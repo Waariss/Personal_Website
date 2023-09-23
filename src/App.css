@@ -80,6 +80,15 @@
   transition: all 0.5s ease-in-out;
 }
 
+.experience-card {
+  height: 100%;  /* This will ensure that each card takes full height of its container */
+}
+
+.experience-card .card-img-top {
+  height: auto;  /* Set a fixed height for the images */
+  object-fit: cover; /* This will crop the image to fit the container */
+}
+
 .experience-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -92,3 +101,183 @@
 .nav-link:hover {
   color: #007bff;  /* adjust color to fit your design */
 }
+
+.timeline {
+  position: relative;
+  padding-left: 30px; /* Increased padding to give space for the line and dots */
+}
+
+.timeline-event {
+  margin-bottom: 15px; /* Adjust spacing between events */
+  position: relative;
+}
+
+.timeline-event::before {
+  content: '';
+  position: absolute;
+  left: -20px; /* Positioning dot to the left */
+  top: 50%;
+  height: 6px; /* Height of the dot */
+  width: 6px; /* Width of the dot */
+  background-color: #ccc;
+  border-radius: 50%; /* Making the dot round */
+  transform: translateY(-50%); /* Centering the dot vertically */
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  left: -17px; /* Positioning the line in the center of the dot */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.event-description {
+  margin-left: 10px;
+}
+
+.activity-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;  /* Remove underline */
+  transition: color 0.3s;
+}
+
+.activity-name-p{
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;  /* Remove underline */
+}
+
+.activity-name:hover{
+  color: #007bff;
+}
+
+.event-detail {
+  margin-left: 20px;
+  font-size: 1em;
+  color: #777;
+}
+
+.link-group {
+  display: flex;
+  flex-wrap: wrap;  /* Allow the links to wrap to the next line if there's not enough space */
+}
+
+.custom-link {
+  display: flex;
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;      /* Center content vertically */
+  padding: 8px 12px;
+  background-color: #f7f7f7; 
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  width: auto;  
+  box-sizing: border-box;
+}
+
+.custom-link:hover {
+  background-color: #e7e7e7;
+}
+
+.custom-link i {
+  font-size: 1.1em;
+}
+
+.internship-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-right: 35%;  /* Add padding to prevent text overlap, adjust as necessary */
+}
+
+.internship-image {
+  max-width: 32%;  /* Adjust width as per your preference */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);  /* Center the image vertically */
+}
+
+.project-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;  /* or any desired fixed height */
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.activity-image {
+  margin-right: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  float: right;  /* Makes the image float to the left of the text */
+}
+
+.mb-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+#scrollToTopButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none;
+  background-color: #555; /* Dark background */
+  color: white; /* White text */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopButton:hover {
+  background-color: #333; /* Add a darker background on hover */
+}
+
+
+
+
+

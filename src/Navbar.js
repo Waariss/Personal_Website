@@ -16,7 +16,7 @@ const Navigation = () => {
                     <Nav.Link href="#publications"><FaBook className="me-1"/> Publications</Nav.Link>
                     <Nav.Link href="#certifications"><FaCertificate className="me-1"/> Certifications</Nav.Link>
                     <Nav.Link href="#projects"><FaProjectDiagram className="me-1"/> Projects</Nav.Link>
-                    <Nav.Link href="#contact"><FaEnvelope className="me-1"/> Contact</Nav.Link>
+                    <Nav.Link href="#resume"><FaEnvelope className="me-1"/> Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

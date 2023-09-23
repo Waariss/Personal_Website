@@ -1,0 +1,58 @@
+/* resume.css */
+
+/* Add a little spacing around the whole section for breathing room */
+#resume {
+    padding: 20px;
+}
+
+Add some space between the icons for better legibility and aesthetics
+.icon-col {
+    margin: 0 40px;
+}
+
+/* .details-container {
+    margin-left: 100px;
+} */
+
+/* Provide a consistent space between the contact details for readability */
+.details-container p {
+    margin-bottom: 15px;
+}
+
+/* Style the contact details for emphasis */
+.details-container strong {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+/* Add some space between the "Contact & Follow" title and the content below */
+.details-container h4 {
+    margin-bottom: 25px;
+}
+
+/* Additional styling to control the spacing between the icons */
+.justify-content-around > [class^="col-"] {
+    padding: 0 10px;
+}
+
+/* Style the contact email link */
+.details-container a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.details-container a:hover {
+    color: #0056b3; /* A bit darker on hover */
+}
+
+/* Style the iframe to ensure it fits well within its container */
+iframe {
+    border-radius: 5px; /* Slight rounding for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+/* Adjust the card style for a cleaner look */
+.experience-card {
+    border-radius: 10px;
+}

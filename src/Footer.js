@@ -5,7 +5,7 @@ import { AiFillGoogleCircle, AiFillProject } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <Navbar bg="dark" variant="dark" className="mt-5" id="contact">
+        <Navbar bg="dark" variant="dark" className="" id="contact">
             <Container className="d-flex flex-column align-items-center">
                 <Navbar.Text className="text-light text-center">
                     © 2023 by Waris Damkham
