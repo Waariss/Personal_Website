@@ -24,7 +24,6 @@ const Publication = () => {
                             <p>An automated COVID-19 screening framework using chest X-ray images is proposed in this study. It leverages artificial intelligence techniques and transfer learning for accurate diagnosis. The framework extracts features using transfer learning and applies modified deep neural networks. Grad-CAM visualization supports the predicted diagnosis. Experimental results demonstrate superior performance compared to other deep learning techniques. This framework has the potential to aid in early COVID-19 diagnosis and alleviate the burden on radiologists.</p>
                             <Card.Subtitle className="mb-2 text-muted">IEEE · Nov 11, 2022</Card.Subtitle>
                         </ListGroup.Item>
-                        {/* Add more ListGroup.Items for each publication */}
                     </ListGroup>
                 </Card.Body>
             </Card>
