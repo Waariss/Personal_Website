@@ -45,7 +45,7 @@ const Experience = () => {
                                             <i className="fas fa-newspaper"></i> News
                                         </Card.Link>
                                         <Card.Link
-                                            href="https://drive.google.com/file/d/1Ulwa9e2Rql9x7gV5vtNJAnlO9-QWPmb3/view?usp=sharing"
+                                            href="https://waariss.github.io/Poster_Cyber_Lab/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="custom-link"

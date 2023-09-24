@@ -117,7 +117,7 @@ const Education = () => {
                             </Card.Text>
                             <Card.Text className="mb-3 mb-3 link-group">
                                     <Card.Link
-                                        href="https://drive.google.com/file/d/1XOU3mwjzSV8n1lqWVwv5BV2mxl8e7xJm/view?usp=sharing"
+                                        href="https://waariss.github.io/School_Portfolio/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="custom-link"
