@@ -20,7 +20,7 @@ const ResumeDisplay = () => {
                         </Col>
                         <Col xs={5} className="d-flex align-items-center justify-content-end">
                             <div className="detailss-container justify-content-center">
-                                <h4 className="text-center mb-4">Contact & Follow</h4>
+                                <h4 className="text-center mb-4 title-enhanced">Contact & Follow</h4>
                                 <p className="text-muted text-center">
                                     I'm always open to discussions, collaborations, or just a chat. Feel free to reach out through any of the platforms below or drop me an email.
                                 </p>
@@ -70,13 +70,13 @@ const ResumeDisplay = () => {
                                 </Row>
                                 <div className="mt-4 text-center">
                                     <p>
-                                        <strong>Email:</strong> <a href="mailto:waris.dam@student.mahidol.ac.th">waris.dam@student.mahidol.ac.th</a>
+                                        <strong className='title-contact'>Email:</strong> <a href="mailto:waris.dam@student.mahidol.ac.th">waris.dam@student.mahidol.ac.th</a>
                                     </p>
                                     <p>
-                                        <strong>Phone:</strong> +66 63 954 4447
+                                        <strong className='title-contact'>Phone:</strong> +66 63 954 4447
                                     </p>
                                     <p>
-                                        <strong>Location:</strong> Bangkok, Thailand
+                                        <strong className='title-contact'>Location:</strong> Bangkok, Thailand
                                     </p>
                                 </div>
                             </div>
