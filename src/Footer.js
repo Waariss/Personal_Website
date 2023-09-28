@@ -5,7 +5,7 @@ import { AiFillGoogleCircle, AiFillProject } from 'react-icons/ai';
 
 const Footer = () => {
     return (
-        <Navbar bg="dark" variant="dark" className="" id="contact">
+        <Navbar collapseOnSelect expand="lg" style={{ background: 'linear-gradient(90deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%)' }} variant="dark" className="" id="contact">
             <Container className="d-flex flex-column align-items-center">
                 <Navbar.Text className="text-light text-center">
                     © 2023 by Waris Damkham
