@@ -5,7 +5,7 @@ import '../App.css';
 const Certificate = () => {
     return (
         <section id="certifications" className="my-4">
-            <h1 className="mb-4 text-center">Certifications</h1>
+            <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
             <Card className="mb-3 border-0 shadow-sm about-card">
                 <Card.Header className="bg-white border-0">
                 </Card.Header>

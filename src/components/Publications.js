@@ -5,7 +5,7 @@ import '../App.css';
 const Publication = () => {
     return (
         <section id="publications" className="my-4">
-            <h1 className="mb-4 text-center">Publications</h1>
+            <h1 className="mb-4 text-center title-enhanced">Publications</h1>
             <Card className="border-0 shadow-sm about-card">
                 <Card.Body>
                     <ListGroup variant="flush">

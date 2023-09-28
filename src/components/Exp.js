@@ -5,7 +5,7 @@ import '../App.css';
 const Experience = () => {
     return (
         <section id="experience" className="my-4">
-                <h1 className="mb-4 text-center">Experience</h1>
+                <h1 className="mb-4 text-center title-enhanced">Experience</h1>
                 <Card className="mb-3 border-0 shadow-sm experience-card">
                     <Card.Header className="bg-white border-0">
                     </Card.Header>

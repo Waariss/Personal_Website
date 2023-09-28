@@ -5,7 +5,7 @@ import '../resume.css';
 const ResumeDisplay = () => {
     return (
         <section id="resume" className="my-4">
-            <h1 className="mb-4 text-center">My Resume</h1>
+            <h1 className="mb-4 text-center title-enhanced">My Resume</h1>
             <Card className="mb-3 border-0 shadow-sm experience-card">
                 <Card.Header className="bg-white border-0"></Card.Header>
                 <Card.Body>

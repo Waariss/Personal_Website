@@ -31,7 +31,7 @@ const About = () => {
                         <Image src="./images/waris.JPG" roundedCircle fluid className="profile-image" />
                     </Col>
                     <Col xs={12} md={8}>
-                        <Card.Title><h2>About Me</h2></Card.Title>
+                        <Card.Title><h2 className='title'>About Me</h2></Card.Title>
                         <Card.Text>
                             Currently in my final year at Mahidol University, I'm majoring in Information and Communication Technology. My academic endeavors have instilled in me a deep passion for leveraging technology to address complex challenges. With a solid foundation in ICT, I'm enthusiastic about applying my knowledge in real-world scenarios. I'm actively seeking internship opportunities that will allow me to contribute to a forward-thinking team, while also enhancing my skills and gaining invaluable industry insights. I'm dedicated to continuous professional growth and am eager to bring my commitment and ICT expertise to a collaborative environment.
                         </Card.Text>
