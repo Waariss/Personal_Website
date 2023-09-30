@@ -19,7 +19,7 @@ const Projects = () => {
                             <Card.Text>
                                 <strong>Skills:</strong> Android Development · OAuth · Application Security · Security · Cybersecurity · Java · Gradle
                             </Card.Text>
-                            {/* <Card.Link href="" target="_blank" className="btn btn-primary">View Project</Card.Link> */}
+                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main/Mobile_App" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card" id="covid">
@@ -34,6 +34,7 @@ const Projects = () => {
                                 <strong>Skills:</strong> Chrome Extensions · Firefox Extensions · Web Development · OAuth · Web Application Security · Security · Cybersecurity · React
                             </Card.Text>
                             <Card.Link href="https://oauth-test-web.netlify.app/" target="_blank" className="btn btn-primary">View Project</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main/Web_App" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="mb-4 project-card">
@@ -48,6 +49,7 @@ const Projects = () => {
                                 <strong>Skills:</strong> Firebase · Web Development · Cryptography · Cybersecurity
                             </Card.Text>
                             <Card.Link href="https://audioplayer-49127.web.app" target="_blank" className="btn btn-primary">View Project</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Secured-Audio-Player-" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card">
@@ -105,6 +107,7 @@ const Projects = () => {
                                 <strong>Skills:</strong> Web Development · Amazon Web Services (AWS) · Cloud Computing
                             </Card.Text>
                             <Card.Link href="http://54.255.156.25" target="_blank" className="btn btn-primary">View Project</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Senyai" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card">
@@ -119,6 +122,7 @@ const Projects = () => {
                                 <strong>Skills:</strong> Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI)
                             </Card.Text>
                             <Card.Link href="https://ieeexplore.ieee.org/document/10067528" target="_blank" className="btn btn-primary">View Project</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Automated-COVID-19-screening-framework-via-Deep-Convolutional-Neural-Network-with-Chest-X-ray" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="mb-4 project-card">
