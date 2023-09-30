@@ -19,7 +19,7 @@ const Projects = () => {
                             <Card.Text>
                                 <strong>Skills:</strong> Android Development · OAuth · Application Security · Security · Cybersecurity · Java · Gradle
                             </Card.Text>
-                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main/Mobile_App" target="_blank" className="btn btn-primary">GitHub</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card" id="covid">
@@ -34,7 +34,7 @@ const Projects = () => {
                                 <strong>Skills:</strong> Chrome Extensions · Firefox Extensions · Web Development · OAuth · Web Application Security · Security · Cybersecurity · React
                             </Card.Text>
                             <Card.Link href="https://oauth-test-web.netlify.app/" target="_blank" className="btn btn-primary">View Project</Card.Link>
-                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main/Web_App" target="_blank" className="btn btn-primary">GitHub</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="mb-4 project-card">
@@ -92,7 +92,7 @@ const Projects = () => {
                             <Card.Text>
                                 <strong>Skills:</strong> Flask · Elasticsearch · Web Development · Public Speaking
                             </Card.Text>
-                            <Card.Link href="https://github.com/Waariss/ITCS414_Information-Storage-and-Retrieval/tree/main/Project2_6388014_6388016_6388022" target="_blank" className="btn btn-primary">GitHub</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/ITCS414_Information-Storage-and-Retrieval/tree/main" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card">
@@ -136,7 +136,7 @@ const Projects = () => {
                             <Card.Text>
                                 <strong>Skills:</strong> JavaScript
                             </Card.Text>
-                            <Card.Link href="https://github.com/Waariss/ITCS381--Introduction-to-Multimedia-Systems/tree/main/Mini-animation" target="_blank" className="btn btn-primary">GitHub</Card.Link>
+                            <Card.Link href="https://github.com/Waariss/ITCS381--Introduction-to-Multimedia-Systems/tree/main" target="_blank" className="btn btn-primary">GitHub</Card.Link>
                         </Card.Body>
                     </Card>
                     <Card className="project-card">

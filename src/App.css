@@ -5,19 +5,7 @@
   border-radius: 0;
   border: none;
 }
-.custom-link {
-  color: #333; /* Change the color to your desired value */
-  text-decoration: none; /* Remove the underline */
-}
 
-.custom-link:hover {
-  color: #007bff; /* Change this to whatever color you'd like on hover */
-  text-decoration: underline;
-}
-
-.custom-link:hover {
-  text-decoration: none; /* Remove the underline on hover */
-}
 .linkStyle {
   text-decoration: none;
 }
@@ -29,7 +17,7 @@
 }
 
 .linkStyle:hover h5 {
-  color: #007bff;
+  color: #ff6347;
 }
 /* .profile-image {
   max-width: 100%;
@@ -68,12 +56,13 @@
 }
 
 .about-card {
-  transition: all 0.5s ease-in-out;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .about-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .experience-card{
@@ -104,38 +93,60 @@
 
 .timeline {
   position: relative;
-  padding-left: 30px; /* Increased padding to give space for the line and dots */
+  padding-left: 40px;  /* Increased the padding to accommodate the dot and some spacing */
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;  /* Positioned the line slightly to the right to allow space for the dot */
+  width: 2px;
+  background: #e0e0e0;
 }
 
 .timeline-event {
-  margin-bottom: 15px; /* Adjust spacing between events */
   position: relative;
+  margin-bottom: 20px;
 }
 
-.timeline-event::before {
-  content: '';
+.event-indicator {
   position: absolute;
-  left: -20px; /* Positioning dot to the left */
+  left: -24px;  /* Positioned the dot to the left to ensure it doesn't overlap with the card */
+  width: 10px;
+  height: 10px;
+  background: #ff6347;
+  border-radius: 50%;
   top: 50%;
-  height: 6px; /* Height of the dot */
-  width: 6px; /* Width of the dot */
-  background-color: #ccc;
-  border-radius: 50%; /* Making the dot round */
-  transform: translateY(-50%); /* Centering the dot vertically */
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
-.timeline::after {
-  content: '';
-  position: absolute;
-  left: -17px; /* Positioning the line in the center of the dot */
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #ccc;
+.event-content {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease-in-out;
 }
 
-.event-description {
-  margin-left: 10px;
+.timeline-event:hover .event-content {
+  background: #e9ecef;
+}
+
+.event-time {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.activity-name, .activity-name-p {
+  font-weight: bold;
+}
+
+.activity-name, .activity-name-p {
+  font-weight: bold;
 }
 
 .activity-name {
@@ -158,13 +169,7 @@
 }
 
 .activity-name:hover{
-  color: #007bff;
-}
-
-.event-detail {
-  margin-left: 20px;
-  font-size: 1em;
-  color: #777;
+  color: #ff6347;
 }
 
 .link-group {
@@ -174,6 +179,7 @@
 
 .custom-link {
   display: flex;
+  color: #333 !important;
   justify-content: center;  /* Center content horizontally */
   align-items: center;      /* Center content vertically */
   padding: 8px 12px;
@@ -185,14 +191,17 @@
   margin-bottom: 10px;
   width: auto;  
   box-sizing: border-box;
+  text-decoration: none !important;
 }
 
 .custom-link:hover {
   background-color: #e7e7e7;
+  text-decoration: none !important;
 }
 
 .custom-link i {
   font-size: 1.1em;
+  text-decoration: none !important;
 }
 
 .internship-image-container {
@@ -209,6 +218,9 @@
   justify-content: center;
   position: relative;
   padding-right: 35%;  /* Add padding to prevent text overlap, adjust as necessary */
+}
+.details-container a{
+  text-decoration: none;
 }
 
 .internship-image {
@@ -234,15 +246,11 @@
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border: none;
+  /* background-color: #ff6347 !important; */
+  border: none !important;
   padding: 10px 20px;
   font-weight: bold;
   transition: background-color 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
 }
 
 .activity-image {
@@ -274,7 +282,7 @@
 }
 
 #scrollToTopButton:hover {
-  background-color: #333; /* Add a darker background on hover */
+  background-color: #ff6347; /* Add a darker background on hover */
 }
 
 .badge-section {
@@ -314,7 +322,7 @@
 }
 
 .icon-btn:hover {
-  color: #007bff; /* or any other color for hover effect */
+  color: #ff6347; /* or any other color for hover effect */
   transform: scale(1.1);
 }
 
@@ -324,11 +332,10 @@
 }
 
 .title-enhanced {
-  font-size: 2.5rem; /* Increase font size */
-  font-weight: bold; /* Make it bold */
-  color: black; /* Updated to the complementary color */
-  position: relative;
-  padding-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .title-contact {
@@ -340,19 +347,9 @@
 }
 
 .title {
+  font-family: 'Lato', sans-serif;
+  color: #333;
   font-size: 1.6rem; /* Increase font size */
-  font-weight: bold; /* Make it bold */
-  color: black; /* Updated to the complementary color */
+  letter-spacing: 1.5px;
   position: relative;
-}
-
-.title-enhanced::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 3px;
-  width: 50px; 
-  background-color: black; /* Underline using the complementary color */
 }
