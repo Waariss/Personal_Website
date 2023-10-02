@@ -20,7 +20,7 @@ const ResumeDisplay = () => {
                         </Col>
                         <Col xs={5} className="d-flex align-items-center justify-content-end">
                             <div className="detailss-container justify-content-center">
-                                <h4 className="text-center mb-4 title-enhanced">Contact & Follow</h4>
+                                <h4 className="text-center mb-4 title-enhanced2">Contact & Follow</h4>
                                 <p className="text-muted text-center">
                                     I'm always open to discussions, collaborations, or just a chat. Feel free to reach out through any of the platforms below or drop me an email.
                                 </p>

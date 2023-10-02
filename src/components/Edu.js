@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
+import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa'; // New Icons
 import '../App.css';
 
 const ImageLogo = ({ src, alt, width, height }) => (
@@ -22,7 +23,7 @@ const TimelineEvent = ({ link, name, detail, time }) => (
 );
 
 const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
-    <Card className="mb-3 border-0 shadow-sm about-card">
+    <Card className="mb-4 border-0 shadow-sm about-card">
         <Card.Body>
             <Row>
                 <Col xs={2} className="d-flex align-items-start justify-content-center p-3">
@@ -51,7 +52,7 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
                                     rel="noopener noreferrer"
                                     className="custom-link"
                                 >
-                                    {link.text}
+                                    <FaFileAlt className="me-1" /> {link.text}
                                 </Card.Link>
                             ))}
                         </Card.Text>

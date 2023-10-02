@@ -1,6 +1,3 @@
-/* resume.css */
-
-/* Add a little spacing around the whole section for breathing room */
 #resume {
     padding: 20px;
 }
@@ -10,9 +7,18 @@ Add some space between the icons for better legibility and aesthetics
     margin: 0 40px;
 }
 
-/* .details-container {
-    margin-left: 100px;
-} */
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.social-icons a {
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
 
 /* Provide a consistent space between the contact details for readability */
 .details-container p {
@@ -55,4 +61,15 @@ iframe {
 /* Adjust the card style for a cleaner look */
 .experience-card {
     border-radius: 10px;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+}
+.title-enhanced2{
+        font-size: 1.75rem;
+        font-family: 'Lato', sans-serif;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
 }

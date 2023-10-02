@@ -11,6 +11,7 @@ import Publication from './components/Publications';
 import Certificate from './components/cert';
 import Projects from './components/Project';
 import ResumeDisplay from './components/ResumeDisplay';
+import Competitions from './components/comp';
 
 const Portfolio = () => {
     return (
@@ -23,6 +24,7 @@ const Portfolio = () => {
             <Publication/>
             <Certificate/>
             <Projects/>
+            <Competitions/>
             <ResumeDisplay />
             <button id="scrollToTopButton" onclick="scrollToTop()">Scroll to Top</button>
         </Container>
