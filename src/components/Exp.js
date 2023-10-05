@@ -86,7 +86,8 @@ const getExperiences = () => [
         skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python', // Full skills list here
         links: [
             { url: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
-            { url: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' }
+            { url: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
+            { url: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' }
         ]
     }
 ];

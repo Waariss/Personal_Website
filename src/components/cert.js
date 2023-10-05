@@ -80,13 +80,13 @@ const certificates = [
         link: "https://www.coursera.org/account/accomplishments/specialization/certificate/59D4PJPG3KLQ",
         imageUrl: "./images/ce1.png"
     },
-    // {
-    //     title: "Command Line Basics in Linux",
-    //     organization: "Coursera",
-    //     date: "June 2023",
-    //     link: "https://www.coursera.org/account/accomplishments/certificate/Q2CFD25FXZXU",
-    //     imageUrl: "./images/ce6.png"
-    // },
+    {
+        title: "Command Line Basics in Linux",
+        organization: "Coursera",
+        date: "June 2023",
+        link: "https://www.coursera.org/account/accomplishments/certificate/Q2CFD25FXZXU",
+        imageUrl: "./images/ce6.png"
+    },
     {
         title: "Learning Tor and the Dark Web",
         organization: "LinkedIn",
@@ -143,13 +143,13 @@ const certificates = [
         link: "https://www.credly.com/badges/bee5a187-4758-436f-a321-88a3f0ad0c25/linked_in_profile",
         imageUrl: "./images/ce15.png"
     },
-    {
-        title: "Certificate of Completion National Central University",
-        organization: "National Central University",
-        date: "July 2022",
-        link: "https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk",
-        imageUrl: "./images/ce16.png"
-    },
+    // {
+    //     title: "Certificate of Completion National Central University",
+    //     organization: "National Central University",
+    //     date: "July 2022",
+    //     link: "https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk",
+    //     imageUrl: "./images/ce16.png"
+    // },
     {
         title: "GDSC Core Team Member Certificate of Appreciation",
         organization: "Google Developer Student Clubs",
