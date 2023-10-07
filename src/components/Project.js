@@ -5,13 +5,14 @@ import ReactMarkdown from 'react-markdown';
 
 const projectData = [
     {
-        id: 'darkweb',
-        imgSrc: './images/darkweb_web.png',
-        title: 'Senyai\'s World via Tor Network',
-        subtitle: 'Oct 2023',
-        description: 'In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser. The website can be accessed for viewing on the Tor network at jozincmtlgnha4lpiqxvdi7nbvaicvbpi5kazzwfkzeuenh6fbtwltqd.onion. This venture was a hands-on exploration and application of basic web hosting, server management, and an introduction to anonymous communication technologies, conducted securely and ethically for educational purposes.',
-        skills: ['Amazon EC2' , 'Web Hosting' , 'Network Security' , 'Web Development' , 'Tor'],
-        links: [{ url: 'https://github.com/Waariss/darkweb/tree/main', label: 'GitHub' }]
+        id: "darkweb",
+        imgSrc: "./images/darkweb_web.png",
+        title: "Senyai's World via Tor Network",
+        subtitle: "Oct 2023",
+        description: "In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser.",
+        credentials: "The website can be accessed for viewing on the Tor network at `jozincmtlgnha4lpiqxvdi7nbvaicvbpi5kazzwfkzeuenh6fbtwltqd.onion`",
+        skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor"],
+        links: [{ "url": "https://github.com/Waariss/darkweb/tree/main", "label": "GitHub" }]
     },
     {
         id: 'oauth',
