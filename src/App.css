@@ -420,3 +420,8 @@
   line-height: 1.6;
   color: #555;
 }
+
+/* App.css */
+.markdown-credentials {
+  margin-top: 2px;
+}

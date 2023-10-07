@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import '../App.css';
+import ReactMarkdown from 'react-markdown';
 
 const projectData = [
     {
@@ -108,13 +109,15 @@ const projectData = [
         ]
     },
     {
-        imgSrc: './images/pro2.jpeg',
-        title: 'Lollipop Music',
-        subtitle: 'Jan 2022 - May 2022',
-        description: 'I successfully designed and developed a project focused on creating a music application called Lollipop Music using React and Node.js. With a passion for music and technology, I utilized my skills to design an intuitive and user-friendly interface for browsing and playing music. Leveraging React for the frontend and Node.js for the backend, I implemented key features such as user authentication, playlist management, and audio playback. This project allowed me to deepen my knowledge of web development, strengthen my skills in React and Node.js, and demonstrate my ability to create engaging and functional music applications. Excited to have contributed to the world of music through technology!',
-        skills: ['React.js', 'Node.js', 'Web Development', 'Public Speaking', 'Postman', 'Git'],
+        imgSrc: "./images/pro2.jpeg",
+        title: "Lollipop Music",
+        subtitle: "Jan 2022 - May 2022",
+        description: "I spearheaded the design and development of a vibrant music application named Lollipop Music, leveraging React for the frontend and Node.js for the backend, and hosted it on an Amazon EC2 instance. With a fervent passion for music and technology, I crafted an intuitive and user-friendly platform that ensures a seamless music browsing and playback experience. The application features user authentication, playlist management, and audio playback, aiming to enhance user interactions with their favorite tunes. This project not only bolstered my expertise in web development and honed my skills in React and Node.js but also showcased my capacity to create engaging and functional music applications. It was a thrilling journey to merge the realms of music and technology, and I'm excited to contribute to the digital music space! For a hands-on experience, you can access the application using the demo credentials provided on the login page: ",
+        credentials: "**Username**: `Senyai_bark@hotmail.com`, **Password**: `loveDogs88`.",
+        skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2"],
         links: [
-            { url: 'https://github.com/Waariss/Lollipop_Music_Project', label: 'GitHub' }
+            {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
+            {url: "http://47.128.71.255/", "label": "Visit Project"}
         ]
     }
 ];
@@ -139,13 +142,16 @@ const Projects = () => {
             <h1 className="mb-4 text-center title-enhanced">Projects</h1>
             <Card className="border-0 shadow-sm about-card">
                 <Card.Body>
-                    {projectData.map(project => (
-                        <Card key={project.id} className="project-card" id={project.id}>
+                    {projectData.map((project, index) => (
+                        <Card key={index} className="project-card" id={project.id}>
                             <Card.Img variant="top" src={project.imgSrc} alt={project.title} />
                             <Card.Body>
                                 <Card.Title>{project.title}</Card.Title>
                                 <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
-                                <Card.Text>{formatDescription(project.description, 'jozincmtlgnha4lpiqxvdi7nbvaicvbpi5kazzwfkzeuenh6fbtwltqd.onion')}</Card.Text>
+                                <Card.Text>
+                                    {project.description}
+                                    <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
+                                </Card.Text>
                                 <Card.Text>
                                     <strong>Skills:</strong> {project.skills.join(' · ')}
                                 </Card.Text>
@@ -160,5 +166,6 @@ const Projects = () => {
         </section>
     );
 };
+
 
 export default Projects;
