@@ -54,6 +54,7 @@ const getCompetitions = () => [
         description: 'Participated in the "Thailand Cyber Top Talent 2023" cybersecurity competition, organized by the National Cyber Security Office and Huawei Technologies (Thailand) Co., Ltd. This prestigious event aimed to educate and upskill participants in various areas of cybersecurity through hands-on challenges. The competition adopted a "Capture the Flag" format in a Jeopardy style, highlighting areas such as Web Application Security, Digital Forensics, and more.',
         skills: 'Cybersecurity, Web Application Security, Digital Forensics, Reverse Engineering, Network Security, Mobile Security, Programming, Cryptography',
         links: [
+            { url: 'https://drive.google.com/file/d/1B0WRjkgiJp7pBx_D8MKeZgB0AvdJOWAN/view?usp=sharing', type: 'news', label: 'Show Credential' },
             { url: 'https://ctf.in.th/thctt2023/', type: 'news', label: 'Website' },
         ]
     },    
