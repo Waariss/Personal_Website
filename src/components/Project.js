@@ -10,7 +10,7 @@ const projectData = [
         title: "Senyai's World via Tor Network",
         subtitle: "Oct 2023",
         description: "In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser.",
-        credentials: "The website can be accessed for viewing on the Tor network at `jozincmtlgnha4lpiqxvdi7nbvaicvbpi5kazzwfkzeuenh6fbtwltqd.onion`",
+        credentials: "The website can be accessed for viewing on the Tor network at `myl3qbzzngac77vjiiqwfxbzbz7w2xcvcy5uxqvebs2x2traeublopid.onion`",
         skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor"],
         links: [{ "url": "https://github.com/Waariss/darkweb/tree/main", "label": "GitHub" }]
     },
@@ -81,10 +81,10 @@ const projectData = [
         imgSrc: './images/pro3.png',
         title: 'Senyai World',
         subtitle: 'Aug 2022 - Dec 2022',
-        description: 'I successfully deployed a web server on a public cloud platform as part of a project. Utilizing my technical skills and knowledge, I implemented the necessary configurations and infrastructure to host the web server. The deployment process involved selecting the appropriate cloud provider, provisioning resources, setting up security measures, and ensuring high availability. By completing this project, I gained hands-on experience in cloud computing, server administration, and infrastructure deployment, showcasing my ability to efficiently utilize cloud technologies for web hosting purposes.',
-        skills: ['Web Development', 'Amazon Web Services (AWS)', 'Cloud Computing'],
+        description: 'I successfully deployed a web server using GitHub Pages as part of a project. Leveraging my technical skills and knowledge, I configured the necessary infrastructure and settings to host the web server. The deployment process involved selecting GitHub as a hosting platform, provisioning resources, and ensuring the web server was secure and highly available. Through this project, I acquired hands-on experience in web hosting and server administration, demonstrating my ability to effectively utilize GitHub Pages for web hosting purposes.',
+        skills: ['Web Development', 'GitHub Pages', 'Cloud Computing'],
         links: [
-            { url: 'http://54.255.156.25', label: 'View Project' },
+            { url: 'https://waariss.github.io/Senyai/', label: 'View Project' },
             { url: 'https://github.com/Waariss/Senyai', label: 'GitHub' }
         ]
     },
