@@ -4,6 +4,13 @@ import '../App.css';
 
 const certificates = [
     {
+        title: "Meta Front-End Developer Specialization",
+        organization: "Coursera",
+        date: "Oct 2023",
+        link: "https://www.coursera.org/account/accomplishments/specialization/certificate/GZTNV9E6SNFG",
+        imageUrl: "./images/Meta_front.png"
+    },
+    {
         title: "Meta Back-End Developer Specialization",
         organization: "Coursera",
         date: "Sep 2023",
@@ -80,13 +87,13 @@ const certificates = [
         link: "https://www.coursera.org/account/accomplishments/specialization/certificate/59D4PJPG3KLQ",
         imageUrl: "./images/ce1.png"
     },
-    {
-        title: "Command Line Basics in Linux",
-        organization: "Coursera",
-        date: "June 2023",
-        link: "https://www.coursera.org/account/accomplishments/certificate/Q2CFD25FXZXU",
-        imageUrl: "./images/ce6.png"
-    },
+    // {
+    //     title: "Command Line Basics in Linux",
+    //     organization: "Coursera",
+    //     date: "June 2023",
+    //     link: "https://www.coursera.org/account/accomplishments/certificate/Q2CFD25FXZXU",
+    //     imageUrl: "./images/ce6.png"
+    // },
     {
         title: "Learning Tor and the Dark Web",
         organization: "LinkedIn",

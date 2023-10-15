@@ -123,20 +123,6 @@ const projectData = [
     }
 ];
 
-const formatDescription = (description, onionLink) => {
-    const parts = description.split(onionLink);
-    return (
-        <>
-            {parts.map((part, index) => (
-                <React.Fragment key={index}>
-                    {part}
-                    {index === parts.length - 1 ? null : <b>{onionLink}</b>}
-                </React.Fragment>
-            ))}
-        </>
-    );
-};
-
 const Projects = () => {
     return (
         <section id="projects" className="my-4">
