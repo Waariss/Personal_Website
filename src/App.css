@@ -190,7 +190,7 @@
 
 .custom-link {
   display: flex;
-  color: #333 !important;
+  color: inherit !important;
   justify-content: center;  /* Center content horizontally */
   align-items: center;      /* Center content vertically */
   padding: 8px 12px;
@@ -207,6 +207,7 @@
 
 .custom-link:hover {
   background-color: #e7e7e7;
+  color: white !important;
   text-decoration: none !important;
 }
 

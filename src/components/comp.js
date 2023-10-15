@@ -23,7 +23,7 @@ const Competitions = () => {
                                     href={link.url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="custom-link"
+                                    className="btn btn-outline-dark"
                                 >
                                     {link.label}
                                 </Card.Link>

@@ -143,7 +143,7 @@ const Projects = () => {
                                     <strong>Skills:</strong> {project.skills.join(' · ')}
                                 </Card.Text>
                                 {project.links.map(link => (
-                                    <Card.Link href={link.url} target="_blank" className="btn btn-primary" key={link.url}>{link.label}</Card.Link>
+                                    <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
                                 ))}
                             </Card.Body>
                         </Card>

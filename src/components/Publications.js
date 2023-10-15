@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
 import '../App.css';
 
-const Publication = () => {
+const Publication = ({links }) => {
     return (
         <section id="publications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Publications</h1>
@@ -21,6 +21,20 @@ const Publication = () => {
                         ))}
                     </ListGroup>
                 </Card.Body>
+                {links && (
+                    <Card.Text className="mb-3 link-group mt-3">
+                        {links.map((link, index) => (
+                            <Card.Link
+                                key={index}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline-secondary"
+                            >
+                            </Card.Link>
+                        ))}
+                    </Card.Text>
+                )}
             </Card>
         </section>
     );

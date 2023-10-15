@@ -50,7 +50,7 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
                                     href={link.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="custom-link"
+                                    className="btn btn-outline-dark"
                                 >
                                     <FaFileAlt className="me-1" /> {link.text}
                                 </Card.Link>

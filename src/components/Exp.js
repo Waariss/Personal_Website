@@ -29,10 +29,10 @@ const Experience = () => {
                                         {experience.links.map((link, linkIndex) => (
                                             <Card.Link
                                                 key={linkIndex}
-                                                href={link.url}
+                                                href={link.href}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="custom-link"
+                                                className="btn btn-outline-dark custom-link"
                                             >
                                                 {getIconForLinkType(link.type)} {link.label}
                                             </Card.Link>
@@ -70,8 +70,8 @@ const getExperiences = () => [
         description: 'I researched the security vulnerabilities in Android apps using OAuth 2.0 with Google accounts, focusing on cross-site request forgery (CSRF) risks. By developing an app and analyzing others, I evaluated critical components like the state parameter and authorization code essential for CSRF prevention. The study reveals the protection level against CSRF in OAuth 2.0 Android implementations. Our aim is to promote user safety by highlighting vulnerable apps and underscoring the need for robust security measures. This research sets a benchmark for future app security audits.', // Full description here
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
-            { url: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
-            { url: 'https://waariss.github.io/Poster_Cyber_Lab/', type: 'poster', label: 'Poster' }
+            { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
+            { href: 'https://waariss.github.io/Poster_Cyber_Lab/', type: 'poster', label: 'Poster' }
         ]
     },
     {
@@ -85,9 +85,9 @@ const getExperiences = () => [
         description: 'I contributed to a project on automated COVID-19 diagnosis using chest X-rays, presented at the 2022 6th International Conference on Information Technology (InCIT). We proposed an AI-based screening method utilizing transfer learning and deep neural networks. Using Grad-CAM visualization, our convolutional neural network model showcased superior performance in accuracy, precision, recall, and F-measure on public datasets. This work advanced early COVID-19 detection and highlighted my skills in AI, deep learning, and medical imaging.', // Full description here
         skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python', // Full skills list here
         links: [
-            { url: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
-            { url: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
-            { url: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' }
+            { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
+            { href: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
+            { href: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' }
         ]
     }
 ];

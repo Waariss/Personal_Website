@@ -185,7 +185,7 @@ const Certificate = () => {
                                             href={cert.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="custom-link mt-auto"
+                                            className="btn btn-outline-dark mt-auto"
                                         >
                                             Show Credential
                                         </Card.Link>
