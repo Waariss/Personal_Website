@@ -426,3 +426,11 @@
 .markdown-credentials {
   margin-top: 2px;
 }
+
+.pub .slick-dots {
+  margin-bottom: 20px;
+}
+
+.comp .slick-dots {
+  margin-bottom: -1px;
+}

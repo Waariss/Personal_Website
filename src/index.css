@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.activity-card {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    text-align: left;
+}
+
+.slick-dots {
+  margin-bottom: 10px;
+}
+
+/* 
+.slick-next {
+    right: 25px;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 1;
+} */

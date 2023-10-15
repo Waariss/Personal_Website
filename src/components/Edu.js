@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
+import Slider from "react-slick";
 import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa'; // New Icons
 import '../App.css';
 
@@ -7,20 +8,89 @@ const ImageLogo = ({ src, alt, width, height }) => (
     <img src={src} alt={alt} width={width} height={height} className="rounded-circle" />
 );
 
-const TimelineEvent = ({ link, name, detail, time }) => (
-    <div className="timeline-event">
-        <div className="event-indicator"></div>
-        <div className="event-content">
-            {link ? (
-                <a href={link} className="activity-name">{name}</a>
-            ) : (
-                <span className="activity-name-p">{name}</span>
-            )}
-            {time && <div className="event-time">{time}</div>}
-            <div className="event-detail">{detail}</div>
-        </div>
+const calculateAutoplaySpeed = (text) => {
+    const words = text.split(' ').length;
+    const readingSpeed = 200; 
+    return (words / readingSpeed) * 60 * 1000;
+};
+
+const getMaxAutoplaySpeed = (activities) => {
+    let maxSpeed = 0;
+    activities.forEach(activity => {
+        const currentSpeed = calculateAutoplaySpeed(activity.detail);
+        if (currentSpeed > maxSpeed) {
+            maxSpeed = currentSpeed;
+        }
+    });
+    return maxSpeed;
+};
+
+// const TimelineEvent = ({ link, name, detail, time }) => (
+//     <div className="timeline-event">
+//         <div className="event-indicator"></div>
+//         <div className="event-content">
+//             {link ? (
+//                 <a href={link} className="activity-name">{name}</a>
+//             ) : (
+//                 <span className="activity-name-p">{name}</span>
+//             )}
+//             {time && <div className="event-time">{time}</div>}
+//             <div className="event-detail">{detail}</div>
+//         </div>
+//     </div>
+// );
+const ActivityCard = ({ link, name, detail, time }) => (
+    <div className="activity-card">
+        {link ? (
+            <a href={link} className="activity-name">{name}</a>
+        ) : (
+            <span className="activity-name-p">{name}</span>
+        )}
+        {time && <div className="event-time">{time}</div>}
+        <div className="event-detail">{detail}</div>
     </div>
 );
+
+// const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
+//     <Card className="mb-4 border-0 shadow-sm about-card">
+//         <Card.Body>
+//             <Row>
+//                 <Col xs={2} className="d-flex align-items-start justify-content-center p-3">
+//                     <ImageLogo {...logo} />
+//                 </Col>
+//                 <Col xs={10} className="p-3">
+//                     <Card.Title className="mb-3">{title}</Card.Title>
+//                     {subtitle.map((text, index) => (
+//                         <Card.Subtitle key={index} className="mb-2 text-muted">{text}</Card.Subtitle>
+//                     ))}
+//                     <Card.Text className="mb-3 mt-3">
+//                         <strong>Activities and societies:</strong>
+//                         <div className="timeline mt-2">
+//                             {activities.map((activity, index) => (
+//                                 <TimelineEvent key={index} {...activity} />
+//                             ))}
+//                         </div>
+//                     </Card.Text>
+//                     {links && (
+//                         <Card.Text className="mb-3 link-group mt-3">
+//                             {links.map((link, index) => (
+//                                 <Card.Link
+//                                     key={index}
+//                                     href={link.href}
+//                                     target="_blank"
+//                                     rel="noopener noreferrer"
+//                                     className="btn btn-outline-dark"
+//                                 >
+//                                     <FaFileAlt className="me-1" /> {link.text}
+//                                 </Card.Link>
+//                             ))}
+//                         </Card.Text>
+//                     )}
+//                 </Col>
+//             </Row>
+//         </Card.Body>
+//     </Card>
+// );
 
 const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
     <Card className="mb-4 border-0 shadow-sm about-card">
@@ -36,11 +106,21 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
                     ))}
                     <Card.Text className="mb-3 mt-3">
                         <strong>Activities and societies:</strong>
-                        <div className="timeline mt-2">
+                        <Slider 
+                            dots={true}
+                            infinite={true}
+                            slidesToShow={1}
+                            slidesToScroll={1}
+                            arrows={false}
+                            autoplay= {true}
+                            speed= {1000}
+                            autoplaySpeed={getMaxAutoplaySpeed(activities)}
+                            cssEase = "linear"
+                        >
                             {activities.map((activity, index) => (
-                                <TimelineEvent key={index} {...activity} />
+                                <ActivityCard key={index} {...activity} />
                             ))}
-                        </div>
+                        </Slider>
                     </Card.Text>
                     {links && (
                         <Card.Text className="mb-3 link-group mt-3">

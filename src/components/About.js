@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import {Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import Slider from "react-slick";
 import '../App.css';
 
 const About = () => {
@@ -23,6 +24,16 @@ const About = () => {
         "bf1bce85-beb9-4421-a727-727ae8f771c4",
         "bee5a187-4758-436f-a321-88a3f0ad0c25"
     ];
+
+    // const settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 3, // Adjust depending on how many badges you want to show per slide
+    //     slidesToScroll: 1,
+    //     arrows: false
+    // };
+
     return (
         <section id="about" className="my-5">
             <Card className="border-0 shadow-sm about-card mb-4">
@@ -97,6 +108,20 @@ const About = () => {
                         ))}
                     </div>
                 </Card.Body>
+            {/* <Card.Body>
+                <Slider {...settings}>
+                    {badges.map(badgeId => (
+                        <div key={badgeId} className="badge-item mx-2 my-2">
+                            <div
+                                data-iframe-width="150"
+                                data-iframe-height="270"
+                                data-share-badge-id={badgeId}
+                                data-share-badge-host="https://www.credly.com"
+                            ></div>
+                        </div>
+                    ))}
+                </Slider>
+            </Card.Body> */}
         </section>
     );
 };

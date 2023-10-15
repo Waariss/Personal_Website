@@ -1,37 +1,84 @@
 import React from 'react';
 import { Card} from 'react-bootstrap';
+import Slider from 'react-slick';
 import '../App.css';
 
 const Competitions = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        arrows : false,
+        speed: 1000,
+        autoplaySpeed : 5000 ,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
+    // return (
+    //     <section id="competitions" className="my-5">
+    //         <h1 className="mb-4 text-center title-enhanced">Competitions</h1>
+    //         {getCompetitions().map((competition, index) => (
+    //             <Card key={index} className="mb-4 competition-card">
+    //                 <img src={competition.certificateImage} alt="Competition Certificate" className="certificate-image" />
+    //                 <Card.Body>
+    //                     <Card.Title className="competition-title">{competition.title}</Card.Title>
+    //                     <Card.Subtitle className="mb-2 text-muted">{competition.date}</Card.Subtitle>
+    //                     <Card.Text>{competition.description}</Card.Text>
+    //                     <Card.Text>
+    //                         <strong>Skills:</strong> <span className="skills">{competition.skills}</span>
+    //                     </Card.Text>
+    //                     <Card.Text className="link-group">
+    //                         {competition.links.map((link, linkIndex) => (
+    //                             <Card.Link
+    //                                 key={linkIndex}
+    //                                 href={link.url}
+    //                                 target="_blank"
+    //                                 rel="noopener noreferrer"
+    //                                 className="btn btn-outline-dark"
+    //                             >
+    //                                 {link.label}
+    //                             </Card.Link>
+    //                         ))}
+    //                     </Card.Text>
+    //                 </Card.Body>
+    //             </Card>
+    //         ))}
+    //     </section>
+    // );
     return (
         <section id="competitions" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Competitions</h1>
-            {getCompetitions().map((competition, index) => (
-                <Card key={index} className="mb-4 competition-card">
-                    <img src={competition.certificateImage} alt="Competition Certificate" className="certificate-image" />
-                    <Card.Body>
-                        <Card.Title className="competition-title">{competition.title}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">{competition.date}</Card.Subtitle>
-                        <Card.Text>{competition.description}</Card.Text>
-                        <Card.Text>
-                            <strong>Skills:</strong> <span className="skills">{competition.skills}</span>
-                        </Card.Text>
-                        <Card.Text className="link-group">
-                            {competition.links.map((link, linkIndex) => (
-                                <Card.Link
-                                    key={linkIndex}
-                                    href={link.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="btn btn-outline-dark"
-                                >
-                                    {link.label}
-                                </Card.Link>
-                            ))}
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-            ))}
+            <Slider {...settings} className="comp">
+                {getCompetitions().map((competition, index) => (
+                    <div key={index} className="competition-card">
+                        <Card className="">
+                            <img src={competition.certificateImage} alt="Competition Certificate" className="certificate-image" />
+                            <Card.Body>
+                                <Card.Title className="competition-title">{competition.title}</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">{competition.date}</Card.Subtitle>
+                                <Card.Text>{competition.description}</Card.Text>
+                                <Card.Text>
+                                    <strong>Skills:</strong> <span className="skills">{competition.skills}</span>
+                                </Card.Text>
+                                <Card.Text className="link-group">
+                                    {competition.links.map((link, linkIndex) => (
+                                        <Card.Link
+                                            key={linkIndex}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="btn btn-outline-dark"
+                                        >
+                                            {link.label}
+                                        </Card.Link>
+                                    ))}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                ))}
+            </Slider>
         </section>
     );
 };
