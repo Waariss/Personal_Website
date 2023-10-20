@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import '../App.css';
+import Slider from 'react-slick';
 
 const certificates = [
     {
@@ -166,36 +167,96 @@ const certificates = [
     }
 ];
 
+// const Certificate = () => {
+//     return (
+//         <section id="certifications" className="my-4">
+//             <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
+//             <Card className="mb-3 border-0 shadow-sm about-card">
+//                 <Card.Header className="bg-white border-0"></Card.Header>
+//                 <Card.Body>
+//                     <Row className="flex-wrap">
+//                         {certificates.map((cert, index) => (
+//                             <Col key={index} sm={6} md={4} lg={3} className="mb-4">
+//                                 <Card className="border-0 shadow-sm experience-card h-100">
+//                                     <Card.Img variant="top" src={cert.imageUrl} style={{ height: '200px', objectFit: 'contain' }} />
+//                                     <Card.Body className="d-flex flex-column">
+//                                         <Card.Title>{cert.title}</Card.Title>
+//                                         <Card.Subtitle className="mb-2 text-muted">{cert.organization} - {cert.date}</Card.Subtitle>
+//                                         <Card.Link
+//                                             href={cert.link}
+//                                             target="_blank"
+//                                             rel="noopener noreferrer"
+//                                             className="btn btn-outline-dark mt-auto"
+//                                         >
+//                                             Show Credential
+//                                         </Card.Link>
+//                                     </Card.Body>
+//                                 </Card>
+//                             </Col>
+//                         ))}
+//                     </Row>
+//                 </Card.Body>
+//             </Card>
+//         </section>
+//     );
+// };
 const Certificate = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        arrows : false,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+
+    const createSlides = (certificates) => {
+        const slides = [];
+        for (let i = 0; i < certificates.length; i += 4) {
+            slides.push(certificates.slice(i, i + 4));
+        }
+        return slides;
+    };
+
+    const slides = createSlides(certificates);
+
     return (
         <section id="certifications" className="my-4">
             <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
-            <Card className="mb-3 border-0 shadow-sm about-card">
-                <Card.Header className="bg-white border-0"></Card.Header>
-                <Card.Body>
-                    <Row className="flex-wrap">
-                        {certificates.map((cert, index) => (
-                            <Col key={index} sm={6} md={4} lg={3} className="mb-4">
-                                <Card className="border-0 shadow-sm experience-card h-100">
-                                    <Card.Img variant="top" src={cert.imageUrl} style={{ height: '200px', objectFit: 'contain' }} />
-                                    <Card.Body className="d-flex flex-column">
-                                        <Card.Title>{cert.title}</Card.Title>
-                                        <Card.Subtitle className="mb-2 text-muted">{cert.organization} - {cert.date}</Card.Subtitle>
-                                        <Card.Link
-                                            href={cert.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-outline-dark mt-auto"
-                                        >
-                                            Show Credential
-                                        </Card.Link>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        ))}
-                    </Row>
-                </Card.Body>
-            </Card>
+            <Slider {...settings}>
+                {slides.map((slideCerts, index) => (
+                    <div key={index}>
+                        <Card className="mb-3 border-0 shadow-sm about-card">
+                            <Card.Header className="bg-white border-0"></Card.Header>
+                            <Card.Body>
+                                <Row className="flex-wrap">
+                                    {slideCerts.map((cert, index) => (
+                                        <Col key={index} sm={6} md={4} lg={3} className="mb-4">
+                                            <Card className="border-0 shadow-sm experience-card h-100">
+                                                <Card.Img variant="top" src={cert.imageUrl} style={{ height: '200px', objectFit: 'contain' }} />
+                                                <Card.Body className="d-flex flex-column">
+                                                    <Card.Title>{cert.title}</Card.Title>
+                                                    <Card.Subtitle className="mb-2 text-muted">{cert.organization} - {cert.date}</Card.Subtitle>
+                                                    <Card.Link
+                                                        href={cert.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="btn btn-outline-dark mt-auto"
+                                                    >
+                                                        Show Credential
+                                                    </Card.Link>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </Card.Body>
+                        </Card>
+                    </div>
+                ))}
+            </Slider>
         </section>
     );
 };

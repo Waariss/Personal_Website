@@ -13,7 +13,7 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                    {['#home', '#about', '#experience', '#education', '#publications', '#certifications', '#projects', '#competitions', '#resume'].map((link, index) => (
+                    {['#home', '#about', '#experience', '#education','#projects', '#publications', '#certifications', '#competitions', '#resume'].map((link, index) => (
                         <Nav.Link 
                             key={index} 
                             href={link} 
@@ -41,9 +41,9 @@ const getIconForLink = (link) => {
         case '#about': return <FaUser className="me-1" />;
         case '#experience': return <FaBriefcase className="me-1" />;
         case '#education': return <FaGraduationCap className="me-1" />;
+        case '#projects': return <FaProjectDiagram className="me-1" />;
         case '#publications': return <FaBook className="me-1" />;
         case '#certifications': return <FaCertificate className="me-1" />;
-        case '#projects': return <FaProjectDiagram className="me-1" />;
         case '#competitions': return <FaTrophy className="me-1" />;
         case '#resume': return <FaEnvelope className="me-1" />;
         default: return null;

@@ -21,9 +21,9 @@ const Portfolio = () => {
             <About/>
             <Experience/>
             <Education/>
+            <Projects/>
             <Publication/>
             <Certificate/>
-            <Projects/>
             <Competitions/>
             <ResumeDisplay />
             <button id="scrollToTopButton" onclick="scrollToTop()">Scroll to Top</button>

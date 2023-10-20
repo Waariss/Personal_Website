@@ -26,15 +26,6 @@ const About = () => {
         "bee5a187-4758-436f-a321-88a3f0ad0c25"
     ];
 
-    // const settings = {
-    //     dots: true,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 3, // Adjust depending on how many badges you want to show per slide
-    //     slidesToScroll: 1,
-    //     arrows: false
-    // };
-
     return (
         <section id="about" className="my-5">
             <Card className="border-0 shadow-sm about-card mb-4">

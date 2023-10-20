@@ -13,66 +13,66 @@ const Publication = ({links }) => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
-    // return (
-    //     <section id="publications" className="my-5">
-    //         <h1 className="mb-4 text-center title-enhanced">Publications</h1>
-    //         <Card className="border-0 shadow-sm about-card">
-    //             <Card.Body>
-    //                 <ListGroup variant="flush">
-    //                     {getPublications().map((publication, index) => (
-    //                         <ListGroup.Item key={index} className="publication-item">
-    //                             <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
-    //                                 <h5>{publication.title}</h5>
-    //                             </a>
-    //                             <p className="text-muted">{publication.subtitle}</p>
-    //                             <p>{publication.description}</p>
-    //                             {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
-    //                         </ListGroup.Item>
-    //                     ))}
-    //                 </ListGroup>
-    //             </Card.Body>
-    //             {links && (
-    //                 <Card.Text className="mb-3 link-group mt-3">
-    //                     {links.map((link, index) => (
-    //                         <Card.Link
-    //                             key={index}
-    //                             href={link.href}
-    //                             target="_blank"
-    //                             rel="noopener noreferrer"
-    //                             className="btn btn-outline-secondary"
-    //                         >
-    //                         </Card.Link>
-    //                     ))}
-    //                 </Card.Text>
-    //             )}
-    //         </Card>
-    //     </section>
-    // );
     return (
         <section id="publications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Publications</h1>
             <Card className="border-0 shadow-sm about-card">
                 <Card.Body>
-                    <Slider {...settings} className="pub">
+                    <ListGroup variant="flush">
                         {getPublications().map((publication, index) => (
-                            <div key={index} className="publication-item">
-                                <ListGroup variant="flush">
-                                    <ListGroup.Item>
-                                        <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
-                                            <h5>{publication.title}</h5>
-                                        </a>
-                                        <p className="text-muted">{publication.subtitle}</p>
-                                        <p>{publication.description}</p>
-                                        {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
-                                    </ListGroup.Item>
-                                </ListGroup>
-                            </div>
+                            <ListGroup.Item key={index} className="publication-item">
+                                <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
+                                    <h5>{publication.title}</h5>
+                                </a>
+                                <p className="text-muted">{publication.subtitle}</p>
+                                <p>{publication.description}</p>
+                                {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
+                            </ListGroup.Item>
                         ))}
-                    </Slider>
+                    </ListGroup>
                 </Card.Body>
+                {links && (
+                    <Card.Text className="mb-3 link-group mt-3">
+                        {links.map((link, index) => (
+                            <Card.Link
+                                key={index}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline-secondary"
+                            >
+                            </Card.Link>
+                        ))}
+                    </Card.Text>
+                )}
             </Card>
         </section>
     );
+    // return (
+    //     <section id="publications" className="my-5">
+    //         <h1 className="mb-4 text-center title-enhanced">Publications</h1>
+    //         <Card className="border-0 shadow-sm about-card">
+    //             <Card.Body>
+    //                 <Slider {...settings} className="pub">
+    //                     {getPublications().map((publication, index) => (
+    //                         <div key={index} className="publication-item">
+    //                             <ListGroup variant="flush">
+    //                                 <ListGroup.Item>
+    //                                     <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
+    //                                         <h5>{publication.title}</h5>
+    //                                     </a>
+    //                                     <p className="text-muted">{publication.subtitle}</p>
+    //                                     <p>{publication.description}</p>
+    //                                     {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
+    //                                 </ListGroup.Item>
+    //                             </ListGroup>
+    //                         </div>
+    //                     ))}
+    //                 </Slider>
+    //             </Card.Body>
+    //         </Card>
+    //     </section>
+    // );
 };
 
 const getPublications = () => [
