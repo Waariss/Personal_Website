@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Modal } from 'react-bootstrap';
 import '../App.css';
 import ReactMarkdown from 'react-markdown';
 
@@ -24,7 +24,7 @@ const projectData = [
         links: [{ url: 'https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main', label: 'GitHub' }]
     },
     {
-        id: 'covid',
+        id: 'oauth_web',
         imgSrc: './images/web.png',
         title: 'Detecting Vulnerable OAuth 2.0 Implementations in Web Applications',
         subtitle: 'May 2023 - Jul 2023',
@@ -36,6 +36,7 @@ const projectData = [
         ]
     },
     {
+        id: 'audio',
         imgSrc: './images/pro1.png',
         title: 'Secured Audio Player with Encryption and Decryption Functions',
         subtitle: 'Mar 2023 - Apr 2023',
@@ -47,6 +48,7 @@ const projectData = [
         ]
     },
     {
+        id: 'gemini',
         imgSrc: './images/gemini.jpeg',
         title: 'Gemini Project',
         subtitle: 'Jan 2023 - May 2023',
@@ -57,6 +59,7 @@ const projectData = [
         ]
     },
     {
+        id: 'go',
         imgSrc: './images/HCI.png',
         title: 'Safe & Go',
         subtitle: 'Jan 2023 - May 2023',
@@ -68,6 +71,7 @@ const projectData = [
         ]
     },
     {
+        id: 'sea',
         imgSrc: './images/seeme.jpeg',
         title: 'Sea me like I see you',
         subtitle: 'Aug 2022 - Dec 2022',
@@ -77,7 +81,8 @@ const projectData = [
             { url: 'https://github.com/Waariss/ITCS414_Information-Storage-and-Retrieval/tree/main', label: 'GitHub' }
         ]
     },
-    {
+    {   
+        id: 'senyai',
         imgSrc: './images/pro3.png',
         title: 'Senyai World',
         subtitle: 'Aug 2022 - Dec 2022',
@@ -89,6 +94,7 @@ const projectData = [
         ]
     },
     {
+        id: 'covid',
         imgSrc: './images/covid.png',
         title: 'Automated COVID-19 Screening Framework Using Deep Convolutional Neural Network With Chest X-Ray Medical Images',
         subtitle: 'Jun 2022 - Aug 2022',
@@ -100,6 +106,7 @@ const projectData = [
         ]
     },
     {
+        id: 'mouse',
         imgSrc: './images/mouse.png',
         title: 'Little Mouse Mini-Animation Project',
         subtitle: 'Apr 2022 - May 2022',
@@ -110,6 +117,7 @@ const projectData = [
         ]
     },
     {
+        id: 'lollipop',
         imgSrc: "./images/pro2.jpeg",
         title: "Lollipop Music",
         subtitle: "Jan 2022 - May 2022",
@@ -124,35 +132,92 @@ const projectData = [
 ];
 
 const Projects = () => {
+    const [selectedProjectId, setSelectedProjectId] = useState(null);
+
+    const handleShow = (project) => {
+        console.log("Selected Project ID:", project.id);
+        if (selectedProjectId === project.id) {
+            setSelectedProjectId(null); // if the same project is clicked, hide the details
+        } else {
+            setSelectedProjectId(project.id); // store the id of the selected project
+        }
+    };
+    
     return (
         <section id="projects" className="my-4">
             <h1 className="mb-4 text-center title-enhanced">Projects</h1>
-            <Card className="border-0 shadow-sm about-card">
-                <Card.Body>
-                    {projectData.map((project, index) => (
-                        <Card key={index} className="project-card" id={project.id}>
-                            <Card.Img variant="top" src={project.imgSrc} alt={project.title} />
-                            <Card.Body>
-                                <Card.Title>{project.title}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
-                                <Card.Text>
-                                    {project.description}
-                                    <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
-                                </Card.Text>
-                                <Card.Text>
-                                    <strong>Skills:</strong> {project.skills.join(' · ')}
-                                </Card.Text>
-                                {project.links.map(link => (
-                                    <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
-                                ))}
-                            </Card.Body>
+            <div className="project-gallery">
+                {projectData.map((project, index) => (
+                    <div key={index}>
+                        <Card className="project-card" onClick={() => handleShow(project)}>
+                            <Card.Img 
+                                variant="top" 
+                                src={project.imgSrc} 
+                                alt={project.title} 
+                                className="project-image" 
+                            />
+                            <Card.ImgOverlay className={`project-img-overlay ${selectedProjectId === project.id ? '' : 'image-overlay'}`}>
+                                <Card.Title className={`project-title ${selectedProjectId === project.id ? 'white-text' : ''}`}>
+                                    {project.title}
+                                </Card.Title>
+                            </Card.ImgOverlay>
                         </Card>
-                    ))}
-                </Card.Body>
-            </Card>
+                        {selectedProjectId === project.id && (
+                            <Card className="border-0 shadow-sm">
+                            <div className="project-details">
+                                <Card.Body>
+                                    <Card.Title>{project.title}</Card.Title>
+                                    <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
+                                    <Card.Text>
+                                        {project.description}
+                                        <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
+                                    </Card.Text>
+                                    <Card.Text>
+                                        <strong>Skills:</strong> {project.skills.join(' · ')}
+                                    </Card.Text>
+                                    {project.links.map(link => (
+                                        <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
+                                    ))}
+                                </Card.Body>
+                            </div>
+                            </Card>
+                        )}
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };
 
-
 export default Projects;
+
+// const Projects = () => {
+//     return (
+//         <section id="projects" className="my-4">
+//             <h1 className="mb-4 text-center title-enhanced">Projects</h1>
+//             <Card className="border-0 shadow-sm about-card">
+//                 <Card.Body>
+//                     {projectData.map((project, index) => (
+//                         <Card key={index} className="project-card" id={project.id}>
+//                             <Card.Img variant="top" src={project.imgSrc} alt={project.title} />
+//                             <Card.Body>
+//                                 <Card.Title>{project.title}</Card.Title>
+//                                 <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
+//                                 <Card.Text>
+//                                     {project.description}
+//                                     <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
+//                                 </Card.Text>
+//                                 <Card.Text>
+//                                     <strong>Skills:</strong> {project.skills.join(' · ')}
+//                                 </Card.Text>
+//                                 {project.links.map(link => (
+//                                     <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
+//                                 ))}
+//                             </Card.Body>
+//                         </Card>
+//                     ))}
+//                 </Card.Body>
+//             </Card>
+//         </section>
+//     );
+// };

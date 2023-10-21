@@ -261,18 +261,6 @@
   text-decoration: none !important;
 }
 
-.project-card {
-  transition: transform 0.3s;
-  cursor: pointer;
-  margin-top: 40px;
-}
-
-.project-card img {
-  width: 100%;
-  height: 400px;  /* or any desired fixed height */
-  object-fit: cover;
-}
-
 .btn-primary {
   /* background-color: #ff6347 !important; */
   border: none !important;
@@ -433,4 +421,48 @@
 
 .comp .slick-dots {
   margin-bottom: -1px;
+}
+
+.project-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;  /* or any desired fixed height */
+  object-fit: cover;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: white !important; /* Or any color that suits your design */
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.3); /* Lighter black overlay with reduced opacity */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for background and transform */
+  cursor: pointer; /* Indicate clickable area */
+  will-change: background; /* Hint for potential background changes */
+}
+
+.image-overlay:hover {
+  background: rgba(0, 0, 0, 0.4); /* Slightly darker on hover, but still lighter than before */
+}
+
+/* If there's text inside the overlay */
+.image-overlay .project-title {
+  color: white; /* Ensure text is readable against dark overlay */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly lighter shadow for better readability */
+}
+
+.white-text {
+  color: white !important; /* Ensure this overrides other color styles */
+  display: none;
 }
