@@ -89,7 +89,8 @@ const getExperiences = () => [
         links: [
             { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
             { href: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
-            { href: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' }
+            { href: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' },
+            { href: 'https://drive.google.com/file/d/1dXJIxR9Uy6Rpp5BmVeYRMthw6Wh8SxaT/view?usp=sharing', type: 'poster', label: 'Conference Certifications' },
         ]
     }
 ];
