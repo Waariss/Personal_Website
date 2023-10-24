@@ -466,3 +466,8 @@
   color: white !important; /* Ensure this overrides other color styles */
   display: none;
 }
+
+.carousel-item img {
+  object-fit: cover; /* This will make sure images cover the area without distorting */
+}
+

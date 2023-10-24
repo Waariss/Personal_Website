@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
-import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa'; // New Icons
+import { Card, Row, Col, Carousel } from 'react-bootstrap';
+import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa';
+import Slider from 'react-slick';
 import '../App.css';
 
 const Experience = () => {
@@ -16,7 +17,7 @@ const Experience = () => {
                             </Col>
                             <Col xs={10}>
                                 <div className="details-container">
-                                    <img src={experience.internshipImage} alt="Internship Experience" className="internship-image float-right ml-3" />
+                                    <img src={experience.internshipImages} alt="Internship Experience" className="internship-image float-right ml-3" />
                                     <Card.Title className="mb-3 experience-title">{experience.title}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.company} · {experience.type}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>
@@ -41,6 +42,7 @@ const Experience = () => {
                                 </div>
                             </Col>
                         </Row>
+                        
                     </Card.Body>
                 </Card>
             ))}
@@ -61,13 +63,13 @@ const getExperiences = () => [
     // You can add more experiences in this array in the same format
     {
         companyLogo: './images/tu.jpeg',
-        internshipImage: './images/IMG_5203.jpg',
+        internshipImages: './images/IMG_5203.jpg',
         title: 'Detecting Vulnerable OAuth 2.0 Implementations in Android Applications',
         company: 'Ritsumeikan University',
         type: 'Internship',
         duration: 'May 2023 - July 2023 · 3 mos',
         location: 'Shiga, Japan · On-site',
-        description: 'I researched the security vulnerabilities in Android apps using OAuth 2.0 with Google accounts, focusing on cross-site request forgery (CSRF) risks. By developing an app and analyzing others, I evaluated critical components like the state parameter and authorization code essential for CSRF prevention. The study reveals the protection level against CSRF in OAuth 2.0 Android implementations. Our aim is to promote user safety by highlighting vulnerable apps and underscoring the need for robust security measures. This research sets a benchmark for future app security audits.', // Full description here
+        description: 'I conducted research on the security vulnerabilities in Android apps that use OAuth 2.0 with Google accounts, with a focus on the risks of cross-site request forgery (CSRF). My findings were presented at the Workshop on Cyber Forensics, Security, and E-discovery, during the 23rd IEEE International Conference on Software Quality, Reliability, and Security in 2023. By developing an app and analyzing others, I evaluated critical components such as the state parameter and authorization code, which are essential for CSRF prevention. The study reveals the level of protection against CSRF in implementations of OAuth 2.0 on Android. Our goal is to enhance user safety by identifying vulnerable apps and emphasizing the necessity for robust security measures. This research establishes a benchmark for future security audits of apps.', // Full description here
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
             { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
@@ -76,7 +78,7 @@ const getExperiences = () => [
     },
     {
         companyLogo: './images/tu1.png',
-        internshipImage: './images/ce16.png',
+        internshipImages: './images/ce16.png',
         title: 'Automated COVID-19 Screening Framework Using Deep CNN With Chest X-Ray Medical Images',
         company: 'National Central University',
         type: 'Internship',
