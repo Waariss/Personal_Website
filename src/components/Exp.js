@@ -1,7 +1,6 @@
 import React from 'react';
-import { Card, Row, Col, Carousel } from 'react-bootstrap';
+import { Card, Row, Col} from 'react-bootstrap';
 import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa';
-import Slider from 'react-slick';
 import '../App.css';
 
 const Experience = () => {

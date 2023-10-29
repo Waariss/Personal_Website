@@ -1,18 +1,8 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
-import Slider from 'react-slick';
 import '../App.css';
 
 const Publication = ({links }) => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        arrows : false,
-        speed: 1000,
-        autoplaySpeed : 5000 ,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
     return (
         <section id="publications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Publications</h1>
@@ -48,31 +38,6 @@ const Publication = ({links }) => {
             </Card>
         </section>
     );
-    // return (
-    //     <section id="publications" className="my-5">
-    //         <h1 className="mb-4 text-center title-enhanced">Publications</h1>
-    //         <Card className="border-0 shadow-sm about-card">
-    //             <Card.Body>
-    //                 <Slider {...settings} className="pub">
-    //                     {getPublications().map((publication, index) => (
-    //                         <div key={index} className="publication-item">
-    //                             <ListGroup variant="flush">
-    //                                 <ListGroup.Item>
-    //                                     <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
-    //                                         <h5>{publication.title}</h5>
-    //                                     </a>
-    //                                     <p className="text-muted">{publication.subtitle}</p>
-    //                                     <p>{publication.description}</p>
-    //                                     {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
-    //                                 </ListGroup.Item>
-    //                             </ListGroup>
-    //                         </div>
-    //                     ))}
-    //                 </Slider>
-    //             </Card.Body>
-    //         </Card>
-    //     </section>
-    // );
 };
 
 const getPublications = () => [

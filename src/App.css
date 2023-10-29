@@ -471,3 +471,43 @@
   object-fit: cover; /* This will make sure images cover the area without distorting */
 }
 
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-right: 35%;
+}
+
+.blog-card{
+  transition: all 0.5s ease-in-out;
+}
+
+.blog-card {
+  height: 100%;  /* This will ensure that each card takes full height of its container */
+}
+
+.blog-card .card-img-top {
+  height: auto;  /* Set a fixed height for the images */
+  object-fit: cover; /* This will crop the image to fit the container */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.blog-image {
+  max-width: 32%;  /* Adjust width as per your preference */
+  border-radius: 10px;
+  height: 98%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);  /* Center the image vertically */
+}

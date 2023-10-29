@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy } from 'react-icons/fa';
+import { FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy, FaBlog } from 'react-icons/fa';
 import './App.css';
 
 const Navigation = () => {
@@ -13,7 +13,7 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                    {['#home', '#about', '#experience', '#education','#projects', '#publications', '#certifications', '#competitions', '#resume'].map((link, index) => (
+                    {['#home', '#about', '#experience', '#education','#projects', '#publications', '#certifications','#competitions', '#blog', '#resume'].map((link, index) => (
                         <Nav.Link 
                             key={index} 
                             href={link} 
@@ -45,6 +45,7 @@ const getIconForLink = (link) => {
         case '#publications': return <FaBook className="me-1" />;
         case '#certifications': return <FaCertificate className="me-1" />;
         case '#competitions': return <FaTrophy className="me-1" />;
+        case '#blog': return <FaBlog className="me-1" />;
         case '#resume': return <FaEnvelope className="me-1" />;
         default: return null;
     }
@@ -60,6 +61,7 @@ const getLabelForLink = (link) => {
         case '#certifications': return 'Certifications';
         case '#projects': return 'Projects';
         case '#competitions': return 'Competitions';
+        case '#blog': return 'Blog';
         case '#resume': return 'Contact';
         default: return '';
     }

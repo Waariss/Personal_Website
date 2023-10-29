@@ -12,6 +12,7 @@ import Certificate from './components/cert';
 import Projects from './components/Project';
 import ResumeDisplay from './components/ResumeDisplay';
 import Competitions from './components/comp';
+import Blog from './components/Blog';
 
 const Portfolio = () => {
     return (
@@ -25,6 +26,7 @@ const Portfolio = () => {
             <Publication/>
             <Certificate/>
             <Competitions/>
+            <Blog/>
             <ResumeDisplay />
             <button id="scrollToTopButton" onclick="scrollToTop()">Scroll to Top</button>
         </Container>
