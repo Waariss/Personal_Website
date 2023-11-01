@@ -61,6 +61,7 @@ const getCompetitions = () => [
         description: 'I participated in the Huntress Capture the Flag (CTF) Contest sponsored by Huntress Labs Incorporated. In this cybersecurity competition, participants solve challenges in domains like web security and cryptography to find and submit flags, earning points. The top scorers are declared winners.',
         skills: 'Cybersecurity, Web Application Security, Malware, Steganography, OSINT, Miscellaneous',
         links: [
+            { url: 'https://drive.google.com/file/d/16rT2fgVvOhvc7foVjKziULz3IbSSa9Eq/view?usp=sharing', type: 'news', label: 'Show Credential' },
             { url: 'https://huntress.ctf.games', type: 'news', label: 'Website' },
         ]
     }, 
