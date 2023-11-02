@@ -52,7 +52,7 @@ const getBlog = () => [
         company: 'Cybersecurity Laboratory',
         type: 'Internship',
         duration: 'Oct 2023',
-        description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University. [...]',
+        description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University.[...]',
         links: [
             { href: 'https://cysec.ise.ritsumei.ac.jp/2023/11/02/from-thailand-to-japan-my-cybersecurity-internship-at-ritsumeikan-university/', label: 'Read More' },
         ]
