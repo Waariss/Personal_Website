@@ -46,7 +46,7 @@ const Blog = () => {
 
 const getBlog = () => [
     {
-        companyLogo: './images/tu.jpeg',
+        companyLogo: './images/lav.png',
         internshipImages: './images/blog_im.jpeg',
         title: 'From Thailand to Japan: My Cybersecurity Internship at Ritsumeikan University',
         company: 'Cybersecurity Laboratory',
@@ -54,8 +54,7 @@ const getBlog = () => [
         duration: 'Oct 2023',
         description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University. [...]',
         links: [
-            { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', label: 'English' },
-            { href: 'https://waariss.github.io/Poster_Cyber_Lab/', label: 'Japanese' }
+            { href: 'https://cysec.ise.ritsumei.ac.jp/2023/11/02/from-thailand-to-japan-my-cybersecurity-internship-at-ritsumeikan-university/', label: 'Read More' },
         ]
     }
 ];
