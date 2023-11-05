@@ -5,6 +5,7 @@ import './App.css';
 import ScrollToTopButton from './button';
 import Home from './components/Home'
 import About from './components/About'
+import Skills from './components/skills';
 import Experience from './components/Exp';
 import Education from './components/Edu';
 import Publication from './components/Publications';
@@ -20,6 +21,7 @@ const Portfolio = () => {
             <ScrollToTopButton />
             <Home/>
             <About/>
+            <Skills/>
             <Experience/>
             <Education/>
             <Projects/>
