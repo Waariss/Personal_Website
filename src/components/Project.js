@@ -4,6 +4,20 @@ import '../App.css';
 import ReactMarkdown from 'react-markdown';
 
 const projectData = [
+
+    {
+        id: "QA_2",
+        imgSrc: "./images/QA_2.png",
+        title: "🐈 GluayGluay 🍌: Testing for Jelly-Translator: Translation Web App 🪼",
+        subtitle: "Aug 2023 - Present",
+        description: "Conducted extensive testing on the Translation Web App using pytest to ensure a robust and error-free application. This included writing unit tests, conducting system testing, and automating UI testing, with a focus on achieving high code coverage and integrating CI/CD workflows with GitHub Actions.",
+        credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa)",
+        skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions"],
+        links: [
+          { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
+          { "url": "https://github.com/ICT-Mahidol/2023-ITCS473-GluayGluay/tree/master/Project_phase_2", "label": "GitHub" }
+        ]
+    },
     {
         id: "QA_1",
         imgSrc: "./images/QA.png",
@@ -40,7 +54,7 @@ const projectData = [
         description: 'In a recent research project, we investigated the security vulnerabilities of web applications using OAuth 2.0 with Google accounts, with a particular focus on the risks associated with cross-site request forgery (CSRF) attacks. We developed a browser extension for the analysis of web applications, examining the presence of critical security components like the state parameter and authorization code. Our findings provide insights into the level of CSRF protection in OAuth 2.0 implementations. This research emphasizes the importance of diligent implementation and robust security for developers using OAuth 2.0. We also demonstrated the potential for using browser extensions to audit existing web applications for security vulnerabilities, setting a precedent for future audits in this domain. This study ultimately aims to enhance user protection by identifying and discouraging the use of vulnerable web applications.',
         skills: ['Chrome Extensions', 'Firefox Extensions', 'Web Development', 'OAuth', 'Web Application Security', 'Security', 'Cybersecurity', 'React'],
         links: [
-            { url: 'https://oauth-test-web.netlify.app/', label: 'View Project' },
+            { url: 'https://oauth-test-web.netlify.app/', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main', label: 'GitHub' }
         ]
     },
@@ -52,7 +66,7 @@ const projectData = [
         description: 'I successfully developed an audio player embedded with encryption/decryption functions as part of a project. Using my programming skills and knowledge, I created a web application hosted on Firebase that supports the playback and secure storage of audio files in raw format, such as *.wav. The program automatically encrypts audio files upon saving and decrypts them during playback, ensuring data security and privacy. Through this project, I gained hands-on experience in web development, audio processing, and encryption techniques, showcasing my ability to create secure and user-friendly applications for audio playback and storage.',
         skills: ['Firebase', 'Web Development', 'Cryptography', 'Cybersecurity'],
         links: [
-            { url: 'https://audioplayer-49127.web.app', label: 'View Project' },
+            { url: 'https://audioplayer-49127.web.app', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Secured-Audio-Player-', label: 'GitHub' }
         ]
     },
@@ -75,7 +89,7 @@ const projectData = [
         description: 'The project aims to create a new motorcycle transportation service to address the problem faced by people living in the citv who requires a secure and reasonablv priced service. The currentl available motorccle transportation services have unreasonable fare charges and security concerns. This service will ensure security features, offer a user-friendly interface, and also charges a reasonable fare. The project aims to improve the daily lives and experiences of those living in cities and contribute to increasing the options available for motorbike transportation.',
         skills: ['User Experience (UX)', 'User Interface Design'],
         links: [
-            { url: 'https://sites.google.com/student.mahidol.edu/safeandgophase4/home?authuser=0&pli=1', label: 'View Project' },
+            { url: 'https://sites.google.com/student.mahidol.edu/safeandgophase4/home?authuser=0&pli=1', label: 'Live View Project' },
             { url: 'https://sites.google.com/student.mahidol.edu/safeandgophase4/phase-4/poster?authuser=0', label: 'Poster' }
         ]
     },
@@ -98,7 +112,7 @@ const projectData = [
         description: 'I successfully deployed a web server using GitHub Pages as part of a project. Leveraging my technical skills and knowledge, I configured the necessary infrastructure and settings to host the web server. The deployment process involved selecting GitHub as a hosting platform, provisioning resources, and ensuring the web server was secure and highly available. Through this project, I acquired hands-on experience in web hosting and server administration, demonstrating my ability to effectively utilize GitHub Pages for web hosting purposes.',
         skills: ['Web Development', 'GitHub Pages', 'Cloud Computing'],
         links: [
-            { url: 'https://waariss.github.io/Senyai/', label: 'View Project' },
+            { url: 'https://waariss.github.io/Senyai/', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Senyai', label: 'GitHub' }
         ]
     },
@@ -110,7 +124,7 @@ const projectData = [
         description: 'I contributed to a groundbreaking project focused on COVID-19 screening using chest X-rays, published in the 2022 6th International Conference on Information Technology (InCIT). Our research addressed the challenges of manually identifying COVID-19 infections in chest X-ray films, proposing an automated screening framework that leverages artificial intelligence techniques and transfer learning. By employing deep neural networks and Grad-CAM visualization, we achieved accurate and efficient COVID-19 diagnosis. The results, obtained through experimentation on publicly accessible datasets, demonstrated the superior performance of our convolutional neural network model across multiple metrics, including accuracy, precision, recall, and F-measure. This project allowed me to contribute to the early diagnosis of COVID-19 and showcase my expertise in artificial intelligence, deep learning, and medical image analysis.',
         skills: ['Public Speaking', 'Jupyter', 'Convolutional Neural Networks (CNN)', 'Deep Learning', 'Artificial Intelligence (AI)'],
         links: [
-            { url: 'https://ieeexplore.ieee.org/document/10067528', label: 'View Project' },
+            { url: 'https://ieeexplore.ieee.org/document/10067528', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Automated-COVID-19-screening-framework-via-Deep-Convolutional-Neural-Network-with-Chest-X-ray', label: 'GitHub' }
         ]
     },
@@ -135,7 +149,7 @@ const projectData = [
         skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
-            {url: "http://52.77.69.103/", "label": "Visit Project"}
+            {url: "http://52.77.69.103/", "label": "Live Visit Project"}
         ]
     }
 ];
