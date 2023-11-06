@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import {Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import Slider from "react-slick";
 import '../App.css';
 
 const About = () => {
@@ -100,20 +99,6 @@ const About = () => {
                         ))}
                     </div>
                 </Card.Body>
-            {/* <Card.Body>
-                <Slider {...settings}>
-                    {badges.map(badgeId => (
-                        <div key={badgeId} className="badge-item mx-2 my-2">
-                            <div
-                                data-iframe-width="150"
-                                data-iframe-height="270"
-                                data-share-badge-id={badgeId}
-                                data-share-badge-host="https://www.credly.com"
-                            ></div>
-                        </div>
-                    ))}
-                </Slider>
-            </Card.Body> */}
         </section>
     );
 };
