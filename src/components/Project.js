@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card, Modal } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import '../App.css';
 import ReactMarkdown from 'react-markdown';
 

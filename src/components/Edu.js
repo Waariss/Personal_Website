@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import Slider from "react-slick";
-import { FaNewspaper, FaFileAlt, FaImage  } from 'react-icons/fa'; // New Icons
+import { FaFileAlt } from 'react-icons/fa'; // New Icons
 import '../App.css';
 
 const ImageLogo = ({ src, alt, width, height }) => (
