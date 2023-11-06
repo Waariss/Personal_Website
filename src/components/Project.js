@@ -11,7 +11,7 @@ const projectData = [
         title: "🐈 GluayGluay 🍌: Testing for Jelly-Translator: Translation Web App 🪼",
         subtitle: "Aug 2023 - Present",
         description: "Conducted extensive testing on the Translation Web App using pytest to ensure a robust and error-free application. This included writing unit tests, conducting system testing, and automating UI testing, with a focus on achieving high code coverage and integrating CI/CD workflows with GitHub Actions.",
-        credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa)",
+        credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa/jelly-translator) 🐈🍌",
         skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions"],
         links: [
           { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
@@ -21,9 +21,10 @@ const projectData = [
     {
         id: "QA_1",
         imgSrc: "./images/QA.png",
-        title: "🐈 GluayGluay 🍌: Testing for Sudoku",
+        title: "🐈 GluayGluay 🍌: Testing for Sudoku 👾",
         subtitle: "Aug 2023 - Oct 2023",
         description: "This project involved contributing additional unit test cases to an open-source Sudoku game project. The primary focus was to improve test coverage and ensure the robustness of the game's logic. Tasks included setting up a Java testing environment using JUnit, writing a comprehensive set of test cases, and utilizing Gradle for build automation and dependency management. The end goal was to ensure that all possible scenarios, including edge cases, were tested and validated against the game's requirements.",
+        credentials: "Project Sudoku 👾: Sudoku App created by [Matt McCoy (mattnenterprise)](https://github.com/mattnenterprise/Sudoku)  🌟",
         skills: ["Java", "JUnit", "Gradle", "Test Case Design"],
         links: [{ "url": "https://github.com/Waariss/GluayGluay_project1", "label": "GitHub" }]
     },
