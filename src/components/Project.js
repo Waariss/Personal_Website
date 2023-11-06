@@ -5,6 +5,15 @@ import ReactMarkdown from 'react-markdown';
 
 const projectData = [
     {
+        id: "QA_1",
+        imgSrc: "./images/QA.png",
+        title: "🐈 GluayGluay 🍌: Testing for Sudoku",
+        subtitle: "Aug 2023 - Oct 2023",
+        description: "This project involved contributing additional unit test cases to an open-source Sudoku game project. The primary focus was to improve test coverage and ensure the robustness of the game's logic. Tasks included setting up a Java testing environment using JUnit, writing a comprehensive set of test cases, and utilizing Gradle for build automation and dependency management. The end goal was to ensure that all possible scenarios, including edge cases, were tested and validated against the game's requirements.",
+        skills: ["Java", "JUnit", "Gradle", "Test Case Design"],
+        links: [{ "url": "https://github.com/Waariss/GluayGluay_project1", "label": "GitHub" }]
+    },
+    {
         id: "darkweb",
         imgSrc: "./images/darkweb_web.png",
         title: "Senyai's World via Tor Network",
