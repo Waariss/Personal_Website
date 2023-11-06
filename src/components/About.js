@@ -92,7 +92,7 @@ const About = () => {
                             <div key={badgeId} className="badge-item mx-2 my-2">
                                 <div
                                     data-iframe-width="150"
-                                    data-iframe-height="270"
+                                    data-iframe-height="239"
                                     data-share-badge-id={badgeId}
                                     data-share-badge-host="https://www.credly.com"
                                 ></div>
