@@ -17,7 +17,7 @@ const Blog = () => {
                                 <div className="blog-container">
                                     <img src={blog.internshipImages} alt="Internship Experience" className="blog-image float-right ml-3" />
                                     <Card.Title className="mb-3 blog-title">{blog.title}</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">{blog.company} · {blog.type}</Card.Subtitle>
+                                    <Card.Subtitle className="mb-2 text-muted">{blog.company}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{blog.duration}</Card.Subtitle>
                                     <Card.Text className="mb-3">{blog.description}</Card.Text>
                                     <Card.Text className="mb-3 link-group">
@@ -47,10 +47,9 @@ const Blog = () => {
 const getBlog = () => [
     {
         companyLogo: './images/lav.png',
-        internshipImages: './images/blog_im.jpeg',
+        internshipImages: './images/blog_im.jpg',
         title: 'From Thailand to Japan: My Cybersecurity Internship at Ritsumeikan University',
         company: 'Cybersecurity Laboratory',
-        type: 'Internship',
         duration: 'Oct 2023',
         description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University.[...]',
         links: [
