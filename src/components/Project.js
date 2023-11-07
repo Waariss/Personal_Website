@@ -156,7 +156,7 @@ const projectData = [
         title: "Lollipop Music",
         subtitle: "Jan 2022 - May 2022",
         description: "I spearheaded the design and development of a vibrant music application named Lollipop Music, leveraging React for the frontend and Node.js for the backend, and hosted it on Nignx and Amazon EC2 instance. With a fervent passion for music and technology, I crafted an intuitive and user-friendly platform that ensures a seamless music browsing and playback experience. The application features user authentication, playlist management, and audio playback, aiming to enhance user interactions with their favorite tunes. This project not only bolstered my expertise in web development and honed my skills in React and Node.js but also showcased my capacity to create engaging and functional music applications. It was a thrilling journey to merge the realms of music and technology, and I'm excited to contribute to the digital music space! For a hands-on experience, you can access the application using the demo credentials provided on the login page: ",
-        credentials: "**Username**: `Senyai_bark@hotmail.com`, **Password**: `loveDogs88`.",
+        credentials: "**Username**: `Senyai_bark@hotmail.com` **Password**: `loveDogs88`.",
         skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
