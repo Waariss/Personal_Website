@@ -128,6 +128,7 @@ const getSkills = () => [
             { name: 'VGG16', logo: 'https://picx.zhimg.com/v2-b2a0c72a4074fc44dcd54d12e485f395_720w.jpg?source=172ae18b' },
             { name: 'ResNet50', logo: 'https://miro.medium.com/v2/resize:fit:1033/0*pBG9EupH3hdprskH.png' },
             { name: 'YOLO', logo: 'https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/yolo.svg' },
+            { name: 'CNN', logo: "https://seeklogo.com/images/C/CNN-logo-6DA92A5BFF-seeklogo.com.png"},
         ]
     },    
     {

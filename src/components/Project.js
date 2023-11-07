@@ -4,7 +4,17 @@ import '../App.css';
 import ReactMarkdown from 'react-markdown';
 
 const projectData = [
-
+    {
+        id: "Senior",
+        imgSrc: "./images/senior.png",
+        title: "Senior Project: Classification Of Chicken Diseases From Fecal Images Via Line OA",
+        subtitle: "Aug 2023 - Present",
+        description: "TBA",
+        skills: ["Python", "Random Over Sampling", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA"],
+        links: [
+            { url: '', "label": "TBA"}
+        ]
+    },
     {
         id: "QA_2",
         imgSrc: "./images/QA_2.png",
@@ -35,7 +45,7 @@ const projectData = [
         subtitle: "Oct 2023",
         description: "In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser.",
         credentials: "The website can be accessed for viewing on the Tor network at `myl3qbzzngac77vjiiqwfxbzbz7w2xcvcy5uxqvebs2x2traeublopid.onion`",
-        skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor"],
+        skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor", 'HTML', 'CSS'],
         links: [{ "url": "https://github.com/Waariss/darkweb/tree/main", "label": "GitHub" }]
     },
     {
@@ -53,7 +63,7 @@ const projectData = [
         title: 'Detecting Vulnerable OAuth 2.0 Implementations in Web Applications',
         subtitle: 'May 2023 - Jul 2023',
         description: 'In a recent research project, we investigated the security vulnerabilities of web applications using OAuth 2.0 with Google accounts, with a particular focus on the risks associated with cross-site request forgery (CSRF) attacks. We developed a browser extension for the analysis of web applications, examining the presence of critical security components like the state parameter and authorization code. Our findings provide insights into the level of CSRF protection in OAuth 2.0 implementations. This research emphasizes the importance of diligent implementation and robust security for developers using OAuth 2.0. We also demonstrated the potential for using browser extensions to audit existing web applications for security vulnerabilities, setting a precedent for future audits in this domain. This study ultimately aims to enhance user protection by identifying and discouraging the use of vulnerable web applications.',
-        skills: ['Chrome Extensions', 'Firefox Extensions', 'Web Development', 'OAuth', 'Web Application Security', 'Security', 'Cybersecurity', 'React'],
+        skills: ['Chrome Extensions', 'Firefox Extensions', 'Web Development', 'OAuth', 'Web Application Security', 'Security', 'Cybersecurity'],
         links: [
             { url: 'https://oauth-test-web.netlify.app/', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Detecting-Vulnerable-OAuth-2.0-Implementations-in-Android-Applications/tree/main', label: 'GitHub' }
@@ -65,7 +75,7 @@ const projectData = [
         title: 'Secured Audio Player with Encryption and Decryption Functions',
         subtitle: 'Mar 2023 - Apr 2023',
         description: 'I successfully developed an audio player embedded with encryption/decryption functions as part of a project. Using my programming skills and knowledge, I created a web application hosted on Firebase that supports the playback and secure storage of audio files in raw format, such as *.wav. The program automatically encrypts audio files upon saving and decrypts them during playback, ensuring data security and privacy. Through this project, I gained hands-on experience in web development, audio processing, and encryption techniques, showcasing my ability to create secure and user-friendly applications for audio playback and storage.',
-        skills: ['Firebase', 'Web Development', 'Cryptography', 'Cybersecurity'],
+        skills: ['Firebase', 'Web Development', 'Cryptography', 'Cybersecurity', 'React', 'CSS', 'Vite'],
         links: [
             { url: 'https://audioplayer-49127.web.app', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Secured-Audio-Player-', label: 'GitHub' }
@@ -77,7 +87,7 @@ const projectData = [
         title: 'Gemini Project',
         subtitle: 'Jan 2023 - May 2023',
         description: 'In the Gemini Project, I demonstrated leadership and in-depth understanding of various software engineering diagrams. This project necessitated the creation of Use Case, Activity, Sequence, Class diagrams to design and effectively document a complex telescope system. I demonstrated my proficiency in Java and Spring Boot by implementing the project as a web application, enabling the generation of intricate science plans for telescope systems. This endeavor refined my technical acumen and underscored my ability to translate complex systems into understandable and functional software solutions.',
-        skills: ['Spring Boot', 'Software Design', 'Web Development', 'Java', 'Gradle', 'Git'],
+        skills: ['Spring Boot', 'Software Design', 'Web Development', 'Java', 'Gradle', 'Git', 'HTML', 'CSS'],
         links: [
             { url: 'https://github.com/Waariss/ITCS431_Software-Design-and-Development.git', label: 'GitHub' }
         ]
@@ -100,7 +110,7 @@ const projectData = [
         title: 'Sea me like I see you',
         subtitle: 'Aug 2022 - Dec 2022',
         description: 'I successfully completed a project where I analyzed the requirements of users and the target audience for a web search engine focused on marine life. Utilizing datasets and data integration techniques, I implemented Elasticsearch to fetch relevant information and provide a seamless search experience. By understanding the needs of users and the target audience, I designed and developed a search engine that efficiently retrieves marine life-related data. This project allowed me to enhance my skills in requirements analysis, data integration, and Elasticsearch, showcasing my ability to create effective search solutions for specific domains, such as marine life.',
-        skills: ['Flask', 'Elasticsearch', 'Web Development', 'Public Speaking'],
+        skills: ['Flask', 'Elasticsearch', 'Web Development', 'HTML', 'CSS'],
         links: [
             { url: 'https://github.com/Waariss/ITCS414_Information-Storage-and-Retrieval/tree/main', label: 'GitHub' }
         ]
@@ -111,7 +121,7 @@ const projectData = [
         title: 'Senyai World',
         subtitle: 'Aug 2022 - Dec 2022',
         description: 'I successfully deployed a web server using GitHub Pages as part of a project. Leveraging my technical skills and knowledge, I configured the necessary infrastructure and settings to host the web server. The deployment process involved selecting GitHub as a hosting platform, provisioning resources, and ensuring the web server was secure and highly available. Through this project, I acquired hands-on experience in web hosting and server administration, demonstrating my ability to effectively utilize GitHub Pages for web hosting purposes.',
-        skills: ['Web Development', 'GitHub Pages', 'Cloud Computing'],
+        skills: ['HTML', 'CSS', 'Web Development', 'GitHub Pages', 'Cloud Computing'],
         links: [
             { url: 'https://waariss.github.io/Senyai/', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Senyai', label: 'GitHub' }
@@ -123,7 +133,7 @@ const projectData = [
         title: 'Automated COVID-19 Screening Framework Using Deep Convolutional Neural Network With Chest X-Ray Medical Images',
         subtitle: 'Jun 2022 - Aug 2022',
         description: 'I contributed to a groundbreaking project focused on COVID-19 screening using chest X-rays, published in the 2022 6th International Conference on Information Technology (InCIT). Our research addressed the challenges of manually identifying COVID-19 infections in chest X-ray films, proposing an automated screening framework that leverages artificial intelligence techniques and transfer learning. By employing deep neural networks and Grad-CAM visualization, we achieved accurate and efficient COVID-19 diagnosis. The results, obtained through experimentation on publicly accessible datasets, demonstrated the superior performance of our convolutional neural network model across multiple metrics, including accuracy, precision, recall, and F-measure. This project allowed me to contribute to the early diagnosis of COVID-19 and showcase my expertise in artificial intelligence, deep learning, and medical image analysis.',
-        skills: ['Public Speaking', 'Jupyter', 'Convolutional Neural Networks (CNN)', 'Deep Learning', 'Artificial Intelligence (AI)'],
+        skills: ["Python", "Jupyter", "Pandas", "NumPy", "OpenCV", "Albumentations", "Plotly", "Matplotlib", "Seaborn", "TensorFlow/Keras", "Deep Learning", "Convolutional Neural Networks (CNN)"],
         links: [
             { url: 'https://ieeexplore.ieee.org/document/10067528', label: 'Live View Project' },
             { url: 'https://github.com/Waariss/Automated-COVID-19-screening-framework-via-Deep-Convolutional-Neural-Network-with-Chest-X-ray', label: 'GitHub' }
@@ -135,7 +145,7 @@ const projectData = [
         title: 'Little Mouse Mini-Animation Project',
         subtitle: 'Apr 2022 - May 2022',
         description: 'In the "Little Mouse" mini-animation project, I combined coding with creativity to bring a playful mouse to life. Users can interact in real-time: dragging along the X-axis changes the background color, while the mouse\'s eyes follow the cursor\'s movement. Clicking anywhere alters the mouse\'s hat color randomly, showcasing the blend of dynamic interactivity and visual design. This project not only honed my coding skills but also emphasized the importance of user interaction in animation.',
-        skills: ['JavaScript'],
+        skills: ['JavaScript', 'p5js'],
         links: [
             { url: 'https://github.com/Waariss/ITCS381--Introduction-to-Multimedia-Systems/tree/main', label: 'GitHub' }
         ]
