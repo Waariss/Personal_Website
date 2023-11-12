@@ -48,7 +48,7 @@ const styles = {
         zIndex: 99,
         border: 'none',
         outline: 'none',
-        backgroundColor: '#555',
+        backgroundColor: '#ff6347',
         color: 'white',
         cursor: 'pointer',
         padding: '10px',

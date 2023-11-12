@@ -129,6 +129,7 @@ const getSkills = () => [
             { name: 'ResNet50', logo: 'https://miro.medium.com/v2/resize:fit:1033/0*pBG9EupH3hdprskH.png' },
             { name: 'YOLO', logo: 'https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/yolo.svg' },
             { name: 'CNN', logo: "https://seeklogo.com/images/C/CNN-logo-6DA92A5BFF-seeklogo.com.png"},
+            { name: 'Darknet', logo: "https://camo.githubusercontent.com/6b3c6c1109586f5f3ddf8967fa4eaf787c7b45fe3df6d89111d6f9c7c1045769/687474703a2f2f706a7265646469652e636f6d2f6d656469612f66696c65732f6461726b6e65742d626c61636b2d736d616c6c2e706e67"},
         ]
     },    
     {
