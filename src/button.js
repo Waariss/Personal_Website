@@ -48,17 +48,20 @@ const styles = {
         zIndex: 99,
         border: 'none',
         outline: 'none',
-        backgroundColor: '#ff6347',
-        color: 'white',
+        backgroundColor: '#E95420',  // Ubuntu's iconic orange color
+        color: 'white',  // White text for contrast
         cursor: 'pointer',
         padding: '10px',
-        borderRadius: '50%',  // Makes it circular
+        borderRadius: '50%',  // Maintains the circular shape
         width: '50px',  // Width of the circle
         height: '50px',  // Height of the circle
         textAlign: 'center',
         lineHeight: '30px',  // Centers the text/arrow inside the circle
-        fontSize: '18px'
+        fontSize: '18px',
+        fontFamily: 'Ubuntu, Arial, sans-serif',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' // Optional: Adds a subtle shadow for depth
     }
 }
+
 
 export default ScrollToTopButton;

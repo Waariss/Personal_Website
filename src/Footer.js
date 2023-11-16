@@ -15,7 +15,6 @@ const Footer = () => {
                     Email: waris.dam@student.mahidol.ac.th
                 </Navbar.Text>
                 <div className="mt-2 icon-container">
-                    {/** All the social and contact icons go here with hover effects */}
                     {getIcons().map((icon, index) => (
                         <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer" className="social-icon">
                             {icon.icon}

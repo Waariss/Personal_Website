@@ -224,34 +224,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// const Projects = () => {
-//     return (
-//         <section id="projects" className="my-4">
-//             <h1 className="mb-4 text-center title-enhanced">Projects</h1>
-//             <Card className="border-0 shadow-sm about-card">
-//                 <Card.Body>
-//                     {projectData.map((project, index) => (
-//                         <Card key={index} className="project-card" id={project.id}>
-//                             <Card.Img variant="top" src={project.imgSrc} alt={project.title} />
-//                             <Card.Body>
-//                                 <Card.Title>{project.title}</Card.Title>
-//                                 <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
-//                                 <Card.Text>
-//                                     {project.description}
-//                                     <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
-//                                 </Card.Text>
-//                                 <Card.Text>
-//                                     <strong>Skills:</strong> {project.skills.join(' · ')}
-//                                 </Card.Text>
-//                                 {project.links.map(link => (
-//                                     <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
-//                                 ))}
-//                             </Card.Body>
-//                         </Card>
-//                     ))}
-//                 </Card.Body>
-//             </Card>
-//         </section>
-//     );
-// };
