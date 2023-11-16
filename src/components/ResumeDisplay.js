@@ -18,69 +18,71 @@ const ResumeDisplay = () => {
                                 style={{ border: "none" }}
                             ></iframe>
                         </Col>
-                        <Col xs={5} className="d-flex align-items-center justify-content-end">
-                            <div className="detailss-container justify-content-center">
-                                <h4 className="text-center mb-4 title-enhanced2">Contact & Follow</h4>
-                                <p className="text-muted text-center">
-                                    I'm always open to discussions, collaborations, or just a chat. Feel free to reach out through any of the platforms below or drop me an email.
-                                </p>
-                                <Row className="mt-4 justify-content-around">
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
-                                            <Button variant="link" href="https://www.linkedin.com/in/waris-damkham/" target="_blank">
-                                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-github">GitHub</Tooltip>}>
-                                            <Button variant="link" href="https://github.com/Waariss" target="_blank">
-                                                <Image src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-researchgate">ResearchGate</Tooltip>}>
-                                            <Button variant="link" href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank">
-                                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-google-scholar">Google Scholar</Tooltip>}>
-                                            <Button variant="link" href="https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en" target="_blank">
-                                                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-email">Email</Tooltip>}>
-                                            <Button variant="link" href="mailto:waris.dam@student.mahidol.ac.th">
-                                                <Image src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                    <Col xs={2} className="text-center">
-                                        <OverlayTrigger overlay={<Tooltip id="tooltip-credly">Credly</Tooltip>}>
-                                            <Button variant="link" href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank">
-                                                <Image src="https://www.svgrepo.com/show/331358/credly.svg" width="50" height="50" />
-                                            </Button>
-                                        </OverlayTrigger>
-                                    </Col>
-                                </Row>
-                                <div className="mt-4 text-center">
-                                    <p>
-                                        <strong className='title-contact'>Email:</strong> <a href="mailto:waris.dam@student.mahidol.ac.th">waris.dam@student.mahidol.ac.th</a>
-                                    </p>
-                                    <p>
-                                        <strong className='title-contact'>Phone:</strong> +66 63 954 4447
-                                    </p>
-                                    <p>
-                                        <strong className='title-contact'>Location:</strong> Bangkok, Thailand
-                                    </p>
+                        <Col xs={5} className="d-flex align-items-center justify-content-center">
+                        <div className="terminal-container">
+                        <div className="terminal-prompt">
+                                <img src="https://www.svgrepo.com/show/355338/ubuntu.svg" alt="Ubuntu Logo" className="ubuntu-logo" />
+                                <span className="prompt-user">warris-m</span>
+                                <span className="prompt-location">~</span>
+                                <span className="prompt-sign">$</span>
+                                <span className='prompt-sign'>cat Contact & Follow</span>
+                        </div>
+                            <div className="terminal-body">
+                                <p>I'm always open to discussions, collaborations, or just a chat. Feel free to reach out through any of the platforms below or drop me an email.</p>
+                                <div className="terminal-commands">
+                                    <div className="command">
+                                        <span className="command-prefix">$</span>
+                                        <span className="command-text">email: <a href="mailto:waris.dam@student.mahidol.ac.th">waris.dam@student.mahidol.ac.th</a></span>
+                                    </div>
+                                    <div className="command">
+                                        <span className="command-prefix">$</span>
+                                        <span className="command-text">phone: +66 63 954 4447</span>
+                                    </div>
+                                    <div className="command">
+                                        <span className="command-prefix">$</span>
+                                        <span className="command-text">location: Bangkok, Thailand 🇹🇭</span>
+                                    </div>
+                                </div>
+                                <div className="terminal-icons">
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
+                                        <Button variant="link" href="https://www.linkedin.com/in/waris-damkham/" target="_blank">
+                                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>   
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-github">GitHub</Tooltip>}>
+                                        <Button variant="link" href="https://github.com/Waariss" target="_blank">
+                                            <Image src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-researchgate">ResearchGate</Tooltip>}>
+                                        <Button variant="link" href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank">
+                                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-google-scholar">Google Scholar</Tooltip>}>
+                                        <Button variant="link" href="https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en" target="_blank">
+                                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-email">Email</Tooltip>}>
+                                        <Button variant="link" href="mailto:waris.dam@student.mahidol.ac.th">
+                                            <Image src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-credly">Credly</Tooltip>}>
+                                        <Button variant="link" href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank">
+                                            <Image src="https://www.svgrepo.com/show/331358/credly.svg" width="35" height="35" />
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-ig">Credly</Tooltip>}>
+                                        <Button variant="link" href="https://www.instagram.com/waaris_m/" target="_blank">
+                                            <Image src="https://www.svgrepo.com/show/452231/instagram.svg" width="40" height="40" />
+                                        </Button>
+                                    </OverlayTrigger>
                                 </div>
                             </div>
-                        </Col>
+                        </div>
+                    </Col>
                     </Row>
                 </Card.Body>
             </Card>
@@ -89,4 +91,3 @@ const ResumeDisplay = () => {
 };
 
 export default ResumeDisplay;
-

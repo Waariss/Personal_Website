@@ -19,45 +19,39 @@
     transform: scale(1.1);
 }
 
-/* Provide a consistent space between the contact details for readability */
 .details-container p {
     margin-bottom: 15px;
 }
 
-/* Style the contact details for emphasis */
 .details-container strong {
     font-size: 1.1em;
     margin-right: 10px;
 }
 
-/* Add some space between the "Contact & Follow" title and the content below */
 .details-container h4 {
     margin-bottom: 25px;
 }
 
-/* Additional styling to control the spacing between the icons */
+
 .justify-content-around > [class^="col-"] {
     padding: 0 10px;
 }
 
-/* Style the contact email link */
 .details-container a {
-    color: #007bff; /* Bootstrap primary color */
+    color: #007bff; 
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .details-container a:hover {
-    color: #0056b3; /* A bit darker on hover */
+    color: #0056b3; 
 }
 
-/* Style the iframe to ensure it fits well within its container */
 iframe {
-    border-radius: 5px; /* Slight rounding for aesthetics */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Adjust the card style for a cleaner look */
 .experience-card {
     border-radius: 10px;
 }
@@ -72,3 +66,132 @@ iframe {
         text-transform: uppercase;
         letter-spacing: 1.5px;
 }
+.terminal-container {
+    background-color: #ffffff; /* Set terminal background to white */
+    border: 1px solid #d1d5db; /* Light grey border for subtle definition */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    padding: 1rem; /* Uniform padding */
+    font-family: 'Courier New', Courier, monospace; /* Maintain monospace font for terminal feel */
+    margin-top: 1rem; /* Space above the terminal */
+}
+
+.terminal-header {
+    background-color: #007bff; /* Theme's primary color for header */
+    color: #ffffff; /* White text for contrast */
+    padding: 0.5rem 1rem; /* Padding inside the header */
+    border-top-left-radius: 7px; /* Rounded corners on top */
+    border-top-right-radius: 7px;
+}
+
+.terminal-header h4 {
+    font-family: 'Lato', sans-serif; /* Sans-serif font for the header */
+    color: #007bff; /* Use the theme's blue as text color for the header */
+    margin: 0; /* Remove default margins */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.terminal-body {
+    padding: 15px 20px;
+}
+
+.terminal-body p {
+    font-size: 1em; /* Smaller font size for body text */
+    color: #333333;
+    margin-bottom: 20px; /* More space below the introduction text */
+}
+
+.terminal-commands {
+    padding: 0px; /* Padding around the command area */
+    border-radius: 4px; /* Rounded corners for the command area */
+    margin-bottom: 15px;
+}
+
+.command {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 5px; /* Space between commands */
+}
+
+.command:last-child {
+    margin-bottom: 0; /* No margin after the last command */
+}
+
+.command-prefix {
+    color: #ff5722; /* Light grey color for the command prefix */
+    margin-right: 8px; /* Space between the prefix and the text */
+}
+
+.command-text {
+    color: #212529; /* Darker text for readability */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for a terminal look */
+}
+
+.command-text a {
+    color: #007bff; /* Theme color for links */
+    text-decoration: none; /* No underline */
+    transition: color 0.2s; /* Smooth color transition for hover */
+}
+
+.command-text a:hover {
+    color: #ff5722; /* Darker blue on hover for contrast */
+}
+
+.terminal-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.terminal-icons a {
+    display: inline-flex; /* Align icons inline with flex */
+    align-items: center;
+    justify-content: center;
+    width: 35px; /* Fixed width and height for icons */
+    height: 35px;
+    background-color: #f2f2f2; /* Light grey background for icons */
+    border-radius: 50%; /* Circular icons */
+    color: #333333; /* Dark grey icon color */
+    margin-right: 20px; /* Space between icons */
+    transition: all 0.2s; /* Smooth transition for hover effects */
+}
+
+.terminal-prompt {
+    background-color: #333333; /* Dark background for prompt line */
+    color: #ffffff; /* White text for prompt */
+    padding: 0.25rem 1rem; /* Padding for prompt line */
+    border-top-left-radius: 7px; /* Continue rounded corners */
+    border-top-right-radius: 7px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    font-weight: bold; /* Bold text for prompt */
+}
+
+.ubuntu-logo {
+    width: 25px; 
+    height: 25px; 
+    margin-right: 8px; 
+}
+
+.prompt-user,
+.prompt-location,
+.prompt-sign,
+.prompt-text {
+    margin: 0 4px;
+}
+
+.prompt-user {
+    background-color: #ff5722; /* Orange background for the user */
+    padding: 0.25rem 0.5rem; /* Padding around the user */
+    border-radius: 4px; /* Rounded corners for user tag */
+    margin-right: 0.5rem; /* Space after the user tag */
+}
+
+.prompt-sign {
+    color: #fff; /* White dollar sign */
+    margin-left: 5px; /* Space before the dollar sign */
+    font-weight: bold; /* Bold dollar sign */
+}
+

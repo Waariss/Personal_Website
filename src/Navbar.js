@@ -1,6 +1,10 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy, FaBlog, FaTools } from 'react-icons/fa';
+import {
+  FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, 
+  FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy, 
+  FaBlog, FaTools
+} from 'react-icons/fa';
 import './App.css';
 
 const Navigation = () => {

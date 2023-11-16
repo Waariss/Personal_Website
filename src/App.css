@@ -421,7 +421,7 @@
 
 .project-card img {
   width: 100%;
-  height: 400px;  /* or any desired fixed height */
+  height: 325px;  /* or any desired fixed height */
   object-fit: cover;
 }
 
@@ -534,4 +534,59 @@
 /* CSS to hide the carousel controls but keep them functional */
 .carousel-control-prev, .carousel-control-next {
   opacity: 0 !important;
+}
+
+.footer-container {
+  background: linear-gradient(90deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%); /* dark background for contrast */
+  color: white;
+  padding: 2rem 0;
+  font-family: 'Roboto', sans-serif; /* Example font */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem; 
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1); /* Scale up icon on hover */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-ascii-art {
+  font-family: 'Courier New', monospace;
+  white-space: pre; /* Ensures whitespace is respected */
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-top: 1rem;
+  }
 }
