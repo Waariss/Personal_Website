@@ -50,6 +50,7 @@ const getSkills = () => [
             { name: 'Markdown', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/2560px-Markdown-mark.svg.png' },
             { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg' },
             { name: 'Dart', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Dart-logo-icon.svg' },
+            { name: 'LaTeX', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg' },
         ]
     },
     {
@@ -78,6 +79,7 @@ const getSkills = () => [
             { name: 'Git', logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' },
             { name: 'Firebase', logo: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg' },
             { name: 'AWS EC2', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg' },
+            { name: 'PM2', logo: 'https://cdn.worldvectorlogo.com/logos/pm2.svg' },
             { name: 'Nginx', logo: 'https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg' },
             { name: 'Maven', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apache_Maven_logo.svg/2560px-Apache_Maven_logo.svg.png' },
             { name: 'Ant', logo: 'https://www.vectorlogo.zone/logos/apache_ant/apache_ant-icon.svg' },
