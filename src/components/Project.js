@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Card } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import '../App.css';
 import ReactMarkdown from 'react-markdown';
 
@@ -20,9 +20,9 @@ const projectData = [
         imgSrc: "./images/QA_2.png",
         title: "🐈 GluayGluay 🍌: Testing for Jelly-Translator: Translation Web App 🪼",
         subtitle: "Aug 2023 - Present",
-        description: "Conducted extensive testing on the Translation Web App using pytest to ensure a robust and error-free application. This included writing unit tests, conducting system testing, and automating UI testing, with a focus on achieving high code coverage and integrating CI/CD workflows with GitHub Actions.",
+        description: "Conducted extensive testing on the Translation Web App using pytest and Robot Framework to ensure a robust and error-free application. This included writing unit tests, system testing, and automating UI testing, with a focus on achieving high code coverage and integrating CI/CD workflows with GitHub Actions.",
         credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa/jelly-translator) 🐈🍌",
-        skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions"],
+        skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions", "Robot Framework"],
         links: [
           { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
           { "url": "https://github.com/ICT-Mahidol/2023-ITCS473-GluayGluay/tree/master/Project_phase_2", "label": "GitHub" }

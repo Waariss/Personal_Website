@@ -65,15 +65,18 @@ const getSkills = () => [
         ]
     },
     {
-        name: 'Backend & Frameworks',
+        name: 'Backend, Frameworks & Testing',
         skills: [
             { name: 'Flask', logo: 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg' },
             { name: 'Spring Boot', logo: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg' },
             { name: 'Postman', logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
+            { name: 'pytest', logo: 'https://www.vectorlogo.zone/logos/pytest/pytest-icon.svg' },
+            { name: 'Selenium WebDriver', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png' },
+            { name: 'Junit', logo: 'https://junit.org/junit5/assets/img/junit5-logo.png' },
         ]
     },
     {
-        name: 'Deployment & Version Control',
+        name: 'DevOps, Deployment & Version Control',
         skills: [
             { name: 'Gradle', logo: 'https://www.vectorlogo.zone/logos/gradle/gradle-icon.svg' },
             { name: 'Git', logo: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' },
@@ -83,6 +86,9 @@ const getSkills = () => [
             { name: 'Nginx', logo: 'https://www.vectorlogo.zone/logos/nginx/nginx-icon.svg' },
             { name: 'Maven', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Apache_Maven_logo.svg/2560px-Apache_Maven_logo.svg.png' },
             { name: 'Ant', logo: 'https://www.vectorlogo.zone/logos/apache_ant/apache_ant-icon.svg' },
+            { name: 'CI/CD', logo: 'https://media.licdn.com/dms/image/C4D12AQHEozYv3E5rdA/article-cover_image-shrink_600_2000/0/1612876678427?e=2147483647&v=beta&t=2fLzzpCTVay31sHhzOEZpVwyfJvxwwjkv-LOpZ9P8r8' },
+            { name: 'GitHub Actions', logo: 'https://www.vectorlogo.zone/logos/github/github-tile.svg' },
+            { name: 'Robot Framework', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Robot-framework-logo.png' },
         ]
     },
     {
@@ -129,7 +135,7 @@ const getSkills = () => [
             { name: 'NumPy', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg' },
             { name: 'VGG16', logo: 'https://picx.zhimg.com/v2-b2a0c72a4074fc44dcd54d12e485f395_720w.jpg?source=172ae18b' },
             { name: 'ResNet50', logo: 'https://miro.medium.com/v2/resize:fit:1033/0*pBG9EupH3hdprskH.png' },
-            { name: 'YOLO', logo: 'https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/yolo.svg' },
+            { name: 'YOLO', logo: 'https://cdn.icon-icons.com/icons2/3915/PNG/512/yolo_logo_icon_249127.png' },
             { name: 'CNN', logo: "https://seeklogo.com/images/C/CNN-logo-6DA92A5BFF-seeklogo.com.png"},
             { name: 'Darknet', logo: "https://camo.githubusercontent.com/6b3c6c1109586f5f3ddf8967fa4eaf787c7b45fe3df6d89111d6f9c7c1045769/687474703a2f2f706a7265646469652e636f6d2f6d656469612f66696c65732f6461726b6e65742d626c61636b2d736d616c6c2e706e67"},
         ]
