@@ -19,7 +19,7 @@ const projectData = [
         id: "QA_2",
         imgSrc: "./images/QA_2.png",
         title: "🐈 GluayGluay 🍌: Testing for Jelly-Translator: Translation Web App 🪼",
-        subtitle: "Aug 2023 - Present",
+        subtitle: "Aug 2023 - Dec 2023",
         description: "Conducted extensive testing on the Translation Web App using pytest and Robot Framework to ensure a robust and error-free application. This included writing unit tests, system testing, and automating UI testing, with a focus on achieving high code coverage and integrating CI/CD workflows with GitHub Actions.",
         credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa/jelly-translator) 🐈🍌",
         skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions", "Robot Framework"],
