@@ -20,7 +20,7 @@ const About = () => {
         "122bf15c-e992-4017-883b-edb152f11dc0",
         "530e5cac-2274-4de1-b565-786cfcda9e6c",
         "5112f234-9d17-4de3-b154-b4468e916dde",
-        "395fc15f-08db-4ae2-bcba-2782d373bd68",
+        // "395fc15f-08db-4ae2-bcba-2782d373bd68",
         "bf1bce85-beb9-4421-a727-727ae8f771c4",
         "bee5a187-4758-436f-a321-88a3f0ad0c25"
     ];
@@ -91,7 +91,7 @@ const About = () => {
                             <div key={badgeId} className="badge-item mx-2 my-2">
                                 <div
                                     data-iframe-width="150"
-                                    data-iframe-height="239"
+                                    data-iframe-height="240"
                                     data-share-badge-id={badgeId}
                                     data-share-badge-host="https://www.credly.com"
                                 ></div>
