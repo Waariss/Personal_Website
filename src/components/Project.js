@@ -33,9 +33,9 @@ const projectData = [
         imgSrc: "./images/QA.png",
         title: "🐈 GluayGluay 🍌: Testing for Sudoku 👾",
         subtitle: "Aug 2023 - Oct 2023",
-        description: "This project involved contributing additional unit test cases to an open-source Sudoku game project. The primary focus was to improve test coverage and ensure the robustness of the game's logic. Tasks included setting up a Java testing environment using JUnit, writing a comprehensive set of test cases, and utilizing Gradle for build automation and dependency management. The end goal was to ensure that all possible scenarios, including edge cases, were tested and validated against the game's requirements.",
+        description: "The project entailed enhancing an open-source Sudoku game with additional unit test cases. Emphasis was placed on bolstering test coverage and fortifying the game's logic. Key tasks comprised establishing a Java testing environment via JUnit, crafting an exhaustive array of test cases, and employing Gradle for streamlined build automation and dependency management. A critical aspect of this project was ensuring thorough testing and validation of all potential scenarios, including edge cases, in alignment with the game's specifications. Additionally, this project included setting up CI/CD using GitHub Actions, automating the testing process and ensuring code quality with every push or pull request.",
         credentials: "Project Sudoku 👾: Sudoku App created by [Matt McCoy (mattnenterprise)](https://github.com/mattnenterprise/Sudoku)  🌟",
-        skills: ["Java", "JUnit", "Gradle", "Test Case Design"],
+        skills: ["Java", "JUnit", "Gradle", "Test Case Design", "CI/CD", "GitHub Action", "JaCoCo"],
         links: [{ "url": "https://github.com/Waariss/GluayGluay_Project", "label": "GitHub" }]
     },
     {
