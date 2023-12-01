@@ -25,7 +25,7 @@ const projectData = [
         skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions", "Robot Framework"],
         links: [
           { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
-          { "url": "https://github.com/ICT-Mahidol/2023-ITCS473-GluayGluay/tree/master/Project_phase_2", "label": "GitHub" }
+          { "url": "https://github.com/Waariss/GluayGluay_Project/tree/master/Project_phase_2", "label": "GitHub" }
         ]
     },
     {
@@ -36,7 +36,7 @@ const projectData = [
         description: "This project involved contributing additional unit test cases to an open-source Sudoku game project. The primary focus was to improve test coverage and ensure the robustness of the game's logic. Tasks included setting up a Java testing environment using JUnit, writing a comprehensive set of test cases, and utilizing Gradle for build automation and dependency management. The end goal was to ensure that all possible scenarios, including edge cases, were tested and validated against the game's requirements.",
         credentials: "Project Sudoku 👾: Sudoku App created by [Matt McCoy (mattnenterprise)](https://github.com/mattnenterprise/Sudoku)  🌟",
         skills: ["Java", "JUnit", "Gradle", "Test Case Design"],
-        links: [{ "url": "https://github.com/Waariss/GluayGluay_project1", "label": "GitHub" }]
+        links: [{ "url": "https://github.com/Waariss/GluayGluay_Project", "label": "GitHub" }]
     },
     {
         id: "darkweb",

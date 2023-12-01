@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import {Card, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import '../App.css';
 
 const About = () => {
