@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Google IT Support Specialization",
+        organization: "Coursera",
+        date: "Dec 2023",
+        link: "https://www.coursera.org/account/accomplishments/specialization/certificate/NJD5UEURVU7Q",
+        imageUrl: "./images/IT_Support.png"
+    },
+    {
         title: "Meta Front-End Developer Specialization",
         organization: "Coursera",
         date: "Oct 2023",

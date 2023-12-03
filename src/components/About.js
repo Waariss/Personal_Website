@@ -15,6 +15,7 @@ const About = () => {
     }, []);
 
     const badges = [
+        "e1d3c2d6-9607-4134-9377-ba4a0698ac8e",
         "2bdbfa21-2c1e-48e9-926d-5b7a442de6df",
         "759dbd4b-35d7-4147-b8c9-8e09bebd4753",
         "122bf15c-e992-4017-883b-edb152f11dc0",
