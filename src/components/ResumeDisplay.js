@@ -74,9 +74,9 @@ const ResumeDisplay = () => {
                                             <Image src="https://www.svgrepo.com/show/331358/credly.svg" width="35" height="35" />
                                         </Button>
                                     </OverlayTrigger>
-                                    <OverlayTrigger overlay={<Tooltip id="tooltip-ig">Credly</Tooltip>}>
-                                        <Button variant="link" href="https://www.instagram.com/waaris_m/" target="_blank">
-                                            <Image src="https://www.svgrepo.com/show/452231/instagram.svg" width="40" height="40" />
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-tryhackme">TryHackMe</Tooltip>}>
+                                        <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank">
+                                            <Image src="https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png" alt="TryHackMe" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
                                 </div>

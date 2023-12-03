@@ -37,7 +37,7 @@ const About = () => {
                     <Col xs={12} md={8}>
                         <Card.Title><h2 className='title'>About Me</h2></Card.Title>
                         <Card.Text>
-                        I am a final-year software engineering student at Mahidol University, specializing in cybersecurity and AI within my major in Information and Communication Technology (ICT). I have led pivotal projects exploring OAuth 2.0 vulnerabilities and developing an AI-based COVID-19 framework, resulting in conference presentations and published research. My academic endeavors have fostered a deep passion for leveraging technology to address complex challenges. Actively seeking internship or full-time opportunities, I am eager to apply my ICT expertise in real-world scenarios and contribute to a forward-thinking team. Dedicated to continuous professional growth, I aim to enhance my skills, gain invaluable industry insights, and bring my commitment to innovation to a collaborative environment.
+                        I am a final-year software engineering student at Mahidol University with a keen interest in cybersecurity, AI, and DevOps, as part of my Information and Communication Technology (ICT) major. My experience includes leading significant projects that explored OAuth 2.0 vulnerabilities and developing an AI-based framework for COVID-19, which have led to presentations at conferences and published research. These academic pursuits have deepened my passion for utilizing technology to tackle complex challenges. As I actively seek internship or full-time opportunities, I am enthusiastic about applying my diverse ICT skills in practical settings and contributing to an innovative team. Committed to continuous professional growth, I aim to further enhance my skills, acquire valuable industry insights, and bring a dedicated spirit of innovation to a collaborative work environment.
                         </Card.Text>
                         <div className="d-flex mt-3 icon-section">
                             <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
@@ -75,10 +75,9 @@ const About = () => {
                                     <Image src="https://www.svgrepo.com/show/331358/credly.svg" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
-
                             <OverlayTrigger overlay={<Tooltip id="tooltip-tryhackme">TryHackMe</Tooltip>}>
                                 <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank">
-                                    <Image src="https://tryhackme-badges.s3.amazonaws.com/waris.dam.png" alt="TryHackMe"/>
+                                    <Image src="https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png" alt="TryHackMe" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
                         </div>
