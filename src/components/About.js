@@ -133,14 +133,29 @@ const About = () => {
                                 placement="top"
                             >
                                 <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer">
-                                    <Image src={badgePath} width="110" height="110" alt={badgeAlts[index]} />
+                                    <Image src={badgePath} width="98" height="98" alt={badgeAlts[index]} />
                                 </a>
                             </OverlayTrigger>
                         </div>
                     ))}
                 </div>
             </Card.Body>
-            {/* <Card.Body>
+            {/* <Card.Body><Card.Body>
+                <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
+                    {badgeImages.map((badgePath, index) => (
+                        <div key={index} className="badge-item mx-2 my-2">
+                            <OverlayTrigger
+                                overlay={<Tooltip id={`tooltip-${index}`}>{badgeAlts[index]}</Tooltip>}
+                                placement="top"
+                            >
+                                <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer">
+                                    <Image src={badgePath} width="98" height="98" alt={badgeAlts[index]} />
+                                </a>
+                            </OverlayTrigger>
+                        </div>
+                    ))}
+                </div>
+            </Card.Body>
                     <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
                         {badges.map(badgeId => (
                             <div key={badgeId} className="badge-item mx-2 my-2">
