@@ -130,7 +130,7 @@ const About = () => {
                                 placement="top"
                             >
                                 <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer">
-                                    <Image src={badgePath} width="115" height="115" alt={badgeAlts[index]} />
+                                    <Image src={badgePath} width="110" height="110" alt={badgeAlts[index]} />
                                 </a>
                             </OverlayTrigger>
                         </div>
