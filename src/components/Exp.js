@@ -23,7 +23,7 @@ const Experience = () => {
                                     <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
                                     <Card.Text className="mb-3">{experience.description}</Card.Text>
                                     <Card.Text className="mb-3">
-                                        <strong>Skills:</strong> <a className="skills">{experience.skills}</a>
+                                        <strong>Skills:</strong> <span className="skills">{experience.skills}</span>
                                     </Card.Text>
                                     <Card.Text className="mb-3 link-group">
                                         {experience.links.map((link, linkIndex) => (

@@ -16,6 +16,7 @@ const ResumeDisplay = () => {
                                 width="100%" 
                                 height="600px" 
                                 style={{ border: "none" }}
+                                title="Resume of Waris"
                             ></iframe>
                         </Col>
                         <Col xs={5} className="d-flex align-items-center justify-content-center">
