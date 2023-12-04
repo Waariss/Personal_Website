@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import '../App.css';
 
