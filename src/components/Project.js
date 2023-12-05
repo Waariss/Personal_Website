@@ -43,9 +43,9 @@ const projectData = [
         imgSrc: "./images/darkweb_web.png",
         title: "Senyai's World via Tor Network",
         subtitle: "Oct 2023",
-        description: "In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser.",
+        description: "In a practical exploration of darknet technologies, I successfully hosted a basic website on the Tor network, utilizing Amazon Web Services (AWS) EC2. The project encompassed fundamental server management on an Ubuntu Server, installing and configuring Tor, and ensuring that the static website was accessible via a .onion domain through the Tor browser with includes a GitHub Action for automated checking of the site's accessibility.",
         credentials: "The website can be accessed for viewing on the Tor network at `myl3qbzzngac77vjiiqwfxbzbz7w2xcvcy5uxqvebs2x2traeublopid.onion`",
-        skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor", 'HTML', 'CSS'],
+        skills: ["Amazon EC2", "Web Hosting", "Network Security", "Web Development", "Tor", 'HTML', 'CSS', 'CI/CD' , 'GitHub Action'],
         links: [{ "url": "https://github.com/Waariss/darkweb/tree/main", "label": "GitHub" }]
     },
     {
@@ -155,9 +155,9 @@ const projectData = [
         imgSrc: "./images/pro2.jpeg",
         title: "Lollipop Music",
         subtitle: "Jan 2022 - May 2022",
-        description: "I spearheaded the design and development of a vibrant music application named Lollipop Music, leveraging React for the frontend and Node.js for the backend, and hosted it on Nignx and Amazon EC2 instance. With a fervent passion for music and technology, I crafted an intuitive and user-friendly platform that ensures a seamless music browsing and playback experience. The application features user authentication, playlist management, and audio playback, aiming to enhance user interactions with their favorite tunes. This project not only bolstered my expertise in web development and honed my skills in React and Node.js but also showcased my capacity to create engaging and functional music applications. It was a thrilling journey to merge the realms of music and technology, and I'm excited to contribute to the digital music space! For a hands-on experience, you can access the application using the demo credentials provided on the login page: ",
+        description: "As the lead designer and developer of Lollipop Music, a dynamic music application built with React and Node.js and hosted on Nginx and Amazon EC2, I combined my passion for music and technology to create an intuitive, user-friendly platform for seamless music browsing and playback. The application features robust user authentication, playlist management, and audio playback functionality. To ensure consistent accessibility and reliability, I integrated a GitHub Action for routine website accessibility checks. This project not only enhanced my web development skills, particularly in React and Node.js, but also underscored my ability to craft engaging digital music experiences. For a hands-on demonstration, access the application using the provided demo credentials on the login page: ",
         credentials: "**Username**: `Senyai_bark@hotmail.com` **Password**: `loveDogs88`.",
-        skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx"],
+        skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx","CI/CD", "GitHub Action"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
             {url: "http://52.77.69.103/", "label": "Live Visit Project"}
