@@ -107,23 +107,23 @@ const Education = () => {
         ]
     };
 
-    const courseraData = {
-        title: "Self-Learning on Coursera",
-        subtitle: ["Online Learning Platform"],
-        logo: {
-            src: "https://149396518.v2.pressablecdn.com/wp-content/uploads/2020/12/cropped-android-chrome-512x512-1.png",
-            alt: "Coursera Logo",
-            width: 150,
-            height: 150
-        },
-        activities: [
-            {
-                link: "https://www.coursera.org/user/684de1c8e5bb7a3061c0e95156dea1a4",
-                name: "Coursera Profile",
-                detail: "Completed various online courses and specializations on Coursera, gaining knowledge in areas like IT support, software engineering, cybersecurity, and more."
-            },
-        ]
-    };
+    // const courseraData = {
+    //     title: "Self-Learning on Coursera",
+    //     subtitle: ["Online Learning Platform"],
+    //     logo: {
+    //         src: "https://149396518.v2.pressablecdn.com/wp-content/uploads/2020/12/cropped-android-chrome-512x512-1.png",
+    //         alt: "Coursera Logo",
+    //         width: 150,
+    //         height: 150
+    //     },
+    //     activities: [
+    //         {
+    //             link: "https://www.coursera.org/user/684de1c8e5bb7a3061c0e95156dea1a4",
+    //             name: "Coursera Profile",
+    //             detail: "Completed various online courses and specializations on Coursera, gaining knowledge in areas like IT support, software engineering, cybersecurity, and more."
+    //         },
+    //     ]
+    // };
 
     const mahidolData = {
         title: "Bachelor of Science in Information and Communication Technology",
