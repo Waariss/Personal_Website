@@ -89,6 +89,42 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
 );
 
 const Education = () => {
+    const tryHackMeData = {
+        title: "Self-Learning on TryHackMe",
+        subtitle: ["Online Platform for Cybersecurity Training"],
+        logo: {
+            src: "https://tryhackme.com/img/favicon.png",
+            alt: "TryHackMe Logo",
+            width: 150,
+            height: 150
+        },
+        activities: [
+            {
+                link: "https://tryhackme.com/p/waris.dam",
+                name: "TryHackMe Profile",
+                detail: "Engaged in various cybersecurity challenges and learning paths on TryHackMe, enhancing practical skills in ethical hacking, penetration testing, and network security."
+            },
+        ]
+    };
+
+    const courseraData = {
+        title: "Self-Learning on Coursera",
+        subtitle: ["Online Learning Platform"],
+        logo: {
+            src: "https://149396518.v2.pressablecdn.com/wp-content/uploads/2020/12/cropped-android-chrome-512x512-1.png",
+            alt: "Coursera Logo",
+            width: 150,
+            height: 150
+        },
+        activities: [
+            {
+                link: "https://www.coursera.org/user/684de1c8e5bb7a3061c0e95156dea1a4",
+                name: "Coursera Profile",
+                detail: "Completed various online courses and specializations on Coursera, gaining knowledge in areas like IT support, software engineering, cybersecurity, and more."
+            },
+        ]
+    };
+
     const mahidolData = {
         title: "Bachelor of Science in Information and Communication Technology",
         subtitle: [
@@ -180,6 +216,8 @@ const Education = () => {
     return (
         <section id="education" className="my-4">
             <h1 className="mb-4 text-center title-enhanced">Education</h1>
+            <EducationEntry {...tryHackMeData} />
+            {/* <EducationEntry {...courseraData} /> */}
             <EducationEntry {...mahidolData} />
             <EducationEntry {...bccData} />
         </section>

@@ -77,7 +77,7 @@ const ResumeDisplay = () => {
                                     </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-tryhackme">TryHackMe</Tooltip>}>
                                         <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank">
-                                            <Image src="https://cdn.icon-icons.com/icons2/3915/PNG/512/tryhackme_logo_icon_249349.png" alt="TryHackMe" width="37.5" height="37.5"/>
+                                            <Image src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
                                 </div>
