@@ -13,24 +13,23 @@ const Navigation = () => {
             background: 'linear-gradient(90deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%)', 
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)'
         }} variant="dark">
-            <Navbar.Brand href="#home" className="ms-2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '24px', fontWeight: 'bold' }}>WD</Navbar.Brand>
+            <Navbar.Brand href="/" className="ms-2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '24px', fontWeight: 'bold' }}>WD</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                    {['#home', '#about', '#skills', '#experience', '#education','#projects', '#publications', '#certifications','#competitions', '#blog', '#resume'].map((link, index) => (
+                    {['home', 'about', 'skills', 'experience', 'education', 'projects', 'publications', 'certifications', 'competitions', 'blog', 'resume'].map((link, index) => (
                         <Nav.Link 
                             key={index} 
-                            href={link} 
+                            href={`/#${link}`} 
                             style={{ 
                                 fontFamily: "'Poppins', sans-serif", 
                                 transition: 'color 0.3s, transform 0.3s', 
                                 fontWeight: '500'
                             }}
-                            activeStyle={{ color: '#FFD700' }}
                             className="hover-grow"
                         >
-                            {getIconForLink(link)}
-                            {getLabelForLink(link)}
+                            {getIconForLink(`#${link}`)}
+                            {getLabelForLink(`#${link}`)}
                         </Nav.Link>
                     ))}
                 </Nav>

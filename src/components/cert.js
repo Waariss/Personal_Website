@@ -5,6 +5,20 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "English for IT 2",
+        organization: "Cisco",
+        date: "Dec 2023",
+        link: "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
+        imageUrl: "./images/Eng2.png"
+    },
+    {
+        title: "English for IT 1",
+        organization: "Cisco",
+        date: "Dec 2023",
+        link: "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
+        imageUrl: "./images/Eng1.png"
+    },
+    {
         title: "Google IT Support Specialization",
         organization: "Coursera",
         date: "Dec 2023",
@@ -43,14 +57,14 @@ const certificates = [
         title: "Cybersecurity Primer",
         organization: "MUICT",
         date: "Sep 2023",
-        link: "https://drive.google.com/file/d/1td-pMT2s-RD9Yr3TLni8ThEc5G5jJzi2/view?usp=sharing",
+        link: "/pdf/8",
         imageUrl: "./images/ICT.png"
     },
     {
         title: "Blue Team Junior Analyst Path",
         organization: "Security Blue Team",
         date: "Aug 2023",
-        link: "https://elearning.securityblue.team/home/certificate/441973244",
+        link: "/pdf/9",
         imageUrl: "./images/Blue.png"
     },
     {
@@ -95,13 +109,6 @@ const certificates = [
         link: "https://www.coursera.org/account/accomplishments/specialization/certificate/59D4PJPG3KLQ",
         imageUrl: "./images/ce1.png"
     },
-    // {
-    //     title: "Command Line Basics in Linux",
-    //     organization: "Coursera",
-    //     date: "June 2023",
-    //     link: "https://www.coursera.org/account/accomplishments/certificate/Q2CFD25FXZXU",
-    //     imageUrl: "./images/ce6.png"
-    // },
     {
         title: "Learning Tor and the Dark Web",
         organization: "LinkedIn",
@@ -116,15 +123,15 @@ const certificates = [
         link: "https://codered.eccouncil.org/certificate/6976bf06-9d05-45f8-880d-8289df80f0f1?logged=true",
         imageUrl: "./images/ce8.png"
     },
-    // {
-    //     title: "Certificate of Participation in Codegoda 2023",
-    //     organization: "Unstop",
-    //     date: "May 2023",
-    //     link: "https://unstop.com/certificate-preview/d0deee19-9a61-4ec0-92d2-00a44d089912?utm_campaign=site-emails",
-    //     imageUrl: "./images/ce10.png"
-    // },
     {
-        title: "Cybersecurity Pathway",
+        title: " NDG Linux Unhatched",
+        organization: "Cisco",
+        date: "April 2023",
+        link: "/pdf/12",
+        imageUrl: "./images/ndg.png"
+    },
+    {
+        title: "Junior Cybersecurity Analyst Career Path",
         organization: "Cisco",
         date: "April 2023",
         link: "https://www.credly.com/badges/bf1bce85-beb9-4421-a727-727ae8f771c4/linked_in_profile",
@@ -134,7 +141,7 @@ const certificates = [
         title: "รู้ทันอาชญากรรมไซเบอร์ Ethical Hacking Penetration Testing",
         organization: "FutureSkill",
         date: "March 2023",
-        link: "https://drive.google.com/file/d/1GrCT7cH7esTrcMIeYuBbVZ5HVxe4fr6i/view?usp=share_link",
+        link: "/pdf/11",
         imageUrl: "./images/ce12.png"
     },
     {
@@ -158,55 +165,15 @@ const certificates = [
         link: "https://www.credly.com/badges/bee5a187-4758-436f-a321-88a3f0ad0c25/linked_in_profile",
         imageUrl: "./images/ce15.png"
     },
-    // {
-    //     title: "Certificate of Completion National Central University",
-    //     organization: "National Central University",
-    //     date: "July 2022",
-    //     link: "https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk",
-    //     imageUrl: "./images/ce16.png"
-    // },
     {
         title: "GDSC Core Team Member Certificate of Appreciation",
         organization: "Google Developer Student Clubs",
         date: "July 2021",
-        link: "https://drive.google.com/file/d/1wzoSn-w56NBqIG6hsOB50r4vw4Imxahr/view?usp=sharing",
+        link: "/pdf/10",
         imageUrl: "./images/GDSC.png"
     }
 ];
 
-// const Certificate = () => {
-//     return (
-//         <section id="certifications" className="my-4">
-//             <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
-//             <Card className="mb-3 border-0 shadow-sm about-card">
-//                 <Card.Header className="bg-white border-0"></Card.Header>
-//                 <Card.Body>
-//                     <Row className="flex-wrap">
-//                         {certificates.map((cert, index) => (
-//                             <Col key={index} sm={6} md={4} lg={3} className="mb-4">
-//                                 <Card className="border-0 shadow-sm experience-card h-100">
-//                                     <Card.Img variant="top" src={cert.imageUrl} style={{ height: '200px', objectFit: 'contain' }} />
-//                                     <Card.Body className="d-flex flex-column">
-//                                         <Card.Title>{cert.title}</Card.Title>
-//                                         <Card.Subtitle className="mb-2 text-muted">{cert.organization} - {cert.date}</Card.Subtitle>
-//                                         <Card.Link
-//                                             href={cert.link}
-//                                             target="_blank"
-//                                             rel="noopener noreferrer"
-//                                             className="btn btn-outline-dark mt-auto"
-//                                         >
-//                                             Show Credential
-//                                         </Card.Link>
-//                                     </Card.Body>
-//                                 </Card>
-//                             </Col>
-//                         ))}
-//                     </Row>
-//                 </Card.Body>
-//             </Card>
-//         </section>
-//     );
-// };
 const Certificate = () => {
     const settings = {
         dots: true,

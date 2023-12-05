@@ -72,7 +72,7 @@ const getExperiences = () => [
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
             { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
-            { href: 'https://waariss.github.io/Poster_Cyber_Lab/', type: 'poster', label: 'Poster' }
+            { href: '/pdf/1', type: 'poster', label: 'Poster' }
         ]
     },
     {
@@ -88,8 +88,8 @@ const getExperiences = () => [
         links: [
             { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
             { href: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
-            { href: 'https://drive.google.com/file/d/1GBeDLI70EY6kvufrNtHE81PWJt6amXk8/view?usp=drivesdk', type: 'poster', label: 'Show Credential' },
-            { href: 'https://drive.google.com/file/d/1dXJIxR9Uy6Rpp5BmVeYRMthw6Wh8SxaT/view?usp=sharing', type: 'poster', label: 'Conference Certifications' },
+            { href: '/pdf/3', type: 'poster', label: 'Show Credential' },
+            { href: '/pdf/4', type: 'poster', label: 'Conference Certifications' },
         ]
     }
 ];

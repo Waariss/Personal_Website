@@ -226,7 +226,7 @@ const Education = () => {
         ],
         links: [
             {
-                href: "https://waariss.github.io/School_Portfolio/",
+                href: "/pdf/2",
                 text: "Portfolio"
             }
         ]
