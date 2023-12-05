@@ -67,7 +67,7 @@ const getExperiences = () => [
         company: 'Ritsumeikan University',
         type: 'Internship',
         duration: 'May 2023 - July 2023 · 3 mos',
-        location: 'Shiga, Japan · On-site',
+        location: 'Shiga, Japan 🇯🇵 · On-site',
         description: 'I conducted research on the security vulnerabilities in Android apps that use OAuth 2.0 with Google accounts, with a focus on the risks of cross-site request forgery (CSRF). My findings were presented at the Workshop on Cyber Forensics, Security, and E-discovery, during the 23rd IEEE International Conference on Software Quality, Reliability, and Security in 2023. By developing an app and analyzing others, I evaluated critical components such as the state parameter and authorization code, which are essential for CSRF prevention. The study reveals the level of protection against CSRF in implementations of OAuth 2.0 on Android. Our goal is to enhance user safety by identifying vulnerable apps and emphasizing the necessity for robust security measures. This research establishes a benchmark for future security audits of apps.', // Full description here
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
@@ -82,7 +82,7 @@ const getExperiences = () => [
         company: 'National Central University',
         type: 'Internship',
         duration: 'Jun 2022 - Jul 2022 · 2 mos',
-        location: 'Taoyuan City, Taiwan · Remote',
+        location: 'Taoyuan City, Taiwan 🇹🇼 · Remote',
         description: 'I contributed to a project on automated COVID-19 diagnosis using chest X-rays, presented at the 2022 6th International Conference on Information Technology (InCIT). We proposed an AI-based screening method utilizing transfer learning and deep neural networks. Using Grad-CAM visualization, our convolutional neural network model showcased superior performance in accuracy, precision, recall, and F-measure on public datasets. This work advanced early COVID-19 detection and highlighted my skills in AI, deep learning, and medical imaging.', // Full description here
         skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python', // Full skills list here
         links: [
