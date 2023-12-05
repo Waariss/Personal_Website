@@ -590,3 +590,7 @@
     margin-top: 1rem;
   }
 }
+
+.strong-highlight {
+  color: #ff6347; /* Example color: a shade of blue */
+}

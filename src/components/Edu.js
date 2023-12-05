@@ -25,20 +25,6 @@ const getMaxAutoplaySpeed = (activities) => {
     return maxSpeed;
 };
 
-// const TimelineEvent = ({ link, name, detail, time }) => (
-//     <div className="timeline-event">
-//         <div className="event-indicator"></div>
-//         <div className="event-content">
-//             {link ? (
-//                 <a href={link} className="activity-name">{name}</a>
-//             ) : (
-//                 <span className="activity-name-p">{name}</span>
-//             )}
-//             {time && <div className="event-time">{time}</div>}
-//             <div className="event-detail">{detail}</div>
-//         </div>
-//     </div>
-// );
 const ActivityCard = ({ link, name, detail, time }) => (
     <div className="activity-card">
         {link ? (
@@ -50,47 +36,6 @@ const ActivityCard = ({ link, name, detail, time }) => (
         <div className="event-detail">{detail}</div>
     </div>
 );
-
-// const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
-//     <Card className="mb-4 border-0 shadow-sm about-card">
-//         <Card.Body>
-//             <Row>
-//                 <Col xs={2} className="d-flex align-items-start justify-content-center p-3">
-//                     <ImageLogo {...logo} />
-//                 </Col>
-//                 <Col xs={10} className="p-3">
-//                     <Card.Title className="mb-3">{title}</Card.Title>
-//                     {subtitle.map((text, index) => (
-//                         <Card.Subtitle key={index} className="mb-2 text-muted">{text}</Card.Subtitle>
-//                     ))}
-//                     <Card.Text className="mb-3 mt-3">
-//                         <strong>Activities and societies:</strong>
-//                         <div className="timeline mt-2">
-//                             {activities.map((activity, index) => (
-//                                 <TimelineEvent key={index} {...activity} />
-//                             ))}
-//                         </div>
-//                     </Card.Text>
-//                     {links && (
-//                         <Card.Text className="mb-3 link-group mt-3">
-//                             {links.map((link, index) => (
-//                                 <Card.Link
-//                                     key={index}
-//                                     href={link.href}
-//                                     target="_blank"
-//                                     rel="noopener noreferrer"
-//                                     className="btn btn-outline-dark"
-//                                 >
-//                                     <FaFileAlt className="me-1" /> {link.text}
-//                                 </Card.Link>
-//                             ))}
-//                         </Card.Text>
-//                     )}
-//                 </Col>
-//             </Row>
-//         </Card.Body>
-//     </Card>
-// );
 
 const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
     <Card className="mb-4 border-0 shadow-sm about-card">
@@ -145,10 +90,10 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
 
 const Education = () => {
     const mahidolData = {
-        title: "Mahidol University",
+        title: "Bachelor of Science in Information and Communication Technology",
         subtitle: [
-            "Bachelor of Science - BS",
-            "Information and Communication Technology · International Program",
+            "Mahidol University, Thailand 🇹🇭",
+            "International Program",
             "Aug 2020 - May 2024"
         ],
         logo: {
