@@ -135,7 +135,7 @@ const projectData = [
         description: 'I contributed to a groundbreaking project focused on COVID-19 screening using chest X-rays, published in the 2022 6th International Conference on Information Technology (InCIT). Our research addressed the challenges of manually identifying COVID-19 infections in chest X-ray films, proposing an automated screening framework that leverages artificial intelligence techniques and transfer learning. By employing deep neural networks and Grad-CAM visualization, we achieved accurate and efficient COVID-19 diagnosis. The results, obtained through experimentation on publicly accessible datasets, demonstrated the superior performance of our convolutional neural network model across multiple metrics, including accuracy, precision, recall, and F-measure. This project allowed me to contribute to the early diagnosis of COVID-19 and showcase my expertise in artificial intelligence, deep learning, and medical image analysis.',
         skills: ["Python", "Jupyter", "Pandas", "NumPy", "OpenCV", "Albumentations", "Plotly", "Matplotlib", "Seaborn", "TensorFlow/Keras", "Deep Learning", "Convolutional Neural Networks (CNN)"],
         links: [
-            { url: 'https://ieeexplore.ieee.org/document/10067528', label: 'Live View Project' },
+            { url: 'https://ieeexplore.ieee.org/document/10067528', label: 'Conference Paper' },
             { url: 'https://github.com/Waariss/Automated-COVID-19-screening-framework-via-Deep-Convolutional-Neural-Network-with-Chest-X-ray', label: 'GitHub' }
         ]
     },
