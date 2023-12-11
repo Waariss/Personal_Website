@@ -148,7 +148,7 @@ const projectData = [
         skills: ['JavaScript', 'p5js'],
         links: [
             { url: 'https://github.com/Waariss/ITCS381--Introduction-to-Multimedia-Systems/tree/main', label: 'GitHub' },
-            { url: "/pdf/p5project", "label": "Live Visit Project"}
+            { url: "/p5project", "label": "Live Visit Project"}
         ]
     },
     {
