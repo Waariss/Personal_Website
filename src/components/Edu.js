@@ -207,7 +207,7 @@ const Education = () => {
         ],
         links: [
             {
-                href: "/pdf/2",
+                href: "/pdf/BCC_Portfoilio",
                 text: "Portfolio"
             }
         ]

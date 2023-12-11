@@ -8,51 +8,51 @@ const PDFViewer = () => {
 
   useEffect(() => {
     switch(pdfId) {
-        case '1':
+        case 'Ritsumeikan_University_Poster':
             setContentUrl("/PDF/Japan/Ritsumeikan University_6388014_Waris_Damkham.pdf");
             setIsImage(false);
             break;
-        case '2':
+        case 'BCC_Portfoilio':
             setContentUrl("/PDF/BCC/Waris Damkham Portfoilo.pdf");
             setIsImage(false);
             break;
-        case '3':
+        case 'NCU_CERT':
             setContentUrl("/PDF/Taiwan/2. Waris Damkham.pdf");
             setIsImage(false);
             break;
-        case '4':
+        case 'INCIT_CERT':
             setContentUrl("/PDF/Taiwan/1570835140.pdf");
             setIsImage(false);
             break;
-        case '5':
+        case 'CODEGODA':
             setContentUrl("/PDF/Comp/codegoda.pdf");
             setIsImage(false);
             break;
-        case '6':
+        case 'TCTT_2023':
             setContentUrl("/PDF/Comp/Sector -WARIS.pdf");
             setIsImage(false);
             break;
-        case '7':
+        case 'Huntress_CERT':
             setContentUrl("/PDF/Comp/MOO.png");
             setIsImage(true);
             break;
-        case '8':
+        case 'ICT_SEC':
             setContentUrl("/PDF/Cert/Test_Certificate_EN.pdf");
             setIsImage(false);
             break;
-        case '9':
+        case 'Blue-Team':
             setContentUrl("/PDF/Cert/Blue Team Junior Analyst Pathway Bundle-btja.pdf");
             setIsImage(false);
             break;
-        case '10':
+        case 'GDSC':
             setContentUrl("/PDF/Cert/download.pdf");
             setIsImage(false);
             break;
-        case '11':
+        case 'FutureSkill_Pen':
             setContentUrl("/PDF/Cert/641626a5fb58de7370b788bc.pdf");
             setIsImage(false);
             break;
-        case '12':
+        case 'NDG':
             setContentUrl("/PDF/Cert/WarisDamkham-NDG Linux Unhatc-certificate.pdf");
             setIsImage(false);
             break;

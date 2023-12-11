@@ -57,14 +57,14 @@ const certificates = [
         title: "Cybersecurity Primer",
         organization: "MUICT",
         date: "Sep 2023",
-        link: "/pdf/8",
+        link: "/pdf/ICT_SEC",
         imageUrl: "./images/ICT.png"
     },
     {
         title: "Blue Team Junior Analyst Path",
         organization: "Security Blue Team",
         date: "Aug 2023",
-        link: "/pdf/9",
+        link: "/pdf/Blue-Team",
         imageUrl: "./images/Blue.png"
     },
     {
@@ -127,7 +127,7 @@ const certificates = [
         title: " NDG Linux Unhatched",
         organization: "Cisco",
         date: "April 2023",
-        link: "/pdf/12",
+        link: "/pdf/NDG",
         imageUrl: "./images/ndg.png"
     },
     {
@@ -141,7 +141,7 @@ const certificates = [
         title: "รู้ทันอาชญากรรมไซเบอร์ Ethical Hacking Penetration Testing",
         organization: "FutureSkill",
         date: "March 2023",
-        link: "/pdf/11",
+        link: "/pdf/FutureSkill_Pen",
         imageUrl: "./images/ce12.png"
     },
     {
@@ -169,7 +169,7 @@ const certificates = [
         title: "GDSC Core Team Member Certificate of Appreciation",
         organization: "Google Developer Student Clubs",
         date: "July 2021",
-        link: "/pdf/10",
+        link: "/pdf/GDSC",
         imageUrl: "./images/GDSC.png"
     }
 ];

@@ -61,7 +61,7 @@ const getCompetitions = () => [
         description: 'I participated in the Huntress Capture the Flag (CTF) Contest sponsored by Huntress Labs Incorporated. In this cybersecurity competition, participants solve challenges in domains like web security and cryptography to find and submit flags, earning points. The top scorers are declared winners.',
         skills: 'Cybersecurity, Web Application Security, Malware, Steganography, OSINT, Miscellaneous',
         links: [
-            { url: '/pdf/7', type: 'news', label: 'Show Credential' },
+            { url: '/pdf/Huntress_CERT', type: 'news', label: 'Show Credential' },
             // { url: 'https://huntress.ctf.games', type: 'news', label: 'Website' },
         ]
     }, 
@@ -72,7 +72,7 @@ const getCompetitions = () => [
         description: 'Participated in the "Thailand Cyber Top Talent 2023" cybersecurity competition, organized by the National Cyber Security Office and Huawei Technologies (Thailand) Co., Ltd. This prestigious event aimed to educate and upskill participants in various areas of cybersecurity through hands-on challenges. The competition adopted a "Capture the Flag" format in a Jeopardy style, highlighting areas such as Web Application Security, Digital Forensics, and more.',
         skills: 'Cybersecurity, Web Application Security, Digital Forensics, Reverse Engineering, Network Security, Mobile Security, Programming, Cryptography',
         links: [
-            { url: '/pdf/6', type: 'news', label: 'Show Credential' },
+            { url: '/pdf/TCTT_2023', type: 'news', label: 'Show Credential' },
             { url: 'https://ctf.in.th/thctt2023/', type: 'news', label: 'Website' },
         ]
     },    
@@ -83,7 +83,7 @@ const getCompetitions = () => [
         description: 'Participated in Codegoda 2023, a renowned coding competition where I tackled challenging algorithmic problems and showcased my coding prowess. It was a great experience to compete with talented coders worldwide and further hone my problem-solving skills.',
         skills: 'Algorithms, Data Structures, Problem Solving, Competitive Programming',
         links: [
-            { url: '/pdf/5', type: 'news', label: 'Show Credential' },
+            { url: '/pdf/CODEGODA', type: 'news', label: 'Show Credential' },
             { url: 'https://codegoda.io', type: 'news', label: 'Website' },
         ]
     }
