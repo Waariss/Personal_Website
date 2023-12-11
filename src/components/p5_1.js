@@ -11,10 +11,10 @@ const P5Wrapper = () => {
     let y = 0;
     let xx = 0;
     let yy = 0;
-    let s;
-    let q;
-    let s2;
-    let q2;
+    let s = 0;
+    let s2 = 0;
+    // let Q = 0;
+    // let q2 = 0;
 
     p.setup = () => {
       p.createCanvas(400, 400);
@@ -136,13 +136,15 @@ const P5Wrapper = () => {
         xi = 172;
         y = 137;
         s = (p.mouseX - xi) / 30;
-        q = (p.mouseY - y) / 30;
+        // Q = (p.mouseY - y) / 30;
         xi += s;
         p.ellipse(xi, y, 10);
         xx = 224;
         yy = 137;
         s2 = (p.mouseX - xx) / 30;
-        q2 = (p.mouseY - yy) / 30;
+        // Q +=1;
+        // q2+=1;
+        // q2 = (p.mouseY - yy) / 30;
         xx += s2;
         p.ellipse(xx, yy, 10);
       }
