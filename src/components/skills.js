@@ -89,6 +89,7 @@ const getSkills = () => [
             { name: 'CI/CD', logo: 'https://media.licdn.com/dms/image/C4D12AQHEozYv3E5rdA/article-cover_image-shrink_600_2000/0/1612876678427?e=2147483647&v=beta&t=2fLzzpCTVay31sHhzOEZpVwyfJvxwwjkv-LOpZ9P8r8' },
             { name: 'GitHub Actions', logo: 'https://www.vectorlogo.zone/logos/github/github-tile.svg' },
             { name: 'Robot Framework', logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e4/Robot-framework-logo.png' },
+            { name: 'Docker', logo: 'https://www.vectorlogo.zone/logos/docker/docker-tile.svg' },
         ]
     },
     {

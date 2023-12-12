@@ -86,10 +86,12 @@ const projectData = [
         imgSrc: './images/gemini.jpeg',
         title: 'Gemini Project',
         subtitle: 'Jan 2023 - May 2023',
-        description: 'In the Gemini Project, I demonstrated leadership and in-depth understanding of various software engineering diagrams. This project necessitated the creation of Use Case, Activity, Sequence, Class diagrams to design and effectively document a complex telescope system. I demonstrated my proficiency in Java and Spring Boot by implementing the project as a web application, enabling the generation of intricate science plans for telescope systems. This endeavor refined my technical acumen and underscored my ability to translate complex systems into understandable and functional software solutions.',
-        skills: ['Spring Boot', 'Software Design', 'Web Development', 'Java', 'Gradle', 'Git', 'HTML', 'CSS'],
+        description: 'In the Gemini Project, I demonstrated leadership and an in-depth understanding of various software engineering diagrams, essential for creating Use Case, Activity, Sequence, and Class diagrams to design and document a complex telescope system. My proficiency in Java and Spring Boot was critical in implementing the project as a web application, facilitating the generation of intricate science plans for telescope systems. Additionally, I built the Docker image for this application and successfully hosted it on Render. This endeavor refined my technical acumen and highlighted my ability to translate complex systems into understandable and functional software solutions.',
+        credentials: "**Username**: `Astronomer` **Password**: `Gemini`",
+        skills: ['Spring Boot', 'Software Design', 'Web Development', 'Java', 'Gradle', 'Git', 'HTML', 'CSS', 'Docker'],
         links: [
-            { url: 'https://github.com/Waariss/ITCS431_Software-Design-and-Development.git', label: 'GitHub' }
+            { url: 'https://github.com/Waariss/ITCS431_Software-Design-and-Development/blob/main/Gemini/Gemini-4.md', label: 'GitHub' },
+            { url: 'https://gemini4.onrender.com/', label: 'Live View Project' }
         ]
     },
     {
