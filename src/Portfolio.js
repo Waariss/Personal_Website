@@ -14,24 +14,28 @@ import Projects from './components/Project';
 import ResumeDisplay from './components/ResumeDisplay';
 import Competitions from './components/comp';
 import Blog from './components/Blog';
+import Navigation from './Navbar';
+import Footer from './Footer';
 
 const Portfolio = () => {
     return (
+        <><Navigation />
         <Container fluid className="bg-light p-4">
             <ScrollToTopButton />
-            <Home/>
-            <About/>
-            <Skills/>
-            <Experience/>
-            <Education/>
-            <Projects/>
-            <Publication/>
-            <Certificate/>
-            <Competitions/>
-            <Blog/>
+            <Home />
+            <About />
+            <Skills />
+            <Experience />
+            <Education />
+            <Projects />
+            <Publication />
+            <Certificate />
+            <Competitions />
+            <Blog />
             <ResumeDisplay />
             <button id="scrollToTopButton" onclick="scrollToTop()">Scroll to Top</button>
         </Container>
+        <Footer /></>
     );
 }
 

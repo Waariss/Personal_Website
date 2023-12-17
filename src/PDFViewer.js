@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Navigation from './Navbar';
+import Footer from './Footer';
 
 const PDFViewer = () => {
   const { pdfId } = useParams();
@@ -63,23 +65,21 @@ const PDFViewer = () => {
   }, [pdfId]);
 
   return (
-    <div style={{ width: '100%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <><Navigation /><div style={{ width: '100%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       {contentUrl && !isImage ? (
         <iframe
           src={contentUrl}
           style={{ width: '100%', height: '100%', border: "none" }}
-          title="PDF"
-        />
+          title="PDF" />
       ) : contentUrl && isImage ? (
         <img
           src={contentUrl}
           alt="Content"
-          style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'cover' }}
-        />
+          style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'cover' }} />
       ) : (
         <p>No content found.</p>
       )}
-    </div>
+    </div><Footer /></>
   );
 };
 

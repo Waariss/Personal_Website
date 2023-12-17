@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import p5 from 'p5';
+import Navigation from '../Navbar';
+import Footer from '../Footer';
 
 const P5Wrapper = () => {
   useEffect(() => {
@@ -165,7 +167,7 @@ const P5Wrapper = () => {
     }
   };
 
-  return <div style={{ width: '100%', height: '77.8vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }} id="p5-container"></div>;
+  return <><Navigation /><div style={{ width: '100%', height: '77.8vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }} id="p5-container"></div><Footer/></>;
 };
 
 export default P5Wrapper;
