@@ -27,6 +27,8 @@ const About = () => {
     // ];
 
     const badgeImages = [
+        "/badges/ICDL_AI.png",
+        "/badges/ICDL_Col.png",
         "/badges/english-for-it-2.png",
         "/badges/english-for-it-1.png",
         "/badges/google-it-support-certificate-2023.png",
@@ -40,6 +42,8 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://profile.icdlasia.org/e62aecef-8755-4049-a69c-98e1b0c32102",
+        "https://profile.icdlasia.org/ea379524-0809-4519-bda6-4f88590f9eae#gs.1x62ar",
         "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
         "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
         "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
@@ -53,6 +57,8 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "ICDL Artificial Intelligence",
+        "ICDL Cloud Computing",
         "English for IT 2",
         "English for IT 1",
         "Google IT Support Certificate",
