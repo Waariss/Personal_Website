@@ -163,7 +163,7 @@ const projectData = [
         skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx","CI/CD", "GitHub Action"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
-            {url: "http://52.77.69.103/", "label": "Live Visit Project"}
+            // {url: "http://52.77.69.103/", "label": "Live Visit Project"}
         ]
     }
 ];
