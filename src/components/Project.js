@@ -16,6 +16,19 @@ const projectData = [
         ]
     },
     {
+        id: "Fifa",
+        imgSrc: "./images/fifa.png",
+        title: "🎉 Fifa's Anniversary Special Website🎉",
+        subtitle: "Dec 2023",
+        description: "Celebrating a year of memories, this website showcases our journey together through a digital memory lane. It's been tailored to tell our unique story, highlighting special moments and milestones. The site is a testament to our shared experiences and the love that has grown between us over the past year.",
+        credentials: "This project is a personal adaptation of [Ayush Singh's 'FOLIO' template](https://github.com/ayush013/folio). With deep appreciation for the original design, I've modified and added elements to infuse our personal story into the framework. A heartfelt thanks to Ayush Singh for the inspiration and foundation provided by his remarkable work.",
+        skills: ["Next.js", "Tailwind", "JavaScript", "TypeScript", "Web Hosting", "Vercel", "SCSS"],
+        links: [
+          { "url": "https://one-years.vercel.app/", "label": "Live View Project" },
+          { "url": "https://github.com/Waariss/One_Years", "label": "GitHub" }
+        ]
+    },
+    {
         id: "QA_2",
         imgSrc: "./images/QA_2.png",
         title: "🐈 GluayGluay 🍌: Testing for Jelly-Translator: Translation Web App 🪼",

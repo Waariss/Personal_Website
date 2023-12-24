@@ -62,6 +62,8 @@ const getSkills = () => [
             { name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
             { name: 'Bootstrap', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg' },
             { name: 'p5js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/P5js_Logo.svg' },
+            { name: 'Next.js', logo: 'https://www.svgrepo.com/show/306466/next-dot-js.svg' },
+            { name: 'Tailwind', logo: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg' },
         ]
     },
     {
