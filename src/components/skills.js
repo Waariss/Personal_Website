@@ -108,7 +108,6 @@ const getSkills = () => [
             { name: 'OAuth 2.0', logo: 'https://i0.wp.com/www.omnidefend.com/wp-content/uploads/2022/03/0Auth_Trans.png?fit=1014%2C676&ssl=1' },
             { name: 'AES Encryption', logo: 'https://cdn-icons-png.flaticon.com/512/3470/3470475.png' },
             { name: 'Tor', logo: 'https://www.vectorlogo.zone/logos/torproject/torproject-icon.svg' },
-            { name: 'OWASP', logo: 'https://owasp.org/assets/images/logo.svg'},
         ]
     },
     {
