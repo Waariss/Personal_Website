@@ -59,7 +59,20 @@ const getIconForLinkType = (type) => {
 };
 
 const getExperiences = () => [
-    // You can add more experiences in this array in the same format
+    {
+        companyLogo: './images/eta-2023-logo-kpmg.webp',
+        internshipImages: './images/KPMG-logo.png',
+        title: 'Penetration tester',
+        company: 'KPMG · Advisory · Tech-Cyber',
+        type: 'Internship',
+        duration: 'Jan 2024 - Present',
+        location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
+        description: 'TBA', // Full description here
+        skills: 'Penetration test · Kali linux · OWSAP · Cybersecurity · Security', // Full skills list here
+        links: [
+            { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
+        ]
+    },
     {
         companyLogo: './images/tu.jpeg',
         internshipImages: './images/IMG_5203.jpg',
