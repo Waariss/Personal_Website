@@ -115,12 +115,14 @@ const getSkills = () => [
         skills: [
             { name: 'Metasploit', logo: 'https://atomrace.com/blog/wp-content/uploads/2017/10/metasploit-logo.png' },
             { name: 'Kali Linux', logo: 'https://upload.vectorlogo.zone/logos/kali/images/4f107199-98a3-43c2-9d1f-19af3082b59b.svg' },
+            { name: 'Burp Suite', logo: 'https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg' },
             { name: 'OWASP', logo: 'https://upload.vectorlogo.zone/logos/owasp/images/d94aaf2a-2dff-4b80-829f-bebf5df933a3.svg' },
             { name: 'Wireshark', logo: 'https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg' },
             { name: 'nmap', logo: 'https://raw.githubusercontent.com/file-icons/icons/master/svg/Nmap.svg' },
             { name: 'John the Ripper', logo: 'https://dashboard.snapcraft.io/site_media/appmedia/2016/04/icon_9.png' },
             { name: 'Ghostbuster', logo: 'https://github.com/assetnote/ghostbuster/blob/master/screenshots/ghostbuster.png?raw=true' },
             { name: 'Hashcat', logo: 'https://www.kali.org/tools/hashcat/images/hashcat-logo.svg' },
+
         ]
     },    
     {
