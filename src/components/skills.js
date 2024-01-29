@@ -128,6 +128,7 @@ const getSkills = () => [
             { name: 'Exiftool', logo: 'https://avatars.githubusercontent.com/u/8656631?s=200&v=4'},
             { name: 'Nessus', logo: 'https://images.peerspot.com/image/upload/c_scale,f_auto,q_auto,w_200/moTsLmTxfezX5F8ncxvX9C8Q.jpg'},
             { name: 'GTFOBins', logo: "https://gtfobins.github.io/assets/logo.png"},
+            { name: 'LinPEAS', logo: "https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/images/linpeas.png"},
         ]
     },    
     {
