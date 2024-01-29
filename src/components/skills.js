@@ -106,7 +106,7 @@ const getSkills = () => [
         name: 'Security & Authentication',
         skills: [
             { name: 'OAuth 2.0', logo: 'https://i0.wp.com/www.omnidefend.com/wp-content/uploads/2022/03/0Auth_Trans.png?fit=1014%2C676&ssl=1' },
-            { name: 'AES Encryption', logo: 'https://cdn-icons-png.flaticon.com/512/3470/3470475.png' },
+            { name: 'OWASP', logo: 'https://upload.vectorlogo.zone/logos/owasp/images/d94aaf2a-2dff-4b80-829f-bebf5df933a3.svg' },
             { name: 'Tor', logo: 'https://www.vectorlogo.zone/logos/torproject/torproject-icon.svg' },
         ]
     },
@@ -116,7 +116,6 @@ const getSkills = () => [
             { name: 'Metasploit', logo: 'https://atomrace.com/blog/wp-content/uploads/2017/10/metasploit-logo.png' },
             { name: 'Kali Linux', logo: 'https://upload.vectorlogo.zone/logos/kali/images/4f107199-98a3-43c2-9d1f-19af3082b59b.svg' },
             { name: 'Burp Suite', logo: 'https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg' },
-            { name: 'OWASP', logo: 'https://upload.vectorlogo.zone/logos/owasp/images/d94aaf2a-2dff-4b80-829f-bebf5df933a3.svg' },
             { name: 'Wireshark', logo: 'https://www.vectorlogo.zone/logos/wireshark/wireshark-icon.svg' },
             { name: 'nmap', logo: 'https://raw.githubusercontent.com/file-icons/icons/master/svg/Nmap.svg' },
             { name: 'John the Ripper', logo: 'https://dashboard.snapcraft.io/site_media/appmedia/2016/04/icon_9.png' },
@@ -127,8 +126,8 @@ const getSkills = () => [
             { name: 'Hydra', logo: 'https://www.kali.org/tools/hydra/images/hydra-logo.svg'},
             { name: 'sqlmap', logo: 'https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg'},
             { name: 'Exiftool', logo: 'https://avatars.githubusercontent.com/u/8656631?s=200&v=4'},
-            
-
+            { name: 'Nessus', logo: 'https://images.peerspot.com/image/upload/c_scale,f_auto,q_auto,w_200/moTsLmTxfezX5F8ncxvX9C8Q.jpg'},
+            { name: 'GTFOBins', logo: "https://gtfobins.github.io/assets/logo.png"},
         ]
     },    
     {
