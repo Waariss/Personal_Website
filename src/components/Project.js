@@ -10,7 +10,7 @@ const projectData = [
         title: "Senior Project: Classification Of Chicken Diseases From Fecal Images Via Line OA",
         subtitle: "Aug 2023 - Present",
         description: "TBA",
-        skills: ["Python", "Random Over Sampling", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA"],
+        skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: '', "label": "TBA"}
         ]

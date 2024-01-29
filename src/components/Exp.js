@@ -67,8 +67,8 @@ const getExperiences = () => [
         type: 'Internship',
         duration: 'Jan 2024 - Present',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'TBA', // Full description here
-        skills: 'Penetration test · Kali linux · OWSAP · Cybersecurity · Security', // Full skills list here
+        description: 'As a Penetration Tester intern at KPMG, I focus on learning and assisting in conducting security assessments for software and web applications. My role involves using tools in Kali Linux and Burp Suite to identify vulnerabilities and simulate cyber attacks. I apply the OWASP methodology for comprehensive testing and adhere to cybersecurity best practices. And part of my job is performing Vulnerability Assessments with Nessus, focusing on KPMG\'s internal network. This role has improved my technical cybersecurity expertise and my ability to communicate complex security issues effectively. I am committed to continually updating my knowledge in this fast-evolving field.',
+        skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Cybersecurity · Vulnerability Assessment', // Full skills list here
         links: [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
         ]

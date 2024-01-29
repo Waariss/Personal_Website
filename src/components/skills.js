@@ -149,6 +149,9 @@ const getSkills = () => [
             { name: 'YOLO', logo: 'https://cdn.icon-icons.com/icons2/3915/PNG/512/yolo_logo_icon_249127.png' },
             { name: 'CNN', logo: "https://seeklogo.com/images/C/CNN-logo-6DA92A5BFF-seeklogo.com.png"},
             { name: 'Darknet', logo: "https://miro.medium.com/v2/resize:fit:800/1*bMyMOvHmXZAmuJxwYvsctg.jpeg"},
+            { name: 'Ultralytics', logo: 'https://assets-global.website-files.com/646dd1f1a3703e451ba81ecc/6499468f33db295c5a1219ec_Ultralytics_mark_blue.svg'},
+            { name: 'PyTorch', logo: 'https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg' },
+            { name: 'ClearML', logo: 'https://avatars.githubusercontent.com/u/38647316?s=280&v=4' },
         ]
     },    
     {
