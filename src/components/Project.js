@@ -9,7 +9,7 @@ const projectData = [
         imgSrc: "./images/senior.png",
         title: "Senior Project: Classification Of Chicken Diseases From Fecal Images Via Line OA",
         subtitle: "Aug 2023 - Present",
-        description: "TBA",
+        description: "This project proposes an advanced diagnostic tool that integrates deep learning technology to enhance disease detection and management in poultry farming. Utilizing YOLOv5 for object detection to segment regions of in terest from fecal images and ResNet50 for image classification, the system classifies health conditions into four categories: Healthy, Coccidiosis, Salmonella, and Newcastle Disease. ",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: '', "label": "TBA"}
