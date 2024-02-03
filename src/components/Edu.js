@@ -101,7 +101,7 @@ const Education = () => {
         activities: [
             {
                 link: "https://tryhackme.com/p/waris.dam",
-                name: "TryHackMe Profile",
+                name: "waris.dam [0x9][0MN1]",
                 detail: "Engaged in various cybersecurity challenges and learning paths on TryHackMe, enhancing practical skills in ethical hacking, penetration testing, and network security."
             },
         ]
