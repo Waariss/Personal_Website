@@ -68,7 +68,10 @@ const projectData = [
         subtitle: 'May 2023 - Jul 2023',
         description: 'I conducted a comprehensive research project focused on investigating the security vulnerabilities of Android applications utilizing OAuth 2.0 with Google accounts, specifically addressing the risks of cross-site request forgery (CSRF) attacks. By developing an Android application and analyzing other Android apps, I assessed the presence or absence of critical components, such as the state parameter and authorization code, which play a crucial role in CSRF attack prevention. The findings from this research allow us to evaluate the level of protection against CSRF attacks in OAuth 2.0 implementation in Android applications. This study aims to enhance user protection by identifying and discouraging the use of vulnerable Android applications employing OAuth 2.0 for social login. It emphasizes the importance of diligent implementation and robust security measures for developers utilizing OAuth 2.0. Additionally, our research demonstrates the potential for examining existing applications for security vulnerabilities and sets a precedent for future security audits in this domain.',
         skills: ['Android Development', 'OAuth', 'Application Security', 'Security', 'Cybersecurity', 'Java', 'Gradle'],
-        links: [{ url: 'https://github.com/Waariss/Oauth2.0', label: 'GitHub' }]
+        links: [
+            { url: 'https://github.com/Waariss/Oauth2.0', label: 'GitHub' },
+            { url: 'https://waris-damkham.netlify.app/pdf/Ritsumeikan_University_Poster', label: 'Poster' },
+        ]
     },
     {
         id: 'oauth_web',
