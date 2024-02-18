@@ -123,13 +123,13 @@ const certificates = [
         link: "https://www.linkedin.com/learning/certificates/3bbe2756f9b737e24d3b90d185b61b827aea10dc34e1c55fd2f8ecf4a7ab4a0d",
         imageUrl: "./images/TOR.png"
     },
-    {
-        title: "Cybersecurity for Businesses - The Fundamental Edition",
-        organization: "EC-Council Learning",
-        date: "May 2023",
-        link: "https://codered.eccouncil.org/certificate/6976bf06-9d05-45f8-880d-8289df80f0f1?logged=true",
-        imageUrl: "./images/ce8.png"
-    },
+    // {
+    //     title: "Cybersecurity for Businesses - The Fundamental Edition",
+    //     organization: "EC-Council Learning",
+    //     date: "May 2023",
+    //     link: "https://codered.eccouncil.org/certificate/6976bf06-9d05-45f8-880d-8289df80f0f1?logged=true",
+    //     imageUrl: "./images/ce8.png"
+    // },
     {
         title: " NDG Linux Unhatched",
         organization: "Cisco",
@@ -151,13 +151,13 @@ const certificates = [
         link: "/pdf/FutureSkill_Pen",
         imageUrl: "./images/ce12.png"
     },
-    {
-        title: "Ultimate JavaScript Strings",
-        organization: "CodeRed",
-        date: "Feb 2023",
-        link: "https://codered.eccouncil.org/certificate/7d906f56-a2f3-41e4-9843-e72e5848a284?logged=true",
-        imageUrl: "https://eccommonstorage.blob.core.windows.net/codered/certificates/7d906f56-a2f3-41e4-9843-e72e5848a284.png"
-    },
+    // {
+    //     title: "Ultimate JavaScript Strings",
+    //     organization: "CodeRed",
+    //     date: "Feb 2023",
+    //     link: "https://codered.eccouncil.org/certificate/7d906f56-a2f3-41e4-9843-e72e5848a284?logged=true",
+    //     imageUrl: "https://eccommonstorage.blob.core.windows.net/codered/certificates/7d906f56-a2f3-41e4-9843-e72e5848a284.png"
+    // },
     {
         title: "Introduction to Dark Web, Anonymity, and Cryptocurrency",
         organization: "EC-Council Learning",
