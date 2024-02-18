@@ -12,7 +12,8 @@ const projectData = [
         description: "This project proposes an advanced diagnostic tool that integrates deep learning technology to enhance disease detection and management in poultry farming. Utilizing YOLOv5 for object detection to segment regions of in terest from fecal images and ResNet50 for image classification, the system classifies health conditions into four categories: Healthy, Coccidiosis, Salmonella, and Newcastle Disease. ",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
-            { url: '', "label": "TBA"}
+            { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
+            { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"}
         ]
     },
     {

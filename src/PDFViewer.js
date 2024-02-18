@@ -62,6 +62,14 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedAppSecPractitioner(CAP).pdf");
             setIsImage(false);
             break;
+        case 'chickenME':
+            setContentUrl("/PDF/Senior/SP2023-31-Piyanuch-Poster.pdf");
+            setIsImage(false);
+            break;
+        case 'Proposal':
+            setContentUrl("/PDF/Senior/SP2023-31-Aj.Piyanuch-PPT.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
