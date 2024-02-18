@@ -3,32 +3,8 @@ import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-boo
 import '../App.css';
 
 const About = () => {
-    // useEffect(() => {
-    //     const script = document.createElement('script');
-    //     script.src = "//cdn.credly.com/assets/utilities/embed.js";
-    //     script.async = true;
-    //     document.body.appendChild(script);
-
-    //     return () => {
-    //         document.body.removeChild(script);
-    //     };
-    // }, []);
-
-    // const badges = [
-    //     "efa300dd-1b22-4f53-ba81-fd2fa458e7fb",
-    //     "e1d3c2d6-9607-4134-9377-ba4a0698ac8e",
-    //     "2bdbfa21-2c1e-48e9-926d-5b7a442de6df",
-    //     "759dbd4b-35d7-4147-b8c9-8e09bebd4753",
-    //     "122bf15c-e992-4017-883b-edb152f11dc0",
-    //     "530e5cac-2274-4de1-b565-786cfcda9e6c",
-    //     "5112f234-9d17-4de3-b154-b4468e916dde",
-    //     "bf1bce85-beb9-4421-a727-727ae8f771c4",
-    //     "bee5a187-4758-436f-a321-88a3f0ad0c25"
-    // ];
-
     const badgeImages = [
-        "/badges/ICDL_AI.png",
-        "/badges/ICDL_Col.png",
+        "/badges/CAP.png",
         "/badges/english-for-it-2.png",
         "/badges/english-for-it-1.png",
         "/badges/google-it-support-certificate-2023.png",
@@ -42,8 +18,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
-        "https://profile.icdlasia.org/e62aecef-8755-4049-a69c-98e1b0c32102",
-        "https://profile.icdlasia.org/ea379524-0809-4519-bda6-4f88590f9eae#gs.1x62ar",
+        "https://waris-damkham.netlify.app/pdf/CAP",
         "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
         "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
         "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
@@ -57,8 +32,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
-        "ICDL Artificial Intelligence",
-        "ICDL Cloud Computing",
+        "Certified AppSec Practitioner (CAP)",
         "English for IT 2",
         "English for IT 1",
         "Google IT Support Certificate",
@@ -125,6 +99,11 @@ const About = () => {
                                     <Image src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
+                            <OverlayTrigger overlay={<Tooltip id="tooltip-hackthebox">HackTheBox</Tooltip>}>
+                                <Button variant="link" href="https://app.hackthebox.com/profile/1458142" target="_blank">
+                                    <Image src="https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png" alt="HackTheBox" width="37.5" height="37.5"/>
+                                </Button>
+                            </OverlayTrigger>
                         </div>
                     </Col>
                 </Row>
@@ -146,35 +125,6 @@ const About = () => {
                     ))}
                 </div>
             </Card.Body>
-            {/* <Card.Body><Card.Body>
-                <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
-                    {badgeImages.map((badgePath, index) => (
-                        <div key={index} className="badge-item mx-2 my-2">
-                            <OverlayTrigger
-                                overlay={<Tooltip id={`tooltip-${index}`}>{badgeAlts[index]}</Tooltip>}
-                                placement="top"
-                            >
-                                <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer">
-                                    <Image src={badgePath} width="98" height="98" alt={badgeAlts[index]} />
-                                </a>
-                            </OverlayTrigger>
-                        </div>
-                    ))}
-                </div>
-            </Card.Body>
-                    <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
-                        {badges.map(badgeId => (
-                            <div key={badgeId} className="badge-item mx-2 my-2">
-                                <div
-                                    data-iframe-width="120"
-                                    data-iframe-height="120"
-                                    data-share-badge-id={badgeId}
-                                    data-share-badge-host="https://www.credly.com"
-                                ></div>
-                            </div>
-                        ))}
-                    </div>
-                </Card.Body> */}
         </section>
     );
 };

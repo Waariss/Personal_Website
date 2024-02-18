@@ -58,6 +58,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-NDG Linux Unhatc-certificate.pdf");
             setIsImage(false);
             break;
+        case 'CAP':
+            setContentUrl("/PDF/Cert/WarisDamkham-CertifiedAppSecPractitioner(CAP).pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
