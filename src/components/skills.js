@@ -126,9 +126,11 @@ const getSkills = () => [
             { name: 'Hydra', logo: 'https://www.kali.org/tools/hydra/images/hydra-logo.svg'},
             { name: 'sqlmap', logo: 'https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg'},
             { name: 'Exiftool', logo: 'https://avatars.githubusercontent.com/u/8656631?s=200&v=4'},
-            { name: 'Nessus', logo: 'https://images.peerspot.com/image/upload/c_scale,f_auto,q_auto,w_200/moTsLmTxfezX5F8ncxvX9C8Q.jpg'},
+            { name: 'Nessus', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Nessus-Professional-FullColor-RGB.svg/2560px-Nessus-Professional-FullColor-RGB.svg.png'},
             { name: 'GTFOBins', logo: "https://gtfobins.github.io/assets/logo.png"},
             { name: 'LinPEAS', logo: "https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/images/linpeas.png"},
+            { name: 'MobSF', logo: "https://repository-images.githubusercontent.com/30102273/ec45ab80-b46b-11e9-9f7f-6db13d2e8507"},
+            { name: 'Android Debug Bridge', logo: "https://fossbytes.com/wp-content/uploads/2017/07/ADB.png"}
         ]
     },    
     {
