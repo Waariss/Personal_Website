@@ -85,7 +85,8 @@ const getExperiences = () => [
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
             { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
-            { href: '/pdf/Ritsumeikan_University_Poster', type: 'poster', label: 'Poster' }
+            { href: '/pdf/Ritsumeikan_University_Poster', type: 'poster', label: 'Poster' },
+            { href: 'https://ieeexplore.ieee.org/document/10430018', type: 'paper', label: 'Conference Paper' }
         ]
     },
     {
