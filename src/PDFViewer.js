@@ -70,6 +70,14 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Senior/SP2023-31-Aj.Piyanuch-PPT.pdf");
             setIsImage(false);
             break;
+        case 'DVWA':
+            setContentUrl("/PDF/KPMG/DVWA_Lab.pdf");
+            setIsImage(false);
+            break;
+        case 'EZ':
+            setContentUrl("/PDF/KPMG/Ez_Shop.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
