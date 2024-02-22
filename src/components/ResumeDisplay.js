@@ -12,7 +12,7 @@ const ResumeDisplay = () => {
                     <Row>
                         <Col xs={7}>
                             <iframe 
-                                src="./images/Waris's_Resume.pdf" 
+                                src="./PDF/Waris_Damkham_Resume.pdf" 
                                 width="100%" 
                                 height="600px" 
                                 style={{ border: "none" }}
@@ -60,11 +60,6 @@ const ResumeDisplay = () => {
                                             <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="35" height="35" />
                                         </Button>
                                     </OverlayTrigger>
-                                    <OverlayTrigger overlay={<Tooltip id="tooltip-google-scholar">Google Scholar</Tooltip>}>
-                                        <Button variant="link" href="https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en" target="_blank">
-                                            <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="35" height="35" />
-                                        </Button>
-                                    </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-email">Email</Tooltip>}>
                                         <Button variant="link" href="mailto:waris.dam@student.mahidol.ac.th">
                                             <Image src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="35" height="35" />
@@ -78,6 +73,11 @@ const ResumeDisplay = () => {
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-tryhackme">TryHackMe</Tooltip>}>
                                         <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank">
                                             <Image src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" width="37.5" height="37.5"/>
+                                        </Button>
+                                    </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-hackthebox">HackTheBox</Tooltip>}>
+                                        <Button variant="link" href="https://app.hackthebox.com/profile/1458142" target="_blank">
+                                            <Image src="https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png" alt="HackTheBox" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
                                 </div>
