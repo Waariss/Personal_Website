@@ -102,7 +102,7 @@ const Education = () => {
         activities: [
             {
                 link: "https://app.hackthebox.com/profile/1458142",
-                name: "Script Kiddie",
+                name: "Hacker",
                 detail: "HackTheBox Profile"
             },
         ]
