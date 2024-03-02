@@ -13,7 +13,8 @@ const projectData = [
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
-            { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"}
+            { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"},
+            { url: "https://liff.line.me/1645278921-kWRPP32q/?accountId=239mhqhy", "label": "Live View Project" },
         ]
     },
     {
