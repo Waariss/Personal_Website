@@ -46,7 +46,7 @@ const Blog = () => {
 
 const getBlog = () => [
     {
-        companyLogo: 'https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png',
+        companyLogo: 'https://www.svgrepo.com/show/330505/gitbook.svg',
         internshipImages: './images/writeup.png',
         title: 'Cybersecurity journey Writeup',
         company: 'Writeup',
