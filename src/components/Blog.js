@@ -48,12 +48,12 @@ const getBlog = () => [
     {
         companyLogo: 'https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png',
         internshipImages: './images/writeup.png',
-        title: 'HackTheBox Writeup',
+        title: 'Cybersecurity journey Writeup',
         company: 'Writeup',
         duration: 'Mar 2024',
-        description: 'Welcome to my HackTheBox journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox.',
+        description: 'Welcome to my Cybersecurity journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox etc.',
         links: [
-            { href: 'https://wariss-writeup.gitbook.io/hack-the-box-writeup/', label: 'Read More' },
+            { href: 'https://wariss-writeup.gitbook.io/writeup/', label: 'Read More' },
         ]
     },
     {
