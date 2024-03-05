@@ -46,6 +46,17 @@ const Blog = () => {
 
 const getBlog = () => [
     {
+        companyLogo: 'https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png',
+        internshipImages: './images/writeup.png',
+        title: 'HackTheBox Writeup',
+        company: 'Writeup',
+        duration: 'Mar 2024',
+        description: 'Welcome to my HackTheBox journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox.',
+        links: [
+            { href: 'https://wariss-writeup.gitbook.io/hack-the-box-writeup/', label: 'Read More' },
+        ]
+    },
+    {
         companyLogo: './images/lav.png',
         internshipImages: './images/blog_im.jpg',
         title: 'From Thailand to Japan: My Cybersecurity Internship at Ritsumeikan University',
