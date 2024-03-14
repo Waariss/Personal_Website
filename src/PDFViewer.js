@@ -78,6 +78,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/KPMG/Ez_Shop.pdf");
             setIsImage(false);
             break;
+        case 'HTBA_2024':
+            setContentUrl("/PDF/Comp/Certificate-Waariss.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

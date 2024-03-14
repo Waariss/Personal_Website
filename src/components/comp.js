@@ -55,6 +55,18 @@ const Competitions = () => {
 
 const getCompetitions = () => [
     {
+        certificateImage: "./images/HTBA.png",
+        title: 'CYBER APOCALYPSE CTF 2024 Hacker Royale',
+        date: 'Mar 2024',
+        description: 'As the dust settles on the virtual battlegrounds of Hacker Royale, our team at KPMG Thailand emerged with a tale of digital valiance. Pwned flags: 9. Our rank: 195th. With 10,525 points to our name, we tackled 35 out of 67 challenges, each representing a milestone in our relentless pursuit of cybersecurity excellence. After pwned another flag, bringing our total to 10, I gave one flag to my friend, keeping our count at 9.',
+        skills: 'Cybersecurity, Web Application Security, Digital Forensics, Reverse Engineering, Pwn, Misc, Hardware, Cryptography, BlockChain',
+        links: [
+            { url: '/pdf/HTBA_2024', type: 'news', label: 'Show Credential' },
+            { url: 'https://www.hackthebox.com/events/cyber-apocalypse-2024', type: 'news', label: 'Website' },
+            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
+        ]
+    },   
+    {
         certificateImage: "./images/hunt.png",
         title: 'Huntress CTF',
         date: 'Oct 2023',
