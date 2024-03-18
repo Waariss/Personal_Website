@@ -55,6 +55,17 @@ const Competitions = () => {
 
 const getCompetitions = () => [
     {
+        certificateImage: "./images/pico.png",
+        title: 'picoCTF 2024',
+        date: 'Mar 2024',
+        description: 'picoCTF is the largest cybersecurity hacking competition for middle, high school, and college students. Participants 13 years and older of all skill levels are encouraged to compete. Competitors must reverse-engineer, break, hack, decrypt, and think creatively and critically to solve the challenges and capture the digital flags.',
+        skills: 'Cybersecurity, Web Exploitation, Forensics, Reverse Engineering, General Skills, Cryptography , Binary Exploitation',
+        links: [
+            { url: 'https://picoctf.org/competitions/2024-spring.html', type: 'news', label: 'Website' },
+            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
+        ]
+    },   
+    {
         certificateImage: "./images/HTBA.png",
         title: 'CYBER APOCALYPSE CTF 2024 Hacker Royale',
         date: 'Mar 2024',
