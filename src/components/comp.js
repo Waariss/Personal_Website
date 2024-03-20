@@ -55,6 +55,17 @@ const Competitions = () => {
 
 const getCompetitions = () => [
     {
+        certificateImage: "./images/SCD.png",
+        title: 'SecureMy.Dev CTF',
+        date: 'April 2024',
+        description: 'The SecureMy.Dev CTF is an engaging cybersecurity challenge designed to hone participants\' skills through manual testing and problem-solving within a controlled environment. The competition emphasizes the importance of ethical practices, such as respecting rate limits and not sharing discovered vulnerabilities outside the intended scope. It operates on a user-friendly platform, offering various challenges that cater to different skill levels. Points and hints are available through the scoreboard, encouraging a collaborative yet competitive atmosphere. This event is an excellent opportunity for enthusiasts and professionals alike to test their cybersecurity knowledge and learn new techniques in a practical, hands-on manner.',
+        skills: 'Cybersecurity, Web Exploitation, Network Forensics, Puzzle, Steganography , Binary Exploitation',
+        links: [
+            { url: 'https://scores.securemy.dev/', type: 'news', label: 'Website' },
+            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
+        ]
+    },   
+    {
         certificateImage: "./images/pico.png",
         title: 'picoCTF 2024',
         date: 'Mar 2024',
