@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified AppSec Pentester (CAPen)",
+        organization: "The SecOps Group",
+        date: "Apr 2024",
+        link: "/pdf/CAPen",
+        imageUrl: "./images/CApen.png"
+    },
+    {
         title: "Certified AppSec Practitioner (CAP)",
         organization: "The SecOps Group",
         date: "Feb 2024",

@@ -4,6 +4,7 @@ import '../App.css';
 
 const About = () => {
     const badgeImages = [
+        "/badges/CAPen.png",
         "/badges/CAP.png",
         "/badges/english-for-it-2.png",
         "/badges/english-for-it-1.png",
@@ -18,6 +19,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://waris-damkham.netlify.app/pdf/CAPen",
         "https://waris-damkham.netlify.app/pdf/CAP",
         "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
         "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
@@ -32,6 +34,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Certified AppSec Pentester (CAPen)",
         "Certified AppSec Practitioner (CAP)",
         "English for IT 2",
         "English for IT 1",
