@@ -4,6 +4,7 @@ import '../App.css';
 
 const About = () => {
     const badgeImages = [
+        "/badges/CNPen.png",
         "/badges/CAPen.png",
         "/badges/CAP.png",
         "/badges/english-for-it-2.png",
@@ -14,11 +15,11 @@ const About = () => {
         "/badges/meta-back-end-developer-certificate.png",
         "/badges/open-source-software-development-linux-and-git-specialization.png",
         "/badges/google-cybersecurity-certificate.png",
-        "/badges/junior-cybersecurity-analyst-career-path.1.png",
         "/badges/aws-academy-graduate-aws-academy-cloud-foundations.png",
     ];
 
     const badgeLinks = [
+        "https://waris-damkham.netlify.app/pdf/CNPen",
         "https://waris-damkham.netlify.app/pdf/CAPen",
         "https://waris-damkham.netlify.app/pdf/CAP",
         "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
@@ -29,11 +30,11 @@ const About = () => {
         "https://www.credly.com/badges/122bf15c-e992-4017-883b-edb152f11dc0/public_url",
         "https://www.credly.com/badges/530e5cac-2274-4de1-b565-786cfcda9e6c/public_url",
         "https://www.credly.com/badges/5112f234-9d17-4de3-b154-b4468e916dde/public_url",
-        "https://www.credly.com/badges/bf1bce85-beb9-4421-a727-727ae8f771c4/public_url",
         "https://www.credly.com/badges/bee5a187-4758-436f-a321-88a3f0ad0c25/public_url",
     ];
 
     const badgeAlts = [
+        "Certified Network Pentester (CNPen)",
         "Certified AppSec Pentester (CAPen)",
         "Certified AppSec Practitioner (CAP)",
         "English for IT 2",
@@ -44,7 +45,6 @@ const About = () => {
         "Meta Back-End Developer Certificate",
         "Open Source Software Development, Linux and Git Specialization",
         "Google Cybersecurity Certificate",
-        "Junior Cybersecurity Analyst Career Path",
         "AWS Academy Graduate - AWS Academy Cloud Foundations",
     ];
 
