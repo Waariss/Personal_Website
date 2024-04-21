@@ -55,6 +55,28 @@ const Competitions = () => {
 
 const getCompetitions = () => [
     {
+        certificateImage: "./images/Umass.png",
+        title: 'UMassCTF 2024',
+        date: 'April 2024',
+        description: 'UMass CTF is back and better than ever this year! Get ready to dive into a thrilling array of challenges that will test your skills and push your limits. Participants can look forward to tackling intricate puzzles in Reverse Engineering, unlocking the mysteries of Cryptography, uncovering clues in Forensics, navigating the complex world of Binary Exploitation, and outsmarting defenses in Web Exploitation. Plus, we\'ve got a host of miscellaneous challenges that are sure to surprise and engage. Don\'t miss out on the action-packed excitement at UMass CTF!',
+        skills: 'Cybersecurity, Web Exploitation, Forensics, Cryptography, Radio Steganography , Misc, Reverse Engineering, Pwn',
+        links: [
+            { url: 'http://ctf.umasscybersec.org/', type: 'news', label: 'Website' },
+            { url: 'https://wariss-writeup.gitbook.io/writeup/umassctf-2024', type: 'paper', label: 'CTF Writeup' }
+        ]
+    },
+    {
+        certificateImage: "./images/Amateurs.png",
+        title: 'AmateursCTF 2024',
+        date: 'April 2024',
+        description: 'Welcome to Les Amateurs\'s second CTF! Problems are targeted towards high schoolers, and will range from beginner-friendly all the way up to kernel pwn.',
+        skills: 'Cybersecurity, Web Exploitation, Forensics, Cryptography, OSINT, Misc, Reverse Engineering, Pwn',
+        links: [
+            { url: 'https://scores.securemy.dev/', type: 'news', label: 'Website' },
+            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
+        ]
+    },
+    {
         certificateImage: "./images/SCD.png",
         title: 'SecureMy.Dev CTF',
         date: 'April 2024',
