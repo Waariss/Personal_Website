@@ -73,7 +73,7 @@ const getCompetitions = () => [
         skills: 'Cybersecurity, Web Exploitation, Forensics, Cryptography, OSINT, Misc, Reverse Engineering, Pwn',
         links: [
             { url: 'https://scores.securemy.dev/', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
+            { url: 'https://wariss-writeup.gitbook.io/writeup/amateursctf-2024', type: 'paper', label: 'CTF Writeup' }
         ]
     },
     {
