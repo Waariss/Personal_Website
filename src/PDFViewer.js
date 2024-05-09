@@ -90,6 +90,14 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedNetworkPentester(CNPen).pdf");
             setIsImage(false);
             break;
+        case 'HTB_Academy_Student_Transcript':
+            setContentUrl("/PDF/HTB/HTB_Academy_Student_Transcript.pdf");
+            setIsImage(false);
+            break;  
+        case 'Def':
+            setContentUrl("/PDF/Senior/Defense_SP2023-31-Aj.Piyanuch-PPT.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

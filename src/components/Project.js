@@ -7,13 +7,14 @@ const projectData = [
     {
         id: "Senior",
         imgSrc: "./images/senior.png",
-        title: "Senior Project: Classification Of Chicken Diseases From Fecal Images Via Line OA",
-        subtitle: "Aug 2023 - Present",
-        description: "This project proposes an advanced diagnostic tool that integrates deep learning technology to enhance disease detection and management in poultry farming. Utilizing YOLOv5 for object detection to segment regions of in terest from fecal images and ResNet50 for image classification, the system classifies health conditions into four categories: Healthy, Coccidiosis, Salmonella, and Newcastle Disease. ",
+        title: "ChickenME: Classification Of Chicken Diseases From Fecal Images Via Line OA",
+        subtitle: "Aug 2023 - May 2024",
+        description: "ChickenME is an advanced diagnostic tool that leverages deep learning to improve disease detection in poultry farming. It uses YOLOv5 for object detection in fecal images, achieving a precision of 87.10%, and ResNet50 for classifying images into four health categories—healthy, Coccidiosis, Salmonella, and Newcastle Disease—with 84% accuracy. The system, trained on 10,500 images from the Zenodo database, is integrated into the LINE platform, making it accessible and user-friendly for poultry farmers to automate disease detection and reduce manual observation errors.",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
             { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"},
+            { url: 'https://waris-damkham.netlify.app/pdf/Def', "label": "Defense"},
             { url: "https://liff.line.me/1645278921-kWRPP32q/?accountId=239mhqhy", "label": "Live View Project" },
         ]
     },
@@ -39,7 +40,7 @@ const projectData = [
         credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa/jelly-translator) 🐈🍌",
         skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions", "Robot Framework"],
         links: [
-          { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
+        //   { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
           { "url": "https://github.com/Waariss/GluayGluay_Project/tree/master/Project_phase_2", "label": "GitHub" }
         ]
     },
@@ -73,6 +74,7 @@ const projectData = [
         links: [
             { url: 'https://github.com/Waariss/Oauth2.0', label: 'GitHub' },
             { url: 'https://waris-damkham.netlify.app/pdf/Ritsumeikan_University_Poster', label: 'Poster' },
+            { url: 'https://ieeexplore.ieee.org/document/10430018', label: 'Conference Paper' },
         ]
     },
     {

@@ -105,6 +105,12 @@ const Education = () => {
                 name: "Hacker",
                 detail: "HackTheBox Profile"
             },
+        ],
+        links: [
+            {
+                href: "/pdf/HTB_Academy_Student_Transcript",
+                text: "HTB Academy Student Transcript"
+            }
         ]
     };
 
