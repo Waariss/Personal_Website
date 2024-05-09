@@ -46,7 +46,7 @@ const Blog = () => {
 
 const getBlog = () => [
     {
-        companyLogo: 'https://www.svgrepo.com/show/330505/gitbook.svg',
+        companyLogo: './images/cat.jpg',
         internshipImages: './images/writeup.png',
         title: 'Cybersecurity journey Writeup',
         company: 'Writeup',
