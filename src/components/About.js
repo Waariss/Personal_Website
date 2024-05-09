@@ -1,8 +1,9 @@
-import React from 'react';
-import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import '../App.css';
 
 const About = () => {
+    const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
         "/badges/CNPen.png",
         "/badges/CAPen.png",
@@ -54,7 +55,14 @@ const About = () => {
                 <Card.Body>
                 <Row>
                     <Col xs={12} md={4} className="mb-3">
-                        <Image src="./images/waris.JPG" roundedCircle fluid className="profile-image" />
+                        <Image 
+                            src={profileImage} 
+                            onMouseEnter={() => setProfileImage("./images/cat.jpg")} 
+                            onMouseLeave={() => setProfileImage("./images/waris.JPG")}
+                            roundedCircle 
+                            fluid 
+                            className="profile-image" 
+                        />
                     </Col>
                     <Col xs={12} md={8}>
                         <Card.Title><h2 className='title'>About Me</h2></Card.Title>
