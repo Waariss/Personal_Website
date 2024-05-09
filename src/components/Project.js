@@ -7,7 +7,7 @@ const projectData = [
     {
         id: "Senior",
         imgSrc: "./images/Docker.jpg",
-        title: "🐔ChickenME🐣: Classification Of Chicken Diseases From Fecal Images Via Line OA",
+        title: "🐔ChickenME🐣: Classification Of Chicken Diseases From Fecal Images",
         subtitle: "Aug 2023 - May 2024",
         description: "ChickenME is an advanced diagnostic tool that leverages deep learning to improve disease detection in poultry farming. It uses YOLOv5 for object detection in fecal images, achieving a precision of 87.10%, and ResNet50 for classifying images into four health categories—healthy, Coccidiosis, Salmonella, and Newcastle Disease—with 84% accuracy. The system, trained on 10,500 images from the Zenodo database, is integrated into the LINE platform, making it accessible and user-friendly for poultry farmers to automate disease detection and reduce manual observation errors.",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
