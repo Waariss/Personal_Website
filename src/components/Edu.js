@@ -102,7 +102,7 @@ const Education = () => {
         activities: [
             {
                 link: "https://app.hackthebox.com/profile/1458142",
-                name: "Hacker",
+                name: "Pro Hacker",
                 detail: "HackTheBox Profile"
             },
         ],
@@ -126,7 +126,7 @@ const Education = () => {
         activities: [
             {
                 link: "https://tryhackme.com/p/waris.dam",
-                name: "waris.dam [0x9][0MN1]",
+                name: "waris.dam [0xA][HARRY]",
                 detail: "TryHackMe Profile"
             },
         ]
