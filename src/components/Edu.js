@@ -110,6 +110,10 @@ const Education = () => {
             {
                 href: "/pdf/HTB_Academy_Student_Transcript",
                 text: "HTB Academy Student Transcript"
+            },
+            {
+                href: "/htb",
+                text: "Pwned Rooms"
             }
         ]
     };
