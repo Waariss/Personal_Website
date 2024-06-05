@@ -23,6 +23,10 @@ const HTBAchievements = () => {
     { name: 'Broker', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a725533911ba94a880899fbf900d988c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/578' },
     { name: 'Devvortex', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/2565d292772abc4a2d774117cf4d36ff.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/577' },
     { name: 'Bizness', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/1919b64800f6676d0c0d285a9d664cee.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/582' },
+    { name: 'Blue', level: 'Easy', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/52e077ae40899ab8b024afd51cb29b1c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/51' },
+    { name: 'Legacy', level: 'Easy', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/60dc190c4c015cfe3a3aef9b5afca254.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/2' },
+    { name: 'Jerry', level: 'Easy', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/59f03a24178dbb2bdc94968c201e21f8.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/144' },
+  
     { name: 'Surveillance', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/580' },
     { name: 'Monitored', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d4988810825d26acb2e84ca0ac9feaf4.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/583' },
     { name: 'Builder', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/591' },
