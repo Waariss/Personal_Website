@@ -29,6 +29,7 @@ const HTBAchievements = () => {
     { name: 'Netmon', level: 'Easy', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/3fa8184483e279369b81becafbac9dee.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/177' },
     { name: 'Knife', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/110fe6608793064cf171080150ebd0dc.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/347' },
     { name: 'Sense', level: 'Easy', os: 'OpenBSD', logo: 'https://labs.hackthebox.com/storage/avatars/a3d8bf97412b0b6247aac14695eff21c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/111' },
+    { name: 'Editorial', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a466db5ce4f7aaea98f588d1cb71a0aa.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/608' },
     { name: 'Surveillance', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/580' },
     { name: 'Monitored', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d4988810825d26acb2e84ca0ac9feaf4.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/583' },
     { name: 'Builder', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/591' },
