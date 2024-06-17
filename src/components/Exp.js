@@ -91,7 +91,7 @@ const getExperiences = () => [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
             { href: '/pdf/EZ', type: 'lab', label: 'Ez_Shop Lab' },
-            { href: 'https://wariss-writeup.gitbook.io/writeup/', type: 'paper', label: 'Writeup Collection' }
+            { href: '/pdf/KPMG', type: 'poster', label: 'Show Credential' },
         ]
     },
     {

@@ -98,6 +98,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Senior/Defense_SP2023-31-Aj.Piyanuch-PPT.pdf");
             setIsImage(false);
             break;
+        case 'KPMG':
+            setContentUrl("/PDF/Cert/KPMG_Internship_Certificate.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
