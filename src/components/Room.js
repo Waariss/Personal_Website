@@ -38,6 +38,7 @@ const HTBAchievements = () => {
     { name: 'SolarLab', level: 'Medium', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/a2c2bd7b4e98ff8b782ed590896305a1.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/601' },
     { name: 'Blurry', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/344998b24aad421410cabf912d3dc3af.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/605' },
     { name: 'Intuition', level: 'Hard', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/464537cc0d3e9962fc598767bff7b1f1.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/599' },
+    { name: 'Axlle', level: 'Hard', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/e6052efa31516d5aa9c78831509bcedd.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/611' },
     { name: 'Corporate', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/380bc40d3a6bd3ba99da465177e8593e.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/581' },
     { name: 'Skyfall', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/e43c6cdfe71e56188e5c2c4f39f5c180.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/586' },
     { name: 'MagicGardens', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a878db048e3cb6ba0e4a467bb705e145.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/602' },
