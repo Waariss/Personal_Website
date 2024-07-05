@@ -102,6 +102,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/KPMG_Internship_Certificate.pdf");
             setIsImage(false);
             break;
+        case 'CAPenX':
+            setContentUrl("/PDF/Cert/CAPenX.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
