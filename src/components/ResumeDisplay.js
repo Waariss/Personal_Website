@@ -33,7 +33,7 @@ const ResumeDisplay = () => {
                                 <div className="terminal-commands">
                                     <div className="command">
                                         <span className="command-prefix">$</span>
-                                        <span className="command-text">email: <a href="mailto:waris.dam@student.mahidol.ac.th">waris.dam@student.mahidol.ac.th</a></span>
+                                        <span className="command-text">email: <a href="mailto:waris.dam@outlook.com">waris.dam@outlook.com</a></span>
                                     </div>
                                     <div className="command">
                                         <span className="command-prefix">$</span>
