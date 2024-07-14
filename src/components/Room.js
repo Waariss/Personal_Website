@@ -38,6 +38,7 @@ const HTBAchievements = () => {
     { name: 'Runner', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/029d258b4444bc4226b90b1f8f27d086.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/598' },
     { name: 'SolarLab', level: 'Medium', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/a2c2bd7b4e98ff8b782ed590896305a1.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/601' },
     { name: 'Blurry', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/344998b24aad421410cabf912d3dc3af.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/605' },
+    { name: 'Blazorized', level: 'Medium', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/3ad1911c18a46af0d6967aef8521989c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/614' },
     { name: 'Intuition', level: 'Hard', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/464537cc0d3e9962fc598767bff7b1f1.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/599' },
     { name: 'Axlle', level: 'Hard', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/e6052efa31516d5aa9c78831509bcedd.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/611' },
     { name: 'Corporate', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/380bc40d3a6bd3ba99da465177e8593e.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/581' },
