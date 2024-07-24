@@ -44,6 +44,7 @@ const HTBAchievements = () => {
     { name: 'Corporate', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/380bc40d3a6bd3ba99da465177e8593e.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/581' },
     { name: 'Skyfall', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/e43c6cdfe71e56188e5c2c4f39f5c180.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/586' },
     { name: 'MagicGardens', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a878db048e3cb6ba0e4a467bb705e145.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/602' },
+    { name: 'Ghost', level: 'Insane', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/38f90738d0433b8adf27036f18ecf91e.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/616' },
   ];
   
   const groupedBoxes = boxes.reduce((acc, box) => {
