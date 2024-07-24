@@ -31,6 +31,7 @@ const HTBAchievements = () => {
     { name: 'Sense', level: 'Easy', os: 'OpenBSD', logo: 'https://labs.hackthebox.com/storage/avatars/a3d8bf97412b0b6247aac14695eff21c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/111' },
     { name: 'Editorial', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a466db5ce4f7aaea98f588d1cb71a0aa.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/608' },
     { name: 'PermX', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/3ec233f1bf70b096a66f8a452e7cd52f.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/613' },
+    { name: 'GreenHorn', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/b7d9a9b075fd49c8509866fe24f58dbb.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/617' },
     { name: 'Surveillance', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d2ddffcb2eced6a4d5486dc99d440d1a.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/580' },
     { name: 'Monitored', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/d4988810825d26acb2e84ca0ac9feaf4.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/583' },
     { name: 'Builder', level: 'Medium', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a0f6d6a08e0806448341587cd59450a6.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/591' },
