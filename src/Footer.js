@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer-container">
             <Container className="footer-content">
                 <div className="footer-section footer-text">
-                    <p>Email: waris.dam@student.mahidol.ac.th</p>
+                    <p>Email: waris.dam@outlook.com</p>
                 </div>
                 <div className="footer-section footer-text">
                     <p>© {year} by Waris Damkham</p>
@@ -29,12 +29,12 @@ const Footer = () => {
 }
 
 const getIcons = () => [
-    { icon: <FaEnvelope className="text-secondary mx-2" />, link: 'mailto:waris.dam@student.mahidol.ac.th' },
+    { icon: <FaEnvelope className="text-secondary mx-2" />, link: 'mailto:waris.dam@outlook.com' },
     { icon: <FaLinkedin className="text-secondary mx-2" />, link: 'https://www.linkedin.com/in/waris-damkham/' },
     { icon: <AiFillProject className="text-secondary mx-2" />, link: 'https://www.researchgate.net/profile/Waris-Damkham' },
     { icon: <AiFillGoogleCircle className="text-secondary mx-2" />, link: 'https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en' },
-    { icon: <FaGithub className="text-secondary mx-2" />, link: 'https://github.com/Waariss' },
-    { icon: <FaInstagram className="text-secondary mx-2" />, link: 'https://www.instagram.com/waaris_m/' }
+    { icon: <FaGithub className="text-secondary mx-2" />, link: 'https://github.com/Waariss' }
+    // { icon: <FaInstagram className="text-secondary mx-2" />, link: 'https://www.instagram.com/waaris_m/' }
 ];
 
 export default Footer;

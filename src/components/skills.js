@@ -51,6 +51,7 @@ const getSkills = () => [
             { name: 'C', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg' },
             { name: 'Dart', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Dart-logo-icon.svg' },
             { name: 'LaTeX', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg' },
+            { name: 'Bash', logo: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg' },
         ]
     },
     {
@@ -162,8 +163,6 @@ const getSkills = () => [
             { name: 'Windows', logo: 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg' },
             { name: 'macOS', logo: 'https://www.vectorlogo.zone/logos/apple/apple-icon.svg' },
             { name: 'Ubuntu', logo: 'https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg' },
-            { name: 'Bash', logo: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg' },
-            { name: 'Zsh', logo: 'https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/zsh.svg' },
         ]
     },
 ];
