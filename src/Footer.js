@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container} from 'react-bootstrap';
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
 import { AiFillGoogleCircle, AiFillProject } from 'react-icons/ai';
 import './App.css';
 
