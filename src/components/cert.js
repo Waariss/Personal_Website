@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Mobile Pentester (CMPen-Android)",
+        organization: "The SecOps Group",
+        date: "Aug 2024",
+        link: "/pdf/CMPen-Android",
+        imageUrl: "./images/CMPen-Android.pdf.png"
+    },
+    {
         title: "Certified AppSec Pentesting eXpert (CAPenX)",
         organization: "The SecOps Group",
         date: "Jul 2024",
