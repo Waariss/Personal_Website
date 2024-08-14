@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/CMPen-Android.png",
         "/badges/CHHB_PATh.png",
         "/badges/cert-stamp-capenx-expert.png",
         "/badges/CNPen.png",
@@ -22,6 +23,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://waris-damkham.netlify.app/pdf/CMPen-Android",
         "https://academy.hackthebox.com/achievement/badge/da8ea085-3e13-11ef-b18d-bea50ffe6cb4",
         "https://waris-damkham.netlify.app/pdf/CAPenX",
         "https://waris-damkham.netlify.app/pdf/CNPen",
@@ -39,6 +41,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Certified Mobile Pentester (CMPen-Android)",
         "HTB Bug Bounty Hunter Path",
         "Certified AppSec Pentesting eXpert (CAPenX)",
         "Certified Network Pentester (CNPen)",

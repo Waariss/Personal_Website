@@ -106,6 +106,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/CAPenX.pdf");
             setIsImage(false);
             break;
+        case 'CMPen-Android':
+            setContentUrl("/PDF/Cert/WarisDamkham-CertifiedMobilePentester(CMPen-Android).pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
