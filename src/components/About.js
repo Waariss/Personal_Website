@@ -5,7 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
-        "/badges/CBBH.png",
+        "/badges/CBBH_2.png",
         "/badges/CMPen-Android-no-bg.png",
         "/badges/cert-stamp-capenx-expert.png",
         "/badges/CNPen.png",
