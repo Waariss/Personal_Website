@@ -110,6 +110,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedMobilePentester(CMPen-Android).pdf");
             setIsImage(false);
             break;
+        case 'CBBH':
+            setContentUrl("/PDF/Cert/HTB Certified Bug Bounty Hunter.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "HTB Certified Bug Bounty Hunter",
+        organization: "Hack The Box",
+        date: "Aug 2024",
+        link: "/pdf/CBBH",
+        imageUrl: "./images/CBBH.png"
+    },
+    {
         title: "Certified Mobile Pentester (CMPen-Android)",
         organization: "The SecOps Group",
         date: "Aug 2024",
