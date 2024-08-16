@@ -23,7 +23,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
-        "https://academy.hackthebox.com/achievement/badge/77c840db-5c09-11ef-864f-bea50ffe6cb4",
+        "https://www.credly.com/badges/36af3daf-dac7-4b20-a1da-96da19bb1822/public_url",
         "https://waris-damkham.netlify.app/pdf/CMPen-Android",
         "https://waris-damkham.netlify.app/pdf/CAPenX",
         "https://waris-damkham.netlify.app/pdf/CNPen",
