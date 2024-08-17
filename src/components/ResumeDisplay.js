@@ -61,7 +61,7 @@ const ResumeDisplay = () => {
                                         </Button>
                                     </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-email">Email</Tooltip>}>
-                                        <Button variant="link" href="mailto:waris.dam@student.mahidol.ac.th">
+                                        <Button variant="link" href="mailto:waris.dam@outlook.com">
                                             <Image src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="35" height="35" />
                                         </Button>
                                     </OverlayTrigger>
