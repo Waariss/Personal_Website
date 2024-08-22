@@ -112,7 +112,7 @@ const getSkills = () => [
         ]
     },
     {
-        name: 'Penetration Testing & Networking',
+        name: 'Penetration Testing & Vulnerability Assessment',
         skills: [
             { name: 'Metasploit', logo: 'https://atomrace.com/blog/wp-content/uploads/2017/10/metasploit-logo.png' },
             { name: 'Kali Linux', logo: 'https://upload.vectorlogo.zone/logos/kali/images/4f107199-98a3-43c2-9d1f-19af3082b59b.svg' },
@@ -131,7 +131,9 @@ const getSkills = () => [
             { name: 'GTFOBins', logo: "https://gtfobins.github.io/assets/logo.png"},
             { name: 'LinPEAS', logo: "https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/images/linpeas.png"},
             { name: 'MobSF', logo: "https://repository-images.githubusercontent.com/30102273/ec45ab80-b46b-11e9-9f7f-6db13d2e8507"},
-            { name: 'Android Debug Bridge', logo: "https://fossbytes.com/wp-content/uploads/2017/07/ADB.png"}
+            { name: 'Android Debug Bridge', logo: "https://fossbytes.com/wp-content/uploads/2017/07/ADB.png"},
+            { name: 'OpenVas', logo: "https://miro.medium.com/v2/resize:fit:954/1*ssgbiwYHOi9gIXt9pGCJYw.png"},
+            { name: 'NamicSoft', logo: "https://media.imgcdn.org/repo/2024/02/namicsoft-scan-report-assistant/65cb4ea8b27f1-namicsoft-scan-report-assistant-Icon.webp"},
         ]
     },    
     {
