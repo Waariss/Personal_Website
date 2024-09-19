@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "GitHub Foundations",
+        organization: "GitHub",
+        date: "Sep 2024",
+        link: "/pdf/GHF",
+        imageUrl: "./images/ghf.png"
+    },
+    {
         title: "HTB Certified Bug Bounty Hunter",
         organization: "Hack The Box",
         date: "Aug 2024",
