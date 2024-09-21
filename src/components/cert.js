@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "GitOps Fundamentals",
+        organization: "Codefresh",
+        date: "Sep 2024",
+        link: "/pdf/GOF",
+        imageUrl: "./images/gof.png"
+    },
+    {
         title: "GitHub Foundations",
         organization: "GitHub",
         date: "Sep 2024",

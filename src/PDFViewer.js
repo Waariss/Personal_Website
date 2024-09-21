@@ -118,6 +118,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/GitHubFoundations.pdf");
             setIsImage(false);
             break;
+        case 'GOF':
+            setContentUrl("/PDF/Cert/GitOpsFoundations.pdf");
+            setIsImage(false);
+            break;       
         default:
             setContentUrl('');
             setIsImage(false);
