@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Cyber Threat Intelligence 101",
+        organization: "arcX",
+        date: "Sep 2024",
+        link: "/pdf/GTI101",
+        imageUrl: "./images/Cyber_Threat_Intelligence_101.jpeg"
+    },
+    {
         title: "GitOps Fundamentals",
         organization: "Codefresh",
         date: "Sep 2024",

@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/CTI101.png",
         "/badges/GOF.png",
         "/badges/GHF.png",
         "/badges/postman.png",
@@ -26,6 +27,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
         "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
         "https://www.credly.com/badges/0a69a68f-97e3-4f7f-8069-9e101a895a11/public_url",
         "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
@@ -47,6 +49,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Cyber Threat Intelligence 101",
         "GitOps Fundamentals",
         "GitHub Foundations",
         "Postman API Fundamentals Student Expert",
