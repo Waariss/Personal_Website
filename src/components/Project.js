@@ -9,7 +9,7 @@ const projectData = [
         imgSrc: "./images/Docker.jpg",
         title: "🐔ChickenME🐣: Classification Of Chicken Diseases From Fecal Images Via Line Office Account",
         subtitle: "Aug 2023 - May 2024",
-        description: "ChickenME is an advanced diagnostic tool that leverages deep learning to improve disease detection in poultry farming. It uses YOLOv5 for object detection in fecal images, achieving a precision of 87.10%, and ResNet50 for classifying images into four health categories—healthy, Coccidiosis, Salmonella, and Newcastle Disease—with 84% accuracy. The system, trained on 10,500 images from the Zenodo database, is integrated into the LINE platform, making it accessible and user-friendly for poultry farmers to automate disease detection and reduce manual observation errors.",
+        description: "Developed a mobile-based tool to help local farmers identify common poultry diseases through fecal images. The system, integrated into a LINE official account for easy access, offers a user-friendly interface for preliminary diagnoses. Achieved 86.49% segmentation mean average precision and 95.93% classification accuracy using a large open database. The system effectively distinguishes between diseased and healthy images, providing a cost-effective alternative to traditional diagnostic methods.",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
