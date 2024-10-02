@@ -125,7 +125,11 @@ const PDFViewer = () => {
         case 'GTI101':
             setContentUrl("/PDF/Cert/Cyber_Threat_Intelligence_101.pdf");
             setIsImage(false);
-            break;    
+            break;  
+        case 'MCRTA':
+            setContentUrl("/PDF/Cert/MCRTA.pdf");
+            setIsImage(false);
+            break;  
         default:
             setContentUrl('');
             setIsImage(false);

@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Multi-Cloud Red Team Analyst",
+        organization: "CyberWarFare",
+        date: "Oct 2024",
+        link: "/pdf/MCRTA",
+        imageUrl: "./images/ MCRTA.png"
+    },
+    {
         title: "Cyber Threat Intelligence 101",
         organization: "arcX",
         date: "Sep 2024",
