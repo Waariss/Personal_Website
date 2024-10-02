@@ -9,7 +9,7 @@ const certificates = [
         organization: "CyberWarFare",
         date: "Oct 2024",
         link: "/pdf/MCRTA",
-        imageUrl: "./images/ MCRTA.png"
+        imageUrl: "./images/MCRTA.png"
     },
     {
         title: "Cyber Threat Intelligence 101",
