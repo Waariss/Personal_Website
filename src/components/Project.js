@@ -16,6 +16,7 @@ const projectData = [
             { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"},
             { url: 'https://waris-damkham.netlify.app/pdf/Def', "label": "Defense"},
             { url: "https://liff.line.me/1645278921-kWRPP32q/?accountId=239mhqhy", "label": "Live View Project" },
+            { url: "https://github.com/Waariss/Chicken_Me-LineOA.git", "label": "Github" },
         ]
     },
     {
