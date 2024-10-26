@@ -66,7 +66,7 @@ const getExperiences = () => [
         title: 'Penetration tester',
         company: 'ALPHASEC',
         type: 'Full-time',
-        duration: 'Jun 2024 - Present',
+        duration: 'Jun 2024 - Oct 2024 · 5 mos',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
         description: 'As a Penetration Tester, I conduct thorough penetration testing to assess the security of IT infrastructure, targeting vulnerabilities in operating systems, applications, configurations, and user behaviors. Using tools like Kali Linux and Burp Suite, I perform security and vulnerability assessments for software, mobile, and web applications. Adhering to OWASP guidelines, I provide actionable recommendations and detailed analysis to enhance overall security posture',
         skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Vulnerability Assessment', // Full skills list here
