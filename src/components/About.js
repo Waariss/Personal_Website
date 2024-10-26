@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/CRTA.png",
         "/badges/CRT-ID.png",
         "/badges/MCRTA.png",
         "/badges/CTI101.png",
@@ -29,6 +30,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://www.credential.net/bfcd9773-ad19-4fdc-b17a-b7dfde8bc57f",
         "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797",
         "https://labs.cyberwarfare.live/badge/image/66fcc85def7753022c5b197c",
         "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
@@ -53,6 +55,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Certified Red Team Analyst",
         "Certified Red Team Infra Developer [CRT-ID]",
         "Multi-Cloud Red Team Analyst",
         "Cyber Threat Intelligence 101",
