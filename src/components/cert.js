@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified AI/ML Pentester (C-AI/MLPen)",
+        organization: "The SecOps Group",
+        date: "Nov 2024",
+        link: "/pdf/MLPen",
+        imageUrl: "./images/WarisDamkham-CertifiedAI_MLPentester(C-AI_MLPen).png"
+    },
+    {
         title: "Multi-Cloud Red Team Analyst",
         organization: "CyberWarFare",
         date: "Oct 2024",
