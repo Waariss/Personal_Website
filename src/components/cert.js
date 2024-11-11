@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "HTB Mini Pro Lab FullHouse",
+        organization: "Hack The Box",
+        date: "Nov 2024",
+        link: "/pdf/FullHouse",
+        imageUrl: "./images/FullHouse.png"
+    },
+    {
         title: "Certified AI/ML Pentester (C-AI/MLPen)",
         organization: "The SecOps Group",
         date: "Nov 2024",

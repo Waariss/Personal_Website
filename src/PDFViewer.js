@@ -134,6 +134,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedAI_MLPentester(C-AI_MLPen).pdf");
             setIsImage(false);
             break;  
+        case 'FullHouse':
+            setContentUrl("/PDF/Cert/FullHouse.pdf");
+            setIsImage(false);
+            break;  
         default:
             setContentUrl('');
             setIsImage(false);
