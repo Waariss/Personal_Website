@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Mobile Pentester (CMPen-IOS)",
+        organization: "The SecOps Group",
+        date: "Nov 2024",
+        link: "/pdf/CMPen-IOS",
+        imageUrl: "./images/CMPen-IOS.png"
+    },
+    {
         title: "HTB Mini Pro Lab FullHouse",
         organization: "Hack The Box",
         date: "Nov 2024",
