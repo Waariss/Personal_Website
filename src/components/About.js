@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/cert-stamp-ccpenX-AWS.png",
         "/badges/CMPen-IOS-no-bg.png",
         "/badges/MLPen.png",
         "/badges/CRTA.png",
@@ -21,7 +22,7 @@ const About = () => {
         "/badges/GOF.png",
         "/badges/CTI101.png",
         "/badges/english-for-it-2.png",
-        "/badges/english-for-it-1.png",
+        //"/badges/english-for-it-1.png",
         "/badges/google-it-support-certificate-2023.png",
         "/badges/meta-full-stack-engineer-certificate.png",
         "/badges/meta-front-end-developer-certificate.png",
@@ -32,6 +33,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://waris-damkham.netlify.app/pdf/CCPenX-AWS",
         "https://waris-damkham.netlify.app/pdf/CMPen-IOS",
         "https://waris-damkham.netlify.app/pdf/MLPen",
         "https://www.credential.net/bfcd9773-ad19-4fdc-b17a-b7dfde8bc57f",
@@ -48,7 +50,7 @@ const About = () => {
         "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
         "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
         "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
-        "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
+        //"https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
         "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
         "https://www.credly.com/badges/2bdbfa21-2c1e-48e9-926d-5b7a442de6df/public_url",
         "https://www.credly.com/badges/759dbd4b-35d7-4147-b8c9-8e09bebd4753/public_url",
@@ -59,6 +61,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)",
         "Certified Mobile Pentester (CMPen-IOS)",
         "Certified AI/ML Pentester (C-AI/MLPen)",
         "Certified Red Team Analyst",
@@ -75,7 +78,7 @@ const About = () => {
         "GitOps Fundamentals",
         "Cyber Threat Intelligence 101",
         "English for IT 2",
-        "English for IT 1",
+        // "English for IT 1",
         "Google IT Support Certificate",
         "Meta Full-Stack Engineer Certificate",
         "Meta Front-End Developer Certificate",

@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)",
+        organization: "The SecOps Group",
+        date: "Nov 2024",
+        link: "/pdf/CCPenX-AWS",
+        imageUrl: "./images/WarisDamkham-CertifiedCloudPentestingeXpert-AWS(CCPenX-AWS).png"
+    },
+    {
         title: "Certified Mobile Pentester (CMPen-IOS)",
         organization: "The SecOps Group",
         date: "Nov 2024",
