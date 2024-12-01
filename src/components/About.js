@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
         "/badges/cert-stamp-ccpenX-AWS.png",
         "/badges/CMPen-IOS-no-bg.png",
         "/badges/MLPen.png",
@@ -21,7 +22,7 @@ const About = () => {
         "/badges/postman.png",
         "/badges/GOF.png",
         "/badges/CTI101.png",
-        "/badges/english-for-it-2.png",
+        // "/badges/english-for-it-2.png",
         //"/badges/english-for-it-1.png",
         "/badges/google-it-support-certificate-2023.png",
         "/badges/meta-full-stack-engineer-certificate.png",
@@ -33,6 +34,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
         "https://waris-damkham.netlify.app/pdf/CCPenX-AWS",
         "https://waris-damkham.netlify.app/pdf/CMPen-IOS",
         "https://waris-damkham.netlify.app/pdf/MLPen",
@@ -49,7 +51,7 @@ const About = () => {
         "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
         "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
         "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
-        "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
+        // "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
         //"https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
         "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
         "https://www.credly.com/badges/2bdbfa21-2c1e-48e9-926d-5b7a442de6df/public_url",
@@ -61,11 +63,12 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Practical Mobile Pentest Associate",
         "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)",
         "Certified Mobile Pentester (CMPen-IOS)",
         "Certified AI/ML Pentester (C-AI/MLPen)",
         "Certified Red Team Analyst",
-        "Certified Red Team Infra Developer [CRT-ID]",
+        "Certified Red Team Infra Developer",
         "Multi-Cloud Red Team Analyst",
         "GitHub Foundations",
         "HTB Certified Bug Bounty Hunter",
@@ -77,7 +80,7 @@ const About = () => {
         "Postman API Fundamentals Student Expert",
         "GitOps Fundamentals",
         "Cyber Threat Intelligence 101",
-        "English for IT 2",
+        // "English for IT 2",
         // "English for IT 1",
         "Google IT Support Certificate",
         "Meta Full-Stack Engineer Certificate",

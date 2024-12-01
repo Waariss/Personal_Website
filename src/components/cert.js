@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Practical Mobile Pentest Associate",
+        organization: "TCM Security",
+        date: "Nov 2024",
+        link: "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/124520643"
+    },
+    {
         title: "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)",
         organization: "The SecOps Group",
         date: "Nov 2024",
