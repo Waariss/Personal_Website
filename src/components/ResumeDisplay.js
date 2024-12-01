@@ -80,6 +80,11 @@ const ResumeDisplay = () => {
                                             <Image src="https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png" alt="HackTheBox" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Credential.Net</Tooltip>}>
+                                        <Button variant="link" href="https://www.credential.net/profile/waarism/wallet#gs.ibia2y" target="_blank">
+                                            <Image src="https://static.otta.com/uploads/images/company-favicons/3150-rwF6APJuwGu69IaKYJr_KQEdI3OnfZ3vlKo0bdD9vKQ.png" alt="Credential.Net" width="37.5" height="37.5"/>
+                                        </Button>
+                                    </OverlayTrigger>
                                 </div>
                             </div>
                         </div>
