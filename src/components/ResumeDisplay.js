@@ -85,6 +85,11 @@ const ResumeDisplay = () => {
                                             <Image src="https://static.otta.com/uploads/images/company-favicons/3150-rwF6APJuwGu69IaKYJr_KQEdI3OnfZ3vlKo0bdD9vKQ.png" alt="Credential.Net" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
+                                    <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Medium</Tooltip>}>
+                                        <Button variant="link" href="https://medium.com/@waaris_m" target="_blank">
+                                            <Image src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png" alt="Medium" width="37.5" height="37.5"/>
+                                        </Button>
+                                    </OverlayTrigger>
                                 </div>
                             </div>
                         </div>

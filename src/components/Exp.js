@@ -61,6 +61,23 @@ const getIconForLinkType = (type) => {
 
 const getExperiences = () => [
     {
+        companyLogo: 'https://cdnali.zipeventapp.com/images/organization/F6B3C9E9-98D4-42CC-AA12-74838182141F/AD84BE4C-F650-4F8E-9871-B7F53F33A875.jpg',
+        internshipImages: './images/KBTG_O.JPG',
+        title: 'Offensive Security Engineer',
+        company: 'Kasikorn Business Technology Group',
+        type: 'Full-time',
+        duration: 'Nov 2024 - Present',
+        location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
+        description: 'TBA',
+        skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Vulnerability Assessment', // Full skills list here
+        links: [
+            // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
+            // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
+            // { href: '/pdf/EZ', type: 'lab', label: 'Ez_Shop Lab' },
+            // { href: 'https://wariss-writeup.gitbook.io/writeup/', type: 'paper', label: 'Writeup Collection' }
+        ]
+    },
+    {
         companyLogo: './images/aplha.png',
         internshipImages: './images/apBG.png',
         title: 'Penetration tester',

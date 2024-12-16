@@ -46,6 +46,17 @@ const Blog = () => {
 
 const getBlog = () => [
     {
+        companyLogo: 'https://logos-world.net/wp-content/uploads/2023/07/Medium-Logo.png',
+        internshipImages: './images/blog_.png',
+        title: 'My Exam Review',
+        company: 'Medium',
+        duration: 'Oct 2024',
+        description: 'My Exams Review on Medium',
+        links: [
+            { href: 'https://medium.com/@waaris_m', label: 'Read More' },
+        ]
+    },
+    {
         companyLogo: './images/cat.jpg',
         internshipImages: './images/writeup.png',
         title: 'Cybersecurity journey Writeup',
