@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Red Team Professional",
+        organization: "Altered Security",
+        date: "Dec 2024 - Dec 2027",
+        link: "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/126901190"
+    },
+    {
         title: "Practical Mobile Pentest Associate",
         organization: "TCM Security",
         date: "Nov 2024",
