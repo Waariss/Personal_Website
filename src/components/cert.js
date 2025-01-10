@@ -47,8 +47,22 @@ const certificates = [
         imageUrl: "./images/WarisDamkham-CertifiedAI_MLPentester(C-AI_MLPen).png"
     },
     {
+        title: "Certified Red Team Analyst (CRTA)",
+        organization: "CyberWarFare Labs",
+        date: "Oct 2024",
+        link: "https://www.credential.net/bfcd9773-ad19-4fdc-b17a-b7dfde8bc57f#acc.bQxEFSPA",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/119878553"
+    },
+    {
+        title: "Certified AI/ML Pentester (C-AI/MLPen)",
+        organization: "CyberWarFare Labs",
+        date: "Oct 2024",
+        link: "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797#acc.Lx94XEdW",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/118877996"
+    },
+    {
         title: "Multi-Cloud Red Team Analyst",
-        organization: "CyberWarFare",
+        organization: "CyberWarFare Labs",
         date: "Oct 2024",
         link: "/pdf/MCRTA",
         imageUrl: "./images/MCRTA.png"
