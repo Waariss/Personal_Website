@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/cert-stamp-c-apipen-pro.png",
         "/badges/crtpimg.png",
         "/badges/burp-suite-certified-color-large.png",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
@@ -36,6 +37,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://waris-damkham.netlify.app/pdf/C-APIPen",
         "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
         "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
         "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
@@ -67,6 +69,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Certified API Pentester (C-APIPen)",
         "Certified Red Team Professional",
         "Burp Suite Certified Practitioner",
         "Practical Mobile Pentest Associate",

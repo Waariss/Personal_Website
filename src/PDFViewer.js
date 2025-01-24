@@ -146,6 +146,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedCloudPentestingeXpert-AWS(CCPenX-AWS).pdf");
             setIsImage(false);
             break;
+        case 'C-APIPen':
+            setContentUrl("/PDF/Cert/WarisDamkham-CertifiedAPIPentester(C-APIPen).pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

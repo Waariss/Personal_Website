@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified API Pentester (C-APIPen)",
+        organization: "The SecOps Group",
+        date: "Jan 2025",
+        link: "pdf/C-APIPen",
+        imageUrl: "./images/WarisDamkham-CertifiedAPIPentester(C-APIPen).png"
+    },
+    {
         title: "Certified Red Team Professional",
         organization: "Altered Security",
         date: "Dec 2024 - Dec 2027",
