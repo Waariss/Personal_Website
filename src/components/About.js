@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
         "/badges/cert-stamp-c-apipen-pro.png",
         "/badges/crtpimg.png",
         "/badges/burp-suite-certified-color-large.png",
@@ -22,7 +23,7 @@ const About = () => {
         "/badges/CNPen.png",
         "/badges/CAPen.png",
         "/badges/CAP.png",
-        "/badges/postman.png",
+        // "/badges/postman.png",
         "/badges/GOF.png",
         // "/badges/CTI101.png",
         // "/badges/english-for-it-2.png",
@@ -37,6 +38,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://www.credly.com/badges/ddd8940f-ad73-4221-9f5d-bdaf51ed1e2a/public_url",
         "https://waris-damkham.netlify.app/pdf/C-APIPen",
         "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
         "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
@@ -54,7 +56,7 @@ const About = () => {
         "https://waris-damkham.netlify.app/pdf/CNPen",
         "https://waris-damkham.netlify.app/pdf/CAPen",
         "https://waris-damkham.netlify.app/pdf/CAP",
-        "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
+        // "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
         "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
         // "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
         // "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
@@ -69,6 +71,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Hack The Box Certified Penetration Testing Specialist",
         "Certified API Pentester (C-APIPen)",
         "Certified Red Team Professional",
         "Burp Suite Certified Practitioner",
@@ -80,13 +83,13 @@ const About = () => {
         "Certified Red Team Infra Developer",
         "Multi-Cloud Red Team Analyst",
         "GitHub Foundations",
-        "HTB Certified Bug Bounty Hunter",
+        "Hack The Box Certified Bug Bounty Hunter",
         "Certified Mobile Pentester (CMPen-Android)",
         "Certified AppSec Pentesting eXpert (CAPenX)",
         "Certified Network Pentester (CNPen)",
         "Certified AppSec Pentester (CAPen)",
         "Certified AppSec Practitioner (CAP)",
-        "Postman API Fundamentals Student Expert",
+        // "Postman API Fundamentals Student Expert",
         "GitOps Fundamentals",
         // "Cyber Threat Intelligence 101",
         // "English for IT 2",

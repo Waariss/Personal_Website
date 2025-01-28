@@ -150,6 +150,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/WarisDamkham-CertifiedAPIPentester(C-APIPen).pdf");
             setIsImage(false);
             break;
+        case 'CPTS':
+            setContentUrl("/PDF/Cert/HTB Certified Penetration Testing Specialist.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);
