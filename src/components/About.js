@@ -121,7 +121,11 @@ const About = () => {
                     <Col xs={12} md={8}>
                         <Card.Title><h2 className='title'>About Me</h2></Card.Title>
                         <Card.Text>
-                            I am a graduated <strong className="strong-highlight">Software Engineering</strong> 🖥️ student from the Faculty of Information and Communication Technology(ICT) at Mahidol University. My academic pursuits are driven by a strong passion for <strong className="strong-highlight">Linux</strong> 🐧, <strong className="strong-highlight">Cybersecurity</strong> 🔒, <strong className="strong-highlight">Artificial Intelligence</strong> 🤖, and <strong className="strong-highlight">DevOps</strong> ⚙️. I have spearheaded significant projects, including an investigation into OAuth 2.0 vulnerabilities and the development of an AI-based framework to combat COVID-19, both of which have been presented at conferences and featured in publications. Additionally, I completed a Penetration Tester internship at KPMG Thailand 🇹🇭, which has significantly enhanced my practical cybersecurity skills. Eager to apply my diverse ICT skills in a dynamic professional setting, I am actively seeking full-time opportunities where I can continue to grow, gain valuable industry insights, and contribute innovatively to a collaborative work environment.
+                            I am an <strong className="strong-highlight">Offensive Security Engineer</strong>, <strong className="strong-highlight">Penetration Tester</strong>, and <strong className="strong-highlight">AI Security Researcher</strong> with a strong passion for <strong className="strong-highlight">Linux</strong> 🐧, <strong className="strong-highlight">Cybersecurity</strong> 🔒, <strong className="strong-highlight">AI</strong> 🤖, and <strong className="strong-highlight">DevOps</strong> ⚙️. My expertise spans <strong className="strong-highlight">Offensive Security</strong>, <strong className="strong-highlight">AI-driven threat research</strong>, <strong className="strong-highlight">Web security</strong>, and <strong className="strong-highlight">Mobile security</strong>, with hands-on experience in penetration testing and security assessments.  
+
+                            I have led significant research projects, including the development of an Automated COVID-19 Screening Framework Using Deep CNN With Chest X-Ray Medical Images, research on Detecting Vulnerable OAuth 2.0 Implementations in Android Applications, and the creation of Practical Mobile-Based Services for Identification of Chicken Diseases From Fecal Images. These projects have been presented at conferences and featured in publications.
+
+                            I am actively seeking full-time opportunities where I can continue to grow, gain valuable industry insights, and contribute innovatively to a collaborative security research environment.
                         </Card.Text>
                         <div className="d-flex mt-3 icon-section">
                             <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
@@ -176,7 +180,7 @@ const About = () => {
                             </OverlayTrigger>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Medium</Tooltip>}>
                                 <Button variant="link" href="https://medium.com/@waaris_m" target="_blank">
-                                    <Image src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png" alt="Medium" width="37.5" height="37.5"/>
+                                    <Image src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-1024.png" alt="Medium" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
                         </div>

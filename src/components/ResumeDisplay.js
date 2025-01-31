@@ -87,7 +87,7 @@ const ResumeDisplay = () => {
                                     </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Medium</Tooltip>}>
                                         <Button variant="link" href="https://medium.com/@waaris_m" target="_blank">
-                                            <Image src="https://cdn.icon-icons.com/icons2/3041/PNG/512/medium_logo_icon_189223.png" alt="Medium" width="37.5" height="37.5"/>
+                                            <Image src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-1024.png" alt="Medium" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
                                 </div>
