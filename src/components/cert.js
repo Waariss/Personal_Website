@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Practical Network Penetration Tester",
+        organization: "TCM Security",
+        date: "Feb 2025",
+        link: "https://certified.tcm-sec.com/57766f22-43d0-4c28-873d-b7e9c02bb039#acc.Hd5EIsLo",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/134181811"
+    },
+    {
         title: "HTB Certified Penetration Testing Specialist",
         organization: "Hack The Box",
         date: "Jan 2025",
