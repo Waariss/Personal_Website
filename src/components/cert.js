@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Web Application Penetration Tester eXtreme",
+        organization: "INE Security",
+        date: "Mar 2025",
+        link: "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/135650894"
+    },
+    {
         title: "Practical Network Penetration Tester",
         organization: "TCM Security",
         date: "Feb 2025",

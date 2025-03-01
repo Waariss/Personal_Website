@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/135650894",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
         "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
@@ -24,9 +25,9 @@ const About = () => {
         "/badges/CRTA.png",
         "/badges/CRT-ID.png",
         "/badges/MCRTA.png",
-        // "/badges/postman.png",
-        // "/badges/GOF.png",
-        // "/badges/CTI101.png",
+        "/badges/postman.png",
+        "/badges/GOF.png",
+        "/badges/CTI101.png",
         // "/badges/english-for-it-2.png",
         //"/badges/english-for-it-1.png",
         "/badges/google-it-support-certificate-2023.png",
@@ -39,6 +40,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
         "https://certified.tcm-sec.com/57766f22-43d0-4c28-873d-b7e9c02bb039#acc.Hd5EIsLo",
         "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
         "https://www.credly.com/badges/ddd8940f-ad73-4221-9f5d-bdaf51ed1e2a/public_url",
@@ -58,13 +60,13 @@ const About = () => {
         "https://www.credential.net/bfcd9773-ad19-4fdc-b17a-b7dfde8bc57f",
         "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797",
         "https://labs.cyberwarfare.live/badge/image/66fcc85def7753022c5b197c",
-        // "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
-        // "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
-        // "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
-        // "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
-        //"https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
-        "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
-        "https://www.credly.com/badges/2bdbfa21-2c1e-48e9-926d-5b7a442de6df/public_url",
+        "https://api.badgr.io/public/assertions/sL8IL9nPS2qshJh-4wC9Yg",
+        "https://www.credly.com/badges/430663a6-c10c-4b34-a560-99ea63438526/public_url",
+        "https://arcx.io/verify-certificate?id=d18c61a1898aab1484fa4cf22b63dffaf977bb35&k=020c2c031517435fb4b46e1e4052c4d7",
+        "https://www.credly.com/badges/7b17681b-e48b-4be2-8d57-dc11eefff877/public_url",
+        "https://www.credly.com/badges/efa300dd-1b22-4f53-ba81-fd2fa458e7fb/public_url",
+        // "https://www.credly.com/badges/e1d3c2d6-9607-4134-9377-ba4a0698ac8e/public_url",
+        // "https://www.credly.com/badges/2bdbfa21-2c1e-48e9-926d-5b7a442de6df/public_url",
         // "https://www.credly.com/badges/759dbd4b-35d7-4147-b8c9-8e09bebd4753/public_url",
         // "https://www.credly.com/badges/122bf15c-e992-4017-883b-edb152f11dc0/public_url",
         "https://www.credly.com/badges/530e5cac-2274-4de1-b565-786cfcda9e6c/public_url",
@@ -73,6 +75,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "Web Application Penetration Tester eXtreme",
         "Practical Network Penetration Tester",
         "Practical Mobile Pentest Associate",
         "Hack The Box Certified Penetration Testing Specialist",
@@ -92,9 +95,9 @@ const About = () => {
         "Certified Red Team Analyst",
         "Certified Red Team Infra Developer",
         "Multi-Cloud Red Team Analyst",
-        // "Postman API Fundamentals Student Expert",
-        // "GitOps Fundamentals",
-        // "Cyber Threat Intelligence 101",
+        "Postman API Fundamentals Student Expert",
+        "GitOps Fundamentals",
+        "Cyber Threat Intelligence 101",
         // "English for IT 2",
         // "English for IT 1",
         "Google IT Support Certificate",
