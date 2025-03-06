@@ -68,7 +68,7 @@ const getExperiences = () => [
         type: 'Full-time',
         duration: 'Nov 2024 - Present',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'TBA',
+        description: '- TBA',
         skills: 'Penetration test · Kali linux · Burp Suite · AI Security · Reporting · Power Automate', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
@@ -80,12 +80,12 @@ const getExperiences = () => [
     {
         companyLogo: './images/aplha.png',
         internshipImages: './images/apBG.png',
-        title: 'Penetration tester',
+        title: 'Security Consultant (Penetration tester)',
         company: 'ALPHASEC',
         type: 'Full-time',
         duration: 'Jun 2024 - Oct 2024 · 5 mos',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'As a Penetration Tester, I conduct thorough penetration testing to assess the security of IT infrastructure, targeting vulnerabilities in operating systems, applications, configurations, and user behaviors. Using tools like Kali Linux and Burp Suite, I perform security and vulnerability assessments for software, mobile, and web applications. Adhering to OWASP guidelines, I provide actionable recommendations and detailed analysis to enhance overall security posture',
+        description: 'As a Penetration Tester, I conduct in-depth security assessments of IT infrastructure, identifying vulnerabilities in operating systems, applications, configurations, and user behaviors. I specialize in security and vulnerability assessments for software, mobile, and web applications, adhering to OWASP guidelines. I provide actionable recommendations and detailed analysis to strengthen overall security posture. To date, I have successfully worked on 16 projects.',
         skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Vulnerability Assessment', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
@@ -97,12 +97,12 @@ const getExperiences = () => [
     {
         companyLogo: './images/eta-2023-logo-kpmg.webp',
         internshipImages: './images/Group.jpg',
-        title: 'Penetration tester',
+        title: 'Cybersecurity Consultant (Penetration tester)',
         company: 'KPMG · Advisory · Tech-Cyber',
         type: 'Internship',
         duration: 'Jan 2024 - Apr 2024 · 4 mos',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'As a Penetration Tester intern at KPMG, I focus on learning and assisting in conducting security assessments for software, mobile, and web applications. My role involves using tools in Kali Linux and Burp Suite to identify vulnerabilities and simulate cyber attacks. I apply the OWASP methodology for comprehensive testing and adhere to cybersecurity best practices. Additionally, I am involved in developing a secure website for KPMG. Part of my job also includes performing Vulnerability Assessments with Nessus, focusing on KPMG’s internal network. This role has improved my technical cybersecurity expertise and my ability to communicate complex security issues effectively. I am committed to continually updating my knowledge in this fast-evolving field.',
+        description: 'As a Penetration Tester intern at KPMG, I assisted in conducting security assessments for software, mobile, and web applications, utilizing Kali Linux, Burp Suite, and OWASP best practices to identify vulnerabilities and simulate cyber attacks. I contributed to developing a secure website for KPMG and performed vulnerability assessments using Nessus, focusing on KPMG’s internal network. During my time at KPMG, I successfully completed two penetration testing projects and one vulnerability assessment project, strengthening my technical expertise and ability to communicate complex security findings effectively. I remain committed to expanding my knowledge in this fast-evolving field.',
         skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Cybersecurity · Vulnerability Assessment', // Full skills list here
         links: [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },

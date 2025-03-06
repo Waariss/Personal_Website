@@ -12,6 +12,7 @@ const projectData = [
         description: "Developed a mobile-based tool to help local farmers identify common poultry diseases through fecal images. The system, integrated into a LINE official account for easy access, offers a user-friendly interface for preliminary diagnoses. Achieved 86.49% segmentation mean average precision and 95.93% classification accuracy using a large open database. The system effectively distinguishes between diseased and healthy images, providing a cost-effective alternative to traditional diagnostic methods.",
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
+            { url: 'https://ieeexplore.ieee.org/document/10902790', "label": "Conference Paper" },
             { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
             { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"},
             { url: 'https://waris-damkham.netlify.app/pdf/Def', "label": "Defense"},

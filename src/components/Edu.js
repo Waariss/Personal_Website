@@ -130,7 +130,7 @@ const Education = () => {
         activities: [
             {
                 link: "https://tryhackme.com/p/waris.dam",
-                name: "waris.dam [0xA][HARRY]",
+                name: "waris.dam [0xA][WIZARD]",
                 detail: "TryHackMe Profile"
             },
         ]
@@ -141,7 +141,7 @@ const Education = () => {
         subtitle: [
             "Mahidol University, Thailand 🇹🇭",
             "International Program",
-            "Aug 2020 - May 2024"
+            "2020 - 2024"
         ],
         logo: {
             src: "./images/Mahidol_U.png",
@@ -183,7 +183,7 @@ const Education = () => {
 
     const bccData = {
         title: "Bangkok Christian College",
-        subtitle: ["Smart Computer · GPAX 3.48", "May 2008 - Feb 2020"],
+        subtitle: ["Smart Computer · GPAX 3.48", "2008 - 2020"],
         logo: {
             src: "./images/bcc.png",
             alt: "Bangkok Christian College Logo",
