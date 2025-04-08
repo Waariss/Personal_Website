@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "APIsec Certified Practitioner",
+        organization: "APIsec University",
+        date: "Apr 2025",
+        link: "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url",
+        imageUrl: "./images/ACPExam20250408-27-rvo5fm.png"
+    },
+    {
         title: "Web Application Penetration Tester eXtreme",
         organization: "INE Security",
         date: "Mar 2025",

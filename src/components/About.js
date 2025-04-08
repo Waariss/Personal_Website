@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "/badges/apisec-certified-practitioner.png",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/135650894",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
@@ -40,6 +41,7 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url",
         "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
         "https://certified.tcm-sec.com/57766f22-43d0-4c28-873d-b7e9c02bb039#acc.Hd5EIsLo",
         "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
@@ -75,6 +77,7 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "APIsec Certified Practitioner",
         "Web Application Penetration Tester eXtreme",
         "Practical Network Penetration Tester",
         "Practical Mobile Pentest Associate",
