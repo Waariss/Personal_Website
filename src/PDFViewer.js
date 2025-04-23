@@ -154,6 +154,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/HTB Certified Penetration Testing Specialist.pdf");
             setIsImage(false);
             break;
+        case 'HCCDA-Tech':
+            setContentUrl("/images/HWENDCTEDA511122.png");
+            setIsImage(true);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "HCCDA-Tech Essentials",
+        organization: "Huawei Cloud",
+        date: "Apr 2025 - Apr 2028",
+        link: "/pdf/HCCDA-Tech",
+        imageUrl: "./images/HWENDCTEDA511122.png"
+    },
+    {
         title: "APIsec Certified Practitioner",
         organization: "APIsec University",
         date: "Apr 2025",
