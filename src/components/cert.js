@@ -21,7 +21,7 @@ const certificates = [
     {
         title: "Web Application Penetration Tester eXtreme",
         organization: "INE Security",
-        date: "Mar 2025",
+        date: "Mar 2025 - Mar 2028",
         link: "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
         imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/135650894"
     },
@@ -52,6 +52,13 @@ const certificates = [
         date: "Dec 2024 - Dec 2027",
         link: "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
         imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/126901190"
+    },
+    {
+        title: "Burp Suite Certified Practitioner",
+        organization: "PortSwigger",
+        date: "Dec 2024 - Dec 2030",
+        link: "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
+        imageUrl: "./images/SCR-20250426-kvjf.png"
     },
     {
         title: "Practical Mobile Pentest Associate",
@@ -96,7 +103,7 @@ const certificates = [
         imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/119878553"
     },
     {
-        title: "Certified AI/ML Pentester (C-AI/MLPen)",
+        title: "Red Team Infra Dev (CRT-ID)",
         organization: "CyberWarFare Labs",
         date: "Oct 2024",
         link: "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797#acc.Lx94XEdW",

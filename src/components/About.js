@@ -5,14 +5,14 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
-        "/badges/apisec-certified-practitioner.png",
-        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/135650894",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
+        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/135650894",
+        "/badges/crtpimg.png",
         "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
         "/badges/CBBH_2.png",
         "/badges/burp-suite-certified-color-large.png",
-        "/badges/crtpimg.png",
+        "/badges/apisec-certified-practitioner.png",
         "/badges/GHF.png",
         "/badges/cert-stamp-c-apipen-pro.png",
         "/badges/cert-stamp-ccpenX-AWS.png",
@@ -41,14 +41,14 @@ const About = () => {
     ];
 
     const badgeLinks = [
-        "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url",
-        "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
         "https://certified.tcm-sec.com/57766f22-43d0-4c28-873d-b7e9c02bb039#acc.Hd5EIsLo",
         "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
+        "https://certs.ine.com/d9490b0e-88d0-4483-a7cc-aefc22ac8de6#acc.BFI2SUWM",
+        "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
         "https://www.credly.com/badges/ddd8940f-ad73-4221-9f5d-bdaf51ed1e2a/public_url",
         "https://www.credly.com/badges/36af3daf-dac7-4b20-a1da-96da19bb1822/public_url",
         "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
-        "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
+        "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url",
         "https://www.credly.com/badges/0a69a68f-97e3-4f7f-8069-9e101a895a11/public_url",
         "https://waris-damkham.netlify.app/pdf/C-APIPen",
         "https://waris-damkham.netlify.app/pdf/CCPenX-AWS",
@@ -77,14 +77,14 @@ const About = () => {
     ];
 
     const badgeAlts = [
-        "APIsec Certified Practitioner",
-        "Web Application Penetration Tester eXtreme",
         "Practical Network Penetration Tester",
         "Practical Mobile Pentest Associate",
+        "Web Application Penetration Tester eXtreme",
+        "Certified Red Team Professional",
         "Hack The Box Certified Penetration Testing Specialist",
         "Hack The Box Certified Bug Bounty Hunter",
         "Burp Suite Certified Practitioner",
-        "Certified Red Team Professional",
+        "APIsec Certified Practitioner",
         "GitHub Foundations",
         "Certified API Pentester (C-APIPen)",
         "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)",
