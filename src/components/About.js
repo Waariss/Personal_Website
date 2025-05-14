@@ -5,6 +5,7 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/135650894",
@@ -12,6 +13,7 @@ const About = () => {
         "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
         "/badges/CBBH_2.png",
         "/badges/burp-suite-certified-color-large.png",
+        "https://images.credly.com/size/680x680/images/304d90d7-289f-4f09-81d6-b2fe9954bcc9/image.png",
         "/badges/apisec-certified-practitioner.png",
         "/badges/GHF.png",
         "/badges/cert-stamp-c-apipen-pro.png",
@@ -48,6 +50,7 @@ const About = () => {
         "https://www.credly.com/badges/ddd8940f-ad73-4221-9f5d-bdaf51ed1e2a/public_url",
         "https://www.credly.com/badges/36af3daf-dac7-4b20-a1da-96da19bb1822/public_url",
         "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
+        "https://www.credly.com/badges/1d423a7e-0997-43b2-9d9e-8e9cae169452/public_url",
         "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url",
         "https://www.credly.com/badges/0a69a68f-97e3-4f7f-8069-9e101a895a11/public_url",
         "https://waris-damkham.netlify.app/pdf/C-APIPen",
@@ -84,6 +87,7 @@ const About = () => {
         "Hack The Box Certified Penetration Testing Specialist",
         "Hack The Box Certified Bug Bounty Hunter",
         "Burp Suite Certified Practitioner",
+        "API Security Certified Professional",
         "APIsec Certified Practitioner",
         "GitHub Foundations",
         "Certified API Pentester (C-APIPen)",
