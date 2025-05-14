@@ -43,7 +43,7 @@ const Publication = ({links }) => {
 const getPublications = () => [
     {
         title: 'Practical Mobile Based Services for Identification of Chicken Diseases From Fecal Images',
-        subtitle: 'Accepted at IEEE Region 10 Conference 2024 (TENCON 2024)',
+        subtitle: 'Presented at IEEE Region 10 Conference 2024 (TENCON 2024)',
         description: 'Poultry farming is crucial to the food chain, and chicken health directly impacts product quality and safety. Diagnosing poultry diseases using polymerase chain reaction is costly, particularly for small farms. To address this, we developed a mobile-based service for farmers, enabling the identification of common chicken diseases from fecal images via a Line account. Our system achieved 86.49% segmentation precision and 95.93% classification accuracy on a large dataset, offering a practical and accessible tool for local farmers.', // Truncated for brevity
         date: 'IEEE · Mar 5, 2024',
         link: 'https://ieeexplore.ieee.org/document/10902790'
