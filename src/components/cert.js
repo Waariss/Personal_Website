@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Basic Web App Sec",
+        organization: "SEC Playground",
+        date: "June 2025",
+        link: "https://www.credly.com/badges/e7800d53-ea5c-4a52-9c46-86ebbe24438a/public_url",
+        imageUrl: "./images/I9X4UO8PQ5SS7.png"
+    },
+    {
         title: "API Security Certified Professional",
         organization: "APIsec University",
         date: "May 2025",
