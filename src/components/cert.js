@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Cloud Digital Leader Certification",
+        organization: "Google Cloud",
+        date: "June 2025 - June 2028",
+        link: "https://www.credly.com/badges/f5642804-65a0-44a0-bffb-cca96bf3c267/public_url",
+        imageUrl: "./images/CDL_Waris.png"
+    },
+    {
         title: "Basic Web App Sec",
         organization: "SEC Playground",
         date: "June 2025",
