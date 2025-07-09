@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "SOC Tier 1 Badge",
+        organization: "SEC Playground",
+        date: "July 2025",
+        link: "https://www.credly.com/badges/4cddf94e-bbdb-4ce7-896e-8ae6e646f7de/public_url",
+        imageUrl: "./images/SOC1.png"
+    },
+    {
         title: "Basic SOC Badge",
         organization: "SEC Playground",
         date: "July 2025",
