@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "SECURITY ANALYST COURSE",
+        organization: "SEC Playground",
+        date: "July 2025",
+        link: "https://www.credly.com/badges/1915f339-1599-47b9-95d4-7869bedc58ad/public_url",
+        imageUrl: "./images/Security_Analyst_Course.png"
+    },
+    {
         title: "SOC Tier 1 Badge",
         organization: "SEC Playground",
         date: "July 2025",
