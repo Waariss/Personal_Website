@@ -94,7 +94,7 @@ const Education = () => {
         title: "Self-Learning on HackTheBox",
         subtitle: ["Online Platform for Cybersecurity Training"],
         logo: {
-            src: "https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png",
+            src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzxlNL92ntRTBI1IUwhxyAj7Ybk1mkW5AA&s",
             alt: "HackTheBox Logo",
             width: 150,
             height: 150

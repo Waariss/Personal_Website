@@ -17,11 +17,16 @@ const Experience = () => {
                             <Col xs={10}>
                                 <div className="details-container">
                                     <img src={experience.internshipImages} alt="Internship Experience" className="internship-image float-right ml-3" />
-                                    <Card.Title className="mb-3 experience-title">{experience.title}</Card.Title>
+                                    <Card.Title className="mb-3 experience-title"><strong>{experience.title}</strong></Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.company} · {experience.type}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>
                                     <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
-                                    <Card.Text className="mb-3">{experience.description}</Card.Text>
+                                    <Card.Text className="mb-1"><strong>Key Responsibilities:</strong></Card.Text>
+                                        <ul className="mb-2 ps-3">
+                                        {experience.description.map((item, idx) => (
+                                            <li key={idx} className="mb-2">{item}</li>
+                                        ))}
+                                        </ul>
                                     <Card.Text className="mb-3">
                                         <strong>Skills:</strong> <span className="skills">{experience.skills}</span>
                                     </Card.Text>
@@ -68,8 +73,19 @@ const getExperiences = () => [
         type: 'Full-time',
         duration: 'Nov 2024 - Present',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: '- TBA',
-        skills: 'Penetration test · Kali linux · Burp Suite · AI Security · Reporting · Power Automate', // Full skills list here
+        description: [
+            'Performed penetration testing across Web, Mobile, API, and Network environments for over 80 projects annually, covering KBTG and its subsidiaries.',
+            'Acted as project owner for 3 major security assessment projects in 2025, leading end-to-end execution and reporting.',
+            'Participated in Red Team operations (Red Team Campaign), supporting advanced threat simulation and detection exercises.',
+            'Created comprehensive summary reports of security findings in both Thai and English, ensuring clear communication with stakeholders',
+            'Led the development of an automated reporting system and collaborated with the team to design reporting formats and styles.',
+            'Significantly reduced response time for critical vulnerability alerts by building automation solutions using Power Apps, Power Automate, and Python.',
+            'Conducted AI security research focused on both Offensive (Red Team) and Defensive (Blue Team).',
+            'Collaborated closely with the Threat Intelligence team to support real-time alerting.',
+            'Presented findings and shared AI threat insights during TBCert sessions and internal security briefings.',
+            'Delivered knowledge-sharing sessions on AI security to regional KBTG teams.'
+        ],
+        skills: 'Penetration test · Kali linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
@@ -85,7 +101,13 @@ const getExperiences = () => [
         type: 'Full-time',
         duration: 'Jun 2024 - Oct 2024 · 5 mos',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'As a Penetration Tester, I conduct in-depth security assessments of IT infrastructure, identifying vulnerabilities in operating systems, applications, configurations, and user behaviors. I specialize in security and vulnerability assessments for software, mobile, and web applications, adhering to OWASP guidelines. I provide actionable recommendations and detailed analysis to strengthen overall security posture. To date, I have successfully worked on 16 projects.',
+        description: [
+            'Conducted in-depth penetration testing of IT infrastructure, identifying vulnerabilities in operating systems, applications, configurations, and user behavior.',
+            'Specialized in web, mobile, and software vulnerability assessments following OWASP Top 10 and industry best practices.',
+            'Delivered detailed security reports with actionable remediation steps to strengthen clients’ overall security posture.',
+            'Worked cross-functionally with development and infrastructure teams to ensure timely remediation of security risks.',
+            'Successfully completed 16 security assessment projects during the engagement.'
+        ],
         skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Vulnerability Assessment', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
@@ -102,7 +124,14 @@ const getExperiences = () => [
         type: 'Internship',
         duration: 'Jan 2024 - Apr 2024 · 4 mos',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
-        description: 'As a Penetration Tester intern at KPMG, I assisted in conducting security assessments for software, mobile, and web applications, utilizing Kali Linux, Burp Suite, and OWASP best practices to identify vulnerabilities and simulate cyber attacks. I contributed to developing a secure website for KPMG and performed vulnerability assessments using Nessus, focusing on KPMG’s internal network. During my time at KPMG, I successfully completed two penetration testing projects and one vulnerability assessment project, strengthening my technical expertise and ability to communicate complex security findings effectively. I remain committed to expanding my knowledge in this fast-evolving field.',
+        description: [
+            'Assisted in conducting penetration tests on software, mobile, and web applications using tools such as Kali Linux and Burp Suite.',
+            'Followed OWASP best practices to identify and document security vulnerabilities and simulate real-world cyberattacks.',
+            'Performed vulnerability assessments on KPMG’s internal network using Nessus and other scanning tools.',
+            'Contributed to the development of a secure internal website, incorporating security-by-design principles.',
+            'Completed 2 penetration testing projects and 1 vulnerability assessment project, improving communication of complex findings to stakeholders.',
+            'Gained practical expertise in offensive security while actively pursuing continuous learning in a dynamic threat landscape.'
+        ],
         skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Cybersecurity · Vulnerability Assessment', // Full skills list here
         links: [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
@@ -119,7 +148,14 @@ const getExperiences = () => [
         type: 'Internship',
         duration: 'May 2023 - July 2023 · 3 mos',
         location: 'Shiga, Japan 🇯🇵 · On-site',
-        description: 'I conducted research on the security vulnerabilities in Android apps that use OAuth 2.0 with Google accounts, with a focus on the risks of cross-site request forgery (CSRF). My findings were presented at the Workshop on Cyber Forensics, Security, and E-discovery, during the 23rd IEEE International Conference on Software Quality, Reliability, and Security in 2023. By developing an app and analyzing others, I evaluated critical components such as the state parameter and authorization code, which are essential for CSRF prevention. The study reveals the level of protection against CSRF in implementations of OAuth 2.0 on Android. Our goal is to enhance user safety by identifying vulnerable apps and emphasizing the necessity for robust security measures. This research establishes a benchmark for future security audits of apps.', // Full description here
+        description: [
+            'Conducted research on OAuth 2.0 implementations in Android applications and browser extensions, focusing on vulnerabilities related to Cross-Site Request Forgery (CSRF).',
+            'Evaluated critical security parameters such as the state value and authorization code to determine resilience against CSRF attacks.',
+            'Developed a custom Android application and analyzed real-world apps and extensions to assess OAuth integration practices.',
+            'Identified insecure implementations that exposed users to potential token hijacking and session fixation risks',
+            'Contributed to the development of a benchmark for future security audits of Android apps and browser extensions using OAuth 2.0, promoting safer authentication design.',
+            'Presented research findings at the Workshop on Cyber Forensics, Security, and E-discovery, part of the 23rd IEEE International Conference on Software Quality, Reliability, and Security (QRS 2023).'
+        ],
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
         links: [
             { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
@@ -135,7 +171,14 @@ const getExperiences = () => [
         type: 'Internship',
         duration: 'Jun 2022 - Jul 2022 · 2 mos',
         location: 'Taoyuan City, Taiwan 🇹🇼 · Remote',
-        description: 'I contributed to a project on automated COVID-19 diagnosis using chest X-rays, presented at the 2022 6th International Conference on Information Technology (InCIT). We proposed an AI-based screening method utilizing transfer learning and deep neural networks. Using Grad-CAM visualization, our convolutional neural network model showcased superior performance in accuracy, precision, recall, and F-measure on public datasets. This work advanced early COVID-19 detection and highlighted my skills in AI, deep learning, and medical imaging.', // Full description here
+        description: [
+            'Contributed to a research project focused on automated COVID-19 diagnosis using deep learning and chest X-ray images.',
+            'Developed and evaluated a convolutional neural network (CNN) model enhanced by transfer learning for accurate COVID-19 screening.',
+            'Utilized Grad-CAM visualizations to interpret model predictions and enhance explainability for medical practitioners.',
+            'Conducted experiments on publicly available datasets to assess model performance in terms of accuracy, precision, recall, and F-measure.',
+            'Demonstrated expertise in artificial intelligence, deep learning, and medical image analysis applied to real-world health challenges.',
+            'Published research findings at the 2022 6th International Conference on Information Technology (InCIT).'
+        ],
         skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python', // Full skills list here
         links: [
             { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },

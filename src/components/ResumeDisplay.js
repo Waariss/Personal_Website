@@ -77,7 +77,7 @@ const ResumeDisplay = () => {
                                     </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-hackthebox">HackTheBox</Tooltip>}>
                                         <Button variant="link" href="https://app.hackthebox.com/profile/1458142" target="_blank">
-                                            <Image src="https://static-00.iconduck.com/assets.00/hack-the-box-icon-512x512-pokr8xc5.png" alt="HackTheBox" width="37.5" height="37.5"/>
+                                            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzxlNL92ntRTBI1IUwhxyAj7Ybk1mkW5AA&s" alt="HackTheBox" width="37.5" height="37.5"/>
                                         </Button>
                                     </OverlayTrigger>
                                     <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Credential.Net</Tooltip>}>
