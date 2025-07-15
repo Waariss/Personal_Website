@@ -96,7 +96,7 @@ const getExperiences = () => [
     {
         companyLogo: './images/aplha.png',
         internshipImages: './images/apBG.png',
-        title: 'Security Consultant (Penetration tester)',
+        title: 'Cybersecurity Consultant (Penetration tester)',
         company: 'ALPHASEC',
         type: 'Full-time',
         duration: 'Jun 2024 - Oct 2024 · 5 mos',

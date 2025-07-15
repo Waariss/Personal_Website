@@ -12,7 +12,7 @@ const ResumeDisplay = () => {
                     <Row>
                         <Col xs={7}>
                             <iframe 
-                                src="./PDF/Waris_Damkham_Resume.pdf" 
+                                src="./PDF/Waris_Resume_2025.pdf" 
                                 width="100%" 
                                 height="600px" 
                                 style={{ border: "none" }}
