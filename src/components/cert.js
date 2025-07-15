@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Practical SOC Analyst Associate",
+        organization: "TCM Security",
+        date: "July 2025",
+        link: "https://certified.tcm-sec.com/e944ad55-2d3c-4af4-a11e-c56c9dfede4a#acc.6zmgMDe2",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/155081719"
+    },
+    {
         title: "SECURITY ANALYST COURSE",
         organization: "SEC Playground",
         date: "July 2025",
