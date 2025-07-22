@@ -7,7 +7,7 @@ const certificates = [
     {
         title: "Jr Penetration Tester (PT1)",
         organization: "TryHackMe",
-        date: "July 2025",
+        date: "July 2025 - July 2028",
         link: "https://www.credly.com/badges/667a39d1-d8f5-45a5-8627-8e508592559f/public_url",
         imageUrl: "./images/CERT.png"
     },
