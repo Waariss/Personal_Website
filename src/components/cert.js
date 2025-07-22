@@ -8,7 +8,7 @@ const certificates = [
         title: "Jr Penetration Tester (PT1)",
         organization: "TryHackMe",
         date: "July 2025 - July 2028",
-        link: "https://www.credly.com/badges/667a39d1-d8f5-45a5-8627-8e508592559f/public_url",
+        link: "https://assets.tryhackme.com/certification-certificate/6868034812c00e6f24504db3.pdf",
         imageUrl: "./images/CERT.png"
     },
     {
