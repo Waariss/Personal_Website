@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Jr Penetration Tester (PT1)",
+        organization: "TryHackMe",
+        date: "July 2025",
+        link: "https://www.credly.com/badges/667a39d1-d8f5-45a5-8627-8e508592559f/public_url",
+        imageUrl: "./images/CERT.png"
+    },
+    {
         title: "Practical SOC Analyst Associate",
         organization: "TCM Security",
         date: "July 2025",
