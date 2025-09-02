@@ -111,7 +111,7 @@ const PDFViewer = () => {
             setIsImage(false);
             break;
         case 'CBBH':
-            setContentUrl("/PDF/Cert/HTB Certified Bug Bounty Hunter.pdf");
+            setContentUrl("/PDF/Cert/CWES.pdf");
             setIsImage(false);
             break;
         case 'GHF':

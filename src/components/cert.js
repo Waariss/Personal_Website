@@ -194,11 +194,11 @@ const certificates = [
         imageUrl: "./images/ghf.png"
     },
     {
-        title: "HTB Certified Bug Bounty Hunter",
+        title: "HTB Certified Web Exploitation Specialist",
         organization: "Hack The Box",
         date: "Aug 2024",
         link: "/pdf/CBBH",
-        imageUrl: "./images/CBBH.png"
+        imageUrl: "./images/CWES.png"
     },
     {
         title: "Certified Mobile Pentester (CMPen-Android)",

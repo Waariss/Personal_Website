@@ -7,7 +7,7 @@ const Home = () => {
         <section id="home" className="text-center my-4 home-section">
             <Container className="jumbotron-style">
                 <h1 className="display-4">Waris Damkham</h1>
-                <p className="lead">Offensive Security Engineer | PNPT | PMPA | PSAA | eWPTX | CRTP | CPTS | CBBH | BSCP | PT1 | ASCP | ACP | GHF | CDL | HCCDA-Tech | C-APIPen | C-AI/MLPen | CCPenX-AWS | CAPenX | CMPen-Android & iOS | CNPen | CAPen | CAP | CRTA | CRT-ID | MCRTA</p>
+                <p className="lead">Offensive Security Engineer | PNPT | PMPA | PSAA | eWPTX | CRTP | CPTS | CWES | BSCP | PT1 | ASCP | ACP | GHF | CDL | HCCDA-Tech | C-APIPen | C-AI/MLPen | CCPenX-AWS | CAPenX | CMPen-Android & iOS | CNPen | CAPen | CAP | CRTA | CRT-ID | MCRTA</p>
                 <hr className="my-4" />
                 <p>Take a moment to explore my skills, experiences, and projects below.</p>
                 <p className="lead">
