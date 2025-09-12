@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "HTB Certified Junior Cybersecurity Associate",
+        organization: "Hack The Box",
+        date: "Sep 2025",
+        link: "https://www.credly.com/badges/37645b13-29ce-4f11-898b-2ca933d3e603/public_url",
+        imageUrl: "./images/HTB Certified Junior Cybersecurity Associate.png"
+    },
+    {
         title: "Jr Penetration Tester (PT1)",
         organization: "TryHackMe",
         date: "July 2025 - July 2028",

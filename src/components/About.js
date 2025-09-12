@@ -5,7 +5,6 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
-
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/155081719",
@@ -13,6 +12,7 @@ const About = () => {
         "/badges/crtpimg.png",
         "https://images.credly.com/size/680x680/images/e63aa507-b974-4e67-bae6-1e425f6e2a99/image.png",
         "https://images.credly.com/size/340x340/images/46525b6b-c65b-45b4-ae45-420dba5af307/blob",
+        "https://images.credly.com/size/680x680/images/95043c37-e916-4e4e-96ab-06fb66056648/blob",
         "/badges/burp-suite-certified-color-large.png",
         "https://images.credly.com/size/340x340/images/54525e33-85d1-405c-a68c-1e4dd9c7f57f/blob",
         "https://images.credly.com/size/680x680/images/304d90d7-289f-4f09-81d6-b2fe9954bcc9/image.png",
@@ -57,6 +57,7 @@ const About = () => {
         "https://www.credential.net/3f3ce36c-11f4-460f-b1f0-206a537d9629#acc.eQDPI2nG",
         "https://www.credly.com/badges/ddd8940f-ad73-4221-9f5d-bdaf51ed1e2a/public_url",
         "https://www.credly.com/badges/36af3daf-dac7-4b20-a1da-96da19bb1822/public_url",
+        "https://www.credly.com/badges/37645b13-29ce-4f11-898b-2ca933d3e603/public_url",
         "https://portswigger.net/web-security/e/c/2a628f7fb6d7dd35",
         "https://assets.tryhackme.com/certification-certificate/6868034812c00e6f24504db3.pdf",
         "https://www.credly.com/badges/1d423a7e-0997-43b2-9d9e-8e9cae169452/public_url",
@@ -101,6 +102,7 @@ const About = () => {
         "Certified Red Team Professional",
         "Hack The Box Certified Penetration Testing Specialist",
         "Hack The Box Certified Web Exploitation Specialist",
+        "HTB Certified Junior Cybersecurity Associate",
         "Burp Suite Certified Practitioner",
         "Jr Penetration Tester (PT1)",
         "API Security Certified Professional",
