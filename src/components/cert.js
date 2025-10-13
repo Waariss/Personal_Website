@@ -5,6 +5,20 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "OffSec Certified Professional+ (OSCP+)",
+        organization: "OffSec",
+        date: "Oct 2025 - Oct 2028",
+        link: "https://credentials.offsec.com/3662edd7-f74b-4afc-89be-6343e301ac16#acc.z5HkIjF6",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/163229512"
+    },
+    {
+        title: "OffSec Certified Professional (OSCP)",
+        organization: "OffSec",
+        date: "Oct 2025",
+        link: "https://credentials.offsec.com/f4a60a23-7c81-4c93-83da-68059488a45a#acc.RfhgV7DF",
+        imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/163229530"
+    },
+    {
         title: "HTB Certified Junior Cybersecurity Associate",
         organization: "Hack The Box",
         date: "Sep 2025",

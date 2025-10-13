@@ -5,6 +5,8 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
+        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229512",
+        "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229530",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/124520643",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/155081719",
@@ -50,6 +52,8 @@ const About = () => {
     ];
 
     const badgeLinks = [
+        "https://credentials.offsec.com/3662edd7-f74b-4afc-89be-6343e301ac16#acc.z5HkIjF6",
+        "https://credentials.offsec.com/f4a60a23-7c81-4c93-83da-68059488a45a#acc.RfhgV7DF",
         "https://certified.tcm-sec.com/57766f22-43d0-4c28-873d-b7e9c02bb039#acc.Hd5EIsLo",
         "https://certified.tcm-sec.com/01b1a674-b38f-4bee-8d4c-cd45a5d60c4d#acc.e1WhmRPx",
         "https://certified.tcm-sec.com/e944ad55-2d3c-4af4-a11e-c56c9dfede4a",
@@ -95,6 +99,8 @@ const About = () => {
     ];
 
     const badgeAlts = [
+        "OffSec Certified Professional+ (OSCP+)",
+        "OffSec Certified Professional (OSCP)",
         "Practical Network Penetration Tester",
         "Practical Mobile Pentest Associate",
         "Practical SOC Analyst Associate",
