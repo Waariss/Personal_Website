@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container,Button} from 'react-bootstrap';
+import { Container, Button, Badge, Stack } from 'react-bootstrap';
 import '../App.css';
 
 const Home = () => {
@@ -7,12 +7,18 @@ const Home = () => {
         <section id="home" className="text-center my-4 home-section">
             <Container className="jumbotron-style">
                 <h1 className="display-4">Waris Damkham</h1>
-                <p className="lead">Offensive Security Engineer | OSCP+ | OSCP | PNPT | PMPA | PSAA | eWPTX | CRTP | CPTS | CWES | CJCA | BSCP | PT1 | ASCP | ACP | GHF | CDL | HCCDA-Tech | C-APIPen | C-AI/MLPen | CCPenX-AWS | CAPenX | CMPen-Android & iOS | CNPen | CAPen | CAP | CRTA | CRT-ID | MCRTA</p>
-                <hr className="my-4" />
-                <p>Take a moment to explore my skills, experiences, and projects below.</p>
-                <p className="lead">
-                <Button variant="outline-light" href="#resume">Resume</Button>
-                </p>
+                <p className="lead">Offensive Security Engineer &amp; AI Security Researcher</p>
+                <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">
+                    {['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES', 'CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech', 'C-APIPen', 'C-AI/MLPen', 'CCPenX-AWS', 'CAPenX', 'CMPen-Android & iOS', 'CNPen', 'CAPen', 'CAP', 'CRTA', 'CRT-ID', 'MCRTA'].map((credential) => (
+                        <Badge bg="light" text="dark" key={credential} className="hero-badge">
+                            {credential}
+                        </Badge>
+                    ))}
+                </Stack>
+                <p>Explore my skills, research, and hands-on security projects below.</p>
+                <div className="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <Button variant="light" href="#resume" className="text-dark fw-semibold">Resume</Button>
+                </div>
             </Container>
         </section>
     );
