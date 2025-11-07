@@ -5,7 +5,6 @@ import '../App.css';
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
     const badgeImages = [
-        "/badges/cert-stamp-ckbpro.png",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229512",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229530",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/134181811",
@@ -22,6 +21,7 @@ const About = () => {
         "/badges/apisec-certified-practitioner.png",
         "/badges/GHF.png",
         "https://images.credly.com/size/340x340/images/44994cda-b5b0-44cb-9a6d-d29b57163073/image.png",
+        "/badges/cert-stamp-ckbpro.png",
         "/badges/cert-stamp-c-apipen-pro.png",
         "/badges/cert-stamp-ccpenX-AWS.png",
         "/badges/MLPen.png",
