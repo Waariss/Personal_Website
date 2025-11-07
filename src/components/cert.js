@@ -8,7 +8,7 @@ const certificates = [
         title: "Certified Kiosk Breakout Professional (CKBPro)",
         organization: "The SecOps Group",
         date: "OCT 2025",
-        link: "pdf/C-APIPen",
+        link: "pdf/CKBPro",
         imageUrl: "./images/WarisDamkham-CertifiedKioskBreakoutProfessional(CKBPro).png"
     },
     {
