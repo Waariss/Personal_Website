@@ -9,7 +9,7 @@ const Home = () => {
                 <h1 className="display-4">Waris Damkham</h1>
                 <p className="lead">Offensive Security Engineer &amp; AI Security Researcher</p>
                 <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">
-                    {['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES', 'CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech', 'C-APIPen', 'C-AI/MLPen', 'CCPenX-AWS', 'CAPenX', 'CMPen-Android & iOS', 'CNPen', 'CAPen', 'CAP', 'CRTA', 'CRT-ID', 'MCRTA'].map((credential) => (
+                    {['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES', 'CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech', 'CKBPro', 'C-APIPen', 'C-AI/MLPen', 'CCPenX-AWS', 'CAPenX', 'CMPen-Android & iOS', 'CNPen', 'CAPen', 'CAP', 'CRTA', 'CRT-ID', 'MCRTA'].map((credential) => (
                         <Badge bg="light" text="dark" key={credential} className="px-3 py-2 hero-badge" style={{ fontSize: '0.9rem' }}>
                             {credential}
                         </Badge>

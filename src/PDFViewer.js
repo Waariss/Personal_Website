@@ -158,6 +158,10 @@ const PDFViewer = () => {
             setContentUrl("/images/HWENDCTEDA511122.png");
             setIsImage(true);
             break;
+        case 'CKBPro':
+            setContentUrl("/PDF/Cert/WarisDamkham-CertifiedKioskBreakoutProfessional(CKBPro).pdf");
+            setIsImage(true);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

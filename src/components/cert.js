@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Kiosk Breakout Professional (CKBPro)",
+        organization: "The SecOps Group",
+        date: "OCT 2025",
+        link: "pdf/C-APIPen",
+        imageUrl: "./images/WarisDamkham-CertifiedKioskBreakoutProfessional(CKBPro).png"
+    },
+    {
         title: "OffSec Certified Professional+ (OSCP+)",
         organization: "OffSec",
         date: "Oct 2025 - Oct 2028",
