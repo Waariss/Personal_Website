@@ -42,6 +42,13 @@ const Publication = ({links }) => {
 
 const getPublications = () => [
     {
+        title: 'CVE-2025-12782 - Beaver Builder – WordPress Page Builder',
+        subtitle: 'Published in Wordfence',
+        description: 'The Beaver Builder – WordPress Page Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.4. This is due to the plugin not properly verifying a user\'s authorization in the disable() function. This makes it possible for authenticated attackers, with contributor level access and above, to disable the Beaver Builder layout on arbitrary posts and pages, causing content integrity issues and layout disruption on those pages.',
+        date: 'Wordfence · Dec 4, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beaver-builder-lite-version/beaver-builder-wordpress-page-builder-294-missing-authorization-to-authenticated-contributor-builder-status-tampering'
+    },
+    {
         title: 'Practical Mobile Based Services for Identification of Chicken Diseases From Fecal Images',
         subtitle: 'Presented at IEEE Region 10 Conference 2024 (TENCON 2024)',
         description: 'Poultry farming is crucial to the food chain, and chicken health directly impacts product quality and safety. Diagnosing poultry diseases using polymerase chain reaction is costly, particularly for small farms. To address this, we developed a mobile-based service for farmers, enabling the identification of common chicken diseases from fecal images via a Line account. Our system achieved 86.49% segmentation precision and 95.93% classification accuracy on a large dataset, offering a practical and accessible tool for local farmers.', // Truncated for brevity

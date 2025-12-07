@@ -56,17 +56,17 @@ const getBlog = () => [
             { href: 'https://medium.com/@waaris_m', label: 'Read More' },
         ]
     },
-    {
-        companyLogo: './images/cat.jpg',
-        internshipImages: './images/writeup.png',
-        title: 'Cybersecurity journey Writeup',
-        company: 'Writeup',
-        duration: 'Mar 2024',
-        description: 'Welcome to my Cybersecurity journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox etc.',
-        links: [
-            { href: 'https://wariss-writeup.gitbook.io/writeup/', label: 'Read More' },
-        ]
-    },
+    // {
+    //     companyLogo: './images/cat.jpg',
+    //     internshipImages: './images/writeup.png',
+    //     title: 'Cybersecurity journey Writeup',
+    //     company: 'Writeup',
+    //     duration: 'Mar 2024',
+    //     description: 'Welcome to my Cybersecurity journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox etc.',
+    //     links: [
+    //         { href: 'https://wariss-writeup.gitbook.io/writeup/', label: 'Read More' },
+    //     ]
+    // },
     {
         companyLogo: './images/lav.png',
         internshipImages: './images/blog_im.jpg',
