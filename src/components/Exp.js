@@ -75,8 +75,8 @@ const getExperiences = () => [
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
         description: [
             'Performed penetration testing across Web, Mobile, API, and Network environments for over 80 projects annually, covering KBTG and its subsidiaries.',
-            'Acted as project owner for 3 major security assessment projects in 2025, leading end-to-end execution and reporting.',
-            'Participated in Red Team operations (Red Team Campaign), supporting advanced threat simulation and detection exercises.',
+            'Acted as project owner for 4 major security assessment projects in 2025, leading end-to-end execution and reporting.',
+            'Served as a core member in Red Team operations (Red Team Campaign), leading and executing advanced threat simulation and detection exercises.',
             'Created comprehensive summary reports of security findings in both Thai and English, ensuring clear communication with stakeholders',
             'Led the development of an automated reporting system and collaborated with the team to design reporting formats and styles.',
             'Significantly reduced response time for critical vulnerability alerts by building automation solutions using Power Apps, Power Automate, and Python.',
