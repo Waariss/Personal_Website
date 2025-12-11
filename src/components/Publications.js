@@ -42,7 +42,14 @@ const Publication = ({links }) => {
 
 const getPublications = () => [
     {
-        title: 'CVE-2025-12782 - Beaver Builder – WordPress Page Builder',
+        title: 'CVE-2025-14166 - WPMasterToolKit (WPMTK) <= 2.13.0 - Authenticated (Contributor+) Code Injection',
+        subtitle: 'Published in Wordfence',
+        description: 'The WPMasterToolKit plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 2.13.0. This is due to the plugin allowing Author-level users to create and execute arbitrary PHP code through the Code Snippets feature without proper capability checks. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute arbitrary PHP code on the server, leading to remote code execution, privilege escalation, and complete site compromise.',
+        date: 'Wordfence · Dec 11, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpmastertoolkit/wpmastertoolkit-wpmtk-2130-authenticated-contributor-code-injection'
+    },
+    {
+        title: 'CVE-2025-12782 - Beaver Builder – WordPress Page Builder <= 2.9.4 - Missing Authorization to Authenticated (Contributor+) Builder Status Tampering',
         subtitle: 'Published in Wordfence',
         description: 'The Beaver Builder – WordPress Page Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.4. This is due to the plugin not properly verifying a user\'s authorization in the disable() function. This makes it possible for authenticated attackers, with contributor level access and above, to disable the Beaver Builder layout on arbitrary posts and pages, causing content integrity issues and layout disruption on those pages.',
         date: 'Wordfence · Dec 4, 2025',
