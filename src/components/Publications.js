@@ -42,6 +42,13 @@ const Publication = ({links }) => {
 
 const getPublications = () => [
     {
+        title: 'CVE-2025-14068 - WPNakama <= 0.6.3 - Unauthenticated SQL Injection via "order_by" Parameter',
+        subtitle: 'Published in Wordfence',
+        description: 'The WPNakama plugin for WordPress is vulnerable to time-based SQL Injection via the "order_by" parameter in all versions up to, and including, 0.6.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.',
+        date: 'Wordfence · Dec 11, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpnakama/wpnakama-063-unauthenticated-sql-injection-via-order-by-parameter'
+    },
+    {
         title: 'CVE-2025-14166 - WPMasterToolKit (WPMTK) <= 2.13.0 - Authenticated (Contributor+) Code Injection',
         subtitle: 'Published in Wordfence',
         description: 'The WPMasterToolKit plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 2.13.0. This is due to the plugin allowing Author-level users to create and execute arbitrary PHP code through the Code Snippets feature without proper capability checks. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute arbitrary PHP code on the server, leading to remote code execution, privilege escalation, and complete site compromise.',
