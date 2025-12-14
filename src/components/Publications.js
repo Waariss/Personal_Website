@@ -42,6 +42,13 @@ const Publication = ({links }) => {
 
 const getPublications = () => [
     {
+        title: 'CVE-2025-14366 - Eyewear prescription form <= 6.0.1 - Missing Authorization to Unauthenticated Arbitrary WooCommerce Product Creation',
+        subtitle: 'Published in Wordfence',
+        description: "The Eyewear prescription form plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 6.0.1. This is due to missing authorization checks on the SubmitCatProductRequest AJAX action. This makes it possible for unauthenticated attackers to create arbitrary WooCommerce products with custom names, prices, and category assignments via the 'Name', 'Price', and 'Parent' parameters.",
+        date: 'Wordfence · Dec 12, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/eyewear-prescription-form/eyewear-prescription-form-601-missing-authorization-to-unauthenticated-arbitrary-woocommerce-product-creation'
+    },
+    {
         title: 'CVE-2025-14068 - WPNakama <= 0.6.3 - Unauthenticated SQL Injection via "order_by" Parameter',
         subtitle: 'Published in Wordfence',
         description: 'The WPNakama plugin for WordPress is vulnerable to time-based SQL Injection via the "order_by" parameter in all versions up to, and including, 0.6.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.',
