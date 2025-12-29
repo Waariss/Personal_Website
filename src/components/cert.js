@@ -5,6 +5,13 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified Cybersecurity Educator Professional (CCEP)",
+        organization: "Red Team Leaders",
+        date: "Dec 2025",
+        link: "pdf/CCEP",
+        imageUrl: "./images/CCEP.png"
+    },
+    {
         title: "Certified Kiosk Breakout Professional (CKBPro)",
         organization: "The SecOps Group",
         date: "Nov 2025",

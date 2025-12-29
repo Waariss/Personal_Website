@@ -42,6 +42,20 @@ const Publication = ({links }) => {
 
 const getPublications = () => [
     {
+        title: 'CVE-2025-13693 - Image Photo Gallery Final Tiles Grid <= 3.6.8 - Authenticated (Author+) Stored Cross-Site Scripting via \'Custom Scripts\' Setting',
+        subtitle: 'Published in Wordfence',
+        description: "The Image Photo Gallery Final Tiles Grid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Custom scripts' setting in all versions up to, and including, 3.6.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        date: 'Wordfence · Dec 20, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/final-tiles-grid-gallery-lite/image-photo-gallery-final-tiles-grid-368-authenticated-author-stored-cross-site-scripting-via-custom-scripts-setting'
+    },
+    {
+        title: 'CVE-2025-14003 - Image Gallery – Photo Grid & Video Gallery <= 2.13.3 - Missing Authorization to Authenticated (Author+) Arbitrary Gallery Modification',
+        subtitle: 'Published in Wordfence',
+        description: "The Image Gallery – Photo Grid & Video Gallery plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the `add_images_to_gallery_callback()` function in all versions up to, and including, 2.13.3. This makes it possible for authenticated attackers, with Author-level access and above, to add images to arbitrary Modula galleries owned by other users.",
+        date: 'Wordfence · Dec 15, 2025',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/modula-best-grid-gallery/image-gallery-photo-grid-video-gallery-2133-missing-authorization-to-authenticated-author-arbitrary-gallery-modification'
+    },
+    {
         title: 'CVE-2025-14366 - Eyewear prescription form <= 6.0.1 - Missing Authorization to Unauthenticated Arbitrary WooCommerce Product Creation',
         subtitle: 'Published in Wordfence',
         description: "The Eyewear prescription form plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 6.0.1. This is due to missing authorization checks on the SubmitCatProductRequest AJAX action. This makes it possible for unauthenticated attackers to create arbitrary WooCommerce products with custom names, prices, and category assignments via the 'Name', 'Price', and 'Parent' parameters.",
