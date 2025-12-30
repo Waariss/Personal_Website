@@ -35,6 +35,7 @@ const About = () => {
         "/badges/CRT-ID.png",
         "/badges/MCRTA.png",
         "/badges/CCEP_Badges.png",
+        "/badges/CCPC.png",
         "https://images.credly.com/images/baeafd89-d904-486c-8e0d-fa96ee54bc5e/blob",
         "https://images.credly.com/images/47182d88-d788-4833-8190-8264cffad5ba/blob",
         "https://images.credly.com/images/1933e6dc-5c14-45d6-81c4-88bd35905dcc/blob",
@@ -84,6 +85,7 @@ const About = () => {
         "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797",
         "https://labs.cyberwarfare.live/badge/image/66fcc85def7753022c5b197c",
         "https://courses.redteamleaders.com/exam-completion/4513c17c1105b18f",
+        "https://courses.redteamleaders.com/exam-completion/c60d69557264702f",
         "https://www.credly.com/badges/e7800d53-ea5c-4a52-9c46-86ebbe24438a/public_url",
         "https://www.credly.com/badges/87a7a7a1-2334-479c-8273-b47ca7de4376/public_url",
         "https://www.credly.com/badges/4cddf94e-bbdb-4ce7-896e-8ae6e646f7de/public_url",
@@ -133,6 +135,7 @@ const About = () => {
         "Certified Red Team Infra Developer",
         "Multi-Cloud Red Team Analyst",
         "Certified Cybersecurity Educator Professional (CCEP)",
+        "Certified C++ Practitioner Certification (CCPC)",
         "Basic Web Application Security Badge",
         "Basic SOC Badge",
         "SOC Tier 1 Badge",
@@ -244,7 +247,7 @@ const About = () => {
                                 overlay={<Tooltip id={`tooltip-${index}`}>{badgeAlts[index]}</Tooltip>}
                                 placement="top"
                             >
-                                <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer">
+                                <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer" aria-label={badgeAlts[index]}>
                                     <Image src={badgePath} width="98" height="98" alt={badgeAlts[index]} />
                                 </a>
                             </OverlayTrigger>

@@ -5,10 +5,17 @@ import Slider from 'react-slick';
 
 const certificates = [
     {
+        title: "Certified C++ Practitioner Certification (CCPC)",
+        organization: "Red Team Leaders",
+        date: "Dec 2025",
+        link: "https://courses.redteamleaders.com/exam-completion/c60d69557264702f",
+        imageUrl: "./images/certified_c_certificate.png"
+    },
+    {
         title: "Certified Cybersecurity Educator Professional (CCEP)",
         organization: "Red Team Leaders",
         date: "Dec 2025",
-        link: "pdf/CCEP",
+        link: "https://courses.redteamleaders.com/exam-completion/4513c17c1105b18f",
         imageUrl: "./images/CCEP.png"
     },
     {

@@ -12,11 +12,11 @@ const Experience = () => {
                     <Card.Body>
                         <Row>
                             <Col xs={2} className="d-flex align-items-start justify-content-center">
-                                <img src={experience.companyLogo} alt="Company Logo" className="company-logo" />
+                                <img src={experience.companyLogo} alt={`${experience.company} Logo`} className="company-logo" />
                             </Col>
                             <Col xs={10}>
                                 <div className="details-container">
-                                    <img src={experience.internshipImages} alt="Internship Experience" className="internship-image float-right ml-3" />
+                                    <img src={experience.internshipImages} alt={`${experience.title} at ${experience.company}`} className="internship-image float-right ml-3" />
                                     <Card.Title className="mb-3 experience-title"><strong>{experience.title}</strong></Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.company} · {experience.type}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>

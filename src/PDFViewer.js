@@ -166,6 +166,10 @@ const PDFViewer = () => {
             setContentUrl("/PDF/Cert/CCEP.pdf");
             setIsImage(false);
             break;
+        case 'CCPC':
+            setContentUrl("/PDF/Cert/certified_c_certificate.pdf");
+            setIsImage(false);
+            break;
         default:
             setContentUrl('');
             setIsImage(false);

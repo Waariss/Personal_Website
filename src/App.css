@@ -531,9 +531,26 @@
   margin-bottom: 5px;  /* Decrease space under the text */
 }
 
-/* CSS to hide the carousel controls but keep them functional */
+/* Carousel controls visibility */
 .carousel-control-prev, .carousel-control-next {
-  opacity: 0 !important;
+  opacity: 0.3 !important;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 0.8 !important;
+}
+
+/* Skills carousel indicators */
+.skill-card .carousel-indicators {
+  bottom: -20px;
+}
+
+.skill-card .carousel-indicators button {
+  background-color: #ff6347;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
 .footer-container {
