@@ -3,44 +3,74 @@ import { Card, ListGroup } from 'react-bootstrap';
 import '../App.css';
 
 const Publication = ({links }) => {
+    const cves = getCVEs();
+    const conferences = getConferences();
+    
     return (
         <section id="publications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Publications</h1>
-            <Card className="border-0 shadow-sm about-card">
-                <Card.Body>
-                    <ListGroup variant="flush">
-                        {getPublications().map((publication, index) => (
-                            <ListGroup.Item key={index} className="publication-item">
-                                <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
-                                    <h5>{publication.title}</h5>
-                                </a>
-                                <p className="text-muted">{publication.subtitle}</p>
-                                <p>{publication.description}</p>
-                                {publication.date && <Card.Subtitle className="mb-2 text-muted">{publication.date}</Card.Subtitle>}
-                            </ListGroup.Item>
-                        ))}
-                    </ListGroup>
-                </Card.Body>
-                {links && (
-                    <Card.Text className="mb-3 link-group mt-3">
-                        {links.map((link, index) => (
-                            <Card.Link
-                                key={index}
-                                href={link.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-outline-secondary"
-                            >
-                            </Card.Link>
-                        ))}
-                    </Card.Text>
-                )}
-            </Card>
+            
+            {/* Academic Publications Section */}
+            <div className="mb-5">
+                <h3 className="mb-3 publication-section-title">Academic Publications</h3>
+                <Card className="border-0 shadow-sm about-card">
+                    <Card.Body>
+                        <ListGroup variant="flush">
+                            {conferences.map((publication, index) => (
+                                <ListGroup.Item key={index} className="publication-item">
+                                    <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
+                                        <h5>{publication.title}</h5>
+                                    </a>
+                                    <p className="text-muted mb-2">{publication.subtitle}</p>
+                                    <p className="mb-2">{publication.description}</p>
+                                    {publication.date && <Card.Subtitle className="mb-2 text-muted"><small>{publication.date}</small></Card.Subtitle>}
+                                </ListGroup.Item>
+                            ))}
+                        </ListGroup>
+                    </Card.Body>
+                </Card>
+            </div>
+
+            {/* CVE Section */}
+            <div className="mb-5">
+                <h3 className="mb-3 publication-section-title">Security Vulnerabilities (CVEs)</h3>
+                <Card className="border-0 shadow-sm about-card">
+                    <Card.Body>
+                        <ListGroup variant="flush">
+                            {cves.map((publication, index) => (
+                                <ListGroup.Item key={index} className="publication-item">
+                                    <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
+                                        <h5>{publication.title}</h5>
+                                    </a>
+                                    <p className="text-muted mb-2">{publication.subtitle}</p>
+                                    <p className="mb-2">{publication.description}</p>
+                                    {publication.date && <Card.Subtitle className="mb-2 text-muted"><small>{publication.date}</small></Card.Subtitle>}
+                                </ListGroup.Item>
+                            ))}
+                        </ListGroup>
+                    </Card.Body>
+                </Card>
+            </div>
+
+            {links && (
+                <Card.Text className="mb-3 link-group mt-3">
+                    {links.map((link, index) => (
+                        <Card.Link
+                            key={index}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-outline-secondary"
+                        >
+                        </Card.Link>
+                    ))}
+                </Card.Text>
+            )}
         </section>
     );
 };
 
-const getPublications = () => [
+const getCVEs = () => [
     {
         title: 'CVE-2025-13693 - Image Photo Gallery Final Tiles Grid <= 3.6.8 - Authenticated (Author+) Stored Cross-Site Scripting via \'Custom Scripts\' Setting',
         subtitle: 'Published in Wordfence',
@@ -82,7 +112,10 @@ const getPublications = () => [
         description: 'The Beaver Builder – WordPress Page Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.4. This is due to the plugin not properly verifying a user\'s authorization in the disable() function. This makes it possible for authenticated attackers, with contributor level access and above, to disable the Beaver Builder layout on arbitrary posts and pages, causing content integrity issues and layout disruption on those pages.',
         date: 'Wordfence · Dec 4, 2025',
         link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beaver-builder-lite-version/beaver-builder-wordpress-page-builder-294-missing-authorization-to-authenticated-contributor-builder-status-tampering'
-    },
+    }
+];
+
+const getConferences = () => [
     {
         title: 'Practical Mobile Based Services for Identification of Chicken Diseases From Fecal Images',
         subtitle: 'Presented at IEEE Region 10 Conference 2024 (TENCON 2024)',
