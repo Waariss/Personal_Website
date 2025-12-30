@@ -654,5 +654,48 @@
   color: #555;
 }
 
+/* Project Read More Link */
+.read-more-link {
+  color: #ff6347;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+  color: #cc4f39;
+  text-decoration: underline;
+}
+
+/* About Section - Better Icon Spacing */
+.icon-section {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.icon-section .btn {
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .publication-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .publication-item {
+    padding: 1rem 0.75rem;
+  }
+  
+  .publication-item h5 {
+    font-size: 1rem;
+  }
+  
+  .icon-section {
+    justify-content: center;
+  }
+}
+
 
 

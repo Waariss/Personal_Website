@@ -192,14 +192,28 @@ const projectData = [
 
 const Projects = () => {
     const [selectedProjectId, setSelectedProjectId] = useState(null);
+    const [expandedDescriptions, setExpandedDescriptions] = useState({});
 
     const handleShow = (project) => {
         console.log("Selected Project ID:", project.id);
         if (selectedProjectId === project.id) {
-            setSelectedProjectId(null); // if the same project is clicked, hide the details
+            setSelectedProjectId(null);
+            setExpandedDescriptions({});
         } else {
-            setSelectedProjectId(project.id); // store the id of the selected project
+            setSelectedProjectId(project.id);
         }
+    };
+
+    const toggleDescription = (projectId) => {
+        setExpandedDescriptions(prev => ({
+            ...prev,
+            [projectId]: !prev[projectId]
+        }));
+    };
+
+    const truncateText = (text, maxLength = 250) => {
+        if (text.length <= maxLength) return text;
+        return text.substr(0, maxLength) + '...';
     };
     
     return (
@@ -228,7 +242,17 @@ const Projects = () => {
                                     <Card.Title>{project.title}</Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
                                     <Card.Text>
-                                        {project.description}
+                                        {expandedDescriptions[project.id] || project.description.length <= 250
+                                            ? project.description
+                                            : truncateText(project.description)}
+                                        {project.description.length > 250 && (
+                                            <span 
+                                                onClick={() => toggleDescription(project.id)}
+                                                className="read-more-link"
+                                            >
+                                                {expandedDescriptions[project.id] ? ' Show less' : ' Read more'}
+                                            </span>
+                                        )}
                                         <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
                                     </Card.Text>
                                     <Card.Text>
