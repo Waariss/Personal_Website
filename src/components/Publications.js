@@ -72,6 +72,13 @@ const Publication = ({links }) => {
 
 const getCVEs = () => [
     {
+        title: 'CVE-2025-14153 - Page Expire Popup/Redirection for WordPress <= 1.0 - Authenticated (Author+) SQL Injection via \'id\' Shortcode Attribute',
+        subtitle: 'Published in Wordfence',
+        description: "The Page Expire Popup/Redirection for WordPress plugin for WordPress is vulnerable to time-based SQL Injection via the 'id' shortcode attribute in all versions up to, and including, 1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        date: 'Wordfence · Jan 5, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/final-tiles-grid-gallery-lite/image-photo-gallery-final-tiles-grid-368-authenticated-author-stored-cross-site-scripting-via-custom-scripts-setting'
+    },
+    {
         title: 'CVE-2025-13693 - Image Photo Gallery Final Tiles Grid <= 3.6.8 - Authenticated (Author+) Stored Cross-Site Scripting via \'Custom Scripts\' Setting',
         subtitle: 'Published in Wordfence',
         description: "The Image Photo Gallery Final Tiles Grid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'Custom scripts' setting in all versions up to, and including, 3.6.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
