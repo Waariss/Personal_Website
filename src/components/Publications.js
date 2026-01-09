@@ -72,6 +72,20 @@ const Publication = ({links }) => {
 
 const getCVEs = () => [
     {
+        title: 'CVE-2025-14453 - My Album Gallery <= 1.0.4 - Authenticated (Contributor+) Stored Cross-Site Scripting via \'style_css\' Shortcode Attribute',
+        subtitle: 'Published in Wordfence',
+        description: "The My Album Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'style_css' shortcode attribute in all versions up to, and including, 1.0.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        date: 'Wordfence · Jan 6, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/my-album-gallery/my-album-gallery-104-authenticated-contributor-stored-cross-site-scripting-via-style-css-shortcode-attribute'
+    },
+    {
+        title: 'CVE-2025-14626 - QR Code for WooCommerce order emails, PDF invoices, packing slips <= 1.9.42 - Authenticated (Contributor+) Cross-Site Scripting via Shortcode Attributes',
+        subtitle: 'Published in Wordfence',
+        description: "The QR Code for WooCommerce order emails, PDF invoices, packing slips plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's shortcode in all versions up to, and including, 1.9.42 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        date: 'Wordfence · Jan 6, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/qr-code-tag-for-wc-from-goaskle-com/qr-code-for-woocommerce-order-emails-pdf-invoices-packing-slips-1942-authenticated-contributor-cross-site-scripting-via-shortcode-attributes'
+    },
+    {
         title: 'CVE-2025-14153 - Page Expire Popup/Redirection for WordPress <= 1.0 - Authenticated (Author+) SQL Injection via \'id\' Shortcode Attribute',
         subtitle: 'Published in Wordfence',
         description: "The Page Expire Popup/Redirection for WordPress plugin for WordPress is vulnerable to time-based SQL Injection via the 'id' shortcode attribute in all versions up to, and including, 1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
