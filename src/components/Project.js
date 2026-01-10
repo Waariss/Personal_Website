@@ -193,6 +193,9 @@ const projectData = [
 const Projects = () => {
     const [selectedProjectId, setSelectedProjectId] = useState(null);
     const [expandedDescriptions, setExpandedDescriptions] = useState({});
+    const [showAllProjects, setShowAllProjects] = useState(false);
+
+    const displayedProjects = showAllProjects ? projectData : projectData.slice(0, 3);
 
     const handleShow = (project) => {
         console.log("Selected Project ID:", project.id);
@@ -220,7 +223,7 @@ const Projects = () => {
         <section id="projects" className="my-4">
             <h1 className="mb-4 text-center title-enhanced">Projects</h1>
             <div className="project-gallery">
-                {projectData.map((project, index) => (
+                {displayedProjects.map((project, index) => (
                     <div key={index}>
                         <Card className="project-card" onClick={() => handleShow(project)}>
                             <Card.Img 
@@ -268,6 +271,16 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
+            {projectData.length > 3 && (
+                <div className="text-center mt-4">
+                    <button 
+                        className="btn btn-outline-secondary btn-lg"
+                        onClick={() => setShowAllProjects(!showAllProjects)}
+                    >
+                        {showAllProjects ? 'Show Less Projects' : `Show All ${projectData.length} Projects`}
+                    </button>
+                </div>
+            )}
         </section>
     );
 };

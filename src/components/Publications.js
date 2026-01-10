@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
 import '../App.css';
 
 const Publication = ({links }) => {
     const cves = getCVEs();
     const conferences = getConferences();
+    const [showAllCVEs, setShowAllCVEs] = useState(false);
+    
+    const displayedCVEs = showAllCVEs ? cves : cves.slice(0, 3);
     
     return (
         <section id="publications" className="my-5">
@@ -37,7 +40,7 @@ const Publication = ({links }) => {
                 <Card className="border-0 shadow-sm about-card">
                     <Card.Body>
                         <ListGroup variant="flush">
-                            {cves.map((publication, index) => (
+                            {displayedCVEs.map((publication, index) => (
                                 <ListGroup.Item key={index} className="publication-item">
                                     <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
                                         <h5>{publication.title}</h5>
@@ -48,6 +51,16 @@ const Publication = ({links }) => {
                                 </ListGroup.Item>
                             ))}
                         </ListGroup>
+                        {cves.length > 3 && (
+                            <div className="text-center mt-3">
+                                <button 
+                                    className="btn btn-outline-secondary"
+                                    onClick={() => setShowAllCVEs(!showAllCVEs)}
+                                >
+                                    {showAllCVEs ? 'Show Less' : `Show All ${cves.length} CVEs`}
+                                </button>
+                            </div>
+                        )}
                     </Card.Body>
                 </Card>
             </div>

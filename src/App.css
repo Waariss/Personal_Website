@@ -326,7 +326,7 @@
 }
 
 .icon-btn:hover {
-  color: #ff6347; /* or any other color for hover effect */
+  color: #ff6347;
   transform: scale(1.1);
 }
 
@@ -716,3 +716,214 @@
 
 
 
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.dark-mode .bg-light {
+  background-color: #0d1117 !important;
+}
+
+.dark-mode .bg-dark {
+  background-color: #0d1117 !important;
+}
+
+.dark-mode .card {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .about-card,
+.dark-mode .experience-card,
+.dark-mode .blog-card,
+.dark-mode .competition-card,
+.dark-mode .skill-card {
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .about-card:hover,
+.dark-mode .experience-card:hover,
+.dark-mode .blog-card:hover,
+.dark-mode .competition-card:hover,
+.dark-mode .skill-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .text-muted {
+  color: #8b949e !important;
+}
+
+.dark-mode .title-enhanced,
+.dark-mode .title,
+.dark-mode .card-title,
+.dark-mode h1, .dark-mode h2, .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: #c9d1d9 !important;
+}
+
+.dark-mode .publication-section-title {
+  color: #c9d1d9;
+  border-left-color: #ff6347;
+}
+
+.dark-mode .publication-item {
+  border-bottom-color: #30363d;
+  background-color: transparent;
+}
+
+.dark-mode .publication-item:hover {
+  background-color: #21262d;
+}
+
+.dark-mode .linkStyle h5 {
+  color: #ff6347;
+}
+
+.dark-mode .linkStyle:hover h5 {
+  color: #ff6347;
+}
+
+.dark-mode .event-content {
+  background: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .timeline-event:hover .event-content {
+  background: #21262d;
+}
+
+.dark-mode .timeline:before {
+  background: #30363d;
+}
+
+.dark-mode .activity-name,
+.dark-mode .activity-name-p {
+  color: #c9d1d9;
+}
+
+.dark-mode .custom-link {
+  background-color: #21262d;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .custom-link:hover {
+  background-color: #30363d;
+}
+
+.dark-mode .btn-outline-dark {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #ff6347;
+  color: #0d1117;
+}
+
+.dark-mode .btn-outline-success {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-success:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.dark-mode .btn-outline-secondary {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #ff6347;
+  color: #0d1117;
+  border-color: #ff6347;
+}
+
+.dark-mode .list-group-item {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.dark-mode .card-body {
+  background-color: #161b22;
+}
+
+.dark-mode .card-text,
+.dark-mode p,
+.dark-mode li {
+  color: #c9d1d9;
+}
+
+.dark-mode .badge {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .project-card {
+  background-color: #161b22;
+}
+
+.dark-mode .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .read-more-link {
+  color: #ff6347;
+}
+
+.dark-mode .read-more-link:hover {
+  color: #ff6347;
+}
+
+.dark-mode strong {
+  color: #c9d1d9;
+}
+
+.dark-mode .strong-highlight {
+  color: #ff6347;
+}
+
+.dark-mode .home-section {
+  color: white;
+}
+
+.dark-mode .jumbotron-style {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .skill-card .card-body {
+  background-color: #161b22;
+}
+
+.dark-mode .skill-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .experience-title {
+  color: #c9d1d9 !important;
+}
+
+.dark-mode .card-subtitle {
+  color: #8b949e !important;
+}
+
+.dark-mode .btn-light {
+  background-color: #21262d;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.dark-mode .btn-light:hover {
+  background-color: #30363d;
+  color: #c9d1d9;
+}
