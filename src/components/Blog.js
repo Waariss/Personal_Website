@@ -1,79 +1,121 @@
-import React from 'react';
-import { Card, Row, Col} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Badge, Row, Col} from 'react-bootstrap';
 import '../App.css';
 
 const Blog = () => {
+    const [showAllBlogs, setShowAllBlogs] = useState(false);
+    const blogs = getBlog();
+    const displayedBlogs = showAllBlogs ? blogs : blogs.slice(0, 3);
+
     return (
         <section id="blog" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Blog</h1>
-            {getBlog().map((blog, index) => (
-                <Card key={index} className="mb-4 border-0 shadow-sm blog-card hover-shadow">
-                    <Card.Body>
-                        <Row>
-                            <Col xs={2} className="d-flex align-items-start justify-content-center">
-                                <img src={blog.companyLogo} alt="Company Logo" className="company-logo" />
-                            </Col>
-                            <Col xs={10}>
-                                <div className="blog-container">
-                                    <img src={blog.internshipImages} alt="Internship Experience" className="blog-image float-right ml-3" />
-                                    <Card.Title className="mb-3 blog-title">{blog.title}</Card.Title>
-                                    <Card.Subtitle className="mb-2 text-muted">{blog.company}</Card.Subtitle>
-                                    <Card.Subtitle className="mb-2 text-muted">{blog.duration}</Card.Subtitle>
-                                    <Card.Text className="mb-3">{blog.description}</Card.Text>
-                                    <Card.Text className="mb-3 link-group">
-                                        {blog.links.map((link, linkIndex) => (
-                                            <Card.Link
-                                                key={linkIndex}
-                                                href={link.href}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="btn btn-outline-dark custom-link"
-                                            >
-                                               {link.label}
-                                            </Card.Link>
-                                        ))}
-                                    </Card.Text>
+            <Row>
+                {displayedBlogs.map((blog, index) => (
+                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                        <a 
+                            href={blog.links[0].href} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="blog-card-link"
+                        >
+                            <Card className="blog-card-new h-100">
+                                <div className="blog-image-container">
+                                    <Card.Img 
+                                        variant="top" 
+                                        src={blog.internshipImages} 
+                                        alt={blog.title} 
+                                        className="blog-card-image" 
+                                    />
+                                    <div className="blog-overlay">
+                                        <i className="fas fa-book-open blog-icon"></i>
+                                    </div>
                                 </div>
-                            </Col>
-                        </Row>
-                        
-                    </Card.Body>
-                </Card>
-            ))}
+                                <Card.Body className="d-flex flex-column">
+                                    <Badge bg="secondary" className="mb-2 align-self-start">{blog.duration}</Badge>
+                                    <Card.Title className="blog-card-title">{blog.title}</Card.Title>
+                                    <Card.Text className="blog-card-excerpt text-muted">
+                                        {blog.description.length > 100 
+                                            ? blog.description.substring(0, 100) + '...' 
+                                            : blog.description}
+                                    </Card.Text>
+                                    <div className="mt-auto">
+                                        <span className="blog-read-more-link">
+                                            Click to read more →
+                                        </span>
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </a>
+                    </Col>
+                ))}
+            </Row>
+            {blogs.length > 3 && (
+                <div className="text-center mt-4">
+                    <button 
+                        className="btn btn-outline-secondary btn-lg"
+                        onClick={() => setShowAllBlogs(!showAllBlogs)}
+                    >
+                        {showAllBlogs ? 'Show Less Blogs' : `Show All ${blogs.length} Blogs`}
+                    </button>
+                </div>
+            )}
         </section>
     );
 };
 
 const getBlog = () => [
     {
-        companyLogo: 'https://logos-world.net/wp-content/uploads/2023/07/Medium-Logo.png',
-        internshipImages: './images/blog_.png',
-        title: 'My Exam Review',
+        id: 'medium-review3',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*26RP7lKbS96_yPzr.png',
+        title: 'My APIsec University ASCP Exam Journey: A Detailed Review',
         company: 'Medium',
-        duration: 'Oct 2024',
-        description: 'My Exams Review on Medium',
+        duration: 'May 2025',
+        description: 'Hi everyone! I recently had the opportunity to pursue the API Security Certified Professional (ASCP) certification from APIsec University…',
         links: [
-            { href: 'https://medium.com/@waaris_m', label: 'Read More' },
+            { href: 'https://medium.com/@waaris_m/review-of-the-burp-suite-certified-practitioner-bscp-exam-1124f62623a1', label: 'Read More' },
         ]
     },
-    // {
-    //     companyLogo: './images/cat.jpg',
-    //     internshipImages: './images/writeup.png',
-    //     title: 'Cybersecurity journey Writeup',
-    //     company: 'Writeup',
-    //     duration: 'Mar 2024',
-    //     description: 'Welcome to my Cybersecurity journey! I\'m Waris Damkham, a passionate Information and Communication Technology student. Dive into my writeup to explore the intricacies of cybersecurity through the lens of my hands-on experiences at HackTheBox etc.',
-    //     links: [
-    //         { href: 'https://wariss-writeup.gitbook.io/writeup/', label: 'Read More' },
-    //     ]
-    // },
     {
-        companyLogo: './images/lav.png',
+        id: 'medium-review2',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*AGW5kY1wSHgi1F_E.png',
+        title: 'Review of the Certified Red Team Professional (CRTP) Exam',
+        company: 'Medium',
+        duration: 'Dec 2024',
+        description: 'Hi everyone! I recently pursued the Certified Red Team Professional (CRTP) certification offered by Altered Security. In this blog, I’ll…',
+        links: [
+            { href: 'https://medium.com/@waaris_m/review-of-the-certified-red-team-professional-crtp-exam-859341da6238', label: 'Read More' },
+        ]
+    },
+    {
+        id: 'medium-review',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*QgtXO5fJa3LPi1uBKq8m-A.png',
+        title: 'Review of the Burp Suite Certified Practitioner (BSCP) Exam',
+        company: 'Medium',
+        duration: 'Dec 2024',
+        description: 'The Burp Suite Certified Practitioner (BSCP) is a certification offered by PortSwigger, the creators of the popular Burp Suite tool beloved…',
+        links: [
+            { href: 'https://medium.com/@waaris_m/review-of-the-burp-suite-certified-practitioner-bscp-exam-1124f62623a1', label: 'Read More' },
+        ]
+    },
+    {
+        id: 'crta-journey',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:640/format:webp/1*cp3IMcmLBImy-ojNwbu5Dw.png',
+        title: 'My Certified Red Team Analyst (CRTA) Journey with Cyberwarfare Labs',
+        company: 'Medium',
+        duration: 'Oct 2024',
+        description: 'On October 2024, I set out on an exciting journey to earn the Certified Red Team Analyst (CRTA) certification from Cyberwarfare Labs. In…',
+        links: [
+            { href: 'https://medium.com/@waaris_m/my-certified-red-team-analyst-crta-journey-with-cyberwarfare-labs-7e5da76e1ffc', label: 'Read More' },
+        ]
+    },
+    {
+        id: 'ritsumeikan',
         internshipImages: './images/blog_im.jpg',
         title: 'From Thailand to Japan: My Cybersecurity Internship at Ritsumeikan University',
         company: 'Cybersecurity Laboratory',
         duration: 'Oct 2023',
-        description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University.[...]',
+        description: 'Hello everyone! My name is Waris Damkham, and I\'m currently a fourth-year student in Information and Communication Technology at Mahidol University. I was fortunate to secure an internship at the Cybersecurity Laboratory in the Faculty of Information Science and Engineering at Ritsumeikan University...',
         links: [
             { href: 'https://cysec.ise.ritsumei.ac.jp/2023/11/02/from-thailand-to-japan-my-cybersecurity-internship-at-ritsumeikan-university/', label: 'Read More' },
         ]

@@ -148,4 +148,3 @@ const getCompetitions = () => [
 
 export default Competitions;
 
-
