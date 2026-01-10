@@ -72,6 +72,13 @@ const Publication = ({links }) => {
 
 const getCVEs = () => [
     {
+        title: 'CVE-2025-14506 - ConvertForce Popup Builder <= 0.0.7 - Stored Cross-Site Scripting via entrance_animation',
+        subtitle: 'Published in Wordfence',
+        description: "The ConvertForce Popup Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gutenberg block's `entrance_animation` attribute in all versions up to, and including, 0.0.7. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        date: 'Wordfence · Jan 9, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/convertforce-popup-builder/convertforce-popup-builder-007-stored-cross-site-scripting-via-entrance-animation'
+    },
+    {
         title: 'CVE-2025-14453 - My Album Gallery <= 1.0.4 - Authenticated (Contributor+) Stored Cross-Site Scripting via \'style_css\' Shortcode Attribute',
         subtitle: 'Published in Wordfence',
         description: "The My Album Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'style_css' shortcode attribute in all versions up to, and including, 1.0.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
