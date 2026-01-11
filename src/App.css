@@ -2709,3 +2709,149 @@ body.dark-mode {
     padding: 0.4rem 0.6rem;
   }
 }
+
+
+/* Certifications Section - Improved Grid Slider */
+.cert-slide-card {
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.cert-slide-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cert-item-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cert-item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2) !important;
+}
+
+.cert-img-wrapper {
+  background: #f8f9fa;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cert-item-card:hover .cert-img {
+  transform: scale(1.1);
+}
+
+.cert-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8rem;
+}
+
+.cert-item-meta {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.cert-item-meta svg {
+  color: #3498db;
+  width: 14px;
+  height: 14px;
+}
+
+/* Slider Dots */
+#certifications .slick-dots {
+  bottom: -45px;
+}
+
+#certifications .slick-dots li button:before {
+  font-size: 12px;
+  color: #3498db;
+  opacity: 0.5;
+}
+
+#certifications .slick-dots li.slick-active button:before {
+  color: #3498db;
+  opacity: 1;
+}
+
+/* Dark Mode */
+.dark-mode .cert-slide-card {
+  background: #161b22;
+}
+
+.dark-mode .cert-item-card {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.dark-mode .cert-img-wrapper {
+  background: #010409;
+  border-bottom-color: #21262d;
+}
+
+.dark-mode .cert-item-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .cert-item-meta {
+  color: #8b949e;
+}
+
+.dark-mode .cert-item-meta svg {
+  color: #58a6ff;
+}
+
+.dark-mode #certifications .slick-dots li button:before {
+  color: #58a6ff;
+}
+
+.dark-mode #certifications .slick-dots li.slick-active button:before {
+  color: #58a6ff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cert-img-wrapper {
+    height: 200px;
+  }
+  
+  .cert-item-title {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cert-img-wrapper {
+    height: 180px;
+  }
+  
+  .cert-item-title {
+    font-size: 0.9rem;
+    min-height: 2.5rem;
+  }
+  
+  .cert-item-meta {
+    font-size: 0.8rem;
+  }
+}

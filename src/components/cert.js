@@ -1,7 +1,7 @@
-import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
-import '../App.css';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import Slider from 'react-slick';
+import '../App.css';
 
 const certificates = [
     {
@@ -451,7 +451,7 @@ const Certificate = () => {
     const settings = {
         dots: true,
         infinite: true,
-        arrows : false,
+        arrows: false,
         speed: 1000,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -470,30 +470,51 @@ const Certificate = () => {
     const slides = createSlides(certificates);
 
     return (
-        <section id="certifications" className="my-4">
+        <section id="certifications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
+            
             <Slider {...settings}>
                 {slides.map((slideCerts, index) => (
                     <div key={index}>
-                        <Card className="mb-3 border-0 shadow-sm about-card">
-                            <Card.Header className="bg-white border-0"></Card.Header>
-                            <Card.Body>
-                                <Row className="flex-wrap">
-                                    {slideCerts.map((cert, index) => (
-                                        <Col key={index} sm={6} md={4} lg={3} className="mb-4">
-                                            <Card className="border-0 shadow-sm experience-card h-100">
-                                                <Card.Img variant="top" src={cert.imageUrl} style={{ height: '200px', objectFit: 'contain' }} />
+                        <Card className="mb-3 border-0 shadow-sm cert-slide-card">
+                            <Card.Body className="p-4">
+                                <Row>
+                                    {slideCerts.map((cert, certIndex) => (
+                                        <Col key={certIndex} xs={12} sm={6} md={6} lg={3} className="mb-4">
+                                            <Card className="cert-item-card h-100 border-0 shadow-sm">
+                                                {/* Certificate Image */}
+                                                <div className="cert-img-wrapper">
+                                                    <Card.Img 
+                                                        variant="top" 
+                                                        src={cert.imageUrl}
+                                                        className="cert-img"
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                                
+                                                {/* Certificate Info */}
                                                 <Card.Body className="d-flex flex-column">
-                                                    <Card.Title>{cert.title}</Card.Title>
-                                                    <Card.Subtitle className="mb-2 text-muted">{cert.organization} - {cert.date}</Card.Subtitle>
-                                                    <Card.Link
+                                                    <Card.Title className="cert-item-title">
+                                                        {cert.title}
+                                                    </Card.Title>
+                                                    
+                                                    <div className="cert-item-meta mb-3">
+                                                        <Card.Subtitle className="text-muted d-block mb-2">
+                                                            {cert.organization}
+                                                        </Card.Subtitle>
+                                                        <Card.Subtitle className="text-muted d-block">
+                                                            {cert.date}
+                                                        </Card.Subtitle>
+                                                    </div>
+
+                                                    <a
                                                         href={cert.link}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="btn btn-outline-dark mt-auto"
+                                                        className="btn btn-outline-primary btn-sm mt-auto"
                                                     >
-                                                        Show Credential
-                                                    </Card.Link>
+                                                        View Credential <FaExternalLinkAlt className="ms-1" />
+                                                    </a>
                                                 </Card.Body>
                                             </Card>
                                         </Col>
