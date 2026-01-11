@@ -1,48 +1,74 @@
 import React from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, Row, Col, Badge } from 'react-bootstrap';
+import { FaCalendar, FaUniversity } from 'react-icons/fa';
 import '../App.css';
 
-const Publication = ({links }) => {
+const Publication = () => {
     const conferences = getConferences();
     
     return (
         <section id="publications" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Academic Publications</h1>
             <p className="text-center text-muted mb-4">
-                Research papers presented at international conferences
+                Research papers presented at international IEEE conferences
             </p>
             
-            <Card className="border-0 shadow-sm about-card">
-                <Card.Body>
-                    <ListGroup variant="flush">
-                        {conferences.map((publication, index) => (
-                            <ListGroup.Item key={index} className="publication-item">
-                                <a href={publication.link} target="_blank" rel="noopener noreferrer" className="linkStyle publication-title">
-                                    <h5>{publication.title}</h5>
-                                </a>
-                                <p className="text-muted mb-2">{publication.subtitle}</p>
-                                <p className="mb-2">{publication.description}</p>
-                                {publication.date && <Card.Subtitle className="mb-2 text-muted"><small>{publication.date}</small></Card.Subtitle>}
-                            </ListGroup.Item>
-                        ))}
-                    </ListGroup>
-                </Card.Body>
-            </Card>
+            <Row>
+                {conferences.map((publication, index) => (
+                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                        <Card className="publication-card h-100 border-0 shadow-sm">
+                            <Card.Body className="d-flex flex-column">
+                                {/* Conference Badge */}
+                                <div className="publication-header">
+                                    <Badge bg="primary" className="conference-badge">
+                                        <FaUniversity className="me-2" />
+                                        {publication.conference}
+                                    </Badge>
+                                    <Badge bg="secondary" className="year-badge">
+                                        {publication.year}
+                                    </Badge>
+                                </div>
 
-            {links && (
-                <Card.Text className="mb-3 link-group mt-3">
-                    {links.map((link, index) => (
-                        <Card.Link
-                            key={index}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn btn-outline-secondary"
-                        >
-                        </Card.Link>
-                    ))}
-                </Card.Text>
-            )}
+                                {/* Paper Title */}
+                                <h5 className="publication-paper-title mt-3">
+                                    {publication.title}
+                                </h5>
+
+                                {/* Venue */}
+                                <p className="publication-venue">
+                                    {/* <FaBook className="me-2" /> */}
+                                    {publication.venue}
+                                </p>
+
+                                {/* Description */}
+                                <p className="publication-abstract flex-grow-1">
+                                    {publication.description}
+                                </p>
+
+                                {/* Date */}
+                                <div className="publication-meta">
+                                    <small className="text-muted">
+                                        <FaCalendar className="me-2" />
+                                        {publication.date}
+                                    </small>
+                                </div>
+
+                                {/* Link Button */}
+                                <div className="mt-3">
+                                    <a
+                                        href={publication.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-outline-primary btn-sm w-100"
+                                    >
+                                        View on IEEE Xplore <i className="fas fa-external-link-alt ms-1"></i>
+                                    </a>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
+            </Row>
         </section>
     );
 };
@@ -51,23 +77,29 @@ const Publication = ({links }) => {
 const getConferences = () => [
     {
         title: 'Practical Mobile Based Services for Identification of Chicken Diseases From Fecal Images',
-        subtitle: 'Presented at IEEE Region 10 Conference 2024 (TENCON 2024)',
-        description: 'Poultry farming is crucial to the food chain, and chicken health directly impacts product quality and safety. Diagnosing poultry diseases using polymerase chain reaction is costly, particularly for small farms. To address this, we developed a mobile-based service for farmers, enabling the identification of common chicken diseases from fecal images via a Line account. Our system achieved 86.49% segmentation precision and 95.93% classification accuracy on a large dataset, offering a practical and accessible tool for local farmers.', // Truncated for brevity
-        date: 'IEEE · Mar 5, 2025',
+        conference: 'TENCON 2024',
+        venue: 'IEEE Region 10 Conference 2024',
+        description: 'Poultry farming is crucial to the food chain, and chicken health directly impacts product quality and safety. Diagnosing poultry diseases using polymerase chain reaction is costly, particularly for small farms. To address this, we developed a mobile-based service for farmers, enabling the identification of common chicken diseases from fecal images via a Line account. Our system achieved 86.49% segmentation precision and 95.93% classification accuracy on a large dataset, offering a practical and accessible tool for local farmers.',
+        date: 'March 5, 2025',
+        year: '2025',
         link: 'https://ieeexplore.ieee.org/document/10902790'
     },
     {
         title: 'Detecting Vulnerable OAuth 2.0 Implementations in Android Applications',
-        subtitle: 'Presented at the Workshop on Cyber Forensics, Security, and E-discovery, as part of the 23rd IEEE International Conference on Software Quality, Reliability, and Security, 2023.',
-        description: 'OAuth 2.0, commonly used for authorization, can be susceptible to CSRF attacks in Android applications. To address this, we developed an Android app to assess other apps\' use of the OAuth 2.0 state parameter—a key defense against CSRF. Our analysis, conducted on both Chrome and the default browser, evaluates whether Android apps using OAuth 2.0 are adequately protected against CSRF attacks. Our research aims to protect users by highlighting apps with potentially vulnerable OAuth 2.0 implementations.', // Truncated for brevity
-        date: 'IEEE · Feb 19, 2024',
+        conference: 'QRS 2023',
+        venue: '23rd IEEE International Conference on Software Quality, Reliability, and Security',
+        description: 'OAuth 2.0, commonly used for authorization, can be susceptible to CSRF attacks in Android applications. To address this, we developed an Android app to assess other apps\' use of the OAuth 2.0 state parameter—a key defense against CSRF. Our analysis, conducted on both Chrome and the default browser, evaluates whether Android apps using OAuth 2.0 are adequately protected against CSRF attacks. Our research aims to protect users by highlighting apps with potentially vulnerable OAuth 2.0 implementations.',
+        date: 'February 19, 2024',
+        year: '2023',
         link: 'https://ieeexplore.ieee.org/document/10430018'
     },
     {
         title: 'Automated COVID-19 Screening Framework Using Deep CNN With Chest X-Ray Medical Images',
-        subtitle: 'Presented at The 6th International Conference on Information Technology (InCIT2022)',
-        description: 'An automated COVID-19 screening framework using chest X-ray images is proposed in this study. It leverages artificial intelligence techniques and transfer learning for accurate diagnosis. The framework extracts features using transfer learning and applies modified deep neural networks. Grad-CAM visualization supports the predicted diagnosis. Experimental results demonstrate superior performance compared to other deep learning techniques. This framework has the potential to aid in early COVID-19 diagnosis and alleviate the burden on radiologists.', // Truncated for brevity
-        date: 'IEEE · Mar 21, 2023',
+        conference: 'InCIT 2022',
+        venue: '6th International Conference on Information Technology',
+        description: 'An automated COVID-19 screening framework using chest X-ray images is proposed in this study. It leverages artificial intelligence techniques and transfer learning for accurate diagnosis. The framework extracts features using transfer learning and applies modified deep neural networks. Grad-CAM visualization supports the predicted diagnosis. Experimental results demonstrate superior performance compared to other deep learning techniques. This framework has the potential to aid in early COVID-19 diagnosis and alleviate the burden on radiologists.',
+        date: 'March 21, 2023',
+        year: '2022',
         link: 'https://ieeexplore.ieee.org/document/10067528'
     }
 ];
