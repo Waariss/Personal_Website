@@ -227,10 +227,10 @@ const Education = () => {
     return (
         <section id="education" className="my-4">
             <h1 className="mb-4 text-center title-enhanced">Education</h1>
-            <EducationEntry {...HacktheboxData} />
-            <EducationEntry {...tryHackMeData} />
             <EducationEntry {...mahidolData} />
             <EducationEntry {...bccData} />
+            <EducationEntry {...HacktheboxData} />
+            <EducationEntry {...tryHackMeData} />
         </section>
     );
 };
