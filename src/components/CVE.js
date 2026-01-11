@@ -110,7 +110,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14506',
         plugin: 'ConvertForce Popup Builder',
-        description: 'Stored Cross-Site Scripting via entrance_animation attribute in Gutenberg block (≤ 0.0.7)',
+        description: 'The ConvertForce Popup Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gutenberg block\'s `entrance_animation` attribute in all versions up to, and including, 0.0.7. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
         cvss: 6.4,
         severity: 'MEDIUM',
         date: 'Jan 9, 2026',
@@ -119,7 +119,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14453',
         plugin: 'My Album Gallery',
-        description: 'Authenticated Stored Cross-Site Scripting via style_css shortcode attribute (≤ 1.0.4)',
+        description: 'The My Album Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \'style_css\' shortcode attribute in all versions up to, and including, 1.0.4 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
         cvss: 6.4,
         severity: 'MEDIUM',
         date: 'Jan 6, 2026',
@@ -128,7 +128,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14626',
         plugin: 'QR Code for WooCommerce',
-        description: 'Authenticated Cross-Site Scripting via shortcode attributes (≤ 1.9.42)',
+        description: 'The QR Code for WooCommerce order emails, PDF invoices, packing slips plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin\'s shortcode in all versions up to, and including, 1.9.42 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
         cvss: 6.4,
         severity: 'MEDIUM',
         date: 'Jan 6, 2026',
@@ -137,7 +137,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14153',
         plugin: 'Page Expire Popup/Redirection',
-        description: 'Authenticated SQL Injection via id shortcode attribute (≤ 1.0)',
+        description: 'The Page Expire Popup/Redirection for WordPress plugin for WordPress is vulnerable to time-based SQL Injection via the \'id\' shortcode attribute in all versions up to, and including, 1.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticated attackers, with Author-level access and above, to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.',
         cvss: 6.5,
         severity: 'MEDIUM',
         date: 'Jan 5, 2026',
@@ -146,7 +146,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-13693',
         plugin: 'Image Photo Gallery Final Tiles Grid',
-        description: 'Authenticated Stored Cross-Site Scripting via Custom Scripts setting (≤ 3.6.8)',
+        description: 'The Image Photo Gallery Final Tiles Grid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \'Custom scripts\' setting in all versions up to, and including, 3.6.8 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
         cvss: 6.4,
         severity: 'MEDIUM',
         date: 'Dec 20, 2025',
@@ -155,7 +155,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14003',
         plugin: 'Image Gallery – Photo Grid & Video Gallery',
-        description: 'Missing Authorization to Authenticated Arbitrary Gallery Modification (≤ 2.13.3)',
+        description: 'The Image Gallery – Photo Grid & Video Gallery plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the `add_images_to_gallery_callback()` function in all versions up to, and including, 2.13.3. This makes it possible for authenticated attackers, with Author-level access and above, to add images to arbitrary Modula galleries owned by other users.',
         cvss: 4.3,
         severity: 'MEDIUM',
         date: 'Dec 15, 2025',
@@ -164,7 +164,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14366',
         plugin: 'Eyewear prescription form',
-        description: 'Missing Authorization to Unauthenticated Arbitrary WooCommerce Product Creation (≤ 6.0.1)',
+        description: 'The Eyewear prescription form plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 6.0.1. This is due to missing authorization checks on the SubmitCatProductRequest AJAX action. This makes it possible for unauthenticated attackers to create arbitrary WooCommerce products with custom names, prices, and category assignments via the \'Name\', \'Price\', and \'Parent\' parameters.',
         cvss: 5.3,
         severity: 'MEDIUM',
         date: 'Dec 12, 2025',
@@ -173,7 +173,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14068',
         plugin: 'WPNakama',
-        description: 'Unauthenticated SQL Injection via order_by parameter (≤ 0.6.3)',
+        description: 'The WPNakama plugin for WordPress is vulnerable to time-based SQL Injection via the \'order_by\' parameter in all versions up to, and including, 0.6.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.',
         cvss: 7.5,
         severity: 'CRITICAL',
         date: 'Dec 11, 2025',
@@ -182,7 +182,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-14166',
         plugin: 'WPMasterToolKit (WPMTK)',
-        description: 'Authenticated Code Injection leading to RCE (≤ 2.13.0)',
+        description: 'The WPMasterToolKit plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 2.13.0. This is due to the plugin allowing Author-level users to create and execute arbitrary PHP code through the Code Snippets feature without proper capability checks. This makes it possible for authenticated attackers, with Contributor-level access and above, to execute arbitrary PHP code on the server, leading to remote code execution, privilege escalation, and complete site compromise.',
         cvss: 5.3,
         severity: 'MEDIUM',
         date: 'Dec 11, 2025',
@@ -191,7 +191,7 @@ const getCVEs = () => [
     {
         id: 'CVE-2025-12782',
         plugin: 'Beaver Builder – WordPress Page Builder',
-        description: 'Missing Authorization to Authenticated Builder Status Tampering (≤ 2.9.4)',
+        description: 'The Beaver Builder – WordPress Page Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.4. This is due to the plugin not properly verifying a user\'s authorization in the disable() function. This makes it possible for authenticated attackers, with contributor level access and above, to disable the Beaver Builder layout on arbitrary posts and pages, causing content integrity issues and layout disruption on those pages.',
         cvss: 4.3,
         severity: 'MEDIUM',
         date: 'Dec 4, 2025',
