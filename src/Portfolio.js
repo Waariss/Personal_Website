@@ -12,6 +12,7 @@ import Publication from './components/Publications';
 import CVE from './components/CVE';
 import Certificate from './components/cert';
 import Projects from './components/Project';
+import Speaker from './components/Speaker';
 import ResumeDisplay from './components/ResumeDisplay';
 import Competitions from './components/comp';
 import Blog from './components/Blog';
@@ -31,6 +32,7 @@ const Portfolio = () => {
             <Projects />
             <Publication />
             <CVE />
+            <Speaker />
             <Certificate />
             <Competitions />
             <Blog />

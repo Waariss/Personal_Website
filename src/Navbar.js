@@ -3,7 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import {
   FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, 
   FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy, 
-  FaBlog, FaTools, FaShieldAlt
+  FaBlog, FaTools, FaShieldAlt, FaMicrophone
 } from 'react-icons/fa';
 import './App.css';
 
@@ -17,7 +17,7 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                    {['home', 'about', 'skills', 'experience', 'education', 'projects', 'publications', 'cves', 'certifications', 'competitions', 'blog', 'resume'].map((link, index) => (
+                    {['home', 'about', 'skills', 'experience', 'education', 'projects', 'publications', 'cves', 'speaker', 'certifications', 'competitions', 'blog', 'resume'].map((link, index) => (
                         <Nav.Link 
                             key={index} 
                             href={`/#${link}`} 
@@ -48,6 +48,7 @@ const getIconForLink = (link) => {
         case '#projects': return <FaProjectDiagram className="me-1" />;
         case '#publications': return <FaBook className="me-1" />;
         case '#cves': return <FaShieldAlt className="me-1" />;
+        case '#speaker': return <FaMicrophone className="me-1" />;
         case '#certifications': return <FaCertificate className="me-1" />;
         case '#competitions': return <FaTrophy className="me-1" />;
         case '#blog': return <FaBlog className="me-1" />;
@@ -65,6 +66,7 @@ const getLabelForLink = (link) => {
         case '#education': return 'Education';
         case '#publications': return 'Publications';
         case '#cves': return 'CVEs';
+        case '#speaker': return 'Speaker';
         case '#certifications': return 'Certifications';
         case '#projects': return 'Projects';
         case '#competitions': return 'Competitions';

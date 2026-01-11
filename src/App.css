@@ -2403,6 +2403,24 @@ body.dark-mode {
   margin-left: -0.5rem;
 }
 
+.comp-click-indicator {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.comp-click-indicator span {
+  font-size: 0.9rem;
+  color: #ff6347;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.competition-minimal-card:hover .comp-click-indicator span {
+  opacity: 1;
+}
+
 /* Dark Mode Minimal */
 .dark-mode .competition-minimal-card {
   background: #161b22;
@@ -2433,6 +2451,10 @@ body.dark-mode {
 
 .dark-mode .minimal-stat-value {
   color: #c9d1d9;
+}
+
+.dark-mode .comp-click-indicator span {
+  color: #ff8c7a;
 }
 
 /* Responsive */
@@ -2857,4 +2879,93 @@ body.dark-mode {
   .cert-item-meta {
     font-size: 0.8rem;
   }
+}
+
+/* Speaker & Presentations Section */
+.talk-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.talk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.talk-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-badge {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.talk-content {
+  margin-bottom: 1rem;
+}
+
+.talk-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.talk-event {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 0.75rem;
+}
+
+.talk-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.talk-meta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Dark Mode - Speaker */
+.dark-mode .talk-card {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+.dark-mode .talk-title {
+  color: #ffffff;
+}
+
+.dark-mode .talk-event {
+  color: #6ea8fe;
+}
+
+.dark-mode .talk-description {
+  color: #b0b0b0;
+}
+
+.dark-mode .talk-meta {
+  border-top-color: #444;
+}
+
+.dark-mode .talk-meta small {
+  color: #999 !important;
 }

@@ -40,6 +40,10 @@ const Competitions = () => {
                                             </div>
                                         )}
                                     </div>
+                                    
+                                    <div className="comp-click-indicator">
+                                        <span>Click to view details →</span>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </a>
