@@ -1,197 +1,218 @@
 #resume {
     padding: 20px;
+    position: relative;
 }
 
-.icon-col {
-    margin: 0 40px;
+/* Terminal Card */
+.terminal-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #2d2d2d;
+    border: 1px solid #1a1a1a !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
 }
 
-.hover-shadow:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s;
+/* Terminal Window */
+.terminal-window {
+    background: #2d2d2d;
+    border-radius: 8px 0 0 0;
+    overflow: hidden;
 }
 
-.social-icons a {
-    transition: transform 0.3s;
-}
-
-.social-icons a:hover {
-    transform: scale(1.1);
-}
-
-.details-container p {
-    margin-bottom: 15px;
-}
-
-.details-container strong {
-    font-size: 1.1em;
-    margin-right: 10px;
-}
-
-.details-container h4 {
-    margin-bottom: 25px;
-}
-
-
-.justify-content-around > [class^="col-"] {
-    padding: 0 10px;
-}
-
-.details-container a {
-    color: #007bff; 
-    text-decoration: underline;
-    transition: color 0.3s ease;
-}
-
-.details-container a:hover {
-    color: #0056b3; 
-}
-
-iframe {
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-.experience-card {
-    border-radius: 10px;
-}
-
-.contact-details p {
-    margin-bottom: 0.5rem;
-}
-.title-enhanced2{
-        font-size: 1.75rem;
-        font-family: 'Lato', sans-serif;
-        color: #333;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-}
-.terminal-container {
-    background-color: #ffffff; /* Set terminal background to white */
-    border: 1px solid #d1d5db; /* Light grey border for subtle definition */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
-    padding: 1rem; /* Uniform padding */
-    font-family: 'Courier New', Courier, monospace; /* Maintain monospace font for terminal feel */
-    margin-top: 1rem; /* Space above the terminal */
-}
-
+/* Terminal Header */
 .terminal-header {
-    background-color: #007bff; /* Theme's primary color for header */
-    color: #ffffff; /* White text for contrast */
-    padding: 0.5rem 1rem; /* Padding inside the header */
-    border-top-left-radius: 7px; /* Rounded corners on top */
-    border-top-right-radius: 7px;
-}
-
-.terminal-header h4 {
-    font-family: 'Lato', sans-serif; /* Sans-serif font for the header */
-    color: #007bff; /* Use the theme's blue as text color for the header */
-    margin: 0; /* Remove default margins */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.terminal-body {
-    padding: 15px 20px;
-}
-
-.terminal-body p {
-    font-size: 1em; /* Smaller font size for body text */
-    color: #333333;
-    margin-bottom: 20px; /* More space below the introduction text */
-}
-
-.terminal-commands {
-    padding: 0px; /* Padding around the command area */
-    border-radius: 4px; /* Rounded corners for the command area */
-    margin-bottom: 15px;
-}
-
-.command {
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Center items vertically */
-    margin-bottom: 5px; /* Space between commands */
-}
-
-.command:last-child {
-    margin-bottom: 0; /* No margin after the last command */
-}
-
-.command-prefix {
-    color: #ff5722; /* Light grey color for the command prefix */
-    margin-right: 8px; /* Space between the prefix and the text */
-}
-
-.command-text {
-    color: #212529; /* Darker text for readability */
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for a terminal look */
-}
-
-.command-text a {
-    color: #007bff; /* Theme color for links */
-    text-decoration: none; /* No underline */
-    transition: color 0.2s; /* Smooth color transition for hover */
-}
-
-.command-text a:hover {
-    color: #ff5722; /* Darker blue on hover for contrast */
-}
-
-.terminal-icons {
+    background: #3a3a3a;
+    padding: 10px 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #1a1a1a;
 }
 
-.terminal-icons a {
-    display: inline-flex; /* Align icons inline with flex */
+.terminal-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.terminal-button.red {
+    background: #ff5f56;
+    box-shadow: 0 0 5px rgba(255, 95, 86, 0.5);
+}
+
+.terminal-button.yellow {
+    background: #ffbd2e;
+    box-shadow: 0 0 5px rgba(255, 189, 46, 0.5);
+}
+
+.terminal-button.green {
+    background: #27c93f;
+    box-shadow: 0 0 5px rgba(39, 201, 63, 0.5);
+}
+
+.terminal-title {
+    color: #e0e0e0;
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Terminal Content */
+.terminal-content {
+    background: #2d2d2d;
+    padding: 0;
+}
+
+.terminal-content iframe {
+    background: white;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Terminal Sidebar */
+.terminal-sidebar {
+    background: #2d2d2d;
+    display: flex;
+    align-items: stretch;
+    border-left: 1px solid #1a1a1a;
+}
+
+.terminal-contact-window {
+    width: 100%;
+    background: #2d2d2d;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-contact-content {
+    background: #2d2d2d;
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.8;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Terminal Prompt */
+.terminal-prompt-line {
+    margin-bottom: 15px;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 35px; /* Fixed width and height for icons */
-    height: 35px;
-    background-color: #f2f2f2; /* Light grey background for icons */
-    border-radius: 50%; /* Circular icons */
-    color: #333333; /* Dark grey icon color */
-    margin-right: 20px; /* Space between icons */
-    transition: all 0.2s; /* Smooth transition for hover effects */
+    gap: 5px;
 }
 
-.terminal-prompt {
-    background-color: #333333; /* Dark background for prompt line */
-    color: #ffffff; /* White text for prompt */
-    padding: 0.25rem 1rem; /* Padding for prompt line */
-    border-top-left-radius: 7px; /* Continue rounded corners */
-    border-top-right-radius: 7px;
-    display: flex; /* Use flexbox for alignment */
-    align-items: center; /* Center items vertically */
-    font-weight: bold; /* Bold text for prompt */
+.terminal-user {
+    color: #7ec699;
+    font-weight: bold;
 }
 
-.ubuntu-logo {
-    width: 25px; 
-    height: 25px; 
-    margin-right: 8px; 
+.terminal-colon {
+    color: #e0e0e0;
 }
 
-.prompt-user,
-.prompt-location,
-.prompt-sign,
-.prompt-text {
-    margin: 0 4px;
+.terminal-path {
+    color: #82aaff;
+    font-weight: bold;
 }
 
-.prompt-user {
-    background-color: #ff5722; /* Orange background for the user */
-    padding: 0.25rem 0.5rem; /* Padding around the user */
-    border-radius: 4px; /* Rounded corners for user tag */
-    margin-right: 0.5rem; /* Space after the user tag */
+.terminal-dollar {
+    color: #e0e0e0;
+    margin-right: 5px;
 }
 
-.prompt-sign {
-    color: #fff; /* White dollar sign */
-    margin-left: 5px; /* Space before the dollar sign */
-    font-weight: bold; /* Bold dollar sign */
+.terminal-command {
+    color: #e0e0e0;
 }
 
+.terminal-cursor {
+    color: #7ec699;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Terminal Output */
+.terminal-output {
+    margin-top: 10px;
+}
+
+.terminal-info-block {
+    margin-bottom: 20px;
+}
+
+.terminal-comment {
+    color: #7ec699;
+    display: block;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.terminal-info-line {
+    margin: 10px 0;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+.terminal-key {
+    color: #ffffff;
+    font-weight: bold;
+    min-width: 110px;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.terminal-value {
+    color: #e7e8fa;
+    text-decoration: none;
+    word-break: break-all;
+    transition: all 0.2s ease;
+    font-size: 16px;
+}
+
+.terminal-value:hover {
+    color: #abcef7;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terminal-title {
+        font-size: 11px;
+    }
+    
+    .terminal-contact-content {
+        font-size: 14px;
+    }
+    
+    .terminal-key {
+        min-width: 90px;
+        font-size: 14px;
+    }
+    
+    .terminal-value {
+        font-size: 14px;
+    }
+    
+    .terminal-comment {
+        font-size: 15px;
+    }
+}
