@@ -7,6 +7,21 @@ const PDFViewer = () => {
   const { pdfId } = useParams();
   const [contentUrl, setContentUrl] = useState('');
   const [isImage, setIsImage] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detect if device is iOS or mobile
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+      const isAndroid = /android/i.test(userAgent);
+      const isMobileDevice = /Mobi|Android/i.test(userAgent);
+      
+      setIsMobile(isIOS || isAndroid || isMobileDevice);
+    };
+    
+    checkMobile();
+  }, []);
 
   useEffect(() => {
     switch(pdfId) {
@@ -177,21 +192,79 @@ const PDFViewer = () => {
   }, [pdfId]);
 
   return (
-    <><Navigation /><div style={{ width: '100%', height: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      {contentUrl && !isImage ? (
-        <iframe
-          src={contentUrl}
-          style={{ width: '100%', height: '100%', border: "none" }}
-          title="PDF" />
-      ) : contentUrl && isImage ? (
-        <img
-          src={contentUrl}
-          alt="Content"
-          style={{ maxHeight: '100%', maxWidth: '100%', objectFit: 'cover' }} />
-      ) : (
-        <p>No content found.</p>
-      )}
-    </div><Footer /></>
+    <>
+      <Navigation />
+      <div style={{ 
+        width: '100%', 
+        minHeight: '80vh', 
+        display: 'flex', 
+        flexDirection: 'column',
+        justifyContent: 'center', 
+        alignItems: 'center',
+        padding: '20px'
+      }}>
+        {contentUrl && isImage ? (
+          <img
+            src={contentUrl}
+            alt="Content"
+            style={{ maxHeight: '80vh', maxWidth: '100%', objectFit: 'contain' }}
+          />
+        ) : contentUrl && !isImage && isMobile ? (
+          // Mobile view - Show download button instead of iframe
+          <div style={{ textAlign: 'center', maxWidth: '600px' }}>
+            <div style={{ 
+              background: '#f8f9fa', 
+              padding: '40px', 
+              borderRadius: '12px',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+            }}>
+              <i className="fas fa-file-pdf" style={{ fontSize: '4rem', color: '#ff6347', marginBottom: '20px' }}></i>
+              <h3 style={{ marginBottom: '20px' }}>PDF Document</h3>
+              <p style={{ marginBottom: '30px', color: '#666' }}>
+                PDF viewing is not supported on mobile browsers. Please download the document to view it.
+              </p>
+              <a 
+                href={contentUrl}
+                download
+                className="btn btn-primary btn-lg"
+                style={{ 
+                  background: '#ff6347', 
+                  border: 'none',
+                  padding: '12px 30px',
+                  fontSize: '1.1rem',
+                  textDecoration: 'none',
+                  display: 'inline-block',
+                  borderRadius: '6px'
+                }}
+              >
+                <i className="fas fa-download me-2"></i>
+                Download PDF
+              </a>
+              <div style={{ marginTop: '20px' }}>
+                <a 
+                  href={contentUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#666', textDecoration: 'underline', fontSize: '0.9rem' }}
+                >
+                  Or try opening in new tab
+                </a>
+              </div>
+            </div>
+          </div>
+        ) : contentUrl && !isImage ? (
+          // Desktop view - Show iframe
+          <iframe
+            src={contentUrl}
+            style={{ width: '100%', height: '80vh', border: 'none' }}
+            title="PDF"
+          />
+        ) : (
+          <p>No content found.</p>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 };
 
