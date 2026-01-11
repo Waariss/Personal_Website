@@ -2451,3 +2451,152 @@ body.dark-mode {
     margin-bottom: 0;
   }
 }
+
+/* CVE Section Styles */
+.cve-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cve-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cve-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.cvss-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cvss-circle {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.cvss-circle-bg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 8;
+}
+
+.cvss-circle-progress {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.cvss-circle-progress.critical {
+  stroke: #dc3545;
+}
+
+.cvss-circle-progress.high {
+  stroke: #fd7e14;
+}
+
+.cvss-circle-progress.medium {
+  stroke: #ffc107;
+}
+
+.cvss-circle-progress.low {
+  stroke: #6c757d;
+}
+
+.cvss-score-text {
+  font-size: 24px;
+  font-weight: 700;
+  fill: #333;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.cve-content {
+  margin-bottom: 1rem;
+}
+
+.cve-id {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.cve-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.cve-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cve-meta {
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Dark Mode */
+.dark-mode .cve-card {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.dark-mode .cve-header {
+  border-bottom-color: #30363d;
+}
+
+.dark-mode .cvss-circle-bg {
+  stroke: #30363d;
+}
+
+.dark-mode .cvss-score-text {
+  fill: #c9d1d9;
+}
+
+.dark-mode .cve-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .cve-description {
+  color: #8b949e;
+}
+
+.dark-mode .cve-meta {
+  border-top-color: #30363d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cvss-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cvss-score-text {
+    font-size: 20px;
+  }
+  
+  .cve-id {
+    font-size: 1rem;
+  }
+  
+  .cve-description {
+    font-size: 0.8rem;
+  }
+}

@@ -9,6 +9,7 @@ import Skills from './components/skills';
 import Experience from './components/Exp';
 import Education from './components/Edu';
 import Publication from './components/Publications';
+import CVE from './components/CVE';
 import Certificate from './components/cert';
 import Projects from './components/Project';
 import ResumeDisplay from './components/ResumeDisplay';
@@ -29,6 +30,7 @@ const Portfolio = () => {
             <Education />
             <Projects />
             <Publication />
+            <CVE />
             <Certificate />
             <Competitions />
             <Blog />
