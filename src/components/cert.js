@@ -476,7 +476,7 @@ const Certificate = () => {
             <Slider {...settings}>
                 {slides.map((slideCerts, index) => (
                     <div key={index}>
-                        <Card className="mb-3 border-0 shadow-sm cert-slide-card">
+                        <Card className="mb-5 border-0 shadow-sm cert-slide-card">
                             <Card.Body className="p-4">
                                 <Row>
                                     {slideCerts.map((cert, certIndex) => (
