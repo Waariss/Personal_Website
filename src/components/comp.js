@@ -1,147 +1,231 @@
-import React from 'react';
-import { Card} from 'react-bootstrap';
-import Slider from 'react-slick';
+import React, { useState } from 'react';
+import { Card, Row, Col } from 'react-bootstrap';
 import '../App.css';
 
 const Competitions = () => {
-
-    const settings = {
-        dots: true,
-        infinite: true,
-        arrows : false,
-        speed: 1000,
-        autoplay: true,
-        autoplaySpeed : 5000 ,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
+    const [showAllCompetitions, setShowAllCompetitions] = useState(false);
+    const competitions = getCompetitions();
+    const displayedCompetitions = showAllCompetitions ? competitions : competitions.slice(0, 4);
 
     return (
         <section id="competitions" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Competitions</h1>
-            <Slider {...settings} className="comp">
-                {getCompetitions().map((competition, index) => (
-                    <div key={index} className="competition-card">
-                        <Card className="">
-                            <img src={competition.certificateImage} alt="Competition Certificate" className="certificate-image" />
-                            <Card.Body>
-                                <Card.Title className="competition-title">{competition.title}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">{competition.date}</Card.Subtitle>
-                                <Card.Text>{competition.description}</Card.Text>
-                                {/* <Card.Text>
-                                    <strong>Skills:</strong> <span className="skills">{competition.skills}</span>
-                                </Card.Text> */}
-                                <Card.Text className="link-group">
-                                    {competition.links.map((link, linkIndex) => (
-                                        <Card.Link
-                                            key={linkIndex}
-                                            href={link.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="btn btn-outline-dark"
-                                        >
-                                            {link.label}
-                                        </Card.Link>
-                                    ))}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </div>
+            <Row>
+                {displayedCompetitions.map((competition, index) => (
+                    <Col key={index} xs={12} md={6} lg={3} className="mb-3">
+                        <a 
+                            href={competition.linkedinUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="competition-minimal-link"
+                        >
+                            <Card className="competition-minimal-card h-100">
+                                <Card.Body className="d-flex flex-column">
+                                    <div className="comp-minimal-header">
+                                        <h5 className="comp-minimal-title">{competition.title}</h5>
+                                        <span className="comp-minimal-date">{competition.date}</span>
+                                    </div>
+                                    
+                                    <div className="comp-minimal-stats">
+                                        {competition.teamRank && (
+                                            <div className="minimal-stat">
+                                                <span className="minimal-stat-label">Team:</span>
+                                                <span className="minimal-stat-value">{competition.teamRank} · {competition.teamScore}</span>
+                                            </div>
+                                        )}
+                                        {competition.individualRank && (
+                                            <div className="minimal-stat">
+                                                <span className="minimal-stat-label">Individual:</span>
+                                                <span className="minimal-stat-value">{competition.individualRank} · {competition.individualScore}</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </Card.Body>
+                            </Card>
+                        </a>
+                    </Col>
                 ))}
-            </Slider>
+            </Row>
+            {competitions.length > 4 && (
+                <div className="text-center mt-4">
+                    <button 
+                        className="btn btn-outline-secondary btn-lg"
+                        onClick={() => setShowAllCompetitions(!showAllCompetitions)}
+                    >
+                        {showAllCompetitions ? 'Show Less Competitions' : `Show All ${competitions.length} Competitions`}
+                    </button>
+                </div>
+            )}
         </section>
     );
 };
 
 const getCompetitions = () => [
+    // {
+    //     certificateImage: "./images/Umass.png",
+    //     title: 'UMassCTF 2024',
+    //     date: 'April 2024',
+    //     teamRank: '85th',
+    //     teamScore: '2,450 points',
+    //     individualRank: '120th',
+    //     individualScore: '1,850 points',
+    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
+    // },
+    // {
+    //     certificateImage: "./images/Amateurs.png",
+    //     title: 'AmateursCTF 2024',
+    //     date: 'April 2024',
+    //     teamRank: '156th',
+    //     teamScore: '1,875 points',
+    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
+    // },
+    // {
+    //     certificateImage: "./images/SCD.png",
+    //     title: 'SecureMy.Dev CTF',
+    //     date: 'April 2024',
+    //     individualRank: '45th',
+    //     individualScore: '3,200 points',
+    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
+    // },
     {
-        certificateImage: "./images/Umass.png",
-        title: 'UMassCTF 2024',
-        date: 'April 2024',
-        description: 'UMass CTF is back and better than ever this year! Get ready to dive into a thrilling array of challenges that will test your skills and push your limits. Participants can look forward to tackling intricate puzzles in Reverse Engineering, unlocking the mysteries of Cryptography, uncovering clues in Forensics, navigating the complex world of Binary Exploitation, and outsmarting defenses in Web Exploitation. Plus, we\'ve got a host of miscellaneous challenges that are sure to surprise and engage. Don\'t miss out on the action-packed excitement at UMass CTF!',
-        // skills: 'Cybersecurity, Web Exploitation, Forensics, Cryptography, Radio Steganography , Misc, Reverse Engineering, Pwn',
-        links: [
-            { url: 'http://ctf.umasscybersec.org/', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/umassctf-2024', type: 'paper', label: 'CTF Writeup' }
-        ]
+        certificateImage: "./images/pico.png",
+        title: 'Internal KBTG CTF 2025',
+        date: 'Dec 2025',
+        teamRank: '1 / 5 teams',
+        teamScore: '311 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_internal-kbtg-ctf-2025-19-december-activity-7411022866307248128-4Vov'
     },
     {
-        certificateImage: "./images/Amateurs.png",
-        title: 'AmateursCTF 2024',
-        date: 'April 2024',
-        description: 'Welcome to Les Amateurs\'s second CTF! Problems are targeted towards high schoolers, and will range from beginner-friendly all the way up to kernel pwn.',
-        // skills: 'Cybersecurity, Web Exploitation, Forensics, Cryptography, OSINT, Misc, Reverse Engineering, Pwn',
-        links: [
-            { url: 'https://scores.securemy.dev/', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/amateursctf-2024', type: 'paper', label: 'CTF Writeup' }
-        ]
+        certificateImage: "./images/pico.png",
+        title: 'Hack The Scammer CTF 2025 – Online Qualifiers',
+        date: 'Dec 2025',
+        teamRank: '5 / 709 teams',
+        teamScore: '1,608 points',
+        individualRank: '4 / 1,7778 participants',
+        individualScore: '1,307 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_hack-the-scammer-ctf-2025-online-qualifiers-activity-7406219811346833409-stpa'
     },
     {
-        certificateImage: "./images/SCD.png",
-        title: 'SecureMy.Dev CTF',
-        date: 'April 2024',
-        description: 'The SecureMy.Dev CTF is an engaging cybersecurity challenge designed to hone participants\' skills through manual testing and problem-solving within a controlled environment. The competition emphasizes the importance of ethical practices, such as respecting rate limits and not sharing discovered vulnerabilities outside the intended scope. It operates on a user-friendly platform, offering various challenges that cater to different skill levels. Points and hints are available through the scoreboard, encouraging a collaborative yet competitive atmosphere. This event is an excellent opportunity for enthusiasts and professionals alike to test their cybersecurity knowledge and learn new techniques in a practical, hands-on manner.',
-        // skills: 'Cybersecurity, Web Exploitation, Network Forensics, Puzzle, Steganography , Binary Exploitation',
-        links: [
-            { url: 'https://scores.securemy.dev/', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
-        ]
-    },   
+        certificateImage: "./images/pico.png",
+        title: 'Thailand Cyber Top Talent 2025 - OPEN [Final]',
+        date: 'Sep 2025',
+        teamRank: '8 / 10 teams',
+        teamScore: '1,100 points',
+        individualRank: '11 / 30 participants',
+        individualScore: '600 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-ctf-thailandcybertoptalent2025-activity-7383493031322312704-uR5t'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'Thailand Cyber Top Talent 2025 - OPEN [Qualifier]',
+        date: 'Sep 2025',
+        teamRank: '4 / 338 teams',
+        teamScore: '4,601 points',
+        individualRank: '32 / 725 participants',
+        individualScore: '2,301 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-ctf-thailandcybertoptalent2025-activity-7368100288869617664-wakW'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'TB-CERT Cyber Combat 2025',
+        date: 'Aug 2025',
+        teamRank: '10 / 43 teams',
+        teamScore: '4,290 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_kbtg-cybersecurity-ctf-activity-7368107840911122432-VLlv'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'SEC Playground Cybersplash 2025',
+        date: 'Apr 2025',
+        teamRank: '8 / 92 teams',
+        teamScore: '133 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_wrapped-up-an-exciting-journey-at-sec-playground-activity-7319220648403251200-QFFC'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'picoCTF 2025',
+        date: 'Mar 2025',
+        individualRank: '169 / 10,460 teams',
+        individualScore: '6,010 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_wrapped-up-an-incredible-journey-at-picoctf-activity-7307693721024634880-f1sJ'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'SEC Playground Hackloween CTF 2024',
+        date: 'Oct 2024',
+        individualRank: '15 / 157 teams',
+        individualScore: '233 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_secplaygroundhackloween-secplaygroundhackloween2024-activity-7258113001302446081-ZiaZ'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'HackTheBox: Hack The Boo 2024',
+        date: 'Oct 2024',
+        individualRank: '85 / 6,348 teams',
+        individualScore: '10,875 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_hackthebox-hacktheboo-ctf-activity-7255929001716658176-oC3d'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'Thailand Cyber Top Talent 2024 - OPEN [Qualifier]',
+        date: 'Sep 2024',
+        teamRank: '41 th',
+        teamScore: '2,000 points',
+        individualRank: '50th',
+        individualScore: '1,200 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_excited-to-share-my-experience-at-the-activity-7246393763504250881-l1Lx'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'SEC Playground Half Year CTF 2024',
+        date: 'Jun 2024',
+        teamRank: '19 / 130 teams',
+        teamScore: '208 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_i-recently-participated-in-sec-playground-activity-7223177722066321409-lN2G'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'BCACTF 5.0',
+        date: 'Jun 2024',
+        teamRank: '91 / 1202 teams',
+        teamScore: '1,935 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_i-recently-participated-in-bcactf-50-and-activity-7206134596525068290-y5Og'
+    },
     {
         certificateImage: "./images/pico.png",
         title: 'picoCTF 2024',
         date: 'Mar 2024',
-        description: 'picoCTF is the largest cybersecurity hacking competition for middle, high school, and college students. Participants 13 years and older of all skill levels are encouraged to compete. Competitors must reverse-engineer, break, hack, decrypt, and think creatively and critically to solve the challenges and capture the digital flags.',
-        // skills: 'Cybersecurity, Web Exploitation, Forensics, Reverse Engineering, General Skills, Cryptography , Binary Exploitation',
-        links: [
-            { url: 'https://picoctf.org/competitions/2024-spring.html', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/picoctf-2024', type: 'paper', label: 'CTF Writeup' }
-        ]
+        teamRank: '128th',
+        teamScore: '7,325 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_recently-participated-in-the-picoctf-2024-activity-7178599101264015360-3_4k'
     },   
     {
         certificateImage: "./images/HTBA.png",
         title: 'CYBER APOCALYPSE CTF 2024 Hacker Royale',
         date: 'Mar 2024',
-        description: 'As the dust settles on the virtual battlegrounds of Hacker Royale, our team at KPMG Thailand emerged with a tale of digital valiance. Pwned flags: 10. Our rank: 195th. With 10,525 points to our name, we tackled 35 out of 67 challenges, each representing a milestone in our relentless pursuit of cybersecurity excellence. After pwned another flag, bringing our total to 10, I gave one flag to my friend, keeping our count at 9.',
-        // skills: 'Cybersecurity, Web Application Security, Digital Forensics, Reverse Engineering, Pwn, Misc, Hardware, Cryptography, BlockChain',
-        links: [
-            { url: '/pdf/HTBA_2024', type: 'news', label: 'Show Credential' },
-            { url: 'https://www.hackthebox.com/events/cyber-apocalypse-2024', type: 'news', label: 'Website' },
-            { url: 'https://wariss-writeup.gitbook.io/writeup/hacker-royale-writeup-cyber-apocalypse-ctf-2024', type: 'paper', label: 'CTF Writeup' }
-        ]
+        teamRank: '227th',
+        teamScore: '10,525 points',
+        // individualRank: '350th',
+        // individualScore: '8,750 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_recently-participated-in-the-htb-cyber-apocalypse-activity-7174106113808756739-FtXK'
     },   
     {
         certificateImage: "./images/hunt.png",
         title: 'Huntress CTF',
         date: 'Oct 2023',
-        description: 'I participated in the Huntress Capture the Flag (CTF) Contest sponsored by Huntress Labs Incorporated. In this cybersecurity competition, participants solve challenges in domains like web security and cryptography to find and submit flags, earning points. The top scorers are declared winners.',
-        // skills: 'Cybersecurity, Web Application Security, Malware, Steganography, OSINT, Miscellaneous',
-        links: [
-            { url: '/pdf/Huntress_CERT', type: 'news', label: 'Show Credential' },
-            // { url: 'https://huntress.ctf.games', type: 'news', label: 'Website' },
-        ]
+        linkedinUrl: '/pdf/Huntress_CERT'
     }, 
     {
         certificateImage: "./images/CTF.png",
         title: 'Thailand Cyber Top Talent 2023',
         date: 'Sep 2023',
-        description: 'Participated in the "Thailand Cyber Top Talent 2023" cybersecurity competition, organized by the National Cyber Security Office and Huawei Technologies (Thailand) Co., Ltd. This prestigious event aimed to educate and upskill participants in various areas of cybersecurity through hands-on challenges. The competition adopted a "Capture the Flag" format in a Jeopardy style, highlighting areas such as Web Application Security, Digital Forensics, and more.',
-        // skills: 'Cybersecurity, Web Application Security, Digital Forensics, Reverse Engineering, Network Security, Mobile Security, Programming, Cryptography',
-        links: [
-            { url: '/pdf/TCTT_2023', type: 'news', label: 'Show Credential' },
-            { url: 'https://ctf.in.th/thctt2023/', type: 'news', label: 'Website' },
-        ]
+        linkedinUrl: '/pdf/TCTT_2023'
     },    
     {
         certificateImage: "./images/codegoda.png",
         title: 'Codegoda 2023',
         date: 'May 2023',
-        description: 'Participated in Codegoda 2023, a renowned coding competition where I tackled challenging algorithmic problems and showcased my coding prowess. It was a great experience to compete with talented coders worldwide and further hone my problem-solving skills.',
-        // skills: 'Algorithms, Data Structures, Problem Solving, Competitive Programming',
-        links: [
-            { url: '/pdf/CODEGODA', type: 'news', label: 'Show Credential' },
-            { url: 'https://codegoda.io', type: 'news', label: 'Website' },
-        ]
+        linkedinUrl: '/pdf/CODEGODA'
     }
     
 ];
