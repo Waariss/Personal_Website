@@ -5,14 +5,14 @@ import '../App.css';
 const Competitions = () => {
     const [showAllCompetitions, setShowAllCompetitions] = useState(false);
     const competitions = getCompetitions();
-    const displayedCompetitions = showAllCompetitions ? competitions : competitions.slice(0, 4);
+    const displayedCompetitions = showAllCompetitions ? competitions : competitions.slice(0, 3);
 
     return (
         <section id="competitions" className="my-5">
             <h1 className="mb-4 text-center title-enhanced">Competitions</h1>
             <Row>
                 {displayedCompetitions.map((competition, index) => (
-                    <Col key={index} xs={12} md={6} lg={3} className="mb-3">
+                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
                         <a 
                             href={competition.linkedinUrl} 
                             target="_blank" 
@@ -46,7 +46,7 @@ const Competitions = () => {
                     </Col>
                 ))}
             </Row>
-            {competitions.length > 4 && (
+            {competitions.length > 3 && (
                 <div className="text-center mt-4">
                     <button 
                         className="btn btn-outline-secondary btn-lg"
