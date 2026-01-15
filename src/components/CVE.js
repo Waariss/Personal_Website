@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-0694',
+        plugin: 'SearchWiz',
+        description: 'The SearchWiz plugin for WordPress is vulnerable to Stored Cross-Site Scripting via post titles in search results in all versions up to, and including, 1.0.0. This is due to the plugin using `esc_attr()` instead of `esc_html()` when outputting post titles in search results. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in post titles that will execute whenever a user performs a search and views the search results page.',
+        cvss: 6.4,
+        severity: 'MEDIUM',
+        date: 'Jan 13, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/searchwiz/searchwiz-100-authenticated-contributor-stored-cross-site-scripting-via-post-title'
+    },
+    {
         id: 'CVE-2025-14506',
         plugin: 'ConvertForce Popup Builder',
         description: 'The ConvertForce Popup Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gutenberg block\'s `entrance_animation` attribute in all versions up to, and including, 0.0.7. This is due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
