@@ -5,6 +5,13 @@ import '../App.css';
 
 const certificates = [
     {
+        title: "Certified Web App Penetration Testing Apprentice (KWAPTA)",
+        organization: "Knight Squad Academy",
+        date: "Jan 2026",
+        link: "https://credential.knightsquad.academy/KSA-UGSEKSEJ2501",
+        imageUrl: "./images/waris-damkham-kwapta.png"
+    },
+    {
         title: "Certified C++ Practitioner Certification (CCPC)",
         organization: "Red Team Leaders",
         date: "Dec 2025",

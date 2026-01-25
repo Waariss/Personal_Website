@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-0920',
+        plugin: 'LA-Studio Element Kit for Elementor',
+        description: 'The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Administrative User Creation in all versions up to, and including, 1.5.6.3. This is due to the \'ajax_register_handle\' function not restricting what user roles a user can register with. This makes it possible for unauthenticated attackers to supply the \'lakit_bkrole\' parameter during registration and gain administrator access to the site.',
+        cvss: 9.8,
+        severity: 'Critical',
+        date: 'Jan 21, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/lastudio-element-kit/la-studio-element-kit-for-elementor-1563-unauthenticated-privilege-escalation-via-backdoor-to-administrative-user-creation-via-lakit-bkrole-parameter'
+    },
+    {
         id: 'CVE-2026-0694',
         plugin: 'SearchWiz',
         description: 'The SearchWiz plugin for WordPress is vulnerable to Stored Cross-Site Scripting via post titles in search results in all versions up to, and including, 1.0.0. This is due to the plugin using `esc_attr()` instead of `esc_html()` when outputting post titles in search results. This makes it possible for authenticated attackers, with contributor-level access and above, to inject arbitrary web scripts in post titles that will execute whenever a user performs a search and views the search results page.',
@@ -184,7 +193,7 @@ const getCVEs = () => [
         plugin: 'WPNakama',
         description: 'The WPNakama plugin for WordPress is vulnerable to time-based SQL Injection via the \'order_by\' parameter in all versions up to, and including, 0.6.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.',
         cvss: 7.5,
-        severity: 'CRITICAL',
+        severity: 'High',
         date: 'Dec 11, 2025',
         link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wpnakama/wpnakama-063-unauthenticated-sql-injection-via-order-by-parameter'
     },
