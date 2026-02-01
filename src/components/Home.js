@@ -3,19 +3,57 @@ import { Container, Button, Badge, Stack } from 'react-bootstrap';
 import '../App.css';
 
 const Home = () => {
+    const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES'];
+    const coreRow2 = ['CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech'];
+    
+    const proofHighlights = [
+        { text: 'Black Hat Asia 2026 (Arsenal)', link: '#speaker' },
+        { text: '13×CVEs', link: '#cves' },
+        { text: '3×IEEE Publications', link: '#publications' }
+    ];
+
     return (
         <section id="home" className="text-center my-4 home-section">
             <Container className="jumbotron-style">
                 <h1 className="display-4">Waris Damkham</h1>
                 <p className="lead">Offensive Security Engineer &amp; AI Security Researcher</p>
+                <p className="mb-4" style={{fontSize: '1.1rem'}}>Red Teaming • AI Security • Web/AppSec</p>
+                
                 <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">
-                    {['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES', 'CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech', 'CKBPro', 'C-APIPen', 'C-AI/MLPen', 'CCPenX-AWS', 'CAPenX', 'CMPen-Android & iOS', 'CNPen', 'CAPen', 'CAP', 'CRTA', 'CRT-ID', 'MCRTA','CCEP', 'CCPC','KWAPTA', 'CVE-2025-12782', 'CVE-2025-14166', 'CVE-2025-14068', 'CVE-2025-14366', 'CVE-2025-14003', 'CVE-2025-13693', 'CVE-2025-14153', 'CVE-2025-14626', 'CVE-2025-14453', 'CVE-2025-14506', 'CVE-2026-0694', 'CVE-2026-0920'].map((credential) => (
-                        <Badge bg="light" text="dark" key={credential} className="px-3 py-2 hero-badge" style={{ fontSize: '0.9rem' }}>
+                    {coreRow1.map((credential) => (
+                        <Badge bg="light" text="dark" key={credential} className="px-3 py-2" style={{ fontSize: '1rem' }}>
                             {credential}
                         </Badge>
                     ))}
                 </Stack>
-                <p>Explore my skills, research, and hands-on security projects below.</p>
+                <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">
+                    {coreRow2.map((credential) => (
+                        <Badge bg="light" text="dark" key={credential} className="px-3 py-2" style={{ fontSize: '1rem' }}>
+                            {credential}
+                        </Badge>
+                    ))}
+                </Stack>
+                
+                <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">
+                    {proofHighlights.map((proof) => (
+                        <a 
+                            key={proof.text} 
+                            href={proof.link} 
+                            className="text-decoration-none"
+                            style={{ cursor: 'pointer' }}
+                        >
+                            <Badge 
+                                bg="light" 
+                                text="dark" 
+                                className="px-3 py-2 proof-badge-clickable" 
+                                style={{ fontSize: '0.95rem' }}
+                            >
+                                {proof.text}
+                            </Badge>
+                        </a>
+                    ))}
+                </Stack>
+                
                 <div className="d-flex justify-content-center gap-3 flex-wrap mt-4">
                     <Button variant="light" href="#resume" className="text-dark fw-semibold">Resume</Button>
                 </div>

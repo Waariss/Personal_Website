@@ -4,6 +4,7 @@ import '../App.css';
 
 const About = () => {
     const [profileImage, setProfileImage] = useState("./images/cat.jpg");
+    const [showAllBadges, setShowAllBadges] = useState(false);
     const badgeImages = [
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229512",
         "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229530",
@@ -165,8 +166,8 @@ const About = () => {
                     <Col xs={12} md={4} className="mb-3">
                         <Image 
                             src={profileImage} 
-                            onMouseEnter={() => setProfileImage("./images/cat.jpg")} 
-                            onMouseLeave={() => setProfileImage("./images/waris.JPG")}
+                            onMouseEnter={() => setProfileImage("./images/waris-2026.JPG")} 
+                            onMouseLeave={() => setProfileImage("./images/waris-2026.JPG")}
                             roundedCircle 
                             fluid 
                             className="profile-image" 
@@ -175,11 +176,13 @@ const About = () => {
                     <Col xs={12} md={8}>
                         <Card.Title><h2 className='title'>About Me</h2></Card.Title>
                         <Card.Text>
-                            I am an <strong className="strong-highlight">Offensive Security Engineer</strong>, <strong className="strong-highlight">Penetration Tester</strong>, and <strong className="strong-highlight">AI Security Researcher</strong> with a strong passion for <strong className="strong-highlight">Linux</strong> 🐧, <strong className="strong-highlight">Cybersecurity</strong> 🔒, <strong className="strong-highlight">AI</strong> 🤖, and <strong className="strong-highlight">DevOps</strong> ⚙️. My expertise spans <strong className="strong-highlight">Offensive Security</strong>, <strong className="strong-highlight">AI-driven threat research</strong>, <strong className="strong-highlight">Web security</strong>, and <strong className="strong-highlight">Mobile security</strong>, with hands-on experience in penetration testing and security assessments.  
+                            I am an <strong>Offensive Security Engineer</strong> and <strong>AI Security Researcher</strong> with hands-on experience across enterprise penetration testing and applied AI and security research.
 
-                            I have led significant research projects, including the development of an Automated COVID-19 Screening Framework Using Deep CNN With Chest X-Ray Medical Images, research on Detecting Vulnerable OAuth 2.0 Implementations in Android Applications, and the creation of Practical Mobile-Based Services for Identification of Chicken Diseases From Fecal Images. These projects have been presented at conferences and featured in publications.
+                            I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and contribute to <strong>Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work also includes <strong>security automation</strong>, critical vulnerability response support, and <strong>AI security readiness</strong> for AI-enabled applications.
 
-                            I am actively seeking full-time opportunities where I can continue to grow, gain valuable industry insights, and contribute innovatively to a collaborative security research environment.
+                            I conduct applied identity and access security work on <strong>Microsoft 365 Conditional Access</strong> policy enforcement, with tooling selected for <strong>Black Hat Asia 2026 (Arsenal)</strong>.
+
+                            Open to global opportunities in Red Teaming, Identity Security, and AI Security.
                         </Card.Text>
                         <div className="d-flex mt-3 icon-section">
                             <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
@@ -242,22 +245,44 @@ const About = () => {
                 </Row>
                 </Card.Body>
             </Card>
-            <Card.Body>
-                <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
-                    {badgeImages.map((badgePath, index) => (
-                        <div key={index} className="badge-item mx-2 my-2">
-                            <OverlayTrigger
-                                overlay={<Tooltip id={`tooltip-${index}`}>{badgeAlts[index]}</Tooltip>}
-                                placement="top"
-                            >
-                                <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer" aria-label={badgeAlts[index]}>
-                                    <Image src={badgePath} width="98" height="98" alt={badgeAlts[index]} />
-                                </a>
-                            </OverlayTrigger>
-                        </div>
-                    ))}
-                </div>
-            </Card.Body>
+            
+            <Card className="border-0 shadow-sm mt-4">
+                <Card.Body>
+                    <div className="d-flex justify-content-between align-items-center mb-3">
+                        <h4 className="mb-0">Highlighted Certifications</h4>
+                        <Button 
+                            variant="outline-primary" 
+                            size="sm"
+                            onClick={() => setShowAllBadges(!showAllBadges)}
+                            aria-expanded={showAllBadges}
+                            className="cert-toggle-btn"
+                        >
+                            {showAllBadges ? 'Hide' : 'Show all certifications'}
+                        </Button>
+                    </div>
+                    
+                    <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
+                        {badgeImages.slice(0, showAllBadges ? badgeImages.length : 16).map((badgePath, index) => (
+                            <div key={index} className="badge-item mx-2 my-2">
+                                <OverlayTrigger
+                                    overlay={<Tooltip id={`tooltip-${index}`}>{badgeAlts[index]}</Tooltip>}
+                                    placement="top"
+                                >
+                                    <a href={badgeLinks[index]} target="_blank" rel="noopener noreferrer" aria-label={badgeAlts[index]}>
+                                        <Image 
+                                            src={badgePath} 
+                                            width="98" 
+                                            height="98" 
+                                            alt={badgeAlts[index]}
+                                            loading="lazy"
+                                        />
+                                    </a>
+                                </OverlayTrigger>
+                            </div>
+                        ))}
+                    </div>
+                </Card.Body>
+            </Card>
         </section>
     );
 };

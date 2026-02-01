@@ -1,0 +1,3046 @@
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* CSS */
+.social-icon {
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+
+.linkStyle {
+  text-decoration: none;
+}
+
+.linkStyle h5 {
+  display: inline-block;
+  transition: color 0.3s;
+  color: black;
+}
+
+.linkStyle:hover h5 {
+  color: #ff6347;
+}
+
+.home-section {
+  background: url('https://wallpapercave.com/wp/3yOCFur.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white; 
+}
+
+.jumbotron-style {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 0.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.home-section:hover .jumbotron-style {
+  transform: scale(1.01);
+}
+
+.profile-image {
+  max-width: 100%;
+  max-height: 250px;
+  display: block;
+  margin: auto;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.experience-card{
+  transition: all 0.5s ease-in-out;
+}
+
+.experience-card {
+  height: 100%;  /* This will ensure that each card takes full height of its container */
+}
+
+.experience-card .card-img-top {
+  height: auto;  /* Set a fixed height for the images */
+  object-fit: cover; /* This will crop the image to fit the container */
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;  /* Increased the padding to accommodate the dot and some spacing */
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;  /* Positioned the line slightly to the right to allow space for the dot */
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.event-indicator {
+  position: absolute;
+  left: -24px;  /* Positioned the dot to the left to ensure it doesn't overlap with the card */
+  width: 10px;
+  height: 10px;
+  background: #ff6347;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.event-content {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+.timeline-event:hover .event-content {
+  background: #e9ecef;
+}
+
+.event-time {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.activity-name, .activity-name-p {
+  font-weight: bold;
+}
+
+.activity-name, .activity-name-p {
+  font-weight: bold;
+}
+
+.activity-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;  /* Remove underline */
+  transition: color 0.3s;
+}
+
+.activity-name-p{
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;  /* Remove underline */
+}
+
+.activity-name:hover{
+  color: #ff6347;
+}
+
+.link-group {
+  display: flex;
+  flex-wrap: wrap;  /* Allow the links to wrap to the next line if there's not enough space */
+}
+
+.custom-link {
+  display: flex;
+  color: inherit !important;
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;      /* Center content vertically */
+  padding: 8px 12px;
+  background-color: #f7f7f7; 
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  text-align: center;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  width: auto;  
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+
+.custom-link:hover {
+  background-color: #e7e7e7;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.custom-link i {
+  font-size: 1.1em;
+  text-decoration: none !important;
+}
+
+.internship-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-right: 35%;  /* Add padding to prevent text overlap, adjust as necessary */
+}
+.details-container a{
+  text-decoration: none;
+}
+
+.company-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.internship-image {
+  max-width: 32%;  /* Adjust width as per your preference */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute; 
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);  /* Center the image vertically */
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.skills {
+  color: black !important; /* Default Bootstrap primary color */
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  /* background-color: #ff6347 !important; */
+  border: none !important;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.activity-image {
+  margin-right: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  float: right;  /* Makes the image float to the left of the text */
+}
+
+.mb-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+#scrollToTopButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none;
+  background-color: #555; /* Dark background */
+  color: white; /* White text */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#scrollToTopButton:hover {
+  background-color: #ff6347; /* Add a darker background on hover */
+}
+
+.badge-section {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge-item img {
+  transition: transform 0.3s ease;
+}
+
+.profile-image-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.icon-section {
+  gap: 10px;
+}
+
+.icon-btn {
+  font-size: 1.5rem;
+  color: #333; /* or any other color you prefer */
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icon-btn:hover {
+  color: #ff6347;
+  transform: scale(1.1);
+}
+
+.badge-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.title-enhanced {
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.title-contact {
+  font-size: 1rem; /* Increase font size */
+  font-weight: bold; /* Make it bold */
+  color: black; /* Updated to the complementary color */
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.title {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 1.6rem; /* Increase font size */
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.competition-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  border: none;
+}
+
+.competition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-image {
+  width: 100%;
+  max-height: 200px;  /* You can adjust this as required */
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.competition-title {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.competition-card .card-subtitle {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.competition-card .card-text {
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* App.css */
+.markdown-credentials {
+  margin-top: 2px;
+}
+
+.pub .slick-dots {
+  margin-bottom: 20px;
+}
+
+.comp .slick-dots {
+  margin-bottom: -1px;
+}
+
+.project-card {
+  transition: transform 0.3s;
+  cursor: pointer;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 325px;  /* or any desired fixed height */
+  object-fit: cover;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  color: white !important; /* Or any color that suits your design */
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.3); /* Lighter black overlay with reduced opacity */
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for background and transform */
+  cursor: pointer; /* Indicate clickable area */
+  will-change: background; /* Hint for potential background changes */
+}
+
+.image-overlay:hover {
+  background: rgba(0, 0, 0, 0.4); /* Slightly darker on hover, but still lighter than before */
+}
+
+/* If there's text inside the overlay */
+.image-overlay .project-title {
+  color: white; /* Ensure text is readable against dark overlay */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly lighter shadow for better readability */
+}
+
+.white-text {
+  color: white !important; /* Ensure this overrides other color styles */
+  display: none;
+}
+
+.carousel-item img {
+  object-fit: cover; /* This will make sure images cover the area without distorting */
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-right: 35%;
+}
+
+.blog-card{
+  transition: all 0.5s ease-in-out;
+}
+
+.blog-card {
+  height: 100%;  /* This will ensure that each card takes full height of its container */
+}
+
+.blog-card .card-img-top {
+  height: auto;  /* Set a fixed height for the images */
+  object-fit: cover; /* This will crop the image to fit the container */
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.blog-image {
+  max-width: 34%;  /* Adjust width as per your preference */
+  border-radius: 10px;
+  height: 88%; 
+  position: absolute; 
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);  /* Center the image vertically */
+}
+
+.skill-card {
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-logo-wrapper {
+  position: relative;
+  width: 40%; /* Adjusted from 100% */
+  padding-bottom: 40%; /* Keeps 1:1 aspect ratio */
+  margin: 0 auto 0px; /* Adjusted margin */
+}
+
+.skill-logo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-title {
+  font-size: 0.85rem;  /* Adjust font size as needed */
+  padding-top: 20px !important;  /* Increase space between logo and text */
+  margin-bottom: 5px;  /* Decrease space under the text */
+}
+
+/* Carousel controls visibility */
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.3 !important;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  opacity: 0.8 !important;
+}
+
+/* Skills carousel indicators */
+.skill-card .carousel-indicators {
+  bottom: -20px;
+}
+
+.skill-card .carousel-indicators button {
+  background-color: #ff6347;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.footer-container {
+  background: linear-gradient(90deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%); /* dark background for contrast */
+  color: white;
+  padding: 2rem 0;
+  font-family: 'Roboto', sans-serif; /* Example font */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem; 
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1); /* Scale up icon on hover */
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-ascii-art {
+  font-family: 'Courier New', monospace;
+  white-space: pre; /* Ensures whitespace is respected */
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-top: 1rem;
+  }
+}
+
+.strong-highlight {
+  color: #ff6347; /* Example color: a shade of blue */
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.room-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.room-logo {
+  margin-bottom: 10px;
+}
+
+.room-name {
+  font-weight: bold;
+}
+
+/* Publications Section Styles */
+.publication-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  padding-left: 10px;
+  border-left: 4px solid #ff6347;
+}
+
+.publication-item {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+}
+
+.publication-item:hover {
+  background-color: #f8f9fa;
+}
+
+.publication-item h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.publication-item p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Project Read More Link */
+.read-more-link {
+  color: #ff6347;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+  color: #cc4f39;
+  text-decoration: underline;
+}
+
+/* About Section - Better Icon Spacing */
+.icon-section {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.icon-section .btn {
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .publication-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .publication-item {
+    padding: 1rem 0.75rem;
+  }
+  
+  .publication-item h5 {
+    font-size: 1rem;
+  }
+  
+  .icon-section {
+    justify-content: center;
+  }
+}
+
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.dark-mode .bg-light {
+  background-color: #0d1117 !important;
+}
+
+.dark-mode .bg-dark {
+  background-color: #0d1117 !important;
+}
+
+.dark-mode .card {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .about-card,
+.dark-mode .experience-card,
+.dark-mode .blog-card,
+.dark-mode .competition-card,
+.dark-mode .skill-card {
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .about-card:hover,
+.dark-mode .experience-card:hover,
+.dark-mode .blog-card:hover,
+.dark-mode .competition-card:hover,
+.dark-mode .skill-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .text-muted {
+  color: #8b949e !important;
+}
+
+.dark-mode .title-enhanced,
+.dark-mode .title,
+.dark-mode .card-title,
+.dark-mode h1, .dark-mode h2, .dark-mode h3, 
+.dark-mode h4, .dark-mode h5, .dark-mode h6 {
+  color: #c9d1d9 !important;
+}
+
+.dark-mode .publication-section-title {
+  color: #c9d1d9;
+  border-left-color: #ff6347;
+}
+
+.dark-mode .publication-item {
+  border-bottom-color: #30363d;
+  background-color: transparent;
+}
+
+.dark-mode .publication-item:hover {
+  background-color: #21262d;
+}
+
+.dark-mode .linkStyle h5 {
+  color: #ff6347;
+}
+
+.dark-mode .linkStyle:hover h5 {
+  color: #ff6347;
+}
+
+.dark-mode .event-content {
+  background: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .timeline-event:hover .event-content {
+  background: #21262d;
+}
+
+.dark-mode .timeline:before {
+  background: #30363d;
+}
+
+.dark-mode .activity-name,
+.dark-mode .activity-name-p {
+  color: #c9d1d9;
+}
+
+.dark-mode .custom-link {
+  background-color: #21262d;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .custom-link:hover {
+  background-color: #30363d;
+}
+
+.dark-mode .btn-outline-dark {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-dark:hover {
+  background-color: #ff6347;
+  color: #0d1117;
+}
+
+.dark-mode .btn-outline-success {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-success:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.dark-mode .btn-outline-secondary {
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #ff6347;
+  color: #0d1117;
+  border-color: #ff6347;
+}
+
+.dark-mode .list-group-item {
+  background-color: #161b22;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.dark-mode .card-body {
+  background-color: #161b22;
+}
+
+.dark-mode .card-text,
+.dark-mode p,
+.dark-mode li {
+  color: #c9d1d9;
+}
+
+.dark-mode .badge {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+  border: 1px solid #30363d;
+}
+
+.dark-mode .project-card {
+  background-color: #161b22;
+}
+
+.dark-mode .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .read-more-link {
+  color: #ff6347;
+}
+
+.dark-mode .read-more-link:hover {
+  color: #ff6347;
+}
+
+.dark-mode strong {
+  color: #c9d1d9;
+}
+
+.dark-mode .strong-highlight {
+  color: #ff6347;
+}
+
+.dark-mode .home-section {
+  color: white;
+}
+
+.dark-mode .jumbotron-style {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .skill-card .card-body {
+  background-color: #161b22;
+}
+
+.dark-mode .skill-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .experience-title {
+  color: #c9d1d9 !important;
+}
+
+.dark-mode .card-subtitle {
+  color: #8b949e !important;
+}
+
+.dark-mode .btn-light {
+  background-color: #21262d;
+  border-color: #30363d;
+  color: #c9d1d9;
+}
+
+.dark-mode .btn-light:hover {
+  background-color: #30363d;
+  color: #c9d1d9;
+}
+
+/* Blog Section Improvements */
+.blog-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.blog-card-new {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.blog-card-link:hover .blog-card-new,
+.blog-card-new:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.blog-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-card-link:hover .blog-card-image,
+.blog-card-new:hover .blog-card-image {
+  transform: scale(1.1);
+}
+
+.blog-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 99, 71, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog-card-link:hover .blog-overlay,
+.blog-card-new:hover .blog-overlay {
+  opacity: 1;
+}
+
+.blog-icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.blog-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  min-height: 50px;
+  line-height: 1.4;
+}
+
+.blog-card-excerpt {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.blog-read-more {
+  color: #ff6347;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.blog-read-more-link {
+  color: #ff6347;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-card-link:hover .blog-read-more-link,
+.blog-read-more-link:hover {
+  color: #cc4f39;
+  text-decoration: underline;
+}
+
+.blog-card-new:hover .blog-read-more {
+  color: #cc4f39;
+}
+
+.blog-details-card {
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode blog styles */
+.dark-mode .blog-card-new {
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .blog-card-new:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .blog-card-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .blog-card-excerpt {
+  color: #8b949e;
+}
+
+.dark-mode .blog-details-card {
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.dark-mode .badge {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+}
+
+/* Competition Stats Grid */
+.competition-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.team-stat {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.individual-stat {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  opacity: 0.9;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Dark mode competition stats */
+.dark-mode .team-stat {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .individual-stat {
+  background: linear-gradient(135deg, #744210 0%, #c05621 100%);
+}
+
+.dark-mode .stat-card:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .competition-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-value {
+    font-size: 1.25rem;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* New Competition Design */
+.competition-card-modern {
+  transition: all 0.3s ease;
+}
+
+.competition-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.competition-badge {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: #f8f9fa;
+}
+
+.competition-info {
+  flex: 1;
+}
+
+.competition-title-new {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.competition-stats-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 200px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
+.individual-box {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stat-header {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stat-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-rank {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.stat-score {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Dark mode */
+.dark-mode .competition-header {
+  border-bottom-color: #30363d;
+}
+
+.dark-mode .competition-badge {
+  background: #21262d;
+}
+
+.dark-mode .competition-title-new {
+  color: #c9d1d9;
+}
+
+.dark-mode .stat-box {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .individual-box {
+  background: linear-gradient(135deg, #744210 0%, #c05621 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competition-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .competition-badge {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .competition-stats-row {
+    flex-direction: column;
+  }
+  
+  .stat-box {
+    min-width: 100%;
+  }
+}
+
+/* Clean Competition Design - No Images */
+.competition-card-clean {
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.competition-header-clean {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #ff6347;
+}
+
+.competition-title-clean {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.competition-date-badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.competition-stats-clean {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-item-clean {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+.stat-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.team-color {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.individual-color {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.stat-info-clean {
+  flex: 1;
+}
+
+.stat-category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.stat-value-clean {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6347;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-score-clean {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.link-group-clean {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.competition-link {
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode */
+.dark-mode .competition-card-clean {
+  background: #161b22;
+}
+
+.dark-mode .competition-header-clean {
+  border-bottom-color: #ff6347;
+}
+
+.dark-mode .competition-title-clean {
+  color: #c9d1d9;
+}
+
+.dark-mode .stat-category {
+  color: #8b949e;
+}
+
+.dark-mode .stat-value-clean {
+  color: #ff6347;
+}
+
+.dark-mode .stat-score-clean {
+  color: #8b949e;
+}
+
+.dark-mode .team-color {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .individual-color {
+  background: linear-gradient(135deg, #744210 0%, #c05621 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competition-header-clean {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .competition-stats-clean {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .stat-item-clean {
+    min-width: 100%;
+  }
+  
+  .competition-title-clean {
+    font-size: 1.2rem;
+  }
+  
+  .stat-value-clean {
+    font-size: 1.5rem;
+  }
+}
+
+/* Minimal Competition Design */
+.competition-minimal {
+  border-left: 4px solid #ff6347 !important;
+  transition: all 0.3s ease;
+}
+
+.competition-minimal:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.competition-title-minimal {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.competition-date-minimal {
+  font-size: 0.85rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.competition-stats-minimal {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.stat-minimal {
+  font-size: 0.9rem;
+  color: #666;
+  display: inline-flex;
+  align-items: center;
+}
+
+.stat-minimal i {
+  color: #ff6347;
+}
+
+.stat-minimal strong {
+  color: #ff6347;
+  font-size: 1.1rem;
+}
+
+.competition-links-minimal {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.link-minimal {
+  font-size: 0.85rem;
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.link-minimal:hover {
+  color: #cc4f39;
+  text-decoration: underline;
+}
+
+.link-minimal i {
+  font-size: 0.75rem;
+}
+
+/* Dark Mode Minimal */
+.dark-mode .competition-minimal {
+  background: #161b22;
+  border-left-color: #ff6347 !important;
+}
+
+.dark-mode .competition-title-minimal {
+  color: #c9d1d9;
+}
+
+.dark-mode .competition-date-minimal {
+  color: #8b949e;
+}
+
+.dark-mode .stat-minimal {
+  color: #8b949e;
+}
+
+.dark-mode .link-minimal {
+  color: #ff6347;
+}
+
+.dark-mode .link-minimal:hover {
+  color: #ff8c7a;
+}
+
+/* Responsive Minimal */
+@media (max-width: 768px) {
+  .competition-title-minimal {
+    font-size: 1rem;
+  }
+  
+  .competition-stats-minimal {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Balanced Competition Design */
+.competition-card-balanced {
+  transition: all 0.3s ease;
+}
+
+.comp-header-row {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.comp-title-balanced {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.comp-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.comp-stat-item {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #ff6347;
+}
+
+.comp-stat-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.comp-stat-values {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.comp-rank {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff6347;
+}
+
+.comp-score {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.comp-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Dark Mode Balanced */
+.dark-mode .comp-header-row {
+  border-bottom-color: #30363d;
+}
+
+.dark-mode .comp-title-balanced {
+  color: #c9d1d9;
+}
+
+.dark-mode .comp-stat-item {
+  background: #21262d;
+  border-left-color: #ff6347;
+}
+
+.dark-mode .comp-stat-label {
+  color: #c9d1d9;
+}
+
+.dark-mode .comp-rank {
+  color: #ff6347;
+}
+
+.dark-mode .comp-score {
+  color: #8b949e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .comp-stats-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Competition Cards - Blog Style */
+.competition-card-blog {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.competition-card-blog:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.competition-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.competition-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.competition-card-blog:hover .competition-card-image {
+  transform: scale(1.1);
+}
+
+.competition-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 99, 71, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.competition-card-blog:hover .competition-overlay {
+  opacity: 1;
+}
+
+.competition-icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.competition-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+  min-height: 50px;
+  line-height: 1.4;
+}
+
+.competition-stats-inline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.stat-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.stat-inline i {
+  color: #ff6347;
+  width: 16px;
+}
+
+.stat-inline strong {
+  color: #ff6347;
+}
+
+.competition-links-blog {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.competition-link-btn {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  background: white;
+  border: 1px solid #ff6347;
+  color: #ff6347;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.competition-link-btn:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* Dark mode */
+.dark-mode .competition-card-blog {
+  background-color: #161b22;
+}
+
+.dark-mode .competition-card-blog:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .competition-card-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .stat-inline {
+  color: #8b949e;
+}
+
+.dark-mode .stat-inline i,
+.dark-mode .stat-inline strong {
+  color: #ff6347;
+}
+
+.dark-mode .competition-link-btn {
+  background: #21262d;
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .competition-link-btn:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* Unique Competition Design */
+.competition-card-unique {
+  border: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.competition-card-unique:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.competition-badge-top {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 140px;
+}
+
+.competition-badge-img {
+  max-width: 120px;
+  max-height: 100px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.competition-header-unique {
+  margin-bottom: 1rem;
+}
+
+.competition-title-unique {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.competition-date-tag {
+  display: inline-block;
+  background: #f8f9fa;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.competition-stats-unique {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.stat-box-unique {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-box-unique:hover {
+  transform: translateX(5px);
+}
+
+.team-bg {
+  background: linear-gradient(90deg, #e0f2ff 0%, #f0f9ff 100%);
+  border-left: 3px solid #3b82f6;
+}
+
+.individual-bg {
+  background: linear-gradient(90deg, #ffe4e6 0%, #fff1f2 100%);
+  border-left: 3px solid #f43f5e;
+}
+
+.stat-icon-unique {
+  font-size: 1.5rem;
+}
+
+.stat-text-unique {
+  flex: 1;
+}
+
+.stat-label-unique {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value-unique {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff6347;
+  line-height: 1.2;
+}
+
+.stat-score-unique {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.competition-footer-unique {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.competition-btn-unique {
+  padding: 0.4rem 1rem;
+  background: white;
+  border: 2px solid #ff6347;
+  color: #ff6347;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.competition-btn-unique:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* Dark Mode Unique */
+.dark-mode .competition-card-unique {
+  background: #161b22;
+}
+
+.dark-mode .competition-badge-top {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+.dark-mode .competition-title-unique {
+  color: #c9d1d9;
+}
+
+.dark-mode .competition-date-tag {
+  background: #21262d;
+  color: #8b949e;
+}
+
+.dark-mode .team-bg {
+  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+  border-left-color: #3b82f6;
+}
+
+.dark-mode .individual-bg {
+  background: linear-gradient(90deg, #3f1d1f 0%, #2d1517 100%);
+  border-left-color: #f43f5e;
+}
+
+.dark-mode .stat-label-unique {
+  color: #8b949e;
+}
+
+.dark-mode .stat-value-unique {
+  color: #ff6347;
+}
+
+.dark-mode .stat-score-unique {
+  color: #8b949e;
+}
+
+.dark-mode .competition-footer-unique {
+  border-top-color: #30363d;
+}
+
+.dark-mode .competition-btn-unique {
+  background: #21262d;
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .competition-btn-unique:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .competition-badge-img {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
+
+/* No Image Competition Design */
+.competition-card-no-img {
+  border: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 10px;
+  border-top: 4px solid #ff6347;
+}
+
+.competition-card-no-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 99, 71, 0.2);
+}
+
+.comp-header-no-img {
+  margin-bottom: 1.25rem;
+}
+
+.comp-title-no-img {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.comp-date-badge {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+}
+
+.comp-stats-no-img {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.stat-item-no-img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-item-no-img:hover {
+  background: #fff5f5;
+  transform: translateX(5px);
+}
+
+.stat-icon-wrap-no-img {
+  width: 45px;
+  height: 45px;
+  background: #ff6347;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.stat-info-no-img {
+  flex: 1;
+}
+
+.stat-label-no-img {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.stat-rank-no-img {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff6347;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-score-no-img {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.comp-links-no-img {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.comp-link-no-img {
+  padding: 0.5rem 1rem;
+  background: white;
+  border: 2px solid #ff6347;
+  color: #ff6347;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.comp-link-no-img:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* Dark Mode No Image */
+.dark-mode .competition-card-no-img {
+  background: #161b22;
+  border-top-color: #ff6347;
+}
+
+.dark-mode .competition-card-no-img:hover {
+  box-shadow: 0 8px 20px rgba(255, 99, 71, 0.3);
+}
+
+.dark-mode .comp-title-no-img {
+  color: #c9d1d9;
+}
+
+.dark-mode .stat-item-no-img {
+  background: #21262d;
+}
+
+.dark-mode .stat-item-no-img:hover {
+  background: #30363d;
+}
+
+.dark-mode .stat-icon-wrap-no-img {
+  background: #ff6347;
+}
+
+.dark-mode .stat-label-no-img {
+  color: #8b949e;
+}
+
+.dark-mode .stat-rank-no-img {
+  color: #ff6347;
+}
+
+.dark-mode .stat-score-no-img {
+  color: #8b949e;
+}
+
+.dark-mode .comp-links-no-img {
+  border-top-color: #30363d;
+}
+
+.dark-mode .comp-link-no-img {
+  background: #21262d;
+  border-color: #ff6347;
+  color: #ff6347;
+}
+
+.dark-mode .comp-link-no-img:hover {
+  background: #ff6347;
+  color: white;
+}
+
+/* LinkedIn Competition Design */
+.competition-linkedin-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.competition-linkedin-card {
+  border: none;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #e5e7eb;
+}
+
+.competition-linkedin-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 119, 181, 0.15);
+  border-color: #0077b5;
+}
+
+.comp-linkedin-badge {
+  background: linear-gradient(135deg, #0077b5 0%, #00a0dc 100%);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+.comp-badge-img-linkedin {
+  max-width: 130px;
+  max-height: 110px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.comp-linkedin-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.comp-linkedin-date {
+  font-size: 0.85rem;
+  align-self: flex-start;
+}
+
+.comp-linkedin-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.linkedin-stat-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.team-stat-box {
+  background: linear-gradient(90deg, #e0f2ff 0%, #f0f9ff 100%);
+  border-left: 3px solid #0077b5;
+}
+
+.individual-stat-box {
+  background: linear-gradient(90deg, #ffe4e6 0%, #fff1f2 100%);
+  border-left: 3px solid #ff6347;
+}
+
+.linkedin-stat-icon {
+  font-size: 2rem;
+}
+
+.linkedin-stat-content {
+  flex: 1;
+}
+
+.linkedin-stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.linkedin-stat-rank {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff6347;
+  line-height: 1.1;
+}
+
+.linkedin-stat-score {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.15rem;
+}
+
+.linkedin-post-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  background: #0077b5;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.competition-linkedin-card:hover .linkedin-post-link {
+  background: #005885;
+}
+
+/* Dark Mode LinkedIn */
+.dark-mode .competition-linkedin-card {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.dark-mode .competition-linkedin-card:hover {
+  border-color: #0077b5;
+  box-shadow: 0 12px 30px rgba(0, 119, 181, 0.3);
+}
+
+.dark-mode .comp-linkedin-badge {
+  background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+}
+
+.dark-mode .comp-linkedin-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .team-stat-box {
+  background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
+  border-left-color: #0077b5;
+}
+
+.dark-mode .individual-stat-box {
+  background: linear-gradient(90deg, #3f1d1f 0%, #2d1517 100%);
+  border-left-color: #ff6347;
+}
+
+.dark-mode .linkedin-stat-label {
+  color: #8b949e;
+}
+
+.dark-mode .linkedin-stat-rank {
+  color: #ff6347;
+}
+
+.dark-mode .linkedin-stat-score {
+  color: #8b949e;
+}
+
+.dark-mode .linkedin-post-link {
+  background: #0077b5;
+}
+
+.dark-mode .competition-linkedin-card:hover .linkedin-post-link {
+  background: #00a0dc;
+}
+
+/* Minimal Professional Competition Design */
+.competition-minimal-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.competition-minimal-card {
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #ff6347;
+  transition: all 0.3s ease;
+  background: white;
+  height: 100%;
+  min-height: 240px;
+}
+
+.competition-minimal-card:hover {
+  border-left-color: #cc4f39;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.comp-minimal-header {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.comp-minimal-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.comp-minimal-date {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+  display: block;
+}
+
+.comp-minimal-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.minimal-stat {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.05rem;
+}
+
+.minimal-stat-label {
+  font-weight: 700;
+  color: #666;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.minimal-stat-value {
+  color: #333;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.minimal-stat-value::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ff6347;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: -0.5rem;
+}
+
+.comp-click-indicator {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.comp-click-indicator span {
+  font-size: 0.9rem;
+  color: #ff6347;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.competition-minimal-card:hover .comp-click-indicator span {
+  opacity: 1;
+}
+
+/* Dark Mode Minimal */
+.dark-mode .competition-minimal-card {
+  background: #161b22;
+  border-color: #30363d;
+  border-left-color: #ff6347;
+}
+
+.dark-mode .competition-minimal-card:hover {
+  border-left-color: #ff8c7a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .comp-minimal-header {
+  border-bottom-color: #30363d;
+}
+
+.dark-mode .comp-minimal-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .comp-minimal-date {
+  color: #8b949e;
+}
+
+.dark-mode .minimal-stat-label {
+  color: #8b949e;
+}
+
+.dark-mode .minimal-stat-value {
+  color: #c9d1d9;
+}
+
+.dark-mode .comp-click-indicator span {
+  color: #ff8c7a;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .comp-minimal-title {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .minimal-stat {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  
+  .minimal-stat-label {
+    min-width: 90px;
+    margin-bottom: 0;
+  }
+}
+
+/* CVE Section Styles */
+.cve-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cve-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cve-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.cvss-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cvss-circle {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.cvss-circle-bg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 8;
+}
+
+.cvss-circle-progress {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 1s ease;
+}
+
+.cvss-circle-progress.critical {
+  stroke: #dc3545;
+}
+
+.cvss-circle-progress.high {
+  stroke: #fd7e14;
+}
+
+.cvss-circle-progress.medium {
+  stroke: #ffc107;
+}
+
+.cvss-circle-progress.low {
+  stroke: #6c757d;
+}
+
+.cvss-score-text {
+  font-size: 24px;
+  font-weight: 700;
+  fill: #333;
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.cve-content {
+  margin-bottom: 1rem;
+}
+
+.cve-id {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #dc3545;
+  margin-bottom: 0.5rem;
+}
+
+.cve-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.cve-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cve-meta {
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Dark Mode */
+.dark-mode .cve-card {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.dark-mode .cve-header {
+  border-bottom-color: #30363d;
+}
+
+.dark-mode .cvss-circle-bg {
+  stroke: #30363d;
+}
+
+.dark-mode .cvss-score-text {
+  fill: #c9d1d9;
+}
+
+.dark-mode .cve-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .cve-description {
+  color: #8b949e;
+}
+
+.dark-mode .cve-meta {
+  border-top-color: #30363d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cvss-circle {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cvss-score-text {
+    font-size: 20px;
+  }
+  
+  .cve-id {
+    font-size: 1rem;
+  }
+  
+  .cve-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Academic Publications Styles */
+.publication-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.conference-badge {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.year-badge {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.publication-paper-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.publication-venue {
+  font-size: 0.9rem;
+  color: #3498db;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.publication-abstract {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.publication-meta {
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Dark Mode */
+.dark-mode .publication-card {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+.dark-mode .publication-paper-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .publication-venue {
+  color: #58a6ff;
+}
+
+.dark-mode .publication-abstract {
+  color: #8b949e;
+}
+
+.dark-mode .publication-meta {
+  border-top-color: #30363d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .publication-paper-title {
+    font-size: 1rem;
+  }
+  
+  .publication-venue {
+    font-size: 0.85rem;
+  }
+  
+  .publication-abstract {
+    font-size: 0.85rem;
+  }
+  
+  .conference-badge,
+  .year-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+
+/* Certifications Section - Improved Grid Slider */
+.cert-slide-card {
+  background: #ffffff;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.cert-slide-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.cert-item-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cert-item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2) !important;
+}
+
+.cert-img-wrapper {
+  background: #f8f9fa;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.cert-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cert-item-card:hover .cert-img {
+  transform: scale(1.1);
+}
+
+.cert-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2c3e50;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8rem;
+}
+
+.cert-item-meta {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.cert-item-meta svg {
+  color: #3498db;
+  width: 14px;
+  height: 14px;
+}
+
+/* Slider Dots */
+#certifications .slick-dots {
+  bottom: -45px;
+  margin-bottom: 3rem;
+}
+
+#certifications .slick-dots li button:before {
+  font-size: 12px;
+  color: #3498db;
+  opacity: 0.5;
+}
+
+#certifications .slick-dots li.slick-active button:before {
+  color: #3498db;
+  opacity: 1;
+}
+
+/* Dark Mode */
+.dark-mode .cert-slide-card {
+  background: #161b22;
+}
+
+.dark-mode .cert-item-card {
+  background: #0d1117;
+  border-color: #30363d;
+}
+
+.dark-mode .cert-img-wrapper {
+  background: #010409;
+  border-bottom-color: #21262d;
+}
+
+.dark-mode .cert-item-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .cert-item-meta {
+  color: #8b949e;
+}
+
+.dark-mode .cert-item-meta svg {
+  color: #58a6ff;
+}
+
+.dark-mode #certifications .slick-dots li button:before {
+  color: #58a6ff;
+}
+
+.dark-mode #certifications .slick-dots li.slick-active button:before {
+  color: #58a6ff;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .cert-img-wrapper {
+    height: 200px;
+  }
+  
+  .cert-item-title {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .cert-img-wrapper {
+    height: 180px;
+  }
+  
+  .cert-item-title {
+    font-size: 0.9rem;
+    min-height: 2.5rem;
+  }
+  
+  .cert-item-meta {
+    font-size: 0.8rem;
+  }
+}
+
+/* Speaker & Presentations Section */
+.talk-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.talk-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.talk-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.event-badge {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.talk-content {
+  margin-bottom: 1rem;
+}
+
+.talk-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.talk-event {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0d6efd;
+  margin-bottom: 0.75rem;
+}
+
+.talk-description {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.talk-meta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Dark Mode - Speaker */
+.dark-mode .talk-card {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+.dark-mode .talk-title {
+  color: #ffffff;
+}
+
+.dark-mode .talk-event {
+  color: #6ea8fe;
+}
+
+.dark-mode .talk-description {
+  color: #b0b0b0;
+}
+
+.dark-mode .talk-meta {
+  border-top-color: #444;
+}
+
+.dark-mode .talk-meta small {
+  color: #999 !important;
+}
+
+/* Hero Chip Groups */
+.hero-chips-section {
+  margin: 2rem 0 1.5rem;
+}
+
+.chip-group {
+  margin-bottom: 1rem;
+}
+
+.chip-group-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.75rem;
+}
+
+.chips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.hero-chip {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.hero-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero-chip:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+.hero-chip-highlight {
+  font-weight: 600;
+}
+
+/* Responsive adjustments for chips */
+@media (max-width: 768px) {
+  .hero-chips-section {
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .chip-group-label {
+    font-size: 0.75rem;
+  }
+  
+  .hero-chip {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .chips-container {
+    gap: 0.4rem;
+  }
+  
+  .hero-chip {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+}

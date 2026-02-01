@@ -714,9 +714,6 @@
   }
 }
 
-
-
-
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #0d1117;
@@ -2734,7 +2731,6 @@ body.dark-mode {
   }
 }
 
-
 /* Certifications Section - Improved Grid Slider */
 .cert-slide-card {
   background: #ffffff;
@@ -2968,4 +2964,438 @@ body.dark-mode {
 
 .dark-mode .talk-meta small {
   color: #999 !important;
+}
+
+/* Certification toggle button */
+.cert-toggle-btn:focus-visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+/* Certification toggle button */
+.cert-toggle-btn:focus-visible {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Responsive - maintain premium feel on all devices */
+
+  
+  .chip-group-label {
+    font-size: 0.85rem;
+  
+  
+  
+
+@media (max-width: 576px) {
+  .chips-container {
+    gap: 0.6rem;
+  }
+  
+  
+  
+}
+/* Responsive adjustments for chips */
+
+  
+  
+}
+
+@media (max-width: 576px) {
+  .chips-container {
+    gap: 0.4rem;
+  }
+  
+  
+}
+
+/* Base chip style - SIGNIFICANTLY INCREASED */
+
+/* Core Credentials - Solid white pills */
+
+/* Proof Highlights - Ghost/outline style - LARGER */
+
+/* Subtle divider between core and proof */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 576px) {
+  
+  
+  
+}
+/* Base chip style - INCREASED SIZE */
+
+/* Core Credentials - Solid white pills */
+
+/* Proof Highlights - Ghost/outline style - LARGER */
+
+/* Subtle divider between core and proof */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 576px) {
+  
+  
+  
+}
+/* Base chip style */
+
+/* Core Credentials - Solid white pills */
+
+/* Proof Highlights - Ghost/outline style */
+
+/* Subtle divider between core and proof */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 576px) {
+  
+  
+  
+}
+
+/* Base chip style */
+
+/* Core Credentials - Solid white pills */
+
+/* Proof Highlights - Ghost/outline style */
+
+/* Subtle divider between core and proof */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 576px) {
+  
+  
+  
+}
+
+/* =================================================================
+   PREMIUM HERO CHIP STYLES - Clear Visual Hierarchy
+   ================================================================= */
+
+/* Focus Line */
+.hero-focus-line {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Base Chip Style */
+.hero-chip {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 24px;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+/* Core Credentials - Solid White Pills */
+.hero-chip--core {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-chip--core:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Proof Highlights - Ghost/Outline Pills */
+.hero-chip--proof {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  box-shadow: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.hero-chip--proof:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.7);
+  transform: translateY(-1px);
+}
+
+/* CTA Buttons */
+.hero-cta-primary {
+  font-weight: 600;
+  padding: 0.6rem 2rem;
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #212529;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  background-color: #f8f9fa;
+  color: #000;
+}
+
+.hero-cta-secondary {
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.95);
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-cta-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-focus-line {
+    font-size: 1rem;
+  }
+  
+  .hero-chip {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .hero-chip--proof {
+    font-size: 0.8rem;
+    padding: 0.45rem 0.95rem;
+  }
+  
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-chip {
+    padding: 0.45rem 0.9rem;
+    font-size: 0.8rem;
+  }
+  
+  .hero-chip--proof {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.85rem;
+  }
+}
+
+/* ============================================
+   MODERN HOMEPAGE DESIGN - Clean & Professional
+   ============================================ */
+
+/* Hero Header */
+.hero-header {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.75rem;
+}
+
+.hero-focus {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+/* Credentials Section */
+.credentials-section {
+  margin: 2.5rem 0;
+  padding: 0 1rem;
+}
+
+.credential-badge {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.25s ease;
+}
+
+.credential-badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Proof Section */
+.proof-section {
+  margin: 2rem 0 2.5rem;
+  padding: 0 1rem;
+}
+
+.proof-badge {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  transition: all 0.25s ease;
+}
+
+.proof-badge:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.resume-btn {
+  background-color: #ffffff !important;
+  color: #212529 !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 2.5rem;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background-color: #f8f9fa !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  
+  .hero-title {
+    font-size: 1.25rem;
+  }
+  
+  .hero-focus {
+    font-size: 1rem;
+  }
+  
+  .credential-badge {
+    font-size: 0.85rem;
+    padding: 0.55rem 1.1rem;
+  }
+  
+  .proof-badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .resume-btn {
+    font-size: 0.95rem;
+    padding: 0.65rem 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-header {
+    margin-bottom: 2rem;
+  }
+  
+  .hero-name {
+    font-size: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 1.1rem;
+  }
+  
+  .hero-focus {
+    font-size: 0.95rem;
+  }
+  
+  .credential-badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.95rem;
+  }
+  
+  .proof-badge {
+    font-size: 0.75rem;
+    padding: 0.45rem 0.9rem;
+  }
+  
+  .credentials-section,
+  .proof-section {
+    margin: 1.5rem 0;
+  }
+}
+
+/* Clickable Proof Badges */
+.proof-badge-clickable {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.proof-badge-clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  opacity: 1 !important;
 }

@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2025-14610',
+        plugin: 'TableMaster for Elementor',
+        description: 'The TableMaster for Elementor plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.3.6. This is due to the plugin not restricting which URLs can be fetched when importing CSV data from a URL in the Data Table widget. This makes it possible for authenticated attackers, with Author-level access and above, to make web requests to arbitrary locations, including localhost and internal network services, and read sensitive files such as wp-config.php via the \'csv_url\' parameter.',
+        cvss: 7.2,
+        severity: 'High',
+        date: 'Jan 27, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/tablemaster-for-elementor/tablemaster-for-elementor-136-authenticated-author-server-side-request-forgery-via-csv-url-parameter'
+    },
+    {
         id: 'CVE-2026-0920',
         plugin: 'LA-Studio Element Kit for Elementor',
         description: 'The LA-Studio Element Kit for Elementor plugin for WordPress is vulnerable to Administrative User Creation in all versions up to, and including, 1.5.6.3. This is due to the \'ajax_register_handle\' function not restricting what user roles a user can register with. This makes it possible for unauthenticated attackers to supply the \'lakit_bkrole\' parameter during registration and gain administrator access to the site.',
