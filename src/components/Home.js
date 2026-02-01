@@ -7,7 +7,7 @@ const Home = () => {
     const coreRow2 = ['CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech'];
     
     const proofHighlights = [
-        { text: 'Black Hat Asia 2026 (Arsenal)', link: '#speaker' },
+        { text: 'Black Hat Asia 2026 Arsenal Speaker', link: '#speaker' },
         { text: '13×CVEs', link: '#cves' },
         { text: '3×IEEE Publications', link: '#publications' }
     ];
