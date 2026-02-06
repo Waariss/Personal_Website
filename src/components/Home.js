@@ -3,8 +3,10 @@ import { Container, Button, Badge, Stack } from 'react-bootstrap';
 import '../App.css';
 
 const Home = () => {
-    const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES'];
-    const coreRow2 = ['CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech'];
+    // const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES'];
+    // const coreRow2 = ['CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech'];
+    const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'CRTP', 'CPTS', 'CWES', 'eWPTX', 'BSCP', 'ASCP'];
+    const coreRow2 = ['ACP', 'PSAA', 'PMPA', 'CJCA', 'PT1', 'GHF', 'CDL', 'HCCDA-Tech'];
     
     const proofHighlights = [
         { text: 'Black Hat Asia 2026 Arsenal Speaker', link: '#speaker' },
