@@ -20,6 +20,7 @@ const About = () => {
         { img: "/badges/apisec-certified-practitioner.png", href: "https://www.credly.com/badges/b6bf6410-d63c-4665-bab0-45c383638dc5/public_url", alt: "APIsec Certified Practitioner" },
         { img: "https://images.credly.com/size/680x680/images/95043c37-e916-4e4e-96ab-06fb66056648/blob", href: "https://www.credly.com/badges/37645b13-29ce-4f11-898b-2ca933d3e603/public_url", alt: "HTB Certified Junior Cybersecurity Associate" },
         { img: "https://images.credly.com/size/340x340/images/54525e33-85d1-405c-a68c-1e4dd9c7f57f/blob", href: "https://assets.tryhackme.com/certification-certificate/6868034812c00e6f24504db3.pdf", alt: "Jr Penetration Tester (PT1)" },
+        { img: "https://images.credly.com/size/340x340/images/47f94746-a150-4f91-abc1-733b68b95504/blob", href: "https://assets.tryhackme.com/certification-certificate/6988722dc6836467cbaece0f.pdf", alt: "Cyber Security 101 (SEC1)" },
         { img: "/badges/GHF.png", href: "https://www.credly.com/badges/0a69a68f-97e3-4f7f-8069-9e101a895a11/public_url", alt: "GitHub Foundations" },
         { img: "https://images.credly.com/size/340x340/images/44994cda-b5b0-44cb-9a6d-d29b57163073/image.png", href: "https://www.credly.com/badges/f5642804-65a0-44a0-bffb-cca96bf3c267/public_url", alt: "Cloud Digital Leader Certification" },
         { img: "/badges/cert-stamp-ckbpro.png", href: "https://waris-damkham.netlify.app/pdf/CKBPro", alt: "Certified Kiosk Breakout Professional (CKBPro)" },
@@ -155,7 +156,7 @@ const About = () => {
                     </div>
                     
                     <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
-                        {badges.slice(0, showAllBadges ? badges.length : 16).map((badge, index) => (
+                        {badges.slice(0, showAllBadges ? badges.length : 17).map((badge, index) => (
                             <div key={index} className="badge-item mx-2 my-2">
                                 <OverlayTrigger
                                     overlay={<Tooltip id={`tooltip-${index}`}>{badge.alt}</Tooltip>}

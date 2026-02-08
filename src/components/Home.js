@@ -5,8 +5,8 @@ import '../App.css';
 const Home = () => {
     // const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'PMPA', 'PSAA', 'eWPTX', 'CRTP', 'CPTS', 'CWES'];
     // const coreRow2 = ['CJCA', 'BSCP', 'PT1', 'ASCP', 'ACP', 'GHF', 'CDL', 'HCCDA-Tech'];
-    const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'CRTP', 'CPTS', 'CWES', 'eWPTX', 'BSCP', 'PSAA'];
-    const coreRow2 = ['PMPA', 'ASCP', 'ACP', 'CJCA', 'PT1', 'GHF', 'CDL', 'HCCDA-Tech'];
+    const coreRow1 = ['OSCP+', 'OSCP', 'PNPT', 'CRTP', 'CPTS', 'CWES', 'eWPTX', 'BSCP'];
+    const coreRow2 = ['PSAA', 'PMPA', 'ASCP', 'ACP', 'CJCA', 'PT1', 'SEC1', 'GHF', 'CDL'];
     
     const proofHighlights = [
         { text: 'Black Hat Asia 2026 Arsenal Speaker', link: '#speaker' },

@@ -5,6 +5,13 @@ import '../App.css';
 
 const certificates = [
     {
+        title: "Cyber Security 101 (SEC1)",
+        organization: "TryHackMe",
+        date: "Feb 2026 - Feb 2029",
+        link: "https://assets.tryhackme.com/certification-certificate/6988722dc6836467cbaece0f.pdf",
+        imageUrl: "./images/SEC1.png"
+    },
+    {
         title: "Certified Web App Penetration Testing Apprentice (KWAPTA)",
         organization: "Knight Squad Academy",
         date: "Jan 2026",
