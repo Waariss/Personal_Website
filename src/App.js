@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 import PDFViewer from './PDFViewer';
 import P5Wrapper from './components/p5_1';
 import HTBAchievements from './components/Room';
+import EightKsecAI from './components/8ksec-AI';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/pdf/:pdfId" element={<PDFViewer />} />
           <Route path="/p5project" element={<P5Wrapper />} />
           <Route path="/htb" element={<HTBAchievements />} />
+          <Route path="/8ksec-AI" element={<EightKsecAI />} />
         </Routes>
       </div>
     </BrowserRouter>

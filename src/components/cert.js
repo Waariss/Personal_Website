@@ -5,6 +5,13 @@ import '../App.css';
 
 const certificates = [
     {
+        title: "AI & LLM Exploitation Challenges (All 10 Labs Completed)",
+        organization: "8kSec",
+        date: "Jan/Feb 2026",
+        link: "/8ksec-AI",
+        imageUrl: "./images/AILLM-Exploitation-Challenges.png"
+    },
+    {
         title: "Cyber Security 101 (SEC1)",
         organization: "TryHackMe",
         date: "Feb 2026 - Feb 2029",
