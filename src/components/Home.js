@@ -8,7 +8,7 @@ const Home = () => {
     
     const proofHighlights = [
         { text: 'Black Hat Asia 2026 Arsenal Speaker', link: '#speaker' },
-        { text: '13×CVEs', link: '#cves' },
+        { text: '14×CVEs', link: '#cves' },
         { text: '3×IEEE Publications', link: '#publications' }
     ];
 

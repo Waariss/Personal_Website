@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-1231',
+        plugin: 'Beaver Builder Page Builder',
+        description: 'The Beaver Builder Page Builder – Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `js` Global Settings parameter in all versions up to, and including, 2.10.0.5 due to missing capability checks on save_global_settings() function and insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Custom-level access and above who have been granted beaver builder access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
+        cvss: 6.4,
+        severity: 'MEDIUM',
+        date: 'Feb 10, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beaver-builder-lite-version/beaver-builder-page-builder-drag-and-drop-website-builder-21005-authenticated-custom-missing-authorization-to-stored-cross-site-scripting-via-global-settings'
+    },
+    {
         id: 'CVE-2025-14610',
         plugin: 'TableMaster for Elementor',
         description: 'The TableMaster for Elementor plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.3.6. This is due to the plugin not restricting which URLs can be fetched when importing CSV data from a URL in the Data Table widget. This makes it possible for authenticated attackers, with Author-level access and above, to make web requests to arbitrary locations, including localhost and internal network services, and read sensitive files such as wp-config.php via the \'csv_url\' parameter.',
