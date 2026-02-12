@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-1104',
+        plugin: 'FastDup',
+        description: 'The FastDup – Fastest WordPress Migration & Duplicator plugin for WordPress is vulnerable to unauthorized backup creation and download due to a missing capability check on REST API endpoints in all versions up to, and including, 2.7.1. This makes it possible for authenticated attackers, with Contributor-level access and above, to create and download full-site backup archives containing the entire WordPress installation, including database exports and configuration files.',
+        cvss: 8.8,
+        severity: 'High',
+        date: 'Feb 11, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beaver-builder-lite-version/beaver-builder-page-builder-drag-and-drop-website-builder-21005-authenticated-custom-missing-authorization-to-stored-cross-site-scripting-via-global-settings'
+    },
+    {
         id: 'CVE-2026-1231',
         plugin: 'Beaver Builder Page Builder',
         description: 'The Beaver Builder Page Builder – Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `js` Global Settings parameter in all versions up to, and including, 2.10.0.5 due to missing capability checks on save_global_settings() function and insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Custom-level access and above who have been granted beaver builder access, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.',
