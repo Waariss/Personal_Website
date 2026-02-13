@@ -21,7 +21,7 @@ const ResumeDisplay = () => {
                                 </div>
                                 <div className="terminal-content">
                                     <iframe 
-                                        src="./PDF/Waris_Resume_2025.pdf" 
+                                        src="./PDF/Waris_Resume_2026.pdf" 
                                         width="100%" 
                                         height="685px" 
                                         style={{ border: "none" }}
