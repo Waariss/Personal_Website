@@ -93,6 +93,14 @@ const getCompetitions = () => [
     // },
     {
         certificateImage: "./images/pico.png",
+        title: ' Snyk CTF 2026',
+        date: 'Feb 2026',
+        teamRank: '211 / 1539 teams',
+        teamScore: '1200 points',
+        linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_i-recently-participated-in-snyk-ctf-2026-share-7428480536698060800-5KfA'
+    },
+    {
+        certificateImage: "./images/pico.png",
         title: 'Internal KBTG CTF 2025',
         date: 'Dec 2025',
         teamRank: '1 / 5 teams',
