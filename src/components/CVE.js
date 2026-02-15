@@ -20,32 +20,31 @@ const CVE = () => {
                                 {/* CVSS Score Circle */}
                                 <div className="cve-header">
                                     <div className="cvss-circle-container">
-                                        <svg className="cvss-circle" viewBox="0 0 100 100">
-                                            <circle
-                                                className="cvss-circle-bg"
-                                                cx="50"
-                                                cy="50"
-                                                r="45"
-                                            />
-                                            <circle
-                                                className={`cvss-circle-progress ${cve.severity.toLowerCase()}`}
-                                                cx="50"
-                                                cy="50"
-                                                r="45"
-                                                style={{
-                                                    strokeDasharray: `${(cve.cvss / 10) * 283} 283`
-                                                }}
-                                            />
-                                            <text
-                                                x="50"
-                                                y="50"
-                                                className="cvss-score-text"
-                                                textAnchor="middle"
-                                                dominantBaseline="middle"
-                                            >
+                                        <div
+                                            className="cvss-circle-wrap"
+                                            aria-label={`CVSS ${cve.cvss} (${cve.severity})`}
+                                        >
+                                            <svg className="cvss-circle" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+                                                <circle
+                                                    className="cvss-circle-bg"
+                                                    cx="50"
+                                                    cy="50"
+                                                    r="45"
+                                                />
+                                                <circle
+                                                    className={`cvss-circle-progress ${cve.severity.toLowerCase()}`}
+                                                    cx="50"
+                                                    cy="50"
+                                                    r="45"
+                                                    style={{
+                                                        strokeDasharray: `${(cve.cvss / 10) * 283} 283`
+                                                    }}
+                                                />
+                                            </svg>
+                                            <div className="cvss-score-overlay" aria-hidden="true">
                                                 {cve.cvss}
-                                            </text>
-                                        </svg>
+                                            </div>
+                                        </div>
                                         <Badge bg={getSeverityColor(cve.severity)} className="mt-2">
                                             {cve.severity}
                                         </Badge>
