@@ -1,11 +1,14 @@
-import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Card, Row, Col, Button } from 'react-bootstrap';
 import '../resume.css';
 
 const ResumeDisplay = () => {
+    const [isResumeLoaded, setIsResumeLoaded] = useState(false);
+    const resumeUrl = "./PDF/Waris_Resume_2026.pdf";
+
     return (
         <section id="resume" className="my-4">
-            <h1 className="mb-4 text-center title-enhanced">My Resume</h1>
+            <h2 className="mb-4 text-center title-enhanced">My Resume</h2>
             <Card className="mb-3 border-0 shadow-sm terminal-card">
                 <Card.Body className="p-0">
                     <Row className="g-0">
@@ -20,13 +23,45 @@ const ResumeDisplay = () => {
                                     <div className="terminal-title">resume.pdf — waaris_m@portfolio</div>
                                 </div>
                                 <div className="terminal-content">
-                                    <iframe 
-                                        src="./PDF/Waris_Resume_2026.pdf" 
-                                        width="100%" 
-                                        height="685px" 
-                                        style={{ border: "none" }}
-                                        title="Resume of Waris"
-                                    ></iframe>
+                                    {!isResumeLoaded ? (
+                                        <div style={{ padding: 18 }}>
+                                            <p style={{ marginBottom: 12 }}>
+                                                The embedded PDF loads on demand to keep the homepage fast.
+                                            </p>
+                                            <div className="d-flex gap-2 flex-wrap">
+                                                <Button
+                                                    variant="outline-dark"
+                                                    onClick={() => setIsResumeLoaded(true)}
+                                                >
+                                                    Load Resume PDF
+                                                </Button>
+                                                <a
+                                                    className="btn btn-dark"
+                                                    href={resumeUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    Open in New Tab
+                                                </a>
+                                                <a
+                                                    className="btn btn-outline-secondary"
+                                                    href={resumeUrl}
+                                                    download
+                                                >
+                                                    Download
+                                                </a>
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <iframe 
+                                            src={resumeUrl}
+                                            loading="lazy"
+                                            width="100%" 
+                                            height="685px" 
+                                            style={{ border: "none" }}
+                                            title="Resume of Waris"
+                                        ></iframe>
+                                    )}
                                 </div>
                             </div>
                         </Col>
@@ -70,49 +105,49 @@ const ResumeDisplay = () => {
                                             <span className="terminal-comment"># SOCIAL NETWORKS</span>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">LinkedIn:</span>
-                                                <a href="https://www.linkedin.com/in/waris-damkham/" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://www.linkedin.com/in/waris-damkham/" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     linkedin.com/in/waris-damkham
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">GitHub:</span>
-                                                <a href="https://github.com/Waariss" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://github.com/Waariss" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     github.com/Waariss
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">Medium:</span>
-                                                <a href="https://medium.com/@waaris_m" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://medium.com/@waaris_m" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     medium.com/@waaris_m
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">ResearchGate:</span>
-                                                <a href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     researchgate.net/profile/Waris-Damkham
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">Credly:</span>
-                                                <a href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     credly.com/users/waris-damkham
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">Credential:</span>
-                                                <a href="https://www.credential.net/profile/waarism/wallet#gs.ibia2y" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://www.credential.net/profile/waarism/wallet#gs.ibia2y" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     credential.net/profile/waarism
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">TryHackMe:</span>
-                                                <a href="https://tryhackme.com/p/waris.dam" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://tryhackme.com/p/waris.dam" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     tryhackme.com/p/waris.dam
                                                 </a>
                                             </div>
                                             <div className="terminal-info-line">
                                                 <span className="terminal-key">HackTheBox:</span>
-                                                <a href="https://app.hackthebox.com/profile/1458142" target="_blank" rel="noreferrer" className="terminal-value">
+                                                <a href="https://app.hackthebox.com/profile/1458142" target="_blank" rel="noopener noreferrer" className="terminal-value">
                                                     hackthebox.com/profile/1458142
                                                 </a>
                                             </div>

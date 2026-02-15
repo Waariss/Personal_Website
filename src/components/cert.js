@@ -1,6 +1,7 @@
-import { Card, Row, Col } from 'react-bootstrap';
+import { Card, Row, Col, Button } from 'react-bootstrap';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import Slider from 'react-slick';
+import { useMemo, useState } from 'react';
 import '../App.css';
 
 const certificates = [
@@ -43,7 +44,7 @@ const certificates = [
         title: "Certified Kiosk Breakout Professional (CKBPro)",
         organization: "The SecOps Group",
         date: "Nov 2025",
-        link: "pdf/CKBPro",
+        link: "/pdf/CKBPro",
         imageUrl: "./images/WarisDamkham-CertifiedKioskBreakoutProfessional(CKBPro).png"
     },
     {
@@ -162,7 +163,7 @@ const certificates = [
         title: "Certified API Pentester (C-APIPen)",
         organization: "The SecOps Group",
         date: "Jan 2025",
-        link: "pdf/C-APIPen",
+        link: "/pdf/C-APIPen",
         imageUrl: "./images/WarisDamkham-CertifiedAPIPentester(C-APIPen).png"
     },
     {
@@ -469,6 +470,13 @@ const certificates = [
 ];
 
 const Certificate = () => {
+    const FEATURED_COUNT = 16;
+    const [showAllCerts, setShowAllCerts] = useState(false);
+    const displayedCertificates = useMemo(
+        () => (showAllCerts ? certificates : certificates.slice(0, FEATURED_COUNT)),
+        [showAllCerts]
+    );
+
     const settings = {
         dots: true,
         infinite: true,
@@ -488,11 +496,11 @@ const Certificate = () => {
         return slides;
     };
 
-    const slides = createSlides(certificates);
+    const slides = createSlides(displayedCertificates);
 
     return (
         <section id="certifications" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Certifications</h1>
+            <h2 className="mb-4 text-center title-enhanced">Certifications</h2>
             
             <Slider {...settings}>
                 {slides.map((slideCerts, index) => (
@@ -510,6 +518,7 @@ const Certificate = () => {
                                                         src={cert.imageUrl}
                                                         className="cert-img"
                                                         loading="lazy"
+                                                        alt={`${cert.title} certificate`}
                                                     />
                                                 </div>
                                                 
@@ -546,6 +555,18 @@ const Certificate = () => {
                     </div>
                 ))}
             </Slider>
+
+            {certificates.length > FEATURED_COUNT && (
+                <div className="text-center mt-3">
+                    <Button
+                        variant="outline-secondary"
+                        onClick={() => setShowAllCerts((v) => !v)}
+                        aria-expanded={showAllCerts}
+                    >
+                        {showAllCerts ? 'Show fewer certifications' : `Show all ${certificates.length} certifications`}
+                    </Button>
+                </div>
+            )}
         </section>
     );
 };

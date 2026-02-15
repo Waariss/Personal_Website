@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Card} from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import '../App.css';
 import ReactMarkdown from 'react-markdown';
 
@@ -13,9 +14,9 @@ const projectData = [
         skills: ["Python", "Deep Learning", "Convolutional Neural Networks (CNN)", "TensorFlow/Keras", "ResNet50", "OpenCV", "Pandas", "Plotly", "Matplotlib", "NumPy", "YOLO", "Line OA", "PyTorch", "ClearML"],
         links: [
             { url: 'https://ieeexplore.ieee.org/document/10902790', "label": "Conference Paper" },
-            { url: 'https://waris-damkham.netlify.app/pdf/Proposal', "label": "Proposal" },
-            { url: 'https://waris-damkham.netlify.app/pdf/chickenME', "label": "Poster"},
-            { url: 'https://waris-damkham.netlify.app/pdf/Def', "label": "Defense"},
+            { url: '/pdf/Proposal', "label": "Proposal" },
+            { url: '/pdf/chickenME', "label": "Poster"},
+            { url: '/pdf/Def', "label": "Defense"},
             { url: "https://liff.line.me/1645278921-kWRPP32q/?accountId=239mhqhy", "label": "Live View Project" },
             { url: "https://github.com/Waariss/Chicken_Me-LineOA.git", "label": "Github" },
         ]
@@ -75,7 +76,7 @@ const projectData = [
         skills: ['Android Development', 'OAuth', 'Application Security', 'Security', 'Cybersecurity', 'Java', 'Gradle'],
         links: [
             { url: 'https://github.com/Waariss/Oauth2.0', label: 'GitHub' },
-            { url: 'https://waris-damkham.netlify.app/pdf/Ritsumeikan_University_Poster', label: 'Poster' },
+            { url: '/pdf/Ritsumeikan_University_Poster', label: 'Poster' },
             { url: 'https://ieeexplore.ieee.org/document/10430018', label: 'Conference Paper' },
         ]
     },
@@ -121,7 +122,7 @@ const projectData = [
         imgSrc: './images/HCI.png',
         title: 'Safe & Go',
         subtitle: 'Jan 2023 - May 2023',
-        description: 'The project aims to create a new motorcycle transportation service to address the problem faced by people living in the citv who requires a secure and reasonablv priced service. The currentl available motorccle transportation services have unreasonable fare charges and security concerns. This service will ensure security features, offer a user-friendly interface, and also charges a reasonable fare. The project aims to improve the daily lives and experiences of those living in cities and contribute to increasing the options available for motorbike transportation.',
+        description: 'The project aims to create a new motorcycle transportation service to address the problem faced by people living in the city who require a secure and reasonably priced service. The currently available motorcycle transportation services can have unreasonable fare charges and safety concerns. This service focuses on security features, a user-friendly interface, and fair pricing. The project aims to improve the daily lives and experiences of those living in cities and increase the options available for motorbike transportation.',
         skills: ['User Experience (UX)', 'User Interface Design'],
         links: [
             { url: 'https://sites.google.com/student.mahidol.edu/safeandgophase4/home?authuser=0&pli=1', label: 'Live View Project' },
@@ -182,7 +183,7 @@ const projectData = [
         subtitle: "Jan 2022 - May 2022",
         description: "As the lead designer and developer of Lollipop Music, a dynamic music application built with React and Node.js and hosted on Nginx and Amazon EC2, I combined my passion for music and technology to create an intuitive, user-friendly platform for seamless music browsing and playback. The application features robust user authentication, playlist management, and audio playback functionality. To ensure consistent accessibility and reliability, I integrated a GitHub Action for routine website accessibility checks. This project not only enhanced my web development skills, particularly in React and Node.js, but also underscored my ability to craft engaging digital music experiences. For a hands-on demonstration, access the application using the provided demo credentials on the login page: ",
         credentials: "**Username**: `Senyai_bark@hotmail.com` **Password**: `loveDogs88`.",
-        skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nignx","CI/CD", "GitHub Action"],
+        skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nginx", "CI/CD", "GitHub Action"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
             // {url: "http://52.77.69.103/", "label": "Live Visit Project"}
@@ -198,7 +199,6 @@ const Projects = () => {
     const displayedProjects = showAllProjects ? projectData : projectData.slice(0, 3);
 
     const handleShow = (project) => {
-        console.log("Selected Project ID:", project.id);
         if (selectedProjectId === project.id) {
             setSelectedProjectId(null);
             setExpandedDescriptions({});
@@ -221,16 +221,29 @@ const Projects = () => {
     
     return (
         <section id="projects" className="my-4">
-            <h1 className="mb-4 text-center title-enhanced">Projects</h1>
+            <h2 className="mb-4 text-center title-enhanced">Projects</h2>
             <div className="project-gallery">
-                {displayedProjects.map((project, index) => (
-                    <div key={index}>
-                        <Card className="project-card" onClick={() => handleShow(project)}>
+                {displayedProjects.map((project) => (
+                    <div key={project.id}>
+                        <Card
+                            className="project-card"
+                            role="button"
+                            tabIndex={0}
+                            aria-expanded={selectedProjectId === project.id}
+                            onClick={() => handleShow(project)}
+                            onKeyDown={(e) => {
+                                if (e.key === 'Enter' || e.key === ' ') {
+                                    e.preventDefault();
+                                    handleShow(project);
+                                }
+                            }}
+                        >
                             <Card.Img 
                                 variant="top" 
                                 src={project.imgSrc} 
                                 alt={project.title} 
                                 className="project-image" 
+                                loading="lazy"
                             />
                             <Card.ImgOverlay className={`project-img-overlay ${selectedProjectId === project.id ? '' : 'image-overlay'}`}>
                                 <Card.Title className={`project-title ${selectedProjectId === project.id ? 'white-text' : ''}`}>
@@ -261,9 +274,32 @@ const Projects = () => {
                                     <Card.Text>
                                         <strong>Skills:</strong> {project.skills.join(' · ')}
                                     </Card.Text>
-                                    {project.links.map(link => (
-                                        <Card.Link href={link.url} target="_blank" className="btn btn-outline-success" key={link.url}>{link.label}</Card.Link>
-                                    ))}
+                                    {project.links.map((link) => {
+                                        const isInternal = typeof link.url === 'string' && link.url.startsWith('/');
+                                        const commonProps = {
+                                            className: 'btn btn-outline-success',
+                                            key: link.url,
+                                        };
+
+                                        if (isInternal) {
+                                            return (
+                                                <Card.Link as={Link} to={link.url} {...commonProps}>
+                                                    {link.label}
+                                                </Card.Link>
+                                            );
+                                        }
+
+                                        return (
+                                            <Card.Link
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                {...commonProps}
+                                            >
+                                                {link.label}
+                                            </Card.Link>
+                                        );
+                                    })}
                                 </Card.Body>
                             </div>
                             </Card>

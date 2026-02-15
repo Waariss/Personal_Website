@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Badge } from 'react-bootstrap';
+import { FaBullhorn, FaMapMarkerAlt, FaCalendarAlt, FaExternalLinkAlt, FaFileAlt } from 'react-icons/fa';
 import '../App.css';
 
 const Speaker = () => {
@@ -9,7 +10,7 @@ const Speaker = () => {
     
     return (
         <section id="speaker" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Speaker & Presentations</h1>
+            <h2 className="mb-4 text-center title-enhanced">Speaker & Presentations</h2>
             
             <Row>
                 {displayedTalks.map((talk, index) => (
@@ -36,18 +37,18 @@ const Speaker = () => {
                                 <div className="talk-content flex-grow-1">
                                     <h5 className="talk-title">{talk.title}</h5>
                                     <h6 className="talk-event">
-                                        <i className="fas fa-bullhorn me-2"></i>
+                                        <FaBullhorn className="me-2" aria-hidden="true" focusable="false" />
                                         {talk.event}
                                     </h6>
                                     <p className="talk-description">{talk.description}</p>
                                     
                                     <div className="talk-meta">
                                         <small className="text-muted d-block mb-1">
-                                            <i className="fas fa-map-marker-alt me-2"></i>
+                                            <FaMapMarkerAlt className="me-2" aria-hidden="true" focusable="false" />
                                             {talk.location}
                                         </small>
                                         <small className="text-muted d-block">
-                                            <i className="fas fa-calendar-alt me-2"></i>
+                                            <FaCalendarAlt className="me-2" aria-hidden="true" focusable="false" />
                                             {talk.date}
                                         </small>
                                     </div>
@@ -65,7 +66,7 @@ const Speaker = () => {
                                                     rel="noopener noreferrer"
                                                     className={`btn btn-outline-${link.color || 'primary'} btn-sm flex-fill`}
                                                 >
-                                                    {link.label} <i className={`${link.icon} ms-1`}></i>
+                                                    {link.label} {renderTalkLinkIcon(link.icon)}
                                                 </a>
                                             ))}
                                         </div>
@@ -89,6 +90,12 @@ const Speaker = () => {
             )}
         </section>
     );
+};
+
+const renderTalkLinkIcon = (icon) => {
+    const cls = 'ms-1';
+    if (icon && icon.includes('file')) return <FaFileAlt className={cls} aria-hidden="true" focusable="false" />;
+    return <FaExternalLinkAlt className={cls} aria-hidden="true" focusable="false" />;
 };
 
 const getEventTypeColor = (type) => {
@@ -121,7 +128,7 @@ const getTalks = () => [
         ]
     },
     {
-        title: 'AI Secuirty Unmasked: The. Hidden Danger Behind Yout AI Tools',
+        title: 'AI Security Unmasked: The Hidden Danger Behind Your AI Tools',
         event: 'KBTG Knowledge Sharing 2025',
         type: 'Webinar',
         status: 'Presented',

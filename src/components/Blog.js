@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Badge, Row, Col} from 'react-bootstrap';
+import { FaBookOpen } from 'react-icons/fa';
 import '../App.css';
 
 const Blog = () => {
@@ -9,7 +10,7 @@ const Blog = () => {
 
     return (
         <section id="blog" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Blog</h1>
+            <h2 className="mb-4 text-center title-enhanced">Blog</h2>
             <Row>
                 {displayedBlogs.map((blog, index) => (
                     <Col key={index} xs={12} md={6} lg={4} className="mb-4">
@@ -26,9 +27,10 @@ const Blog = () => {
                                         src={blog.internshipImages} 
                                         alt={blog.title} 
                                         className="blog-card-image" 
+                                        loading="lazy"
                                     />
                                     <div className="blog-overlay">
-                                        <i className="fas fa-book-open blog-icon"></i>
+                                        <FaBookOpen className="blog-icon" aria-hidden="true" focusable="false" />
                                     </div>
                                 </div>
                                 <Card.Body className="d-flex flex-column">

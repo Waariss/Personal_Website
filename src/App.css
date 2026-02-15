@@ -33,11 +33,10 @@
 }
 
 .home-section {
-  background: url('https://wallpapercave.com/wp/3yOCFur.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background:
+    radial-gradient(1200px 800px at 15% 0%, rgba(13,110,253,.22), transparent 55%),
+    radial-gradient(1000px 700px at 80% 10%, rgba(255,99,71,.18), transparent 55%),
+    linear-gradient(180deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%);
   color: white; 
 }
 
@@ -417,6 +416,11 @@
   margin-top: 40px;
   position: relative;
   overflow: hidden;
+}
+
+.project-card:focus {
+  outline: 3px solid rgba(13, 110, 253, 0.85);
+  outline-offset: 3px;
 }
 
 .project-card img {

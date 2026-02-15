@@ -206,7 +206,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">1) Ultimate AI Essay Grader</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Ultimate AI Essay Grader Challenge.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Ultimate AI Essay Grader Challenge.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -219,7 +219,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">2) Smart Workspace Assistant</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Smart Workspace Assistant Challenge.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Smart Workspace Assistant Challenge.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -232,7 +232,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">3) Secure Vault</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Secure Vault Challenge.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Secure Vault Challenge.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -245,7 +245,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">4) breakup Password Bot</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Password Bot Challenge.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Password Bot Challenge.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -258,7 +258,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">5) Meetings MCP</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Meeting MCP.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Meeting MCP.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -271,7 +271,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">6) Intern Filter</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Intern Filter.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Intern Filter.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -306,7 +306,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">8) Supply Chain Sabotage</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Supply Chain Sabotage.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Supply Chain Sabotage.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -319,7 +319,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">9) Rogue Skills</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Rogue Skills.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Rogue Skills.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
@@ -332,7 +332,7 @@ const EightKsecAI = () => {
             <div className="body">
               <p className="title">10) Identity Crisis</p>
               <div className="actions">
-                <a className="btn" href="/images/AI-k8sec/Identity Crisis.png" target="_blank" rel="noopener">View image</a>
+                <a className="btn" href="/images/AI-k8sec/Identity Crisis.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>

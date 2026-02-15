@@ -9,7 +9,7 @@ const Competitions = () => {
 
     return (
         <section id="competitions" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Competitions</h1>
+            <h2 className="mb-4 text-center title-enhanced">Competitions</h2>
             <Row>
                 {displayedCompetitions.map((competition, index) => (
                     <Col key={index} xs={12} md={6} lg={4} className="mb-4">
@@ -243,4 +243,3 @@ const getCompetitions = () => [
 ];
 
 export default Competitions;
-

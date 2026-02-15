@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Row, Col, Badge } from 'react-bootstrap';
-import { FaCalendar, FaUniversity } from 'react-icons/fa';
+import { FaCalendar, FaUniversity, FaExternalLinkAlt } from 'react-icons/fa';
 import '../App.css';
 
 const Publication = () => {
@@ -8,7 +8,7 @@ const Publication = () => {
     
     return (
         <section id="publications" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Academic Publications</h1>
+            <h2 className="mb-4 text-center title-enhanced">Academic Publications</h2>
             <p className="text-center text-muted mb-4">
                 Research papers presented at international IEEE conferences
             </p>
@@ -61,7 +61,7 @@ const Publication = () => {
                                         rel="noopener noreferrer"
                                         className="btn btn-outline-primary btn-sm w-100"
                                     >
-                                        View on IEEE Xplore <i className="fas fa-external-link-alt ms-1"></i>
+                                        View on IEEE Xplore <FaExternalLinkAlt className="ms-1" aria-hidden="true" focusable="false" />
                                     </a>
                                 </div>
                             </Card.Body>

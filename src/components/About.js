@@ -3,7 +3,7 @@ import { Card, Row, Col, Image, Button, OverlayTrigger, Tooltip } from 'react-bo
 import '../App.css';
 
 const About = () => {
-    const [profileImage, setProfileImage] = useState("./images/cat.jpg");
+    const [profileImage, setProfileImage] = useState("./images/waris-2026.jpg");
     const [showAllBadges, setShowAllBadges] = useState(false);
     const badges = [
         { img: "https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/163229512", href: "https://credentials.offsec.com/3662edd7-f74b-4afc-89be-6343e301ac16#acc.z5HkIjF6", alt: "OffSec Certified Professional+ (OSCP+)" },
@@ -23,16 +23,16 @@ const About = () => {
         { img: "https://images.credly.com/size/340x340/images/47f94746-a150-4f91-abc1-733b68b95504/blob", href: "https://assets.tryhackme.com/certification-certificate/6988722dc6836467cbaece0f.pdf", alt: "Cyber Security 101 (SEC1)" },
         { img: "https://images.credly.com/size/340x340/images/44994cda-b5b0-44cb-9a6d-d29b57163073/image.png", href: "https://www.credly.com/badges/f5642804-65a0-44a0-bffb-cca96bf3c267/public_url", alt: "Cloud Digital Leader Certification" },
         { img: "/badges/GHF.png", href: "https://www.credly.com/badges/0a69a68f-97e3-4f7f-8069-9e101a895a11/public_url", alt: "GitHub Foundations" },
-        { img: "/badges/cert-stamp-ckbpro.png", href: "https://waris-damkham.netlify.app/pdf/CKBPro", alt: "Certified Kiosk Breakout Professional (CKBPro)" },
-        { img: "/badges/cert-stamp-c-apipen-pro.png", href: "https://waris-damkham.netlify.app/pdf/C-APIPen", alt: "Certified API Pentester (C-APIPen)" },
-        { img: "/badges/cert-stamp-ccpenX-AWS.png", href: "https://waris-damkham.netlify.app/pdf/CCPenX-AWS", alt: "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)" },
-        { img: "/badges/MLPen.png", href: "https://waris-damkham.netlify.app/pdf/MLPen", alt: "Certified AI/ML Pentester (C-AI/MLPen)" },
-        { img: "/badges/CMPen-IOS-no-bg.png", href: "https://waris-damkham.netlify.app/pdf/CMPen-IOS", alt: "Certified Mobile Pentester (CMPen-IOS)" },
-        { img: "/badges/CMPen-Android-no-bg.png", href: "https://waris-damkham.netlify.app/pdf/CMPen-Android", alt: "Certified Mobile Pentester (CMPen-Android)" },
-        { img: "/badges/cert-stamp-capenx-expert.png", href: "https://waris-damkham.netlify.app/pdf/CAPenX", alt: "Certified AppSec Pentesting eXpert (CAPenX)" },
-        { img: "/badges/CNPen.png", href: "https://waris-damkham.netlify.app/pdf/CNPen", alt: "Certified Network Pentester (CNPen)" },
-        { img: "/badges/CAPen.png", href: "https://waris-damkham.netlify.app/pdf/CAPen", alt: "Certified AppSec Pentester (CAPen)" },
-        { img: "/badges/CAP.png", href: "https://waris-damkham.netlify.app/pdf/CAP", alt: "Certified AppSec Practitioner (CAP)" },
+        { img: "/badges/cert-stamp-ckbpro.png", href: "/pdf/CKBPro", alt: "Certified Kiosk Breakout Professional (CKBPro)" },
+        { img: "/badges/cert-stamp-c-apipen-pro.png", href: "/pdf/C-APIPen", alt: "Certified API Pentester (C-APIPen)" },
+        { img: "/badges/cert-stamp-ccpenX-AWS.png", href: "/pdf/CCPenX-AWS", alt: "Certified Cloud Pentesting eXpert - AWS (CCPenX-AWS)" },
+        { img: "/badges/MLPen.png", href: "/pdf/MLPen", alt: "Certified AI/ML Pentester (C-AI/MLPen)" },
+        { img: "/badges/CMPen-IOS-no-bg.png", href: "/pdf/CMPen-IOS", alt: "Certified Mobile Pentester (CMPen-IOS)" },
+        { img: "/badges/CMPen-Android-no-bg.png", href: "/pdf/CMPen-Android", alt: "Certified Mobile Pentester (CMPen-Android)" },
+        { img: "/badges/cert-stamp-capenx-expert.png", href: "/pdf/CAPenX", alt: "Certified AppSec Pentesting eXpert (CAPenX)" },
+        { img: "/badges/CNPen.png", href: "/pdf/CNPen", alt: "Certified Network Pentester (CNPen)" },
+        { img: "/badges/CAPen.png", href: "/pdf/CAPen", alt: "Certified AppSec Pentester (CAPen)" },
+        { img: "/badges/CAP.png", href: "/pdf/CAP", alt: "Certified AppSec Practitioner (CAP)" },
         { img: "/badges/CRTA.png", href: "https://www.credential.net/bfcd9773-ad19-4fdc-b17a-b7dfde8bc57f", alt: "Certified Red Team Analyst" },
         { img: "/badges/CRT-ID.png", href: "https://www.credential.net/b8740539-da8e-4efb-ae8f-9ed63a23b797", alt: "Certified Red Team Infra Developer" },
         { img: "/badges/MCRTA.png", href: "https://labs.cyberwarfare.live/badge/image/66fcc85def7753022c5b197c", alt: "Multi-Cloud Red Team Analyst" },
@@ -60,8 +60,9 @@ const About = () => {
                     <Col xs={12} md={4} className="mb-3">
                         <Image 
                             src={profileImage} 
-                            onMouseEnter={() => setProfileImage("./images/waris-2026.JPG")} 
-                            onMouseLeave={() => setProfileImage("./images/waris-2026.JPG")}
+                            alt="Portrait of Waris Damkham"
+                            onMouseEnter={() => setProfileImage("./images/cat.jpg")} 
+                            onMouseLeave={() => setProfileImage("./images/waris-2026.jpg")}
                             roundedCircle 
                             fluid 
                             className="profile-image" 
@@ -80,57 +81,57 @@ const About = () => {
                         </Card.Text>
                         <div className="d-flex mt-3 icon-section">
                             <OverlayTrigger overlay={<Tooltip id="tooltip-linkedin">LinkedIn</Tooltip>}>
-                                <Button variant="link" href="https://www.linkedin.com/in/waris-damkham/" target="_blank">
-                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" width="37.5" height="37.5" />
+                                <Button variant="link" href="https://www.linkedin.com/in/waris-damkham/" target="_blank" rel="noopener noreferrer">
+                                    <Image alt="LinkedIn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
 
                             <OverlayTrigger overlay={<Tooltip id="tooltip-github">GitHub</Tooltip>}>
-                                <Button variant="link" href="https://github.com/Waariss" target="_blank">
-                                    <Image src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="37.5" height="37.5" />
+                                <Button variant="link" href="https://github.com/Waariss" target="_blank" rel="noopener noreferrer">
+                                    <Image alt="GitHub" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
 
                             <OverlayTrigger overlay={<Tooltip id="tooltip-researchgate">ResearchGate</Tooltip>}>
-                                <Button variant="link" href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank">
-                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="37.5" height="37.5" />
+                                <Button variant="link" href="https://www.researchgate.net/profile/Waris-Damkham" target="_blank" rel="noopener noreferrer">
+                                    <Image alt="ResearchGate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/ResearchGate_icon_SVG.svg/1200px-ResearchGate_icon_SVG.svg.png" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
 
                             <OverlayTrigger overlay={<Tooltip id="tooltip-google-scholar">Google Scholar</Tooltip>}>
-                                <Button variant="link" href="https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en" target="_blank">
-                                    <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="37.5" height="37.5" />
+                                <Button variant="link" href="https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                                    <Image alt="Google Scholar" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
 
                             <OverlayTrigger overlay={<Tooltip id="tooltip-email">Email</Tooltip>}>
                                 <Button variant="link" href="mailto:waris.dam@student.mahidol.ac.th">
-                                    <Image src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="37.5" height="37.5" />
+                                    <Image alt="Email" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
 
                             <OverlayTrigger overlay={<Tooltip id="tooltip-credly">Credly</Tooltip>}>
-                                <Button variant="link" href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank">
-                                    <Image src="https://www.svgrepo.com/show/331358/credly.svg" width="37.5" height="37.5" />
+                                <Button variant="link" href="https://www.credly.com/users/waris-damkham.196ff471" target="_blank" rel="noopener noreferrer">
+                                    <Image alt="Credly" src="https://www.svgrepo.com/show/331358/credly.svg" width="37.5" height="37.5" />
                                 </Button>
                             </OverlayTrigger>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-tryhackme">TryHackMe</Tooltip>}>
-                                <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank">
+                                <Button variant="link" href="https://tryhackme.com/p/waris.dam" target="_blank" rel="noopener noreferrer">
                                     <Image src="https://tryhackme.com/img/favicon.png" alt="TryHackMe" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-hackthebox">HackTheBox</Tooltip>}>
-                                <Button variant="link" href="https://app.hackthebox.com/profile/1458142" target="_blank">
+                                <Button variant="link" href="https://app.hackthebox.com/profile/1458142" target="_blank" rel="noopener noreferrer">
                                     <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzxlNL92ntRTBI1IUwhxyAj7Ybk1mkW5AA&s" alt="HackTheBox" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Credential.Net</Tooltip>}>
-                                <Button variant="link" href="https://www.credential.net/profile/waarism/wallet#gs.ibia2y" target="_blank">
+                                <Button variant="link" href="https://www.credential.net/profile/waarism/wallet#gs.ibia2y" target="_blank" rel="noopener noreferrer">
                                     <Image src="https://static.otta.com/uploads/images/company-favicons/3150-rwF6APJuwGu69IaKYJr_KQEdI3OnfZ3vlKo0bdD9vKQ.png" alt="Credential.Net" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>
                             <OverlayTrigger overlay={<Tooltip id="tooltip-credential">Medium</Tooltip>}>
-                                <Button variant="link" href="https://medium.com/@waaris_m" target="_blank">
+                                <Button variant="link" href="https://medium.com/@waaris_m" target="_blank" rel="noopener noreferrer">
                                     <Image src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Medium-1024.png" alt="Medium" width="37.5" height="37.5"/>
                                 </Button>
                             </OverlayTrigger>

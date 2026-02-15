@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import {
   FaHome, FaUser, FaBriefcase, FaBook, FaGraduationCap, 
   FaCertificate, FaProjectDiagram, FaEnvelope, FaTrophy, 
@@ -13,14 +14,15 @@ const Navigation = () => {
             background: 'linear-gradient(90deg, rgba(10,24,61,1) 0%, rgba(28,40,51,1) 100%)', 
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)'
         }} variant="dark">
-            <Navbar.Brand href="/" className="ms-2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '24px', fontWeight: 'bold' }}>WD</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/" className="ms-2" style={{ fontFamily: "'Poppins', sans-serif", fontSize: '24px', fontWeight: 'bold' }}>WD</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
                     {['home', 'about', 'skills', 'experience', 'education', 'projects', 'publications', 'cves', 'speaker', 'certifications', 'competitions', 'blog', 'resume'].map((link, index) => (
                         <Nav.Link 
                             key={index} 
-                            href={`/#${link}`} 
+                            as={Link}
+                            to={`/#${link}`}
                             style={{ 
                                 fontFamily: "'Poppins', sans-serif", 
                                 transition: 'color 0.3s, transform 0.3s', 

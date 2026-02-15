@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FaDownload, FaFilePdf } from 'react-icons/fa';
 import Navigation from './Navbar';
 import Footer from './Footer';
 
@@ -212,14 +213,14 @@ const PDFViewer = () => {
         ) : contentUrl && !isImage && isMobile ? (
           // Mobile view - Show download button instead of iframe
           <div style={{ textAlign: 'center', maxWidth: '600px' }}>
-            <div style={{ 
-              background: '#f8f9fa', 
-              padding: '40px', 
-              borderRadius: '12px',
-              boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-            }}>
-              <i className="fas fa-file-pdf" style={{ fontSize: '4rem', color: '#ff6347', marginBottom: '20px' }}></i>
-              <h3 style={{ marginBottom: '20px' }}>PDF Document</h3>
+	            <div style={{ 
+	              background: '#f8f9fa', 
+	              padding: '40px', 
+	              borderRadius: '12px',
+	              boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+	            }}>
+	              <FaFilePdf aria-hidden="true" focusable="false" style={{ fontSize: '4rem', color: '#ff6347', marginBottom: '20px' }} />
+	              <h3 style={{ marginBottom: '20px' }}>PDF Document</h3>
               <p style={{ marginBottom: '30px', color: '#666' }}>
                 PDF viewing is not supported on mobile browsers. Please download the document to view it.
               </p>
@@ -236,10 +237,10 @@ const PDFViewer = () => {
                   display: 'inline-block',
                   borderRadius: '6px'
                 }}
-              >
-                <i className="fas fa-download me-2"></i>
-                Download PDF
-              </a>
+	              >
+	                <FaDownload className="me-2" aria-hidden="true" focusable="false" />
+	                Download PDF
+	              </a>
               <div style={{ marginTop: '20px' }}>
                 <a 
                   href={contentUrl}

@@ -56,6 +56,7 @@ const Home = () => {
                 
                 <div className="d-flex justify-content-center gap-3 flex-wrap mt-4">
                     <Button variant="light" href="#resume" className="text-dark fw-semibold">Resume</Button>
+                    <Button variant="outline-light" href="mailto:waris.dam@outlook.com" className="fw-semibold">Email</Button>
                 </div>
             </Container>
         </section>

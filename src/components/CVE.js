@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Card, Row, Col, Badge } from 'react-bootstrap';
+import { FaCalendarAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import '../App.css';
 
 const CVE = () => {
@@ -9,7 +10,7 @@ const CVE = () => {
     
     return (
         <section id="cves" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Security Vulnerabilities (CVEs)</h1>
+            <h2 className="mb-4 text-center title-enhanced">Security Vulnerabilities (CVEs)</h2>
             
             <Row>
                 {displayedCVEs.map((cve, index) => (
@@ -59,7 +60,7 @@ const CVE = () => {
                                     
                                     <div className="cve-meta">
                                         <small className="text-muted">
-                                            <i className="fas fa-calendar-alt me-2"></i>
+                                            <FaCalendarAlt className="me-2" aria-hidden="true" focusable="false" />
                                             {cve.date}
                                         </small>
                                     </div>
@@ -73,7 +74,7 @@ const CVE = () => {
                                         rel="noopener noreferrer"
                                         className="btn btn-outline-danger btn-sm w-100"
                                     >
-                                        View on Wordfence <i className="fas fa-external-link-alt ms-1"></i>
+                                        View on Wordfence <FaExternalLinkAlt className="ms-1" aria-hidden="true" focusable="false" />
                                     </a>
                                 </div>
                             </Card.Body>

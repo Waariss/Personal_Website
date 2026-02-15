@@ -16,6 +16,8 @@ import Speaker from './components/Speaker';
 import ResumeDisplay from './components/ResumeDisplay';
 import Competitions from './components/comp';
 import Blog from './components/Blog';
+// import ProofStrip from './components/ProofStrip';
+// import FeaturedSection from './components/FeaturedSection';
 import Navigation from './Navbar';
 import Footer from './Footer';
 
@@ -26,18 +28,17 @@ const Portfolio = () => {
             <ScrollToTopButton />
             <Home />
             <About />
-            <Skills />
             <Experience />
-            <Education />
-            <Projects />
-            <Publication />
             <CVE />
-            <Speaker />
-            <Certificate />
+            <Speaker />              
+            <Publication />      
+            <Projects />          
+            <Skills />           
+            <Certificate /> 
+            <Education />
             <Competitions />
             <Blog />
             <ResumeDisplay />
-            <button id="scrollToTopButton" onclick="scrollToTop()">Scroll to Top</button>
         </Container>
         <Footer /></>
     );

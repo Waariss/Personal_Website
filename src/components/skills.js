@@ -5,7 +5,7 @@ import '../App.css';
 const Skills = () => {
     return (
         <section id="skills" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Skills &amp; Tools</h1>
+            <h2 className="mb-4 text-center title-enhanced">Skills &amp; Tools</h2>
             <Row>
                 {getSkills().map((category, index) => (
                     <Col key={index} xs={12} sm={6} md={4} className="mb-4">

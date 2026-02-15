@@ -6,17 +6,17 @@ import '../App.css';
 const Experience = () => {
     return (
         <section id="experience" className="my-5">
-            <h1 className="mb-4 text-center title-enhanced">Experience</h1>
+            <h2 className="mb-4 text-center title-enhanced">Experience</h2>
             {getExperiences().map((experience, index) => (
                 <Card key={index} className="mb-4 border-0 shadow-sm experience-card hover-shadow">
                     <Card.Body>
                         <Row>
                             <Col xs={2} className="d-flex align-items-start justify-content-center">
-                                <img src={experience.companyLogo} alt={`${experience.company} Logo`} className="company-logo" />
+                                <img src={experience.companyLogo} alt={`${experience.company} Logo`} className="company-logo" loading="lazy" />
                             </Col>
                             <Col xs={10}>
                                 <div className="details-container">
-                                    <img src={experience.internshipImages} alt={`${experience.title} at ${experience.company}`} className="internship-image float-right ml-3" />
+                                    <img src={experience.internshipImages} alt={`${experience.title} at ${experience.company}`} className="internship-image float-right ml-3" loading="lazy" />
                                     <Card.Title className="mb-3 experience-title"><strong>{experience.title}</strong></Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.company} · {experience.type}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>
@@ -74,18 +74,14 @@ const getExperiences = () => [
         duration: 'Nov 2024 - Present',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
         description: [
-            'Performed penetration testing across Web, Mobile, API, and Network environments for over 80 projects annually, covering KBTG and its subsidiaries.',
-            'Acted as project owner for 4 major security assessment projects in 2025, leading end-to-end execution and reporting.',
-            'Served as a core member in Red Team operations (Red Team Campaign), leading and executing advanced threat simulation and detection exercises.',
-            'Created comprehensive summary reports of security findings in both Thai and English, ensuring clear communication with stakeholders',
-            'Led the development of an automated reporting system and collaborated with the team to design reporting formats and styles.',
-            'Significantly reduced response time for critical vulnerability alerts by building automation solutions using Power Apps, Power Automate, and Python.',
-            'Conducted AI security research focused on both Offensive (Red Team) and Defensive (Blue Team).',
-            'Collaborated closely with the Threat Intelligence team to support real-time alerting.',
-            'Presented findings and shared AI threat insights during TBCert sessions and internal security briefings.',
-            'Delivered knowledge-sharing sessions on AI security to regional KBTG teams.'
+            'Delivered 38 penetration tests across annual assessments and major-change projects, and contributed as a core member of advanced Red Team engagements, translating findings into remediation actions.',
+            'Acted as project owner for 12 major security assessment projects in 2025 - 2026, leading end-to-end execution and reporting.',
+            'Produced 30+ executive and technical summaries and delivered 24 security briefings (18 Penetration Testing: 15 Thai / 3 English; 6 Red Team), aligning stakeholders on risk impact, priorities, and action plans.',
+            'Led AI pentesting and AI security workstreams across readiness, research, and automation tooling, using OWASP LLM Top 10 to translate emerging risks into actionable guidance and presentation-ready materials',
+            'Led PwnDoc-ng implementation, achieving 50% reduction in operational effort and 25% reduction in review workload, and drove reporting standard upgrades through 2025 report redesign and issue write-up rewrites aligned with modern security standards.',
+            'Built security automation to scale recurring operations, including monthly subsidiary reporting extraction (34.7% manual-effort reduction), email-driven Critical CVE follow-up (≥ 50% time reduction and ≥ 80% mitigation artifact tracking), and BitSight WAS daily scan automation supporting a BitSight rating of 800.'
         ],
-        skills: 'Penetration test · Kali Linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps', // Full skills list here
+        skills: 'Penetration testing · Kali Linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps',
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
@@ -108,7 +104,7 @@ const getExperiences = () => [
             'Worked cross-functionally with development and infrastructure teams to ensure timely remediation of security risks.',
             'Successfully completed 16 security assessment projects during the engagement.'
         ],
-        skills: 'Penetration test · Kali Linux · Burp Suite · OWASP · Vulnerability Assessment', // Full skills list here
+        skills: 'Penetration testing · Kali Linux · Burp Suite · OWASP · Vulnerability Assessment',
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
@@ -132,7 +128,7 @@ const getExperiences = () => [
             'Completed 2 penetration testing projects and 1 vulnerability assessment project, improving communication of complex findings to stakeholders.',
             'Gained practical expertise in offensive security while actively pursuing continuous learning in a dynamic threat landscape.'
         ],
-        skills: 'Penetration test · Kali Linux · Burp Suite · OWASP · Cybersecurity · Vulnerability Assessment', // Full skills list here
+        skills: 'Penetration testing · Kali Linux · Burp Suite · OWASP · Vulnerability Assessment',
         links: [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
