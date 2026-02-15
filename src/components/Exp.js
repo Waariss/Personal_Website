@@ -11,12 +11,17 @@ const Experience = () => {
                 <Card key={index} className="mb-4 border-0 shadow-sm experience-card hover-shadow">
                     <Card.Body>
                         <Row>
-                            <Col xs={2} className="d-flex align-items-start justify-content-center">
+                            <Col xs={12} md={2} className="d-flex align-items-start justify-content-center mb-3 mb-md-0">
                                 <img src={experience.companyLogo} alt={`${experience.company} Logo`} className="company-logo" loading="lazy" />
                             </Col>
-                            <Col xs={10}>
+                            <Col xs={12} md={10}>
                                 <div className="details-container">
-                                    <img src={experience.internshipImages} alt={`${experience.title} at ${experience.company}`} className="internship-image float-right ml-3" loading="lazy" />
+                                    <img
+                                        src={experience.internshipImages}
+                                        alt={`${experience.title} at ${experience.company}`}
+                                        className="internship-image"
+                                        loading="lazy"
+                                    />
                                     <Card.Title className="mb-3 experience-title"><strong>{experience.title}</strong></Card.Title>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.company} · {experience.type}</Card.Subtitle>
                                     <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>

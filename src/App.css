@@ -170,9 +170,26 @@
   color: #ff6347;
 }
 
+.activity-card,
+.event-detail {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .link-group {
   display: flex;
   flex-wrap: wrap;  /* Allow the links to wrap to the next line if there's not enough space */
+}
+
+.edu-logo {
+  max-width: 160px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .edu-logo {
+    max-width: 110px;
+  }
 }
 
 .custom-link {
@@ -223,8 +240,9 @@
 }
 
 .company-logo {
-  width: 200px;
-  height: 200px;
+  width: min(200px, 100%);
+  aspect-ratio: 1 / 1;
+  height: auto;
   object-fit: cover;
 }
 
@@ -263,10 +281,7 @@
   float: right;  /* Makes the image float to the left of the text */
 }
 
-.mb-4 {
-  display: flex;
-  flex-direction: column;
-}
+/* Do not override Bootstrap utility classes like .mb-4 (margin-bottom). */
 
 #scrollToTopButton {
   display: none; /* Hidden by default */
@@ -501,6 +516,64 @@
   right: 15px;
   top: 50%;
   transform: translateY(-50%);  /* Center the image vertically */
+}
+
+/* Mobile stacking for "side image" layouts (iPhone-friendly) */
+@media (max-width: 768px) {
+  .details-container {
+    padding-right: 0;
+  }
+
+  .internship-image {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 12px 0 0 0;
+    order: 99;
+  }
+
+  .blog-container {
+    padding-right: 0;
+  }
+
+  .blog-image {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 12px 0 0 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .company-logo {
+    width: 96px;
+  }
+
+  .profile-image-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .title-enhanced {
+    font-size: 2rem;
+  }
+
+  #scrollToTopButton {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .project-card img {
+    height: 240px;
+  }
 }
 
 .skill-card {

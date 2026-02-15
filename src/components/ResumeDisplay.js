@@ -12,7 +12,7 @@ const ResumeDisplay = () => {
             <Card className="mb-3 border-0 shadow-sm terminal-card">
                 <Card.Body className="p-0">
                     <Row className="g-0">
-                        <Col xs={7}>
+                        <Col xs={12} lg={7}>
                             <div className="terminal-window">
                                 <div className="terminal-header">
                                     <div className="terminal-buttons">
@@ -24,19 +24,19 @@ const ResumeDisplay = () => {
                                 </div>
                                 <div className="terminal-content">
                                     {!isResumeLoaded ? (
-                                        <div style={{ padding: 18 }}>
-                                            <p style={{ marginBottom: 12 }}>
-                                                The embedded PDF loads on demand to keep the homepage fast.
+                                        <div className="terminal-placeholder">
+                                            <p className="terminal-placeholder-text">
+                                                PDF preview loads on demand to keep the homepage fast.
                                             </p>
-                                            <div className="d-flex gap-2 flex-wrap">
+                                            <div className="d-flex gap-2 flex-wrap terminal-placeholder-actions">
                                                 <Button
-                                                    variant="outline-dark"
+                                                    variant="light"
                                                     onClick={() => setIsResumeLoaded(true)}
                                                 >
                                                     Load Resume PDF
                                                 </Button>
                                                 <a
-                                                    className="btn btn-dark"
+                                                    className="btn btn-outline-light"
                                                     href={resumeUrl}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
@@ -44,7 +44,7 @@ const ResumeDisplay = () => {
                                                     Open in New Tab
                                                 </a>
                                                 <a
-                                                    className="btn btn-outline-secondary"
+                                                    className="btn btn-outline-light"
                                                     href={resumeUrl}
                                                     download
                                                 >
@@ -65,7 +65,7 @@ const ResumeDisplay = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col xs={5} className="terminal-sidebar">
+                        <Col xs={12} lg={5} className="terminal-sidebar">
                             <div className="terminal-contact-window">
                                 <div className="terminal-header">
                                     <div className="terminal-buttons">

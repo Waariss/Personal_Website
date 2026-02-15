@@ -5,7 +5,13 @@ import { FaFileAlt } from 'react-icons/fa'; // New Icons
 import '../App.css';
 
 const ImageLogo = ({ src, alt, width, height }) => (
-    <img src={src} alt={alt} width={width} height={height} className="rounded-circle" />
+    <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="rounded-circle img-fluid edu-logo"
+    />
 );
 
 const calculateAutoplaySpeed = (text) => {
@@ -41,10 +47,10 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
     <Card className="mb-4 border-0 shadow-sm about-card">
         <Card.Body>
             <Row>
-                <Col xs={2} className="d-flex align-items-start justify-content-center p-3">
+                <Col xs={12} md={2} className="d-flex align-items-start justify-content-center p-3">
                     <ImageLogo {...logo} />
                 </Col>
-                <Col xs={10} className="p-3">
+                <Col xs={12} md={10} className="p-3">
                     <Card.Title className="mb-3">{title}</Card.Title>
                     {subtitle.map((text, index) => (
                         <Card.Subtitle key={index} className="mb-2 text-muted">{text}</Card.Subtitle>

@@ -69,6 +69,8 @@
 .terminal-content {
     background: #2d2d2d;
     padding: 0;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
 }
 
 .terminal-content iframe {
@@ -76,6 +78,21 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+}
+
+.terminal-placeholder {
+    padding: 18px;
+}
+
+.terminal-placeholder-text {
+    margin: 0 0 12px 0;
+    color: #e0e0e0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.terminal-placeholder-actions .btn {
+    font-weight: 600;
 }
 
 /* Terminal Sidebar */
@@ -195,6 +212,32 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .terminal-window {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .terminal-sidebar {
+        border-left: none;
+        border-top: 1px solid #1a1a1a;
+    }
+
+    .terminal-contact-window {
+        border-radius: 0 0 8px 8px;
+    }
+
+    .terminal-contact-content {
+        padding: 14px;
+        max-height: 55vh;
+    }
+
+    .terminal-content iframe {
+        height: 70vh !important;
+    }
+
+    .terminal-placeholder-text {
+        font-size: 14px;
+    }
+
     .terminal-title {
         font-size: 11px;
     }
