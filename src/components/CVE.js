@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-1306',
+        plugin: 'midi-Synth',
+        description: "The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.",
+        cvss: 9.8,
+        severity: 'Critical',
+        date: 'Feb 13, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/midi-synth/midi-synth-110-unauthenticated-arbitrary-file-upload-via-export-ajax-action'
+    },
+    {
         id: 'CVE-2026-1104',
         plugin: 'FastDup',
         description: 'The FastDup – Fastest WordPress Migration & Duplicator plugin for WordPress is vulnerable to unauthorized backup creation and download due to a missing capability check on REST API endpoints in all versions up to, and including, 2.7.1. This makes it possible for authenticated attackers, with Contributor-level access and above, to create and download full-site backup archives containing the entire WordPress installation, including database exports and configuration files.',
