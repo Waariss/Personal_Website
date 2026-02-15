@@ -123,7 +123,7 @@ const getCVEs = () => [
         cvss: 8.8,
         severity: 'High',
         date: 'Feb 11, 2026',
-        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/beaver-builder-lite-version/beaver-builder-page-builder-drag-and-drop-website-builder-21005-authenticated-custom-missing-authorization-to-stored-cross-site-scripting-via-global-settings'
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/fastdup/fastdup-fastest-wordpress-migration-duplicator-271-missing-authorization-to-authenticated-contributor-backup-creation-and-download'
     },
     {
         id: 'CVE-2026-1231',

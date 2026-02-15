@@ -85,7 +85,7 @@ const getExperiences = () => [
             'Presented findings and shared AI threat insights during TBCert sessions and internal security briefings.',
             'Delivered knowledge-sharing sessions on AI security to regional KBTG teams.'
         ],
-        skills: 'Penetration test · Kali linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps', // Full skills list here
+        skills: 'Penetration test · Kali Linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
@@ -108,7 +108,7 @@ const getExperiences = () => [
             'Worked cross-functionally with development and infrastructure teams to ensure timely remediation of security risks.',
             'Successfully completed 16 security assessment projects during the engagement.'
         ],
-        skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Vulnerability Assessment', // Full skills list here
+        skills: 'Penetration test · Kali Linux · Burp Suite · OWASP · Vulnerability Assessment', // Full skills list here
         links: [
             // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
@@ -132,7 +132,7 @@ const getExperiences = () => [
             'Completed 2 penetration testing projects and 1 vulnerability assessment project, improving communication of complex findings to stakeholders.',
             'Gained practical expertise in offensive security while actively pursuing continuous learning in a dynamic threat landscape.'
         ],
-        skills: 'Penetration test · Kali linux · Burp Suite · OWSAP · Cybersecurity · Vulnerability Assessment', // Full skills list here
+        skills: 'Penetration test · Kali Linux · Burp Suite · OWASP · Cybersecurity · Vulnerability Assessment', // Full skills list here
         links: [
             { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
             { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },

@@ -260,7 +260,7 @@ const certificates = [
         title: "HTB Certified Web Exploitation Specialist",
         organization: "Hack The Box",
         date: "Aug 2024",
-        link: "/pdf/CBBH",
+        link: "/pdf/CWES",
         imageUrl: "./images/CWES.png"
     },
     {

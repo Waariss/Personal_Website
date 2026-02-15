@@ -73,7 +73,7 @@ const getBlog = () => [
         duration: 'May 2025',
         description: 'Hi everyone! I recently had the opportunity to pursue the API Security Certified Professional (ASCP) certification from APIsec University…',
         links: [
-            { href: 'https://medium.com/@waaris_m/review-of-the-burp-suite-certified-practitioner-bscp-exam-1124f62623a1', label: 'Read More' },
+            { href: 'https://medium.com/@waaris_m/my-apisec-university-ascp-exam-journey-a-detailed-review-7d17f26231ba', label: 'Read More' },
         ]
     },
     {
