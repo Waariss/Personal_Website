@@ -16,7 +16,7 @@ const Home = () => {
         <section id="home" className="text-center my-4 home-section">
             <Container className="jumbotron-style">
                 <h1 className="display-4">Waris Damkham</h1>
-                <p className="lead">Offensive Security Engineer &amp; AI Security Researcher</p>
+                <p className="lead">Offensive Security Engineer &amp; AI Security Engineer</p>
                 <p className="mb-4" style={{fontSize: '1.1rem'}}>Red Teaming • AI Security • Web/AppSec</p>
                 
                 <Stack direction="horizontal" gap={2} className="justify-content-center flex-wrap my-3">

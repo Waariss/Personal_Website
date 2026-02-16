@@ -71,7 +71,7 @@ const About = () => {
                     <Col xs={12} md={8}>
                         <Card.Title><h2 className='title'>About Me</h2></Card.Title>
                         <Card.Text>
-                            I am an <strong>Offensive Security Engineer</strong> and <strong>AI Security Researcher</strong> with hands-on experience across enterprise penetration testing and applied AI and security research.
+                            I am an <strong>Offensive Security Engineer</strong> and <strong>AI Security Engineer</strong> with hands-on experience across enterprise penetration testing and applied AI and security research.
 
                             I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and contribute to <strong>Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work also includes <strong>security automation</strong>, critical vulnerability response support, and <strong>AI security readiness</strong> for AI-enabled applications.
 
