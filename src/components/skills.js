@@ -71,7 +71,7 @@ const getSkills = () => [
     /* 3 */ {
         name: 'Backend, Frameworks & Testing',
         skills: [
-            { name: 'Flask', logo: 'https://static-00.iconduck.com/assets.00/flask-icon-1594x2048-84mjydzf.png' },
+            { name: 'Flask', logo: 'https://cdn.creazilla.com/icons/3269884/flask-icon-sm.png' },
             { name: 'Spring Boot', logo: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg' },
             { name: 'Postman', logo: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg' },
             { name: 'pytest', logo: 'https://www.vectorlogo.zone/logos/pytest/pytest-icon.svg' },
@@ -164,15 +164,15 @@ const getSkills = () => [
         skills: [
             { 
                 name: 'Microsoft Word', 
-                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Microsoft_Office_Word_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_Word_%282019%E2%80%93present%29.svg.png' 
+                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Microsoft_Office_Word_%282025%E2%80%93present%29.svg/960px-Microsoft_Office_Word_%282025%E2%80%93present%29.svg.png'
             },
             { 
                 name: 'Microsoft PowerPoint', 
-                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg/800px-Microsoft_Office_PowerPoint_%282019%E2%80%93present%29.svg.png' 
+                logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYMdkMx5i1kZWRlBEy74XuIrcUSfh3IoWu7w&s' 
             },
             { 
                 name: 'Microsoft Excel', 
-                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/1920px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png' 
+                logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg/960px-Microsoft_Office_Excel_%282019%E2%80%932025%29.svg.png' 
             },
             { 
                 name: 'Power Automate', 
@@ -180,7 +180,7 @@ const getSkills = () => [
             },
             { 
                 name: 'Copilot Studio', 
-                logo: 'https://aiblog.es/wp-content/uploads/2024/10/Microsoft-Copilot-Studio-Advanced-Training-1-1.webp' 
+                logo: 'https://media.licdn.com/dms/image/v2/D4E22AQG-3iTFoRBBug/feedshare-shrink_800/B4EZlujhABKUAg-/0/1758496429824?e=2147483647&v=beta&t=ihvXXPmmSKry0X1UTqHH5-urot58j5c-PIZ-lH9ee7c' 
             },
             {
                 name: 'Line Office Account',
