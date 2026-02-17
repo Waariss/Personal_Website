@@ -276,24 +276,15 @@ const EightKsecAI = () => {
             </div>
           </article>
 
-          {/* 7 (placeholder for Neural Hunter - not ready yet) */}
+          {/* 7 */}
           <article className="card">
             <div className="thumb">
-              <div className="fav">★ Favorite</div>
-              {/* Replace the placeholder below with: <img src="/images/AI-k8sec/Neural Hunter.png" ...> when ready */}
-              <div style={{padding: '18px', textAlign: 'center', color: 'rgba(229,231,235,.9)'}}>
-                <div style={{fontWeight: '700', fontSize: '14px', marginBottom: '6px'}}>Neural Hunter</div>
-                <div style={{color: 'rgba(148,163,184,.95)', fontSize: '13px', lineHeight: '1.5'}}>
-                  Placeholder (image not added yet).<br />
-                  Model backdoor identification &amp; behavioral analysis.
-                </div>
-              </div>
+              <img src="/images/AI-k8sec/Neural Hunter.png" alt="Neural Hunter certificate" loading="lazy" />
             </div>
             <div className="body">
               <p className="title">7) Neural Hunter</p>
               <div className="actions">
-                {/* When you have the file, change to an <a> tag with href="/images/AI-k8sec/Neural Hunter.png" */}
-                <button className="btn" onClick={() => alert('Add Neural Hunter.png first, then update this link.')}>View image</button>
+                <a className="btn" href="/images/AI-k8sec/Neural Hunter.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
             </div>
           </article>
