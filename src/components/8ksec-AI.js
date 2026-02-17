@@ -243,7 +243,7 @@ const EightKsecAI = () => {
               <img src="/images/AI-k8sec/Password Bot Challenge.png" alt="Password Bot certificate" loading="lazy" />
             </div>
             <div className="body">
-              <p className="title">4) breakup Password Bot</p>
+              <p className="title">4) Password Bot</p>
               <div className="actions">
                 <a className="btn" href="/images/AI-k8sec/Password Bot Challenge.png" target="_blank" rel="noopener noreferrer">View image</a>
               </div>
