@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2026-1941',
+        plugin: 'WP Event Aggregator',
+        description: "The WP Event Aggregator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'wp_events' shortcode in all versions up to, and including, 1.8.7 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        cvss: 6.4,
+        severity: 'MEDIUM',
+        date: 'Feb 17, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-event-aggregator/wp-event-aggregator-187-authenticated-contributor-stored-cross-site-scripting-via-shortcode-attributes'
+    },
+    {
         id: 'CVE-2026-1306',
         plugin: 'midi-Synth',
         description: "The midi-Synth plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type and file extension validation in the 'export' AJAX action in all versions up to, and including, 1.1.0. This makes it possible for unauthenticated attackers to upload arbitrary files on the affected site's server which may make remote code execution possible granted the attacker can obtain a valid nonce. The nonce is exposed in frontend JavaScript making it trivially accessible to unauthenticated attackers.",
