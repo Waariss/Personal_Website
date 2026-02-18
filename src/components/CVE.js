@@ -108,6 +108,15 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2025-12707',
+        plugin: 'Library Management System',
+        description: "The Library Management System plugin for WordPress is vulnerable to SQL Injection via the 'bid' parameter in all versions up to, and including, 3.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        cvss: 7.5,
+        severity: 'HIGH',
+        date: 'Feb 18, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/library-management-system/library-management-system-321-unauthenticated-sql-injection'
+    },
+    {
         id: 'CVE-2026-1941',
         plugin: 'WP Event Aggregator',
         description: "The WP Event Aggregator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'wp_events' shortcode in all versions up to, and including, 1.8.7 due to insufficient input sanitization and output escaping on user supplied attributes. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
