@@ -108,6 +108,24 @@ const getSeverityColor = (severity) => {
 
 const getCVEs = () => [
     {
+        id: 'CVE-2025-14452',
+        plugin: 'WP Customer Reviews',
+        description: "The WP Customer Reviews plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'wpcr3_fname' parameter in all versions up to, and including, 3.7.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
+        cvss: 7.2,
+        severity: 'HIGH',
+        date: 'Feb 18, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/wp-customer-reviews/wp-customer-reviews-375-reflected-cross-site-scripting-via-wpcr3-fname-parameter'
+    },
+    {
+        id: 'CVE-2026-0926',
+        plugin: 'Prodigy Commerce',
+        description: "The Prodigy Commerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.2.9 via the 'parameters[template_name]' parameter. This makes it possible for unauthenticated attackers to include and read arbitrary files or execute arbitrary files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where images and other “safe” file types can be uploaded and included.",
+        cvss: 9.8,
+        severity: 'CRITICAL',
+        date: 'Feb 18, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/prodigy-commerce/prodigy-commerce-329-unauthenticated-local-file-inclusion-via-parameterstemplate-name'
+    },
+    {
         id: 'CVE-2025-12707',
         plugin: 'Library Management System',
         description: "The Library Management System plugin for WordPress is vulnerable to SQL Injection via the 'bid' parameter in all versions up to, and including, 3.2.1 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
