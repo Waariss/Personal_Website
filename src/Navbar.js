@@ -73,7 +73,7 @@ const getLabelForLink = (link) => {
         case '#projects': return 'Projects';
         case '#competitions': return 'Competitions';
         case '#blog': return 'Blog';
-        case '#resume': return 'Contact';
+        case '#resume': return 'ResumeDisplay';
         default: return '';
     }
 }
