@@ -69,6 +69,13 @@ const certificates = [
         imageUrl: "./images/HTB Certified Junior Cybersecurity Associate.png"
     },
     {
+        title: "CYBER COMBAT 2025 ATTACK & DEFENSE",
+        organization: "TB-CERT",
+        date: "Aug 2025",
+        link: "https://www.linkedin.com/posts/waris-damkham_kbtg-cybersecurity-ctf-activity-7368107840911122432-VLlv/",
+        imageUrl: "./images/TBCERT-2025.jpeg"
+    },
+    {
         title: "Jr Penetration Tester (PT1)",
         organization: "TryHackMe",
         date: "July 2025 - July 2028",
