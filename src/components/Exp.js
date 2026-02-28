@@ -84,7 +84,9 @@ const getExperiences = () => [
             'Produced 30+ executive and technical summaries and delivered 24 security briefings (18 Penetration Testing: 15 Thai / 3 English; 6 Red Team), aligning stakeholders on risk impact, priorities, and action plans.',
             'Led AI pentesting and AI security workstreams across readiness, research, and automation tooling, using OWASP LLM Top 10 to translate emerging risks into actionable guidance and presentation-ready materials',
             'Led PwnDoc-ng implementation, achieving 50% reduction in operational effort and 25% reduction in review workload, and drove reporting standard upgrades through 2025 report redesign and issue write-up rewrites aligned with modern security standards.',
-            'Built security automation to scale recurring operations, including monthly subsidiary reporting extraction (34.7% manual-effort reduction), email-driven Critical CVE follow-up (≥ 50% time reduction and ≥ 80% mitigation artifact tracking), and BitSight WAS daily scan automation supporting a BitSight rating of 800.'
+            'Built security automation to scale recurring operations, including monthly subsidiary reporting extraction (34.7% manual-effort reduction), email-driven Critical CVE follow-up (≥ 50% time reduction and ≥ 80% mitigation artifact tracking), and BitSight WAS daily scan automation supporting a BitSight rating of 800.',
+            'Shared AI threat insights via internal briefings and knowledge-sharing sessions across regional teams.',
+            'Designed and authored an official challenge for NCSA AI CTF (Thailand’s first Cyber AI CTF) as KBTG representative, focusing on AI security and prompt-attack scenarios.'
         ],
         skills: 'Penetration testing · Kali Linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps',
         links: [
