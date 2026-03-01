@@ -24,9 +24,9 @@ const Publication = () => {
                                         <FaUniversity className="me-2" />
                                         {publication.conference}
                                     </Badge>
-                                    <Badge bg="secondary" className="year-badge">
+                                    {/* <Badge bg="secondary" className="year-badge">
                                         {publication.year}
-                                    </Badge>
+                                    </Badge> */}
                                 </div>
 
                                 {/* Paper Title */}
@@ -81,7 +81,7 @@ const getConferences = () => [
         venue: 'IEEE Region 10 Conference 2024',
         description: 'Poultry farming is crucial to the food chain, and chicken health directly impacts product quality and safety. Diagnosing poultry diseases using polymerase chain reaction is costly, particularly for small farms. To address this, we developed a mobile-based service for farmers, enabling the identification of common chicken diseases from fecal images via a Line account. Our system achieved 86.49% segmentation precision and 95.93% classification accuracy on a large dataset, offering a practical and accessible tool for local farmers.',
         date: 'March 5, 2025',
-        year: '2025',
+        year: '2024',
         link: 'https://ieeexplore.ieee.org/document/10902790'
     },
     {
