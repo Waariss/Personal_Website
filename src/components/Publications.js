@@ -14,38 +14,29 @@ const Publication = () => {
             </p>
             
             <Row>
-                {conferences.map((publication, index) => (
-                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                {conferences.map((publication) => (
+                    <Col key={`${publication.conference}-${publication.title}`} xs={12} md={6} lg={4} className="mb-4">
                         <Card className="publication-card h-100 border-0 shadow-sm">
                             <Card.Body className="d-flex flex-column">
-                                {/* Conference Badge */}
                                 <div className="publication-header">
                                     <Badge bg="primary" className="conference-badge">
                                         <FaUniversity className="me-2" />
                                         {publication.conference}
                                     </Badge>
-                                    {/* <Badge bg="secondary" className="year-badge">
-                                        {publication.year}
-                                    </Badge> */}
                                 </div>
 
-                                {/* Paper Title */}
                                 <h5 className="publication-paper-title mt-3">
                                     {publication.title}
                                 </h5>
 
-                                {/* Venue */}
                                 <p className="publication-venue">
-                                    {/* <FaBook className="me-2" /> */}
                                     {publication.venue}
                                 </p>
 
-                                {/* Description */}
                                 <p className="publication-abstract flex-grow-1">
                                     {publication.description}
                                 </p>
 
-                                {/* Date */}
                                 <div className="publication-meta">
                                     <small className="text-muted">
                                         <FaCalendar className="me-2" />
@@ -53,7 +44,6 @@ const Publication = () => {
                                     </small>
                                 </div>
 
-                                {/* Link Button */}
                                 <div className="mt-3">
                                     <a
                                         href={publication.link}

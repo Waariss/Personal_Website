@@ -13,11 +13,10 @@ const CVE = () => {
             <h2 className="mb-4 text-center title-enhanced">Security Vulnerabilities (CVEs)</h2>
             
             <Row>
-                {displayedCVEs.map((cve, index) => (
-                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                {displayedCVEs.map((cve) => (
+                    <Col key={cve.id} xs={12} md={6} lg={4} className="mb-4">
                         <Card className="cve-card h-100 border-0 shadow-sm">
                             <Card.Body className="d-flex flex-column">
-                                {/* CVSS Score Circle */}
                                 <div className="cve-header">
                                     <div className="cvss-circle-container">
                                         <div
@@ -51,7 +50,6 @@ const CVE = () => {
                                     </div>
                                 </div>
 
-                                {/* CVE Info */}
                                 <div className="cve-content flex-grow-1">
                                     <h5 className="cve-id">{cve.id}</h5>
                                     <h6 className="cve-title">{cve.plugin}</h6>
@@ -65,7 +63,6 @@ const CVE = () => {
                                     </div>
                                 </div>
 
-                                {/* Link */}
                                 <div className="mt-auto">
                                     <a
                                         href={cve.link}

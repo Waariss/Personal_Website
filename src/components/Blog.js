@@ -12,8 +12,8 @@ const Blog = () => {
         <section id="blog" className="my-5">
             <h2 className="mb-4 text-center title-enhanced">Blog</h2>
             <Row>
-                {displayedBlogs.map((blog, index) => (
-                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                {displayedBlogs.map((blog) => (
+                    <Col key={blog.id} xs={12} md={6} lg={4} className="mb-4">
                         <a 
                             href={blog.links[0].href} 
                             target="_blank" 

@@ -11,7 +11,6 @@ const PDFViewer = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Detect if device is iOS or mobile
     const checkMobile = () => {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
       const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
@@ -211,7 +210,6 @@ const PDFViewer = () => {
             style={{ maxHeight: '80vh', maxWidth: '100%', objectFit: 'contain' }}
           />
         ) : contentUrl && !isImage && isMobile ? (
-          // Mobile view - Show download button instead of iframe
           <div style={{ textAlign: 'center', maxWidth: '600px' }}>
 	            <div style={{ 
 	              background: '#f8f9fa', 
@@ -254,7 +252,6 @@ const PDFViewer = () => {
             </div>
           </div>
         ) : contentUrl && !isImage ? (
-          // Desktop view - Show iframe
           <iframe
             src={contentUrl}
             style={{ width: '100%', height: '80vh', border: 'none' }}

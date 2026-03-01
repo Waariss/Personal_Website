@@ -8,6 +8,22 @@ import {
 } from 'react-icons/fa';
 import './App.css';
 
+const NAV_ITEMS = [
+    { id: 'home', label: 'Home', icon: FaHome },
+    { id: 'about', label: 'About', icon: FaUser },
+    { id: 'skills', label: 'Skills', icon: FaTools },
+    { id: 'experience', label: 'Experience', icon: FaBriefcase },
+    { id: 'education', label: 'Education', icon: FaGraduationCap },
+    { id: 'projects', label: 'Projects', icon: FaProjectDiagram },
+    { id: 'publications', label: 'Publications', icon: FaBook },
+    { id: 'cves', label: 'CVEs', icon: FaShieldAlt },
+    { id: 'speaker', label: 'Speaker', icon: FaMicrophone },
+    { id: 'certifications', label: 'Certifications', icon: FaCertificate },
+    { id: 'competitions', label: 'Competitions', icon: FaTrophy },
+    { id: 'blog', label: 'Blog', icon: FaBlog },
+    { id: 'resume', label: 'Resume', icon: FaEnvelope },
+];
+
 const Navigation = () => {
     return (
         <Navbar collapseOnSelect expand="lg" style={{ 
@@ -18,11 +34,11 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                    {['home', 'about', 'skills', 'experience', 'education', 'projects', 'publications', 'cves', 'speaker', 'certifications', 'competitions', 'blog', 'resume'].map((link, index) => (
+                    {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
                         <Nav.Link 
-                            key={index} 
+                            key={id} 
                             as={Link}
-                            to={`/#${link}`}
+                            to={`/#${id}`}
                             style={{ 
                                 fontFamily: "'Poppins', sans-serif", 
                                 transition: 'color 0.3s, transform 0.3s', 
@@ -30,52 +46,14 @@ const Navigation = () => {
                             }}
                             className="hover-grow"
                         >
-                            {getIconForLink(`#${link}`)}
-                            {getLabelForLink(`#${link}`)}
+                            <Icon className="me-1" />
+                            {label}
                         </Nav.Link>
                     ))}
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
     );
-}
-
-const getIconForLink = (link) => {
-    switch(link) {
-        case '#home': return <FaHome className="me-1" />;
-        case '#about': return <FaUser className="me-1" />;
-        case '#skills': return <FaTools className="me-1" />;
-        case '#experience': return <FaBriefcase className="me-1" />;
-        case '#education': return <FaGraduationCap className="me-1" />;
-        case '#projects': return <FaProjectDiagram className="me-1" />;
-        case '#publications': return <FaBook className="me-1" />;
-        case '#cves': return <FaShieldAlt className="me-1" />;
-        case '#speaker': return <FaMicrophone className="me-1" />;
-        case '#certifications': return <FaCertificate className="me-1" />;
-        case '#competitions': return <FaTrophy className="me-1" />;
-        case '#blog': return <FaBlog className="me-1" />;
-        case '#resume': return <FaEnvelope className="me-1" />;
-        default: return null;
-    }
-}
-
-const getLabelForLink = (link) => {
-    switch(link) {
-        case '#home': return 'Home';
-        case '#about': return 'About';
-        case '#skills': return 'Skills';
-        case '#experience': return 'Experience';
-        case '#education': return 'Education';
-        case '#publications': return 'Publications';
-        case '#cves': return 'CVEs';
-        case '#speaker': return 'Speaker';
-        case '#certifications': return 'Certifications';
-        case '#projects': return 'Projects';
-        case '#competitions': return 'Competitions';
-        case '#blog': return 'Blog';
-        case '#resume': return 'ResumeDisplay';
-        default: return '';
-    }
-}
+};
 
 export default Navigation;

@@ -158,10 +158,10 @@ const About = () => {
                     </div>
                     
                     <div className="badge-section d-flex flex-wrap justify-content-center align-items-center">
-                        {badges.slice(0, showAllBadges ? badges.length : 17).map((badge, index) => (
-                            <div key={index} className="badge-item mx-2 my-2">
+                        {badges.slice(0, showAllBadges ? badges.length : 17).map((badge) => (
+                            <div key={badge.href} className="badge-item mx-2 my-2">
                                 <OverlayTrigger
-                                    overlay={<Tooltip id={`tooltip-${index}`}>{badge.alt}</Tooltip>}
+                                    overlay={<Tooltip id={`tooltip-${badge.alt.replace(/[^a-zA-Z0-9]+/g, '-').toLowerCase()}`}>{badge.alt}</Tooltip>}
                                     placement="top"
                                 >
                                     <a href={badge.href} target="_blank" rel="noopener noreferrer" aria-label={badge.alt}>

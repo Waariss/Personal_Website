@@ -52,8 +52,8 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
                 </Col>
                 <Col xs={12} md={10} className="p-3">
                     <Card.Title className="mb-3">{title}</Card.Title>
-                    {subtitle.map((text, index) => (
-                        <Card.Subtitle key={index} className="mb-2 text-muted">{text}</Card.Subtitle>
+                    {subtitle.map((text) => (
+                        <Card.Subtitle key={text} className="mb-2 text-muted">{text}</Card.Subtitle>
                     ))}
                     <Card.Text className="mb-3 mt-3">
                         <strong>Activities and societies:</strong>
@@ -68,16 +68,16 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
                             autoplaySpeed={getMaxAutoplaySpeed(activities)}
                             cssEase = "linear"
                         >
-                            {activities.map((activity, index) => (
-                                <ActivityCard key={index} {...activity} />
+                            {activities.map((activity) => (
+                                <ActivityCard key={`${activity.name}-${activity.link || activity.detail}`} {...activity} />
                             ))}
                         </Slider>
                     </Card.Text>
                     {links && (
                         <Card.Text className="mb-3 link-group mt-3">
-                            {links.map((link, index) => (
+                            {links.map((link) => (
                                 <Card.Link
-                                    key={index}
+                                    key={link.href}
                                     href={link.href}
                                     target="_blank"
                                     rel="noopener noreferrer"

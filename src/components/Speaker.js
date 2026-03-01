@@ -13,11 +13,10 @@ const Speaker = () => {
             <h2 className="mb-4 text-center title-enhanced">Speaker & Presentations</h2>
             
             <Row>
-                {displayedTalks.map((talk, index) => (
-                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                {displayedTalks.map((talk) => (
+                    <Col key={`${talk.event}-${talk.title}-${talk.date}`} xs={12} md={6} lg={4} className="mb-4">
                         <Card className="talk-card h-100 border-0 shadow-sm">
                             <Card.Body className="d-flex flex-column">
-                                {/* Event Badge */}
                                 <div className="talk-header">
                                     <Badge 
                                         bg={getEventTypeColor(talk.type)} 
@@ -33,7 +32,6 @@ const Speaker = () => {
                                     </Badge>
                                 </div>
 
-                                {/* Talk Info */}
                                 <div className="talk-content flex-grow-1">
                                     <h5 className="talk-title">{talk.title}</h5>
                                     <h6 className="talk-event">
@@ -54,13 +52,12 @@ const Speaker = () => {
                                     </div>
                                 </div>
 
-                                {/* Links */}
                                 {talk.links && talk.links.length > 0 && (
                                     <div className="mt-auto">
                                         <div className="d-flex gap-2 flex-wrap">
-                                            {talk.links.map((link, idx) => (
+                                            {talk.links.map((link) => (
                                                 <a
-                                                    key={idx}
+                                                    key={`${link.url}-${link.label}`}
                                                     href={link.url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"

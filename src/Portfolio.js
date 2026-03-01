@@ -1,10 +1,9 @@
 import React from 'react';
-// import { Container, Card, Row, Col, ListGroup, Image, Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
-import { Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import './App.css';
 import ScrollToTopButton from './button';
-import Home from './components/Home'
-import About from './components/About'
+import Home from './components/Home';
+import About from './components/About';
 import Skills from './components/skills';
 import Experience from './components/Exp';
 import Education from './components/Edu';
@@ -16,32 +15,30 @@ import Speaker from './components/Speaker';
 import ResumeDisplay from './components/ResumeDisplay';
 import Competitions from './components/comp';
 import Blog from './components/Blog';
-// import ProofStrip from './components/ProofStrip';
-// import FeaturedSection from './components/FeaturedSection';
 import Navigation from './Navbar';
 import Footer from './Footer';
 
-const Portfolio = () => {
-    return (
-        <><Navigation />
-        <Container fluid className="bg-light p-4">
-            <ScrollToTopButton />
-            <Home />
-            <About />
-            <Experience />
-            <CVE />
-            <Speaker />              
-            <Publication />      
-            <Projects />          
-            <Skills />           
-            <Certificate /> 
-            <Education />
-            <Competitions />
-            <Blog />
-            <ResumeDisplay />
-        </Container>
-        <Footer /></>
-    );
-}
+const Portfolio = () => (
+  <>
+    <Navigation />
+    <Container fluid className="bg-light p-4">
+      <ScrollToTopButton />
+      <Home />
+      <About />
+      <Experience />
+      <CVE />
+      <Speaker />
+      <Publication />
+      <Projects />
+      <Skills />
+      <Certificate />
+      <Education />
+      <Competitions />
+      <Blog />
+      <ResumeDisplay />
+    </Container>
+    <Footer />
+  </>
+);
 
 export default Portfolio;

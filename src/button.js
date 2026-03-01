@@ -4,11 +4,9 @@ function ScrollToTopButton() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Attach the scroll event listener
         window.addEventListener('scroll', toggleVisibility);
 
         return () => {
-            // Clean up the listener when the component is unmounted
             window.removeEventListener('scroll', toggleVisibility);
         };
     }, []);
@@ -48,18 +46,18 @@ const styles = {
         zIndex: 99,
         border: 'none',
         outline: 'none',
-        backgroundColor: '#E95420',  // Ubuntu's iconic orange color
-        color: 'white',  // White text for contrast
+        backgroundColor: '#E95420',
+        color: 'white',
         cursor: 'pointer',
         padding: '10px',
-        borderRadius: '50%',  // Maintains the circular shape
-        width: '50px',  // Width of the circle
-        height: '50px',  // Height of the circle
+        borderRadius: '50%',
+        width: '50px',
+        height: '50px',
         textAlign: 'center',
-        lineHeight: '30px',  // Centers the text/arrow inside the circle
+        lineHeight: '30px',
         fontSize: '18px',
         fontFamily: 'Ubuntu, Arial, sans-serif',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' // Optional: Adds a subtle shadow for depth
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
     }
 }
 

@@ -7,8 +7,8 @@ const Experience = () => {
     return (
         <section id="experience" className="my-5">
             <h2 className="mb-4 text-center title-enhanced">Experience</h2>
-            {getExperiences().map((experience, index) => (
-                <Card key={index} className="mb-4 border-0 shadow-sm experience-card hover-shadow">
+            {getExperiences().map((experience) => (
+                <Card key={`${experience.company}-${experience.title}-${experience.duration}`} className="mb-4 border-0 shadow-sm experience-card hover-shadow">
                     <Card.Body>
                         <Row>
                             <Col xs={12} md={2} className="d-flex align-items-start justify-content-center mb-3 mb-md-0">
@@ -28,17 +28,17 @@ const Experience = () => {
                                     <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
                                     <Card.Text className="mb-1"><strong>Key Responsibilities:</strong></Card.Text>
                                         <ul className="mb-2 ps-3">
-                                        {experience.description.map((item, idx) => (
-                                            <li key={idx} className="mb-2">{item}</li>
+                                        {experience.description.map((item) => (
+                                            <li key={item} className="mb-2">{item}</li>
                                         ))}
                                         </ul>
                                     <Card.Text className="mb-3">
                                         <strong>Skills:</strong> <span className="skills">{experience.skills}</span>
                                     </Card.Text>
                                     <Card.Text className="mb-3 link-group">
-                                        {experience.links.map((link, linkIndex) => (
+                                        {experience.links.map((link) => (
                                             <Card.Link
-                                                key={linkIndex}
+                                                key={`${link.href}-${link.label}`}
                                                 href={link.href}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -89,12 +89,7 @@ const getExperiences = () => [
             'Designed and authored an official challenge for NCSA AI CTF (Thailand’s first Cyber AI CTF) as KBTG representative, focusing on AI security and prompt-attack scenarios.'
         ],
         skills: 'Penetration testing · Kali Linux · Burp Suite · AI Security · Reporting · Power Automate · Power Apps',
-        links: [
-            // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
-            // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
-            // { href: '/pdf/EZ', type: 'lab', label: 'Ez_Shop Lab' },
-            // { href: 'https://wariss-writeup.gitbook.io/writeup/', type: 'paper', label: 'Writeup Collection' }
-        ]
+        links: []
     },
     {
         companyLogo: './images/aplha.png',
@@ -112,12 +107,7 @@ const getExperiences = () => [
             'Successfully completed 16 security assessment projects during the engagement.'
         ],
         skills: 'Penetration testing · Kali Linux · Burp Suite · OWASP · Vulnerability Assessment',
-        links: [
-            // { href: 'https://www.instagram.com/p/C138L04JLYI/?fbclid=IwAR2PdXTwGHHzhd-r1jfOr-_iQMWHWy0JwAZF58j7TI4aGhNMdkGi6U8BrSM&img_index=4', type: 'news', label: 'News' },
-            // { href: '/pdf/DVWA', type: 'lab', label: 'DVWA Lab' },
-            // { href: '/pdf/EZ', type: 'lab', label: 'Ez_Shop Lab' },
-            // { href: 'https://wariss-writeup.gitbook.io/writeup/', type: 'paper', label: 'Writeup Collection' }
-        ]
+        links: []
     },
     {
         companyLogo: './images/eta-2023-logo-kpmg.webp',
@@ -159,7 +149,7 @@ const getExperiences = () => [
             'Contributed to the development of a benchmark for future security audits of Android apps and browser extensions using OAuth 2.0, promoting safer authentication design.',
             'Presented research findings at the Workshop on Cyber Forensics, Security, and E-discovery, part of the 23rd IEEE International Conference on Software Quality, Reliability, and Security (QRS 2023).'
         ],
-        skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java', // Full skills list here
+        skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java',
         links: [
             { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
             { href: '/pdf/Ritsumeikan_University_Poster', type: 'poster', label: 'Poster' },
@@ -182,7 +172,7 @@ const getExperiences = () => [
             'Demonstrated expertise in artificial intelligence, deep learning, and medical image analysis applied to real-world health challenges.',
             'Published research findings at the 2022 6th International Conference on Information Technology (InCIT).'
         ],
-        skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python', // Full skills list here
+        skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python',
         links: [
             { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
             { href: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },

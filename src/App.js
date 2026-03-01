@@ -1,5 +1,4 @@
 import React, { Suspense, lazy, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Portfolio from './Portfolio';
 
@@ -7,6 +6,13 @@ const PDFViewer = lazy(() => import('./PDFViewer'));
 const P5Wrapper = lazy(() => import('./components/p5_1'));
 const HTBAchievements = lazy(() => import('./components/Room'));
 const EightKsecAI = lazy(() => import('./components/8ksec-AI'));
+const ROUTES = [
+  { path: '/', element: <Portfolio /> },
+  { path: '/pdf/:pdfId', element: <PDFViewer /> },
+  { path: '/p5project', element: <P5Wrapper /> },
+  { path: '/htb', element: <HTBAchievements /> },
+  { path: '/8ksec-AI', element: <EightKsecAI /> },
+];
 
 function ScrollToHash() {
   const location = useLocation();
@@ -17,7 +23,6 @@ function ScrollToHash() {
     const el = document.getElementById(id);
     if (!el) return;
 
-    // Let layout settle before scrolling (images, collapses, etc.).
     requestAnimationFrame(() => {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
@@ -33,11 +38,9 @@ function App() {
       <div className="App">
         <Suspense fallback={<div style={{ padding: 24 }}>Loading…</div>}>
           <Routes>
-            <Route path="/" element={<Portfolio />} />
-            <Route path="/pdf/:pdfId" element={<PDFViewer />} />
-            <Route path="/p5project" element={<P5Wrapper />} />
-            <Route path="/htb" element={<HTBAchievements />} />
-            <Route path="/8ksec-AI" element={<EightKsecAI />} />
+            {ROUTES.map((route) => (
+              <Route key={route.path} path={route.path} element={route.element} />
+            ))}
           </Routes>
         </Suspense>
       </div>

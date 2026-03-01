@@ -17,8 +17,8 @@ const Footer = () => {
                     <p>© {year} by Waris Damkham</p>
                 </div>
                 <div className="footer-section footer-icons">
-                    {getIcons().map((icon, index) => (
-                        <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer" aria-label={icon.label} className="social-icon">
+                    {getIcons().map((icon) => (
+                        <a key={icon.link} href={icon.link} target="_blank" rel="noopener noreferrer" aria-label={icon.label} className="social-icon">
                             {icon.icon}
                         </a>
                     ))}
@@ -34,30 +34,6 @@ const getIcons = () => [
     { icon: <AiFillProject className="text-secondary mx-2" />, link: 'https://www.researchgate.net/profile/Waris-Damkham' },
     { icon: <AiFillGoogleCircle className="text-secondary mx-2" />, link: 'https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en' },
     { icon: <FaGithub className="text-secondary mx-2" />, link: 'https://github.com/Waariss' }
-    // { icon: <FaInstagram className="text-secondary mx-2" />, link: 'https://www.instagram.com/waaris_m/' }
 ];
 
 export default Footer;
-
-
-
-//     return (
-//         <Navbar collapseOnSelect expand="lg" style={{ background: '#f8f9fa' }} variant="light" className="py-4" id="contact">
-//             <Container className="d-flex flex-column align-items-center">
-//                 <Navbar.Text className="text-dark text-center mb-2" style={{ fontWeight: '600', fontSize: '18px' }}>
-//                     © 2023 by Waris Damkham
-//                 </Navbar.Text>
-//                 <Navbar.Text className="text-dark text-center mb-3" style={{ fontSize: '16px' }}>
-//                     Email: waris.dam@student.mahidol.ac.th
-//                 </Navbar.Text>
-//                 <div className="mt-2 icon-container">
-//                     {getIcons().map((icon, index) => (
-//                         <a key={index} href={icon.link} target="_blank" rel="noopener noreferrer" className="social-icon">
-//                             {icon.icon}
-//                         </a>
-//                     ))}
-//                 </div>
-//             </Container>
-//         </Navbar>
-//     );
-// }

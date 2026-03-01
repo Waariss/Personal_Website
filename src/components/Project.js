@@ -43,7 +43,6 @@ const projectData = [
         credentials: "Project Jelly-Translator 🪼: Translation Web App created by [Siranut Akarawuthi (PKBSA)](https://github.com/pkbsa/jelly-translator) 🐈🍌",
         skills: ["Python", "pytest", "Selenium WebDriver", "CI/CD", "GitHub Actions", "Robot Framework"],
         links: [
-        //   { "url": "https://jellytranslator.siranuta13.repl.co/", "label": "Live View Project" },
           { "url": "https://github.com/Waariss/GluayGluay_Project/tree/master/Project_phase_2", "label": "GitHub" }
         ]
     },
@@ -186,7 +185,6 @@ const projectData = [
         skills: ["React.js", "Node.js", "Web Development", "Public Speaking", "Postman", "Git", "Amazon EC2", "Nginx", "CI/CD", "GitHub Action"],
         links: [
             {url: "https://github.com/Waariss/Lollipop_Music_Project", "label": "GitHub"},
-            // {url: "http://52.77.69.103/", "label": "Live Visit Project"}
         ]
     }
 ];

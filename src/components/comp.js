@@ -11,8 +11,8 @@ const Competitions = () => {
         <section id="competitions" className="my-5">
             <h2 className="mb-4 text-center title-enhanced">Competitions</h2>
             <Row>
-                {displayedCompetitions.map((competition, index) => (
-                    <Col key={index} xs={12} md={6} lg={4} className="mb-4">
+                {displayedCompetitions.map((competition) => (
+                    <Col key={`${competition.title}-${competition.date}`} xs={12} md={6} lg={4} className="mb-4">
                         <a 
                             href={competition.linkedinUrl} 
                             target="_blank" 
@@ -65,32 +65,6 @@ const Competitions = () => {
 };
 
 const getCompetitions = () => [
-    // {
-    //     certificateImage: "./images/Umass.png",
-    //     title: 'UMassCTF 2024',
-    //     date: 'April 2024',
-    //     teamRank: '85th',
-    //     teamScore: '2,450 points',
-    //     individualRank: '120th',
-    //     individualScore: '1,850 points',
-    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
-    // },
-    // {
-    //     certificateImage: "./images/Amateurs.png",
-    //     title: 'AmateursCTF 2024',
-    //     date: 'April 2024',
-    //     teamRank: '156th',
-    //     teamScore: '1,875 points',
-    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
-    // },
-    // {
-    //     certificateImage: "./images/SCD.png",
-    //     title: 'SecureMy.Dev CTF',
-    //     date: 'April 2024',
-    //     individualRank: '45th',
-    //     individualScore: '3,200 points',
-    //     linkedinUrl: 'https://www.linkedin.com/in/your-profile/post-id'
-    // },
     {
         certificateImage: "./images/pico.png",
         title: ' Snyk CTF 2026',
@@ -217,8 +191,6 @@ const getCompetitions = () => [
         date: 'Mar 2024',
         teamRank: '227th',
         teamScore: '10,525 points',
-        // individualRank: '350th',
-        // individualScore: '8,750 points',
         linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_recently-participated-in-the-htb-cyber-apocalypse-activity-7174106113808756739-FtXK'
     },   
     {

@@ -22,6 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "clean:public": "node scripts/cleanup-public.js",
+    "prebuild": "npm run clean:public",
+    "prevalidate:site": "npm run clean:public",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "validate:site": "node scripts/validate-site.js",
