@@ -4,16 +4,13 @@ import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import { PROJECTS } from '../data';
-import { truncateText } from '../utils';
 
 const FEATURED_PROJECT_COUNT = 3;
-const MAX_DESCRIPTION_LENGTH = 250;
 
 const isInternalLink = (url) => typeof url === 'string' && url.startsWith('/');
 
 const Projects = () => {
   const [selectedProjectId, setSelectedProjectId] = useState(null);
-  const [expandedDescriptions, setExpandedDescriptions] = useState({});
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const displayedProjects = showAllProjects ? PROJECTS : PROJECTS.slice(0, FEATURED_PROJECT_COUNT);
@@ -21,19 +18,11 @@ const Projects = () => {
   const handleShow = (projectId) => {
     setSelectedProjectId((currentId) => {
       if (currentId === projectId) {
-        setExpandedDescriptions({});
         return null;
       }
 
       return projectId;
     });
-  };
-
-  const toggleDescription = (projectId) => {
-    setExpandedDescriptions((previousState) => ({
-      ...previousState,
-      [projectId]: !previousState[projectId],
-    }));
   };
 
   return (
@@ -75,17 +64,7 @@ const Projects = () => {
                     <Card.Title>{project.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{project.subtitle}</Card.Subtitle>
                     <Card.Text>
-                      {expandedDescriptions[project.id] || project.description.length <= MAX_DESCRIPTION_LENGTH
-                        ? project.description
-                        : truncateText(project.description)}
-                      {project.description.length > MAX_DESCRIPTION_LENGTH && (
-                        <span
-                          onClick={() => toggleDescription(project.id)}
-                          className="read-more-link"
-                        >
-                          {expandedDescriptions[project.id] ? ' Show less' : ' Read more'}
-                        </span>
-                      )}
+                      {project.description}
                       {project.credentials && (
                         <ReactMarkdown className="markdown-credentials">{project.credentials}</ReactMarkdown>
                       )}
