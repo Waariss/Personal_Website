@@ -1,20 +1,22 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import './App.css';
-import ScrollToTopButton from './button';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/skills';
-import Experience from './components/Exp';
-import Education from './components/Edu';
-import Publication from './components/Publications';
-import CVE from './components/CVE';
-import Certificate from './components/cert';
-import Projects from './components/Project';
-import Speaker from './components/Speaker';
-import ResumeDisplay from './components/ResumeDisplay';
-import Competitions from './components/comp';
-import Blog from './components/Blog';
+import ScrollToTopButton from './ScrollToTopButton';
+import {
+  About,
+  Blog,
+  CVE,
+  Certifications,
+  Competitions,
+  Education,
+  Experience,
+  Home,
+  Projects,
+  Publications,
+  ResumeDisplay,
+  Skills,
+  Speaker,
+} from './components';
 import Navigation from './Navbar';
 import Footer from './Footer';
 
@@ -28,10 +30,10 @@ const Portfolio = () => (
       <Experience />
       <CVE />
       <Speaker />
-      <Publication />
+      <Publications />
       <Projects />
       <Skills />
-      <Certificate />
+      <Certifications />
       <Education />
       <Competitions />
       <Blog />

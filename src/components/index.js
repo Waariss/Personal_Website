@@ -1,0 +1,13 @@
+export { default as About } from './About';
+export { default as Blog } from './Blog';
+export { default as CVE } from './CVE';
+export { default as Certifications } from './Certifications';
+export { default as Competitions } from './Competitions';
+export { default as Education } from './Education';
+export { default as Experience } from './Experience';
+export { default as Home } from './Home';
+export { default as Projects } from './Projects';
+export { default as Publications } from './Publications';
+export { default as ResumeDisplay } from './ResumeDisplay';
+export { default as Skills } from './Skills';
+export { default as Speaker } from './Speaker';

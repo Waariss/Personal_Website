@@ -116,8 +116,18 @@ function extractPdfIdsFromViewer() {
   }
   const text = readText(viewerPath);
   const ids = new Set();
-  const re = /case\s+['"]([^'"]+)['"]\s*:/g;
-  for (let m; (m = re.exec(text)); ) ids.add(m[1]);
+  const caseRe = /case\s+['"]([^'"]+)['"]\s*:/g;
+  const mapUseRe = /PDF_CONTENT_MAP\s*\[\s*pdfId\s*\]/;
+  const mapFilePath = path.join(ROOT, 'src', 'data', 'pdfContentMap.js');
+
+  for (let m; (m = caseRe.exec(text)); ) ids.add(m[1]);
+
+  if (ids.size === 0 && mapUseRe.test(text) && fs.existsSync(mapFilePath)) {
+    const mapText = readText(mapFilePath);
+    const mapKeyRe = /^ {2}(['"]?)([A-Za-z0-9-]+)\1\s*:/gm;
+    for (let m; (m = mapKeyRe.exec(mapText)); ) ids.add(m[2]);
+  }
+
   return ids;
 }
 
@@ -147,7 +157,7 @@ function assertNoopenerForTargetBlank() {
         const hasNoreferrer = /rel\s*=\s*['"][^'"]*noreferrer[^'"]*['"]/.test(tag);
         if (!hasRel || !hasNoopener || !hasNoreferrer) {
           const { line, col } = findLineCol(text, idx);
-          fail(`target=\"_blank\" without rel=\"noopener noreferrer\" in ${path.relative(ROOT, filePath)}:${line}:${col}`);
+          fail(`target="_blank" without rel="noopener noreferrer" in ${path.relative(ROOT, filePath)}:${line}:${col}`);
         }
       }
       idx = text.indexOf('target="_blank"', idx + 1);
@@ -167,4 +177,3 @@ function main() {
 }
 
 main();
-

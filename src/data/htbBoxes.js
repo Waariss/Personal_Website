@@ -1,10 +1,4 @@
-import React from 'react';
-import '../HTBAchievements.css';  // Import the CSS file
-import Navigation from '../Navbar';
-import Footer from '../Footer';
-
-const HTBAchievements = () => {
-  const boxes = [
+export const HTB_BOXES = [
     { name: 'Crafty', level: 'Easy', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/c01c8813bfc7795ae0717bbee7b407d1.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/587' },
     { name: 'Perfection', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/57fc0f58916cb3ed8e793db071769d70.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/590' },
     { name: 'Headless', level: 'Easy', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/26e076db204a74b99390e586d7ebcf8c.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/594' },
@@ -53,40 +47,3 @@ const HTBAchievements = () => {
     { name: 'MagicGardens', level: 'Insane', os: 'Linux', logo: 'https://labs.hackthebox.com/storage/avatars/a878db048e3cb6ba0e4a467bb705e145.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/602' },
     { name: 'Ghost', level: 'Insane', os: 'Windows', logo: 'https://labs.hackthebox.com/storage/avatars/38f90738d0433b8adf27036f18ecf91e.png', link: 'https://www.hackthebox.com/achievement/machine/1458142/616' },
   ];
-  
-  const groupedBoxes = boxes.reduce((acc, box) => {
-    if (!acc[box.level]) {
-      acc[box.level] = [];
-    }
-    acc[box.level].push(box);
-    return acc;
-  }, {});
-
-  return (
-    <>
-      <Navigation />
-      <div className="achievements-page">
-        <div className="achievements-container">
-          <h1 className="fancy-header">Pwned Rooms</h1>
-          {Object.keys(groupedBoxes).map(level => (
-            <div key={level}>
-              <h2 className="level-header">{level} Level</h2>
-              <div className="room-grid">
-                {groupedBoxes[level].map((box) => (
-                  <a href={box.link} className="room" key={box.name} target="_blank" rel="noopener noreferrer">
-                    <img src={box.logo} alt={`${box.name} logo`} className="room-logo" />
-                    <h3>{box.name}</h3>
-                    <p>{box.os}</p>
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-      <Footer />
-    </>
-  );
-};
-
-export default HTBAchievements;

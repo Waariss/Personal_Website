@@ -80,6 +80,10 @@
     box-shadow: none;
 }
 
+.resume-iframe {
+    border: none;
+}
+
 .terminal-placeholder {
     padding: 18px;
 }
@@ -128,6 +132,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.terminal-prompt-line-spaced {
+    margin-top: 15px;
 }
 
 .terminal-user {

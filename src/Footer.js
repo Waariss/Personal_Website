@@ -1,39 +1,57 @@
 import React from 'react';
-import { Container} from 'react-bootstrap';
-import { FaEnvelope, FaLinkedin, FaGithub} from 'react-icons/fa';
+import { Container } from 'react-bootstrap';
 import { AiFillGoogleCircle, AiFillProject } from 'react-icons/ai';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import './App.css';
+import { CONTACT_DETAILS, FOOTER_SOCIAL_PROFILE_IDS, SOCIAL_PROFILES_BY_ID } from './data';
+
+const FOOTER_ICON_MAP = {
+  envelope: FaEnvelope,
+  github: FaGithub,
+  linkedin: FaLinkedin,
+  researchgate: AiFillProject,
+  'google-scholar': AiFillGoogleCircle,
+};
+
+const FOOTER_SOCIAL_PROFILES = FOOTER_SOCIAL_PROFILE_IDS
+  .map((id) => SOCIAL_PROFILES_BY_ID[id])
+  .filter(Boolean);
+
+const primaryEmail = CONTACT_DETAILS.find((detail) => detail.id === 'email')?.display ?? '';
 
 const Footer = () => {
-    const year = new Date().getFullYear();
+  const year = new Date().getFullYear();
 
-    return (
-        <div className="footer-container">
-            <Container className="footer-content">
-                <div className="footer-section footer-text">
-                    <p>Email: waris.dam@outlook.com</p>
-                </div>
-                <div className="footer-section footer-text">
-                    <p>© {year} by Waris Damkham</p>
-                </div>
-                <div className="footer-section footer-icons">
-                    {getIcons().map((icon) => (
-                        <a key={icon.link} href={icon.link} target="_blank" rel="noopener noreferrer" aria-label={icon.label} className="social-icon">
-                            {icon.icon}
-                        </a>
-                    ))}
-                </div>
-            </Container>
+  return (
+    <div className="footer-container">
+      <Container className="footer-content">
+        <div className="footer-section footer-text">
+          <p>Email: {primaryEmail}</p>
         </div>
-    );
-}
+        <div className="footer-section footer-text">
+          <p>© {year} by Waris Damkham</p>
+        </div>
+        <div className="footer-section footer-icons">
+          {FOOTER_SOCIAL_PROFILES.map((profile) => {
+            const Icon = FOOTER_ICON_MAP[profile.footerIcon];
 
-const getIcons = () => [
-    { icon: <FaEnvelope className="text-secondary mx-2" />, link: 'mailto:waris.dam@outlook.com' },
-    { icon: <FaLinkedin className="text-secondary mx-2" />, link: 'https://www.linkedin.com/in/waris-damkham/' },
-    { icon: <AiFillProject className="text-secondary mx-2" />, link: 'https://www.researchgate.net/profile/Waris-Damkham' },
-    { icon: <AiFillGoogleCircle className="text-secondary mx-2" />, link: 'https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en' },
-    { icon: <FaGithub className="text-secondary mx-2" />, link: 'https://github.com/Waariss' }
-];
+            return (
+              <a
+                key={profile.id}
+                href={profile.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+                aria-label={profile.label}
+              >
+                {Icon ? <Icon className="text-secondary mx-2" /> : null}
+              </a>
+            );
+          })}
+        </div>
+      </Container>
+    </div>
+  );
+};
 
 export default Footer;
