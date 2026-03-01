@@ -6,11 +6,11 @@ import '../App.css';
 
 const certificates = [
     {
-        title: "AI & LLM Exploitation Challenges (All 10 Labs Completed)",
-        organization: "8kSec",
-        date: "Jan/Feb 2026",
-        link: "/8ksec-AI",
-        imageUrl: "./images/AILLM-Exploitation-Challenges.png"
+        title: "Certified AI Penetration Testing Associate (kAIPTA)",
+        organization: "Knight Squad Academy",
+        date: "Mar 2026",
+        link: "https://credential.knightsquad.academy/KSA-RRJ4SZC20103",
+        imageUrl: "./images/waris-damkham-kaipta.png"
     },
     {
         title: "Cyber Security 101 (SEC1)",
@@ -20,7 +20,14 @@ const certificates = [
         imageUrl: "./images/SEC1.png"
     },
     {
-        title: "Certified Web App Penetration Testing Apprentice (KWAPTA)",
+        title: "AI & LLM Exploitation Challenges (All 10 Labs Completed)",
+        organization: "8kSec",
+        date: "Jan/Feb 2026",
+        link: "/8ksec-AI",
+        imageUrl: "./images/AILLM-Exploitation-Challenges.png"
+    },
+    {
+        title: "Certified Web App Penetration Testing Apprentice (kWAPTA)",
         organization: "Knight Squad Academy",
         date: "Jan 2026",
         link: "https://credential.knightsquad.academy/KSA-UGSEKSEJ2501",
