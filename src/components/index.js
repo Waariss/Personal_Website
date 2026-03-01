@@ -9,5 +9,5 @@ export { default as Home } from './Home';
 export { default as Projects } from './Projects';
 export { default as Publications } from './Publications';
 export { default as ResumeDisplay } from './ResumeDisplay';
-export { default as Skills } from './Skills';
+export { default as Skills } from './SkillsSection';
 export { default as Speaker } from './Speaker';
