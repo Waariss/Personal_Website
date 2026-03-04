@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-1236',
+        plugin: 'Envira Gallery for WordPress',
+        description: "The Envira Gallery for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'justified_gallery_theme' parameter in all versions up to, and including, 1.12.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        cvss: 6.4,
+        severity: 'Medium',
+        date: 'Mar 3, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/envira-gallery-lite/envira-gallery-for-wordpress-1123-authenticated-author-stored-cross-site-scripting-via-justified-gallery-theme-parameter-via-rest-api'
+    },
+    {
         id: 'CVE-2025-14452',
         plugin: 'WP Customer Reviews',
         description: "The WP Customer Reviews plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'wpcr3_fname' parameter in all versions up to, and including, 3.7.5 due to insufficient input sanitization and output escaping. This makes it possible for unauthenticated attackers to inject arbitrary web scripts in pages that execute if they can successfully trick a user into performing an action such as clicking on a link.",
