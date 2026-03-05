@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-1720',
+        plugin: 'WowOptin: Next-Gen Popup Maker – Create Stunning Popups and Optins for Lead Generation',
+        description: "The WowOptin: Next-Gen Popup Maker – Create Stunning Popups and Optins for Lead Generation plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the 'install_and_active_plugin' function in all versions up to, and including, 1.4.24. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install and activate arbitrary plugins.",
+        cvss: 8.8,
+        severity: 'High',
+        date: 'Mar 4, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/optin/wowoptin-next-gen-popup-maker-create-stunning-popups-and-optins-for-lead-generation-1424-missing-authorization-to-authenticated-subscriber-arbitrary-plugin-installation'
+    },
+    {
         id: 'CVE-2026-1236',
         plugin: 'Envira Gallery for WordPress',
         description: "The Envira Gallery for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'justified_gallery_theme' parameter in all versions up to, and including, 1.12.3 due to insufficient input sanitization and output escaping. This makes it possible for authenticated attackers, with Author-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
