@@ -17,21 +17,33 @@ const FOOTER_SOCIAL_PROFILES = FOOTER_SOCIAL_PROFILE_IDS
   .map((id) => SOCIAL_PROFILES_BY_ID[id])
   .filter(Boolean);
 
-const primaryEmail = CONTACT_DETAILS.find((detail) => detail.id === 'email')?.display ?? '';
+const primaryEmailDetail = CONTACT_DETAILS.find((detail) => detail.id === 'email');
+const primaryEmail = primaryEmailDetail?.display ?? '';
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="footer-container">
+    <footer className="footer-container footer-premium">
       <Container className="footer-content">
-        <div className="footer-section footer-text">
-          <p>Email: {primaryEmail}</p>
+        <div className="footer-section footer-col">
+          <span className="footer-label">Contact</span>
+          {primaryEmailDetail?.href ? (
+            <a href={primaryEmailDetail.href} className="footer-email-link">
+              {primaryEmail}
+            </a>
+          ) : (
+            <p className="mb-0">{primaryEmail}</p>
+          )}
         </div>
-        <div className="footer-section footer-text">
-          <p>© {year} by Waris Damkham</p>
+
+        <div className="footer-section footer-col footer-brand-col">
+          <span className="footer-brand-name">Waris Damkham</span>
+          <p className="footer-brand-copy mb-0">© {year} Offensive Security Engineer</p>
         </div>
-        <div className="footer-section footer-icons">
+
+        <div className="footer-section footer-col footer-icons">
+          <span className="footer-label">Profiles</span>
           {FOOTER_SOCIAL_PROFILES.map((profile) => {
             const Icon = FOOTER_ICON_MAP[profile.footerIcon];
 
@@ -41,16 +53,16 @@ const Footer = () => {
                 href={profile.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="social-icon footer-social-link"
                 aria-label={profile.label}
               >
-                {Icon ? <Icon className="text-secondary mx-2" /> : null}
+                {Icon ? <Icon className="footer-social-icon" /> : null}
               </a>
             );
           })}
         </div>
       </Container>
-    </div>
+    </footer>
   );
 };
 

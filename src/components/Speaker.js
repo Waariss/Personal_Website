@@ -27,7 +27,7 @@ const Speaker = () => {
 
   return (
     <section id="speaker" className="my-5">
-      <h2 className="mb-4 text-center title-enhanced">Speaker & Presentations</h2>
+      <h2 className="mb-4 text-center title-enhanced">Talks & Contributions</h2>
 
       <Row>
         {displayedTalks.map((talk) => (

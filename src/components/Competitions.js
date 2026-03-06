@@ -5,7 +5,7 @@ import '../App.css';
 import { COMPETITIONS } from '../data';
 import { getAchievementBadges, parseCompetitionDateValue, parseRankMetric } from '../utils';
 
-const PREVIEW_COUNT = 6;
+const PREVIEW_COUNT = 3;
 
 const VIEW_MODES = [
   { id: 'all', label: 'All' },

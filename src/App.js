@@ -25,8 +25,10 @@ function ScrollToHash() {
     const element = document.getElementById(id);
     if (!element) return;
 
+    const offset = 92;
     requestAnimationFrame(() => {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const top = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     });
   }, [location.pathname, location.hash]);
 

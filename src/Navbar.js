@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import {
   FaBlog,
   FaBook,
@@ -18,6 +18,7 @@ import {
 } from 'react-icons/fa';
 import './App.css';
 import { NAV_ITEMS } from './data';
+import useScrollSpy from './hooks/useScrollSpy';
 
 const NAV_ICON_MAP = {
   blog: FaBlog,
@@ -35,32 +36,75 @@ const NAV_ICON_MAP = {
   user: FaUser,
 };
 
-const Navigation = () => (
-  <Navbar collapseOnSelect expand="lg" className="portfolio-navbar" variant="dark">
-    <Navbar.Brand as={Link} to="/" className="ms-2 portfolio-navbar-brand">
-      WD
-    </Navbar.Brand>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="ms-auto">
-        {NAV_ITEMS.map(({ id, label, icon }) => {
-          const Icon = NAV_ICON_MAP[icon];
+const NAV_SCROLL_OFFSET = 92;
 
-          return (
-            <Nav.Link
-              key={id}
-              as={Link}
-              to={`/#${id}`}
-              className="hover-grow portfolio-navbar-link"
-            >
-              {Icon ? <Icon className="me-1" /> : null}
-              {label}
-            </Nav.Link>
-          );
-        })}
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
-);
+const Navigation = () => {
+  const [expanded, setExpanded] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const sectionIds = useMemo(() => NAV_ITEMS.map((item) => item.id), []);
+  const activeId = useScrollSpy(sectionIds);
+
+  const scrollToSection = (id) => {
+    const target = document.getElementById(id);
+    if (!target) {
+      return;
+    }
+
+    const top = target.getBoundingClientRect().top + window.scrollY - NAV_SCROLL_OFFSET;
+    window.history.replaceState(null, '', `/#${id}`);
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
+
+  const handleNavClick = (event, id) => {
+    event.preventDefault();
+    setExpanded(false);
+
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`);
+      return;
+    }
+
+    scrollToSection(id);
+  };
+
+  return (
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      sticky="top"
+      expanded={expanded}
+      onToggle={(nextValue) => setExpanded(Boolean(nextValue))}
+      className="portfolio-navbar"
+      variant="dark"
+      aria-label="Primary navigation"
+    >
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" className="portfolio-navbar-toggle" />
+      <Navbar.Collapse id="responsive-navbar-nav" className="portfolio-navbar-collapse">
+        <Nav className="portfolio-navbar-nav">
+          {NAV_ITEMS.map(({ id, label, icon }) => {
+            const Icon = NAV_ICON_MAP[icon];
+            const isActive = location.pathname === '/' && activeId === id;
+
+            return (
+              <Nav.Link
+                key={id}
+                as={Link}
+                to={`/#${id}`}
+                onClick={(event) => handleNavClick(event, id)}
+                className={`portfolio-navbar-link ${isActive ? 'active' : ''}`}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {Icon ? <Icon className="portfolio-nav-icon me-1" /> : null}
+                {label}
+              </Nav.Link>
+            );
+          })}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
 
 export default Navigation;

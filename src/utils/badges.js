@@ -20,18 +20,27 @@ export function getEventTypeColor(type = '') {
     case 'arsenal':
     case 'demo labs':
       return 'danger';
+
     case 'conference':
       return 'primary';
+
     case 'workshop':
-      return 'info';
-    case 'webinar':
-      return 'success';
-    case 'meetup':
-      return 'warning';
     case 'guest lecture':
     case 'university talk':
     case 'talk':
       return 'info';
+
+    case 'webinar':
+      return 'success';
+
+    case 'meetup':
+      return 'warning';
+
+    case 'community':
+    case 'contribution':
+    case 'ctf':
+      return 'secondary';
+
     default:
       return 'secondary';
   }

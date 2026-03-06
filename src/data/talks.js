@@ -36,6 +36,24 @@ export const TALKS = [
         ]
     },
     {
+        title: 'NCSA AI CTF 2026 (Thailand) – Challenge Author',
+        event: 'NCSA AI CTF (Thailand’s first Cyber AI CTF)',
+        type: 'Community',
+        status: 'Challenge Author',
+        description:
+            'Contributed as a challenge author for NCSA AI CTF 2026, representing KBTG, focusing on AI security and prompt-injection scenarios.',
+        location: 'Thailand (Online)',
+        date: 'Mar 2026',
+        links: [
+            {
+            label: 'Linkedln Post',
+            url: 'https://www.linkedin.com/posts/waris-damkham_excited-to-support-the-thai-ai-security-community-share-7433378262996877312-ARpi',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
+            }
+        ]
+    },
+    {
         title: 'Real-World Cybersecurity Without Filters',
         event: 'ICT Mahidol Cybersecurity Club (Special Talk)',
         type: 'University Talk',
