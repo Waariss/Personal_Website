@@ -4034,7 +4034,6 @@ body.dark-mode {
 .portfolio-navbar-collapse {
   align-items: center;
   width: 100%;
-  display: flex !important;
   justify-content: center;
   position: relative;
 }
@@ -4112,6 +4111,10 @@ body.dark-mode {
 }
 
 @media (min-width: 992px) {
+  .portfolio-navbar-collapse {
+    display: flex !important;
+  }
+
   .portfolio-resume-cta {
     position: absolute;
     right: 0;
