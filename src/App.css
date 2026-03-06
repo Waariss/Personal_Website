@@ -3605,3 +3605,357 @@ body.dark-mode {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   opacity: 1 !important;
 }
+
+/* Competitions Theme-Aligned Redesign */
+#competitions.competition-themed-section {
+  --surface: #ffffff;
+  --surface-2: #f4f8ff;
+  --border: #d9e5f5;
+  --text: #1f2a37;
+  --muted: #5f6e82;
+  --accent: #1e6fd9;
+  --accent-warm: #e86b2d;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.competition-themed-title {
+  color: var(--text);
+}
+
+.competition-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.competition-filter-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.competition-filter-btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 0.42rem 0.82rem;
+  transition: all 0.2s ease;
+}
+
+.competition-filter-btn:hover,
+.competition-filter-btn:focus-visible {
+  background: rgba(30, 111, 217, 0.14);
+  color: var(--text);
+}
+
+.competition-filter-btn.active {
+  background: rgba(30, 111, 217, 0.18);
+  color: var(--text);
+  border-color: rgba(30, 111, 217, 0.45);
+}
+
+.competition-control-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.competition-search-input,
+.competition-sort-select {
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.competition-search-input::placeholder {
+  color: var(--muted);
+}
+
+.competition-search-input {
+  min-width: 220px;
+}
+
+.competition-search-input:focus,
+.competition-sort-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(30, 111, 217, 0.2);
+}
+
+.competition-premium-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  color: inherit;
+}
+
+.competition-premium-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.competition-premium-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(30, 111, 217, 0.32);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.14);
+}
+
+.competition-premium-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  height: 100%;
+  padding: 1.1rem;
+}
+
+.competition-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+
+.competition-date {
+  margin: 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.competition-title {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.42;
+  font-weight: 700;
+}
+
+.competition-hero {
+  border: 1px solid rgba(30, 111, 217, 0.3);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(30, 111, 217, 0.13) 0%, rgba(30, 111, 217, 0.04) 100%);
+  padding: 0.82rem 0.92rem;
+}
+
+.competition-hero-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.competition-hero-rank {
+  margin-top: 0.2rem;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.28;
+  font-variant-numeric: tabular-nums;
+}
+
+.competition-hero-rank-fallback {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.competition-hero-percentile {
+  margin-top: 0.16rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.competition-achievement-row {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.competition-achievement-badge.badge {
+  --bs-badge-bg: rgba(232, 107, 45, 0.15);
+  --bs-badge-color: #a53f0d;
+  border-radius: 999px;
+  background-color: rgba(232, 107, 45, 0.15) !important;
+  color: #a53f0d !important;
+  border: 1px solid rgba(232, 107, 45, 0.48);
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  padding: 0.36rem 0.58rem;
+}
+
+.competition-achievement-neutral.badge {
+  color: var(--muted) !important;
+  background-color: rgba(95, 110, 130, 0.09) !important;
+  border-color: var(--border);
+}
+
+.competition-metric-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.58rem;
+}
+
+.competition-metric-block {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.7rem 0.8rem;
+  background: var(--surface-2);
+}
+
+.competition-metric-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.competition-metric-rank {
+  margin-top: 0.18rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.competition-metric-percentile {
+  margin-top: 0.14rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.competition-metric-points {
+  margin-top: 0.26rem;
+  font-size: 0.82rem;
+  color: #ba4d17;
+  font-weight: 600;
+}
+
+.competition-card-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 0.72rem;
+}
+
+.competition-proof-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.competition-proof-link:hover {
+  text-decoration: underline;
+}
+
+.competition-empty-state {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.competition-toggle-btn {
+  border-radius: 999px;
+  padding: 0.72rem 1.35rem;
+  font-weight: 600;
+}
+
+.competition-toggle-btn:focus-visible,
+.competition-filter-btn:focus-visible,
+.competition-premium-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .competition-metric-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  .competition-controls {
+    align-items: stretch;
+  }
+
+  .competition-control-inputs {
+    width: 100%;
+  }
+
+  .competition-search-input {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #competitions.competition-themed-section {
+    border-radius: 14px;
+    padding: 1rem 0.8rem;
+  }
+
+  .competition-filter-group {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .competition-control-inputs {
+    flex-direction: column;
+  }
+
+  .competition-search-input,
+  .competition-sort-select {
+    width: 100%;
+  }
+}
+
+body.dark-mode #competitions.competition-themed-section {
+  --surface: #161b22;
+  --surface-2: #0d1117;
+  --border: #30363d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #58a6ff;
+  --accent-warm: #ff9c6b;
+  background:
+    radial-gradient(900px 600px at 8% 0%, rgba(13, 110, 253, 0.14), transparent 55%),
+    radial-gradient(900px 600px at 90% 15%, rgba(255, 99, 71, 0.12), transparent 56%),
+    linear-gradient(180deg, rgba(10, 24, 61, 0.96) 0%, rgba(28, 40, 51, 0.96) 100%);
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 1.4rem 1.2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.34);
+}
