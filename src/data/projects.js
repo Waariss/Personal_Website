@@ -1,5 +1,18 @@
 export const PROJECTS = [
     {
+        id: "Oblivion Token",
+        imgSrc: "./images/Oblivion_Token.png",
+        title: "Oblivion Token : M365 Conditional Access Policy Bypass OST (Offensive Tooling)",
+        subtitle: "Oct 2025 - Apr 2026",
+        description: "Oblivion Token is a focused offensive-research utility that makes Microsoft 365 Conditional Access Policy (CAP) bypass testing practical, repeatable, and scriptable. Designed for red-teamers and security researchers, it systematizes token-centric workflows and exercises policy edge cases to expose where device, network, or app-context assumptions fail including realistic test paths against Microsoft first-party (built-in) applications.",
+        skills: ["Python", "Entra ID (Azure AD)", "OAuth 2.0 / OIDC", "Conditional Access", "Microsoft Graph API"],
+        links: [
+            { url: "https://github.com/Waariss/OblivionToken", "label": "Github" },
+            { url: 'https://blackhat.com/asia-26/arsenal/schedule/?track[]=cloud-security#oblivion-token--m365-conditional-access-policy-bypass-ost-offensive-tooling-49920', "label": "Black Hat Asia Arsenal 2026" },
+            { url: "https://defcon.org/html/defcon-singapore/dc-singapore-demolabs.html", "label": "DEF CON Singapore 2026 Demo Labs" },
+        ]
+    },
+    {
         id: "Senior",
         imgSrc: "./images/Docker.jpg",
         title: "🐔ChickenME🐣: Classification Of Chicken Diseases From Fecal Images Via Line Office Account",

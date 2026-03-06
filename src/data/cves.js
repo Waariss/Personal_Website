@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-2020',
+        plugin: 'JS Archive List',
+        description: "The JS Archive List plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.1.7 via the 'included' shortcode attribute. This is due to the deserialization of untrusted input supplied via the 'included' parameter of the plugin's shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",
+        cvss: 7.5,
+        severity: 'High',
+        date: 'Mar 6, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/jquery-archive-list-widget/js-archive-list-617-authenticated-contributor-php-object-injection-via-included-shortcode-attribute'
+    },
+    {
         id: 'CVE-2026-1720',
         plugin: 'WowOptin: Next-Gen Popup Maker – Create Stunning Popups and Optins for Lead Generation',
         description: "The WowOptin: Next-Gen Popup Maker – Create Stunning Popups and Optins for Lead Generation plugin for WordPress is vulnerable to unauthorized arbitrary plugin installation due to a missing capability check on the 'install_and_active_plugin' function in all versions up to, and including, 1.4.24. This makes it possible for authenticated attackers, with Subscriber-level access and above, to install and activate arbitrary plugins.",

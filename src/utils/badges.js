@@ -13,9 +13,12 @@ export function getSeverityColor(severity) {
   }
 }
 
-export function getEventTypeColor(type) {
-  switch (type.toLowerCase()) {
+export function getEventTypeColor(type = '') {
+  const t = String(type).trim().toLowerCase();
+
+  switch (t) {
     case 'arsenal':
+    case 'demo labs':
       return 'danger';
     case 'conference':
       return 'primary';
@@ -25,6 +28,10 @@ export function getEventTypeColor(type) {
       return 'success';
     case 'meetup':
       return 'warning';
+    case 'guest lecture':
+    case 'university talk':
+    case 'talk':
+      return 'info';
     default:
       return 'secondary';
   }

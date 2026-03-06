@@ -1,27 +1,55 @@
 export const TALKS = [
     {
         title: 'Oblivion Token: M365 Conditional Access Policy Bypass OST (Offensive Tooling)',
+        event: 'DEF CON Singapore 2026 Demo Labs',
+        type: 'Demo Labs',
+        status: 'Upcoming (Accepted)',
+        description:
+            'Accepted for DEF CON Singapore 2026 Demo Labs. Oblivion Token is an offensive research utility for practical, repeatable testing of Microsoft 365 Conditional Access (CA) edge cases. It systematizes token-centric workflows to help identify where device, network, or app-context assumptions can fail in real-world environments.',
+        location: 'Marina Bay Sands, Singapore',
+        date: 'Apr 2026',
+        // links: [
+        //     {
+        //     label: 'DEF CON SG',
+        //     url: 'https://defcon.org/html/defcon-singapore/dc-singapore-index.html',
+        //     icon: 'fas fa-external-link-alt',
+        //     color: 'danger'
+        //     }
+        // ]
+    },
+    {
+        title: 'Oblivion Token: M365 Conditional Access Policy Bypass OST (Offensive Tooling)',
         event: 'Black Hat Asia Arsenal 2026',
         type: 'Arsenal',
-        status: 'Accepted',
-        description: 'Oblivion Token is a focused offensive-research utility that makes Microsoft 365 Conditional Access Policy (CAP) bypass testing practical, repeatable, and scriptable. Designed for red-teamers and security researchers, it systematizes token-centric workflows and exercises policy edge cases to expose where device, network, or app-context assumptions fail including realistic test paths against Microsoft first-party (built-in) applications.',
+        status: 'Upcoming (Accepted)',
+        description:
+            'Accepted for Black Hat Asia 2026 Arsenal. Oblivion Token is an offensive research utility for practical, repeatable testing of Microsoft 365 Conditional Access (CA) edge cases. It systematizes token-centric workflows to help identify where device, network, or app-context assumptions can fail in real-world environments.',
         location: 'Marina Bay Sands, Singapore',
-        date: 'April 2026',
+        date: 'Apr 2026',
         links: [
             {
-                label: 'Black Hat',
-                url: 'https://blackhat.com/asia-26/arsenal/schedule/#oblivion-token--m365-conditional-access-policy-bypass-ost-offensive-tooling-49920',
-                icon: 'fas fa-external-link-alt',
-                color: 'danger'
+            label: 'Black Hat',
+            url: 'https://blackhat.com/asia-26/arsenal/schedule/#oblivion-token--m365-conditional-access-policy-bypass-ost-offensive-tooling-49920',
+            icon: 'fas fa-external-link-alt',
+            color: 'danger'
             }
         ]
+    },
+    {
+        title: 'Real-World Cybersecurity Without Filters',
+        event: 'ICT Mahidol Cybersecurity Club (Special Talk)',
+        type: 'University Talk',
+        status: 'Upcoming',
+        description: 'Scheduled (details to be announced)',
+        location: 'Faculty of Information and Communication Technology, Mahidol University (ICT Mahidol)',
+        date: 'Mar 2026'
     },
     {
         title: 'AI Security Unmasked: The Hidden Danger Behind Your AI Tools',
         event: 'KBTG Knowledge Sharing 2025',
         type: 'Webinar',
         status: 'Presented',
-        description: 'TBA',
+        description: 'Delivered an internal KBTG Academy knowledge-sharing session for regional teams (Vietnam, China, Indonesia) on Risk of Generative AI, Responsible Use of AI, and AI Threat Internal Development, highlighting practical controls and guardrails for enterprise adoption.',
         location: 'MS Teams',
         date: 'Sep 2025'
     },
@@ -30,8 +58,8 @@ export const TALKS = [
         event: 'TBCert Monthly Meeting 2025',
         type: 'Meetup',
         status: 'Presented',
-        description: 'TBA',
-        location: 'Bangkok, Thailand',
+        description: 'Presented at TBCert Monthly Meeting on “AI Security Research: The Rise of AI Threat,” highlighting modern offensive AI capabilities such as phishing automation, deepfakes, CAPTCHA bypass, AI-enabled threat automation, and LLM-driven adversarial agents.',
+        location: 'KBTG Building',
         date: 'May 2025'
     },
     {

@@ -73,7 +73,7 @@ export const SOCIAL_PROFILES = [
     resumeLabel: 'Google Scholar',
     href: 'https://scholar.google.com/citations?user=dug8UQQAAAAJ&hl=en',
     display: 'scholar.google.com/citations?user=dug8UQQAAAAJ',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png',
+    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/960px-Google_Scholar_logo.svg.png',
     imageAlt: 'Google Scholar',
     tooltip: 'Google Scholar',
     footerIcon: 'google-scholar',

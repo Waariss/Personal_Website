@@ -47,9 +47,9 @@ const About = () => {
 
                 I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and contribute to <strong>Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work also includes <strong>security automation</strong>, critical vulnerability response support, and <strong>AI security readiness</strong> for AI-enabled applications.
 
-                I conduct applied identity and access security work on <strong>Microsoft 365 Conditional Access</strong> policy enforcement, with tooling selected for <strong>Black Hat Asia 2026 (Arsenal)</strong>.
+                I conduct applied identity and access security work on <strong>Microsoft 365 Conditional Access</strong> policy enforcement, with tooling accepted for <strong>Black Hat Asia 2026 (Arsenal)</strong> and <strong>DEF CON Singapore 2026 (Demo Labs)</strong>.
 
-                Open to global opportunities in Red Teaming, Identity Security, and AI Security.
+                Open to global opportunities in Red Teaming, AI Security, and Application Security.
               </Card.Text>
               <div className="d-flex mt-3 icon-section">
                 {ABOUT_SOCIAL_PROFILES.map((profile) => {
