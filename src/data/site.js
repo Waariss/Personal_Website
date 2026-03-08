@@ -40,7 +40,7 @@ export const SOCIAL_PROFILES = [
     resumeLabel: 'LinkedIn',
     href: 'https://www.linkedin.com/in/waris-damkham/',
     display: 'linkedin.com/in/waris-damkham',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png',
+    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/3840px-LinkedIn_icon.svg.png',
     imageAlt: 'LinkedIn',
     tooltip: 'LinkedIn',
     footerIcon: 'linkedin',
