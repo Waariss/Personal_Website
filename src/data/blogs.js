@@ -1,5 +1,16 @@
 export const BLOGS = [
     {
+        id: 'Devvortex(HTB)',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*UXw7AgyriNTH-TKa',
+        title: 'My APIsec University ASCP Exam Journey: A Detailed Review',
+        company: 'Medium',
+        duration: 'Mar 2026',
+        description: 'Devvortex is an easy Linux machine from Hack The Box that provides a solid opportunity to practice a full attack chain, from web…',
+        links: [
+            { href: 'https://medium.com/@waaris_m/devvortex-htb-a-practical-walkthrough-from-enumeration-to-privilege-escalation-807cce6e34b7', label: 'Read More' },
+        ]
+    },
+    {
         id: 'medium-review3',
         internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*26RP7lKbS96_yPzr.png',
         title: 'My APIsec University ASCP Exam Journey: A Detailed Review',
