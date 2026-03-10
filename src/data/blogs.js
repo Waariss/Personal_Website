@@ -1,5 +1,16 @@
 export const BLOGS = [
     {
+        id: 'Corporate(HTB)',
+        internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*IVLiyQopjVFRYkbq',
+        title: 'Corporate — HTB Insane Writeup (Adapted from 2024 Notes)',
+        company: 'Medium',
+        duration: 'Mar 2026',
+        description: 'Adapted from notes taken during the original solve, cleaned up and expanded into a proper walkthrough.',
+        links: [
+            { href: 'https://medium.com/@waaris_m/corporate-htb-insane-writeup-adapted-from-2024-notes-27d45a5a9693', label: 'Read More' },
+        ]
+    },
+    {
         id: 'Devvortex(HTB)',
         internshipImages: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*UXw7AgyriNTH-TKa',
         title: 'My APIsec University ASCP Exam Journey: A Detailed Review',
