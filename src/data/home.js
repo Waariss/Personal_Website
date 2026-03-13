@@ -6,7 +6,7 @@ export const HOME_CREDENTIAL_ROWS = [
 ];
 
 export const HOME_PROOF_HIGHLIGHTS = [
-  { text: 'Black Hat Asia 2026 Arsenal Speaker', link: '#speaker' },
+  { text: 'Black Hat Asia 2026 Arsenal Presenter', link: '#speaker' },
   { text: 'DEF CON SG 2026 Demo Labs', link: '#speaker' },
   { text: '23×CVEs', link: '#cves' },
   { text: '3×IEEE Publications', link: '#publications' },

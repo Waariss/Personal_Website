@@ -32,6 +32,12 @@ export const TALKS = [
             url: 'https://blackhat.com/asia-26/arsenal/schedule/#oblivion-token--m365-conditional-access-policy-bypass-ost-offensive-tooling-49920',
             icon: 'fas fa-external-link-alt',
             color: 'danger'
+            },
+            {
+            label: 'Linkedln Post',
+            url: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-bhasia-activity-7438047875575681024-CMQ7',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
             }
         ]
     },
