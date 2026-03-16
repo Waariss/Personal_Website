@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-2579',
+        plugin: 'WowStore – Store Builder & Product Blocks for WooCommerce',
+        description: "The WowStore – Store Builder & Product Blocks for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the ‘search’ parameter in all versions up to, and including, 4.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
+        cvss: 7.5,
+        severity: 'High',
+        date: 'Mar 16, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/product-blocks/wowstore-store-builder-product-blocks-for-woocommerce-443-unauthenticated-sql-injection-via-search-parameter'
+    },
+    {
         id: 'CVE-2026-2020',
         plugin: 'JS Archive List',
         description: "The JS Archive List plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.1.7 via the 'included' shortcode attribute. This is due to the deserialization of untrusted input supplied via the 'included' parameter of the plugin's shortcode. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject a PHP Object. No known POP chain is present in the vulnerable software. If a POP chain is present via an additional plugin or theme installed on the target system, it could allow the attacker to delete arbitrary files, retrieve sensitive data, or execute code.",

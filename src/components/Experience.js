@@ -3,6 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import { FaFileAlt, FaFlask, FaImage, FaNewspaper } from 'react-icons/fa';
 import '../App.css';
 import { EXPERIENCES } from '../data';
+import { formatExperienceDuration } from '../utils';
 
 const getIconForLinkType = (type) => {
   switch (type) {
@@ -52,7 +53,9 @@ const Experience = () => (
                 <Card.Subtitle className="mb-2 text-muted">
                   {experience.company} · {experience.type}
                 </Card.Subtitle>
-                <Card.Subtitle className="mb-2 text-muted">{experience.duration}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">
+                  {formatExperienceDuration(experience.duration)}
+                </Card.Subtitle>
                 <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
                 <Card.Text className="mb-1">
                   <strong>Key Responsibilities:</strong>

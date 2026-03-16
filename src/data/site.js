@@ -1,3 +1,15 @@
+const extractResumeYear = (path) => {
+  const match = path.match(/(19|20)\d{2}/);
+  return match ? Number(match[0]) : 0;
+};
+
+export const RESUME_FILES = [
+  './PDF/Waris_Resume_2026.pdf',
+];
+
+export const ACTIVE_RESUME_URL = [...RESUME_FILES]
+  .sort((a, b) => extractResumeYear(b) - extractResumeYear(a))[0] || './PDF/Waris_Resume_2026.pdf';
+
 export const NAV_ITEMS = [
   { id: 'home', label: 'Home', icon: 'home' },
   { id: 'about', label: 'About', icon: 'user' },

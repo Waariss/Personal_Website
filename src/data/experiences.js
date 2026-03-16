@@ -26,7 +26,7 @@ export const EXPERIENCES = [
         title: 'Cybersecurity Consultant (Penetration tester)',
         company: 'ALPHASEC',
         type: 'Full-time',
-        duration: 'Jun 2024 - Oct 2024 · 5 mos',
+        duration: 'Jun 2024 - Oct 2024',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
         description: [
             'Conducted in-depth penetration testing of IT infrastructure, identifying vulnerabilities in operating systems, applications, configurations, and user behavior.',
@@ -44,7 +44,7 @@ export const EXPERIENCES = [
         title: 'Cybersecurity Consultant (Penetration tester)',
         company: 'KPMG · Advisory · Tech-Cyber',
         type: 'Internship',
-        duration: 'Jan 2024 - Apr 2024 · 4 mos',
+        duration: 'Jan 2024 - Apr 2024',
         location: 'Bangkok, Thailand 🇹🇭 · Hybrid',
         description: [
             'Assisted in conducting penetration tests on software, mobile, and web applications using tools such as Kali Linux and Burp Suite.',
@@ -68,7 +68,7 @@ export const EXPERIENCES = [
         title: 'Detecting Vulnerable OAuth 2.0 Implementations in Android Applications',
         company: 'Ritsumeikan University',
         type: 'Internship',
-        duration: 'May 2023 - July 2023 · 3 mos',
+        duration: 'May 2023 - July 2023',
         location: 'Shiga, Japan 🇯🇵 · On-site',
         description: [
             'Conducted research on OAuth 2.0 implementations in Android applications and browser extensions, focusing on vulnerabilities related to Cross-Site Request Forgery (CSRF).',
@@ -91,7 +91,7 @@ export const EXPERIENCES = [
         title: 'Automated COVID-19 Screening Framework Using Deep CNN With Chest X-Ray Medical Images',
         company: 'National Central University',
         type: 'Internship',
-        duration: 'Jun 2022 - Jul 2022 · 2 mos',
+        duration: 'Jun 2022 - Jul 2022',
         location: 'Taoyuan City, Taiwan 🇹🇼 · Remote',
         description: [
             'Contributed to a research project focused on automated COVID-19 diagnosis using deep learning and chest X-ray images.',

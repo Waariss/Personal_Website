@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Badge, Card, Col, Row } from 'react-bootstrap';
 import { FaCalendarAlt, FaExternalLinkAlt } from 'react-icons/fa';
 import '../App.css';
@@ -8,10 +8,52 @@ import { getSeverityColor } from '../utils';
 const CVE = () => {
   const [showAllCVEs, setShowAllCVEs] = useState(false);
   const displayedCVEs = showAllCVEs ? CVES : CVES.slice(0, 3);
+  const summary = useMemo(() => {
+    const counts = {
+      total: CVES.length,
+      critical: 0,
+      high: 0,
+      medium: 0,
+      low: 0,
+      latestDateLabel: '-',
+    };
+
+    let latestTimestamp = Number.NEGATIVE_INFINITY;
+
+    CVES.forEach((cve) => {
+      const severity = String(cve.severity || '').toLowerCase();
+
+      if (severity.includes('critical')) {
+        counts.critical += 1;
+      } else if (severity.includes('high')) {
+        counts.high += 1;
+      } else if (severity.includes('medium')) {
+        counts.medium += 1;
+      } else if (severity.includes('low')) {
+        counts.low += 1;
+      }
+
+      const timestamp = Date.parse(cve.date);
+      if (Number.isFinite(timestamp) && timestamp > latestTimestamp) {
+        latestTimestamp = timestamp;
+        counts.latestDateLabel = cve.date;
+      }
+    });
+
+    return counts;
+  }, []);
 
   return (
     <section id="cves" className="my-5">
       <h2 className="mb-4 text-center title-enhanced">Security Vulnerabilities (CVEs)</h2>
+      <div className="cve-summary-bar" aria-label="CVE summary">
+        <span className="cve-summary-pill cve-summary-total">Total {summary.total}</span>
+        <span className="cve-summary-pill cve-summary-critical">Critical {summary.critical}</span>
+        <span className="cve-summary-pill cve-summary-high">High {summary.high}</span>
+        <span className="cve-summary-pill cve-summary-medium">Medium {summary.medium}</span>
+        <span className="cve-summary-pill cve-summary-low">Low {summary.low}</span>
+        <span className="cve-summary-pill cve-summary-latest">Latest {summary.latestDateLabel}</span>
+      </div>
 
       <Row>
         {displayedCVEs.map((cve) => (

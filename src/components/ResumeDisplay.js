@@ -10,9 +10,12 @@ import {
 } from 'react-icons/fa';
 import '../resume.css';
 import ResumePreview from './ResumePreview';
-import { CONTACT_DETAILS, RESUME_SOCIAL_PROFILE_IDS, SOCIAL_PROFILES_BY_ID } from '../data';
-
-const RESUME_URL = './PDF/Waris_Resume_2026.pdf';
+import {
+  ACTIVE_RESUME_URL,
+  CONTACT_DETAILS,
+  RESUME_SOCIAL_PROFILE_IDS,
+  SOCIAL_PROFILES_BY_ID,
+} from '../data';
 
 const RESUME_SOCIAL_PROFILES = RESUME_SOCIAL_PROFILE_IDS
   .map((id) => SOCIAL_PROFILES_BY_ID[id])
@@ -92,7 +95,7 @@ const ResumeDisplay = () => {
 
       <Row className="g-4 align-items-stretch resume-layout-row">
         <Col xs={12} xl={7} className="order-1">
-          <ResumePreview resumeUrl={RESUME_URL} />
+          <ResumePreview resumeUrl={ACTIVE_RESUME_URL} />
         </Col>
 
         <Col xs={12} xl={5} className="order-2">
