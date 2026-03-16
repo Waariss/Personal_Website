@@ -4,15 +4,19 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import Slider from 'react-slick';
 import '../App.css';
 import { CERTIFICATIONS } from '../data';
-import { chunkArray } from '../utils';
+import { chunkArray, parseDateLabelValue } from '../utils';
 
 const FEATURED_COUNT = 16;
 
 const Certifications = () => {
   const [showAllCerts, setShowAllCerts] = useState(false);
+  const sortedCertifications = useMemo(
+    () => [...CERTIFICATIONS].sort((a, b) => parseDateLabelValue(b.date) - parseDateLabelValue(a.date)),
+    []
+  );
   const displayedCertificates = useMemo(
-    () => (showAllCerts ? CERTIFICATIONS : CERTIFICATIONS.slice(0, FEATURED_COUNT)),
-    [showAllCerts]
+    () => (showAllCerts ? sortedCertifications : sortedCertifications.slice(0, FEATURED_COUNT)),
+    [showAllCerts, sortedCertifications]
   );
 
   const settings = {
@@ -82,7 +86,7 @@ const Certifications = () => {
         ))}
       </Slider>
 
-      {CERTIFICATIONS.length > FEATURED_COUNT && (
+      {sortedCertifications.length > FEATURED_COUNT && (
         <div className="text-center mt-3">
           <Button
             variant="outline-secondary"
@@ -90,8 +94,8 @@ const Certifications = () => {
             aria-expanded={showAllCerts}
           >
             {showAllCerts
-              ? 'Show fewer certifications'
-              : `Show all ${CERTIFICATIONS.length} certifications`}
+              ? 'Show Less Certifications'
+              : `Show All ${sortedCertifications.length} Certifications`}
           </Button>
         </div>
       )}

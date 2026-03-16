@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Badge, Card, Col, Row } from 'react-bootstrap';
 import { FaBookOpen } from 'react-icons/fa';
 import '../App.css';
 import { BLOGS } from '../data';
-import { truncateText } from '../utils';
+import { parseDateLabelValue, truncateText } from '../utils';
 
 const BLOG_EXCERPT_LENGTH = 100;
 const FEATURED_BLOG_COUNT = 3;
 
 const Blog = () => {
   const [showAllBlogs, setShowAllBlogs] = useState(false);
-  const displayedBlogs = showAllBlogs ? BLOGS : BLOGS.slice(0, FEATURED_BLOG_COUNT);
+  const sortedBlogs = useMemo(
+    () => [...BLOGS].sort((a, b) => parseDateLabelValue(b.duration) - parseDateLabelValue(a.duration)),
+    []
+  );
+  const displayedBlogs = showAllBlogs ? sortedBlogs : sortedBlogs.slice(0, FEATURED_BLOG_COUNT);
 
   return (
     <section id="blog" className="my-5">

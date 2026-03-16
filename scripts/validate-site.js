@@ -165,12 +165,160 @@ function assertNoopenerForTargetBlank() {
   }
 }
 
+function assertTalkLinksNoProfilePlaceholder() {
+  const talksPath = path.join(ROOT, 'src', 'data', 'talks.js');
+  if (!fs.existsSync(talksPath)) {
+    fail('Missing src/data/talks.js');
+    return;
+  }
+
+  const text = readText(talksPath);
+  const linkBlockRe = /label:\s*['"]([^'"]+)['"][\s\S]*?url:\s*['"]([^'"]+)['"]/g;
+
+  for (let m; (m = linkBlockRe.exec(text)); ) {
+    const label = m[1].trim();
+    const url = m[2].trim();
+    if (/linkedin/i.test(label) && /linkedin\.com\/in\//i.test(url)) {
+      const { line, col } = findLineCol(text, m.index);
+      fail(`LinkedIn talk proof points to profile (not post) in src/data/talks.js:${line}:${col}`);
+    }
+  }
+}
+
+function assertHttpsOnlyLinksInData() {
+  const dataDir = path.join(ROOT, 'src', 'data');
+  const files = walkFiles(dataDir).filter((p) => /\.(js|jsx|ts|tsx)$/.test(p));
+  const linkRe = /(href|url|link):\s*['"]([^'"]+)['"]/g;
+
+  for (const filePath of files) {
+    const text = readText(filePath);
+    for (let m; (m = linkRe.exec(text)); ) {
+      const rawUrl = m[2].trim();
+      const normalized = rawUrl.toLowerCase();
+
+      if (
+        normalized.startsWith('/') ||
+        normalized.startsWith('./') ||
+        normalized.startsWith('#') ||
+        normalized.startsWith('mailto:') ||
+        normalized.startsWith('tel:')
+      ) {
+        continue;
+      }
+
+      if (normalized.startsWith('http://')) {
+        const { line, col } = findLineCol(text, m.index);
+        fail(`Insecure http:// link in ${path.relative(ROOT, filePath)}:${line}:${col} -> ${rawUrl}`);
+      }
+    }
+  }
+}
+
+function assertParsableDates() {
+  const checks = [
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'talks.js'),
+      parser: (label) => new Date(`${label} 1`),
+      label: 'talk date',
+    },
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'cves.js'),
+      parser: (label) => new Date(label),
+      label: 'CVE date',
+    },
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'blogs.js'),
+      parser: (label) => new Date(`${label} 1`),
+      label: 'blog date',
+    },
+  ];
+
+  const dateFieldRe = /date:\s*['"]([^'"]+)['"]/g;
+
+  for (const check of checks) {
+    if (!fs.existsSync(check.filePath)) {
+      fail(`Missing ${path.relative(ROOT, check.filePath)} for date validation`);
+      continue;
+    }
+
+    const text = readText(check.filePath);
+    for (let m; (m = dateFieldRe.exec(text)); ) {
+      const raw = m[1].trim();
+      const parsed = check.parser(raw);
+      if (Number.isNaN(parsed.getTime())) {
+        const { line, col } = findLineCol(text, m.index);
+        fail(`Unparsable ${check.label} in ${path.relative(ROOT, check.filePath)}:${line}:${col} -> "${raw}"`);
+      }
+    }
+  }
+}
+
+function assertDataShapeHeuristics() {
+  const checks = [
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'talks.js'),
+      primaryKey: 'title',
+      requiredKeys: ['title', 'event', 'type', 'date', 'description'],
+    },
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'blogs.js'),
+      primaryKey: 'id',
+      requiredKeys: ['id', 'title', 'duration', 'description'],
+    },
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'certifications.js'),
+      primaryKey: 'title',
+      requiredKeys: ['title', 'organization', 'date', 'link', 'imageUrl'],
+    },
+    {
+      filePath: path.join(ROOT, 'src', 'data', 'competitions.js'),
+      primaryKey: 'title',
+      requiredKeys: ['title', 'date', 'linkedinUrl'],
+    },
+  ];
+
+  for (const check of checks) {
+    if (!fs.existsSync(check.filePath)) {
+      fail(`Missing ${path.relative(ROOT, check.filePath)} for schema checks`);
+      continue;
+    }
+
+    const text = readText(check.filePath);
+    const primaryRe = new RegExp(`^\\s*${check.primaryKey}\\s*:`, 'gm');
+    const entries = (text.match(primaryRe) || []).length;
+
+    if (entries === 0) {
+      fail(`No entries found in ${path.relative(ROOT, check.filePath)} using key "${check.primaryKey}"`);
+      continue;
+    }
+
+    for (const key of check.requiredKeys) {
+      const keyRe = new RegExp(`^\\s*${key}\\s*:`, 'gm');
+      const keyCount = (text.match(keyRe) || []).length;
+      if (keyCount < entries) {
+        fail(
+          `Schema mismatch in ${path.relative(ROOT, check.filePath)}: key "${key}" appears ${keyCount} times but expected at least ${entries}`
+        );
+      }
+
+      const emptyStringRe = new RegExp(`^\\s*${key}\\s*:\\s*['"]\\s*['"]`, 'gm');
+      if (emptyStringRe.test(text)) {
+        fail(`Schema mismatch in ${path.relative(ROOT, check.filePath)}: key "${key}" has empty string value`);
+      }
+    }
+  }
+}
+
 function main() {
   assertNoDSStore();
   assertNoHardcodedInternalDomain();
   assertSitemapRoutes();
   assertPdfIdCoverage();
   assertNoopenerForTargetBlank();
+  assertTalkLinksNoProfilePlaceholder();
+  assertHttpsOnlyLinksInData();
+  assertParsableDates();
+  assertDataShapeHeuristics();
 
   if (process.exitCode) process.exit(process.exitCode);
   console.log('validate-site: OK');

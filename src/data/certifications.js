@@ -3,21 +3,21 @@ export const CERTIFICATIONS = [
         title: "Model Context Protocol: Advanced Topics",
         organization: "Anthropic Education",
         date: "Mar 2026",
-        link: "http://verify.skilljar.com/c/xhmm7ik9payp",
+        link: "https://verify.skilljar.com/c/xhmm7ik9payp",
         imageUrl: "./images/Model-Context-Protocol-Advanced-Topics.png"
     },
     {
         title: "Introduction to Model Context Protocol",
         organization: "Anthropic Education",
         date: "Mar 2026",
-        link: "http://verify.skilljar.com/c/tktpjsafg8nz",
+        link: "https://verify.skilljar.com/c/tktpjsafg8nz",
         imageUrl: "./images/Introduction-to-Model-Context-Protocol.png"
     },
     {
         title: "Claude 101",
         organization: "Anthropic Education",
         date: "Mar 2026",
-        link: "http://verify.skilljar.com/c/h7oixfkiovsr",
+        link: "https://verify.skilljar.com/c/h7oixfkiovsr",
         imageUrl: "./images/Claude-101.png"
     },
 

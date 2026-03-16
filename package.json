@@ -32,11 +32,13 @@
     "build": "BROWSERSLIST_IGNORE_OLD_DATA=true GENERATE_SOURCEMAP=false react-scripts build",
     "update:browserslist": "npx update-browserslist-db@latest",
     "validate:site": "node scripts/validate-site.js",
+    "lighthouse:check": "node scripts/lighthouse-check.js",
+    "prepush:check": "npm run build && npm run validate:site && npm run lighthouse:check",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "7.21.0-placeholder-for-preset-env.2"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "eslintConfig": {
     "extends": [

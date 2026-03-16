@@ -262,7 +262,7 @@ const Competitions = () => {
 
                   <div className="competition-card-footer">
                     <span className="competition-proof-link">
-                      View proof <FaExternalLinkAlt className="ms-1" aria-hidden="true" focusable="false" />
+                      View Proof <FaExternalLinkAlt className="ms-1" aria-hidden="true" focusable="false" />
                     </span>
                   </div>
                 </Card.Body>

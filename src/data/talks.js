@@ -9,13 +9,13 @@ export const TALKS = [
         date: 'Apr 2026',
         links: [
             {
-            label: 'Black Hat Arsenal',
+            label: 'Black Hat',
             url: 'https://blackhat.com/asia-26/arsenal/schedule/#oblivion-token--m365-conditional-access-policy-bypass-ost-offensive-tooling-49920',
             icon: 'fas fa-external-link-alt',
             color: 'danger'
             },
             {
-            label: 'DEF CON Demo Labs',
+            label: 'DEF CON',
             url: 'https://defcon.org/html/defcon-singapore/dc-singapore-demolabs.html',
             icon: 'fas fa-external-link-alt',
             color: 'danger'
@@ -28,7 +28,7 @@ export const TALKS = [
             },
             {
             label: 'LinkedIn (DEF CON)',
-            url: 'https://www.linkedin.com/in/waris-damkham/',
+            url: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-bhasia-activity-7438047875575681024-CMQ7',
             icon: 'fas fa-external-link-alt',
             color: 'primary'
             }

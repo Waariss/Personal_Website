@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Badge, Card, Col, Row } from 'react-bootstrap';
 import {
   FaBullhorn,
@@ -9,7 +9,7 @@ import {
 } from 'react-icons/fa';
 import '../App.css';
 import { TALKS } from '../data';
-import { getEventTypeColor, getTalkStatus } from '../utils';
+import { getEventTypeColor, getTalkStatus, parseDateLabelValue } from '../utils';
 
 const renderTalkLinkIcon = (icon) => {
   const className = 'ms-1';
@@ -43,7 +43,11 @@ const renderTalkEvent = (eventLabel) => {
 
 const Speaker = () => {
   const [showAllTalks, setShowAllTalks] = useState(false);
-  const displayedTalks = showAllTalks ? TALKS : TALKS.slice(0, 3);
+  const sortedTalks = useMemo(
+    () => [...TALKS].sort((a, b) => parseDateLabelValue(b.date) - parseDateLabelValue(a.date)),
+    []
+  );
+  const displayedTalks = showAllTalks ? sortedTalks : sortedTalks.slice(0, 3);
 
   return (
     <section id="speaker" className="my-5">
@@ -115,7 +119,7 @@ const Speaker = () => {
             className="btn btn-outline-secondary btn-lg"
             onClick={() => setShowAllTalks(!showAllTalks)}
           >
-            {showAllTalks ? 'Show Less' : `Show All ${TALKS.length} Talks`}
+            {showAllTalks ? 'Show Less Talks' : `Show All ${TALKS.length} Talks`}
           </button>
         </div>
       )}
