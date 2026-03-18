@@ -55,13 +55,19 @@ export const TALKS = [
         title: 'Real-World Cybersecurity Without Filters',
         event: 'ICT Mahidol Cybersecurity Club (Special Talk)',
         type: 'University Talk',
-        description: 'Scheduled (details to be announced)',
+        description: 'Delivered a special talk and hands-on workshop on real-world cybersecurity practices, sharing practical knowledge, industry experience, and career insights with ICT Mahidol students.',
         location: 'Faculty of Information and Communication Technology, Mahidol University (ICT Mahidol)',
         date: 'Mar 2026',
         links: [
             {
             label: 'Facebook Post',
             url: 'https://www.facebook.com/share/p/1JFT2Xdi9i/',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
+            },
+            {
+            label: 'LinkedIn Post',
+            url: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-muict-mahidoluniversity-ugcPost-7440042088827691008-wO5o',
             icon: 'fas fa-external-link-alt',
             color: 'primary'
             }
