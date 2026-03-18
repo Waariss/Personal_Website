@@ -57,7 +57,15 @@ export const TALKS = [
         type: 'University Talk',
         description: 'Scheduled (details to be announced)',
         location: 'Faculty of Information and Communication Technology, Mahidol University (ICT Mahidol)',
-        date: 'Mar 2026'
+        date: 'Mar 2026',
+        links: [
+            {
+            label: 'Facebook Post',
+            url: 'https://www.facebook.com/share/p/1JFT2Xdi9i/',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
+            }
+        ]
     },
     {
         title: 'AI Security Unmasked: The Hidden Danger Behind Your AI Tools',

@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-1463',
+        plugin: 'Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery',
+        description: "The Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.0.3 via the 'template' parameter in gallery shortcodes. This makes it possible for authenticated attackers, with Author-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
+        cvss: 8.8,
+        severity: 'High',
+        date: 'Mar 17, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/nextgen-gallery/photo-gallery-sliders-proofing-and-themes-nextgen-gallery-404-authenticated-author-local-file-inclusion'
+    },
+    {
         id: 'CVE-2026-2579',
         plugin: 'WowStore – Store Builder & Product Blocks for WooCommerce',
         description: "The WowStore – Store Builder & Product Blocks for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the ‘search’ parameter in all versions up to, and including, 4.4.3 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for unauthenticated attackers to append additional SQL queries into already existing queries that can be used to extract sensitive information from the database.",
