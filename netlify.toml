@@ -1,7 +1,6 @@
 [build]
-  command = "npm run build:prerender"
+  command = "npm run build"
   publish = "build"
 
 [build.environment]
   GENERATE_SOURCEMAP = "false"
-
