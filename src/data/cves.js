@@ -1,5 +1,23 @@
 export const CVES = [
     {
+        id: 'TBA',
+        plugin: 'Easy Image Gallery',
+        description: "The Easy Image Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gallery SHORTCODE post meta field in all versions up to, and including, 1.5.3. This is due to insufficient input sanitization and output escaping on user-supplied gallery SHORTCODE values. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
+        cvss: 6.4,
+        severity: 'Medium',
+        date: 'Mar 20, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easy-image-gallery/easy-image-gallery-153-authenticated-contributor-stored-cross-site-scripting-via-gallery-shortcode-post-meta'
+    },
+    {
+        id: 'CVE-2026-2720',
+        plugin: 'Hr Press Lite',
+        description: "The Hr Press Lite plugin for WordPress is vulnerable to unauthorized access of sensitive employee data due to a missing capability check on the `hrp-fetch-employees` AJAX action in all versions up to, and including, 1.0.2. This makes it possible for authenticated attackers, with Subscriber-level access and above, to retrieve sensitive employee information including names, email addresses, phone numbers, salary/pay rates, employment dates, and employment status.",
+        cvss: 6.5,
+        severity: 'Medium',
+        date: 'Mar 20, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/hr-press-lite/hr-press-lite-102-missing-authorization-to-authenticated-subscriber-sensitive-employee-information-exposure'
+    },
+    {
         id: 'CVE-2026-1463',
         plugin: 'Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery',
         description: "The Photo Gallery, Sliders, Proofing and Themes – NextGEN Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.0.3 via the 'template' parameter in gallery shortcodes. This makes it possible for authenticated attackers, with Author-level access and above, to include and execute arbitrary .php files on the server, allowing the execution of any PHP code in those files. This can be used to bypass access controls, obtain sensitive data, or achieve code execution in cases where .php file types can be uploaded and included.",
