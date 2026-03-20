@@ -113,21 +113,21 @@ export const CERTIFICATIONS = [
         imageUrl: "https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/155081719"
     },
     {
-        title: "SECURITY ANALYST COURSE",
+        title: "Certified Web Security Tester (CWST) (Course: Security Analyst - From Zero to Hero Course)",
         organization: "SEC Playground",
         date: "July 2025",
         link: "https://www.credly.com/badges/1915f339-1599-47b9-95d4-7869bedc58ad/public_url",
         imageUrl: "./images/Security_Analyst_Course.png"
     },
     {
-        title: "SOC Tier 1 Badge",
+        title: "Certified Security Operations Specialist (CSOS)",
         organization: "SEC Playground",
         date: "July 2025",
         link: "https://www.credly.com/badges/4cddf94e-bbdb-4ce7-896e-8ae6e646f7de/public_url",
         imageUrl: "./images/SOC1.png"
     },
     {
-        title: "Basic SOC Badge",
+        title: "Certified Security Operations Associate (CSOA)",
         organization: "SEC Playground",
         date: "July 2025",
         link: "https://www.credly.com/badges/87a7a7a1-2334-479c-8273-b47ca7de4376/public_url",
@@ -141,7 +141,7 @@ export const CERTIFICATIONS = [
         imageUrl: "./images/CDL_Waris.png"
     },
     {
-        title: "Basic Web App Sec",
+        title: "Certified Web Security Tester (CWST)",
         organization: "SEC Playground",
         date: "June 2025",
         link: "https://www.credly.com/badges/e7800d53-ea5c-4a52-9c46-86ebbe24438a/public_url",
