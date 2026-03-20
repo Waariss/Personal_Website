@@ -30,6 +30,8 @@
     "format": "npm run lint:fix",
     "start": "BROWSERSLIST_IGNORE_OLD_DATA=true react-scripts start",
     "build": "BROWSERSLIST_IGNORE_OLD_DATA=true GENERATE_SOURCEMAP=false react-scripts build",
+    "prerender": "react-snap",
+    "build:prerender": "npm run build && npm run prerender",
     "update:browserslist": "npx update-browserslist-db@latest",
     "validate:site": "node scripts/validate-site.js",
     "lighthouse:check": "node scripts/lighthouse-check.js",
@@ -38,7 +40,24 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react-snap": "^1.23.0"
+  },
+  "reactSnap": {
+    "source": "build",
+    "inlineCss": true,
+    "crawl": true,
+    "include": [
+      "/",
+      "/htb",
+      "/p5project",
+      "/8ksec-AI"
+    ],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "skipThirdPartyRequests": true
   },
   "eslintConfig": {
     "extends": [
