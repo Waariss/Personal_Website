@@ -45,8 +45,8 @@
   },
   "reactSnap": {
     "source": "build",
-    "inlineCss": true,
-    "crawl": true,
+    "inlineCss": false,
+    "crawl": false,
     "include": [
       "/",
       "/htb",
@@ -57,7 +57,8 @@
       "--no-sandbox",
       "--disable-setuid-sandbox"
     ],
-    "skipThirdPartyRequests": true
+    "skipThirdPartyRequests": true,
+    "removeStyleTags": false
   },
   "eslintConfig": {
     "extends": [
