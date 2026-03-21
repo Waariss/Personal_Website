@@ -1,8 +1,5 @@
 export const PDF_CONTENT_MAP = {
-  Ritsumeikan_University_Poster: {
-    url: '/PDF/Japan/Ritsumeikan University_6388014_Waris_Damkham.pdf',
-    isImage: false,
-  },
+  Ritsumeikan_University_Poster: { url: '/PDF/Japan/Ritsumeikan University_6388014_Waris_Damkham.pdf', isImage: false},
   BCC_Portfoilio: { url: '/PDF/BCC/Waris Damkham Portfoilo.pdf', isImage: false },
   NCU_CERT: { url: '/PDF/Taiwan/2. Waris Damkham.pdf', isImage: false },
   INCIT_CERT: { url: '/PDF/Taiwan/1570835140.pdf', isImage: false },
@@ -42,4 +39,9 @@ export const PDF_CONTENT_MAP = {
   CKBPro: { url: '/PDF/Cert/WarisDamkham-CertifiedKioskBreakoutProfessional(CKBPro).pdf', isImage: false },
   CCEP: { url: '/PDF/Cert/CCEP.pdf', isImage: false },
   CCPC: { url: '/PDF/Cert/certified_c_certificate.pdf', isImage: false },
+
+  University_CTF_2024: { url: '/PDF/Comp/University_CTF_2024.pdf', isImage: false },
+  Cyber_Apocalypse_CTF_2025: { url: '/PDF/Comp/Cyber_Apocalypse_CTF_2025.pdf', isImage: false },
+  Spherical_Madness: { url: '/PDF/Comp/Spherical_Madness.pdf', isImage: false },
+  Holmes_CTF_2025: { url: '/PDF/Comp/Holmes_CTF_2025.pdf', isImage: false }
 };

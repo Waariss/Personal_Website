@@ -27,6 +27,14 @@ export const COMPETITIONS = [
     },
     {
         certificateImage: "./images/pico.png",
+        title: 'HackTheBox: Holmes CTF 2025',
+        date: 'Sep 2025',
+        teamRank: '94 / 7085 teams',
+        teamScore: '8,925 points',
+        linkedinUrl: '/pdf/Holmes_CTF_2025'
+    },
+    {
+        certificateImage: "./images/pico.png",
         title: 'Thailand Cyber Top Talent 2025 - OPEN [Final]',
         date: 'Sep 2025',
         teamRank: '8 / 10 teams',
@@ -38,7 +46,7 @@ export const COMPETITIONS = [
     {
         certificateImage: "./images/pico.png",
         title: 'Thailand Cyber Top Talent 2025 - OPEN [Qualifier]',
-        date: 'Sep 2025',
+        date: 'Aug 2025',
         teamRank: '4 / 338 teams',
         teamScore: '4,601 points',
         individualRank: '32 / 725 participants',
@@ -63,11 +71,35 @@ export const COMPETITIONS = [
     },
     {
         certificateImage: "./images/pico.png",
+        title: 'HackTheBox: Spherical Madness',
+        date: 'Apr 2025',
+        teamRank: '54 / 274 teams',
+        teamScore: '650 points',
+        linkedinUrl: '/pdf/Spherical_Madness'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'Cyber Apocalypse CTF 2025: Tales from Eldoria',
+        date: 'Mar 2025',
+        teamRank: '3106 / 8130 teams',
+        teamScore: '2325 points',
+        linkedinUrl: '/pdf/Cyber_Apocalypse_CTF_2025'
+    },
+    {
+        certificateImage: "./images/pico.png",
         title: 'picoCTF 2025',
         date: 'Mar 2025',
         individualRank: '169 / 10,460 teams',
         individualScore: '6,010 points',
         linkedinUrl: 'https://www.linkedin.com/posts/waris-damkham_wrapped-up-an-incredible-journey-at-picoctf-activity-7307693721024634880-f1sJ'
+    },
+    {
+        certificateImage: "./images/pico.png",
+        title: 'University CTF 2024: Binary Badlands',
+        date: 'Dec 2024',
+        teamRank: '552 / 1128 teams',
+        teamScore: '3900 points',
+        linkedinUrl: '/pdf/University_CTF_2024'
     },
     {
         certificateImage: "./images/pico.png",
