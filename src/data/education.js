@@ -1,7 +1,7 @@
 export const EDUCATION_ENTRIES = [
   {
-    title: 'Bachelor of Science in Information and Communication Technology',
-    subtitle: ['Mahidol University, Thailand 🇹🇭', 'International Program', '2020 - 2024'],
+    title: 'Mahidol University',
+    subtitle: ['Bachelor of Science (Information and Communication Technology)', 'International Program', '2020 - 2024', 'Thailand 🇹🇭'],
     logo: {
       src: './images/Mahidol_U.png',
       alt: 'Mahidol University Logo',
@@ -46,7 +46,7 @@ export const EDUCATION_ENTRIES = [
   },
   {
     title: 'Bangkok Christian College',
-    subtitle: ['Smart Computer · GPAX 3.48', '2008 - 2020'],
+    subtitle: ['GPAX 3.48','Smart Computer', '2008 - 2020', 'Thailand 🇹🇭'],
     logo: {
       src: './images/bcc.png',
       alt: 'Bangkok Christian College Logo',

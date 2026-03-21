@@ -1,3 +1,24 @@
+:root {
+  --bg: #f8f9fa;
+  --accent: #ff6347;
+  --accent-alt: #0d6efd;
+  --surface-soft: #f8f9fa;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --border: #dbe2eb;
+  --text: #212529;
+  --muted: #6b7280;
+  --blue-900: #1f2b3a;
+  --blue-700: #1d4f95;
+  --blue-600: #2f4f76;
+  --blue-500: #124a97;
+  --blue-400: #8fb2e7;
+  --blue-300: #c8daf7;
+  --blue-200: #d7e2f4;
+  --blue-100: #edf3ff;
+  --blue-050: #f2f7ff;
+}
+
 .hover-grow:hover {
   transform: scale(1.05);
 }
@@ -32,7 +53,7 @@
 }
 
 .linkStyle:hover h5 {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .portfolio-navbar {
@@ -147,7 +168,7 @@
   left: -24px;  /* Positioned the dot to the left to ensure it doesn't overlap with the card */
   width: 10px;
   height: 10px;
-  background: #ff6347;
+  background: var(--accent);
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
@@ -155,7 +176,7 @@
 }
 
 .event-content {
-  background: #f8f9fa;
+  background: var(--surface-soft);
   padding: 10px 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -187,7 +208,7 @@
 }
 
 .activity-name:hover {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .activity-card,
@@ -236,7 +257,7 @@
   margin: 0;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #1f2b3a;
+  color: var(--blue-900);
 }
 
 .edu2-subtitle-wrap {
@@ -252,9 +273,9 @@
   border-radius: 999px;
   padding: 0.25rem 0.65rem;
   font-size: 0.86rem;
-  color: #2f4f76;
-  background: #edf3ff;
-  border: 1px solid #c8daf7;
+  color: var(--blue-600);
+  background: var(--blue-100);
+  border: 1px solid var(--blue-300);
 }
 
 .edu2-activities-grid {
@@ -263,8 +284,8 @@
 }
 
 .edu2-activity-card {
-  border: 1px solid #d7e2f4;
-  background: #ffffff;
+  border: 1px solid var(--blue-200);
+  background: var(--surface);
   border-radius: 12px;
   padding: 0.85rem 0.9rem;
 }
@@ -278,7 +299,7 @@
 }
 
 .edu2-activity-name {
-  color: #0f4ea4;
+  color: var(--blue-500);
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.35;
@@ -286,7 +307,7 @@
 }
 
 .edu2-activity-name:hover {
-  color: #0b63d1;
+  color: var(--blue-700);
 }
 
 .edu2-activity-time {
@@ -308,21 +329,14 @@
   word-break: break-word;
 }
 
-.edu2-link-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin-top: 0.95rem;
-}
-
 .edu2-toggle-wrap {
   margin-top: 0.8rem;
 }
 
 .edu2-toggle-btn {
-  border: 1px solid #b7ccef;
-  background: #f2f7ff;
-  color: #1d4f95;
+  border: 1px solid var(--blue-400);
+  background: var(--blue-050);
+  color: var(--blue-700);
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.9rem;
@@ -332,26 +346,7 @@
 
 .edu2-toggle-btn:hover {
   background: #e8f1ff;
-  border-color: #8fb2e7;
-}
-
-.edu2-action-link {
-  display: inline-flex;
-  align-items: center;
-  border-radius: 999px;
-  border: 1px solid #c4d5ef;
-  padding: 0.45rem 0.8rem;
-  color: #234a80;
-  font-weight: 600;
-  text-decoration: none;
-  background: #f4f8ff;
-  transition: all 0.2s ease;
-}
-
-.edu2-action-link:hover {
-  color: #0f4ea4;
-  border-color: #8fb2e7;
-  background: #eaf2ff;
+  border-color: var(--blue-400);
 }
 
 .htb-edu-panel {
@@ -381,24 +376,24 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 88px;
-  border: 1px solid #9ec3ef;
+  border: 1px solid var(--blue-400);
   border-radius: 12px;
   padding: 0.58rem 0.68rem;
   text-decoration: none;
-  background: #ffffff;
+  background: var(--surface);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .htb-edu-link-card:hover {
   transform: translateY(-1px);
-  border-color: #669cde;
+  border-color: var(--blue-700);
   box-shadow: 0 6px 14px rgba(21, 62, 110, 0.12);
 }
 
 .htb-edu-link-title {
   font-weight: 700;
   font-size: 0.92rem;
-  color: #124a97;
+  color: var(--blue-500);
   line-height: 1.28;
 }
 
@@ -449,18 +444,6 @@
 
 .dark-mode .edu2-activity-detail {
   color: #d3deed;
-}
-
-.dark-mode .edu2-action-link {
-  background: rgba(24, 50, 82, 0.45);
-  border-color: #3a5f90;
-  color: #d6e6fa;
-}
-
-.dark-mode .edu2-action-link:hover {
-  background: rgba(33, 75, 125, 0.45);
-  border-color: #5b8dca;
-  color: #ffffff;
 }
 
 .dark-mode .htb-edu-panel {
@@ -523,7 +506,7 @@
   }
 
   .edu2-activity-card {
-    min-height: 160px;
+    min-height: 0;
   }
 
   .htb-edu-grid {
@@ -607,7 +590,7 @@
 }
 
 .btn-primary {
-  /* background-color: #ff6347 !important; */
+  /* background-color: var(--accent) !important; */
   border: none !important;
   padding: 10px 20px;
   font-weight: bold;
@@ -645,7 +628,7 @@
 }
 
 .scroll-to-top-button:hover {
-  background-color: #ff6347;
+  background-color: var(--accent);
 }
 
 .badge-section {
@@ -685,7 +668,7 @@
 }
 
 .icon-btn:hover {
-  color: #ff6347;
+  color: var(--accent);
   transform: scale(1.1);
 }
 
@@ -965,7 +948,7 @@
 }
 
 .skill-card .carousel-indicators button {
-  background-color: #ff6347;
+  background-color: var(--accent);
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1027,7 +1010,7 @@
 }
 
 .strong-highlight {
-  color: #ff6347; /* Example color: a shade of blue */
+  color: var(--accent); /* Example color: a shade of blue */
 }
 
 .room-grid {
@@ -1077,7 +1060,7 @@
 }
 
 .pdf-viewer-mobile-card {
-  background: #f8f9fa;
+  background: var(--surface-soft);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1085,7 +1068,7 @@
 
 .pdf-viewer-icon {
   font-size: 4rem;
-  color: #ff6347;
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
@@ -1099,7 +1082,7 @@
 }
 
 .pdf-viewer-download {
-  background: #ff6347;
+  background: var(--accent);
   border: none;
   padding: 12px 30px;
   font-size: 1.1rem;
@@ -1138,7 +1121,7 @@
   font-weight: 600;
   color: #333;
   padding-left: 10px;
-  border-left: 4px solid #ff6347;
+  border-left: 4px solid var(--accent);
 }
 
 .publication-item {
@@ -1152,7 +1135,7 @@
 }
 
 .publication-item:hover {
-  background-color: #f8f9fa;
+  background-color: var(--surface-soft);
 }
 
 .publication-item h5 {
@@ -1168,7 +1151,7 @@
 
 /* Project Read More Link */
 .read-more-link {
-  color: #ff6347;
+  color: var(--accent);
   cursor: pointer;
   font-weight: 600;
   transition: color 0.2s ease;
@@ -1260,7 +1243,7 @@ body.dark-mode {
 
 .dark-mode .publication-section-title {
   color: #c9d1d9;
-  border-left-color: #ff6347;
+  border-left-color: var(--accent);
 }
 
 .dark-mode .publication-item {
@@ -1273,11 +1256,11 @@ body.dark-mode {
 }
 
 .dark-mode .linkStyle h5 {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .linkStyle:hover h5 {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .event-content {
@@ -1309,34 +1292,34 @@ body.dark-mode {
 }
 
 .dark-mode .btn-outline-dark {
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .btn-outline-dark:hover {
-  background-color: #ff6347;
+  background-color: var(--accent);
   color: #0d1117;
 }
 
 .dark-mode .btn-outline-success {
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .btn-outline-success:hover {
-  background-color: #ff6347;
+  background-color: var(--accent);
   color: #fff;
 }
 
 .dark-mode .btn-outline-secondary {
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .btn-outline-secondary:hover {
-  background-color: #ff6347;
+  background-color: var(--accent);
   color: #0d1117;
-  border-color: #ff6347;
+  border-color: var(--accent);
 }
 
 .dark-mode .list-group-item {
@@ -1370,11 +1353,11 @@ body.dark-mode {
 }
 
 .dark-mode .read-more-link {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .read-more-link:hover {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode strong {
@@ -1382,7 +1365,7 @@ body.dark-mode {
 }
 
 .dark-mode .strong-highlight {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .home-section {
@@ -1497,14 +1480,14 @@ body.dark-mode {
 }
 
 .blog-read-more {
-  color: #ff6347;
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .blog-read-more-link {
-  color: #ff6347;
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;
@@ -1668,7 +1651,7 @@ body.dark-mode {
   object-fit: contain;
   border-radius: 8px;
   padding: 0.5rem;
-  background: #f8f9fa;
+  background: var(--surface-soft);
 }
 
 .competition-info {
@@ -1787,7 +1770,7 @@ body.dark-mode {
   align-items: center;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 3px solid #ff6347;
+  border-bottom: 3px solid var(--accent);
 }
 
 .competition-title-clean {
@@ -1852,7 +1835,7 @@ body.dark-mode {
 .stat-value-clean {
   font-size: 2rem;
   font-weight: 700;
-  color: #ff6347;
+  color: var(--accent);
   line-height: 1;
   margin-bottom: 0.25rem;
 }
@@ -1879,7 +1862,7 @@ body.dark-mode {
 }
 
 .dark-mode .competition-header-clean {
-  border-bottom-color: #ff6347;
+  border-bottom-color: var(--accent);
 }
 
 .dark-mode .competition-title-clean {
@@ -1891,7 +1874,7 @@ body.dark-mode {
 }
 
 .dark-mode .stat-value-clean {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .stat-score-clean {
@@ -1934,7 +1917,7 @@ body.dark-mode {
 
 /* Minimal Competition Design */
 .competition-minimal {
-  border-left: 4px solid #ff6347 !important;
+  border-left: 4px solid var(--accent) !important;
   transition: all 0.3s ease;
 }
 
@@ -1970,11 +1953,11 @@ body.dark-mode {
 }
 
 .stat-minimal i {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .stat-minimal strong {
-  color: #ff6347;
+  color: var(--accent);
   font-size: 1.1rem;
 }
 
@@ -1986,7 +1969,7 @@ body.dark-mode {
 
 .link-minimal {
   font-size: 0.85rem;
-  color: #ff6347;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -2004,7 +1987,7 @@ body.dark-mode {
 /* Dark Mode Minimal */
 .dark-mode .competition-minimal {
   background: #161b22;
-  border-left-color: #ff6347 !important;
+  border-left-color: var(--accent) !important;
 }
 
 .dark-mode .competition-title-minimal {
@@ -2020,7 +2003,7 @@ body.dark-mode {
 }
 
 .dark-mode .link-minimal {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .link-minimal:hover {
@@ -2066,9 +2049,9 @@ body.dark-mode {
 
 .comp-stat-item {
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--surface-soft);
   border-radius: 8px;
-  border-left: 4px solid #ff6347;
+  border-left: 4px solid var(--accent);
 }
 
 .comp-stat-label {
@@ -2087,7 +2070,7 @@ body.dark-mode {
 .comp-rank {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .comp-score {
@@ -2112,7 +2095,7 @@ body.dark-mode {
 
 .dark-mode .comp-stat-item {
   background: #21262d;
-  border-left-color: #ff6347;
+  border-left-color: var(--accent);
 }
 
 .dark-mode .comp-stat-label {
@@ -2120,7 +2103,7 @@ body.dark-mode {
 }
 
 .dark-mode .comp-rank {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .comp-score {
@@ -2212,12 +2195,12 @@ body.dark-mode {
 }
 
 .stat-inline i {
-  color: #ff6347;
+  color: var(--accent);
   width: 16px;
 }
 
 .stat-inline strong {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .competition-links-blog {
@@ -2230,15 +2213,15 @@ body.dark-mode {
   font-size: 0.85rem;
   padding: 0.35rem 0.75rem;
   background: white;
-  border: 1px solid #ff6347;
-  color: #ff6347;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .competition-link-btn:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
@@ -2261,17 +2244,17 @@ body.dark-mode {
 
 .dark-mode .stat-inline i,
 .dark-mode .stat-inline strong {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .competition-link-btn {
   background: #21262d;
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .competition-link-btn:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
@@ -2319,7 +2302,7 @@ body.dark-mode {
 
 .competition-date-tag {
   display: inline-block;
-  background: #f8f9fa;
+  background: var(--surface-soft);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -2376,7 +2359,7 @@ body.dark-mode {
 .stat-value-unique {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #ff6347;
+  color: var(--accent);
   line-height: 1.2;
 }
 
@@ -2396,8 +2379,8 @@ body.dark-mode {
 .competition-btn-unique {
   padding: 0.4rem 1rem;
   background: white;
-  border: 2px solid #ff6347;
-  color: #ff6347;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
@@ -2406,7 +2389,7 @@ body.dark-mode {
 }
 
 .competition-btn-unique:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
@@ -2443,7 +2426,7 @@ body.dark-mode {
 }
 
 .dark-mode .stat-value-unique {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .stat-score-unique {
@@ -2456,12 +2439,12 @@ body.dark-mode {
 
 .dark-mode .competition-btn-unique {
   background: #21262d;
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .competition-btn-unique:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
@@ -2479,7 +2462,7 @@ body.dark-mode {
   transition: all 0.3s ease;
   background: white;
   border-radius: 10px;
-  border-top: 4px solid #ff6347;
+  border-top: 4px solid var(--accent);
 }
 
 .competition-card-no-img:hover {
@@ -2516,7 +2499,7 @@ body.dark-mode {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--surface-soft);
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -2529,7 +2512,7 @@ body.dark-mode {
 .stat-icon-wrap-no-img {
   width: 45px;
   height: 45px;
-  background: #ff6347;
+  background: var(--accent);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2554,7 +2537,7 @@ body.dark-mode {
 .stat-rank-no-img {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ff6347;
+  color: var(--accent);
   line-height: 1;
   margin-bottom: 0.25rem;
 }
@@ -2575,8 +2558,8 @@ body.dark-mode {
 .comp-link-no-img {
   padding: 0.5rem 1rem;
   background: white;
-  border: 2px solid #ff6347;
-  color: #ff6347;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
@@ -2585,14 +2568,14 @@ body.dark-mode {
 }
 
 .comp-link-no-img:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
 /* Dark Mode No Image */
 .dark-mode .competition-card-no-img {
   background: #161b22;
-  border-top-color: #ff6347;
+  border-top-color: var(--accent);
 }
 
 .dark-mode .competition-card-no-img:hover {
@@ -2612,7 +2595,7 @@ body.dark-mode {
 }
 
 .dark-mode .stat-icon-wrap-no-img {
-  background: #ff6347;
+  background: var(--accent);
 }
 
 .dark-mode .stat-label-no-img {
@@ -2620,7 +2603,7 @@ body.dark-mode {
 }
 
 .dark-mode .stat-rank-no-img {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .stat-score-no-img {
@@ -2633,12 +2616,12 @@ body.dark-mode {
 
 .dark-mode .comp-link-no-img {
   background: #21262d;
-  border-color: #ff6347;
-  color: #ff6347;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .dark-mode .comp-link-no-img:hover {
-  background: #ff6347;
+  background: var(--accent);
   color: white;
 }
 
@@ -2715,7 +2698,7 @@ body.dark-mode {
 
 .individual-stat-box {
   background: linear-gradient(90deg, #ffe4e6 0%, #fff1f2 100%);
-  border-left: 3px solid #ff6347;
+  border-left: 3px solid var(--accent);
 }
 
 .linkedin-stat-icon {
@@ -2738,7 +2721,7 @@ body.dark-mode {
 .linkedin-stat-rank {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #ff6347;
+  color: var(--accent);
   line-height: 1.1;
 }
 
@@ -2790,7 +2773,7 @@ body.dark-mode {
 
 .dark-mode .individual-stat-box {
   background: linear-gradient(90deg, #3f1d1f 0%, #2d1517 100%);
-  border-left-color: #ff6347;
+  border-left-color: var(--accent);
 }
 
 .dark-mode .linkedin-stat-label {
@@ -2798,7 +2781,7 @@ body.dark-mode {
 }
 
 .dark-mode .linkedin-stat-rank {
-  color: #ff6347;
+  color: var(--accent);
 }
 
 .dark-mode .linkedin-stat-score {
@@ -2822,7 +2805,7 @@ body.dark-mode {
 
 .competition-minimal-card {
   border: 1px solid #e5e7eb;
-  border-left: 4px solid #ff6347;
+  border-left: 4px solid var(--accent);
   transition: all 0.3s ease;
   background: white;
   height: 100%;
@@ -2889,7 +2872,7 @@ body.dark-mode {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background: #ff6347;
+  background: var(--accent);
   border-radius: 50%;
   margin-right: 0.5rem;
   margin-left: -0.5rem;
@@ -2903,7 +2886,7 @@ body.dark-mode {
 
 .comp-click-indicator span {
   font-size: 0.9rem;
-  color: #ff6347;
+  color: var(--accent);
   font-weight: 600;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -2917,7 +2900,7 @@ body.dark-mode {
 .dark-mode .competition-minimal-card {
   background: #161b22;
   border-color: #30363d;
-  border-left-color: #ff6347;
+  border-left-color: var(--accent);
 }
 
 .dark-mode .competition-minimal-card:hover {
@@ -3383,7 +3366,7 @@ body.dark-mode {
 }
 
 .cert-img-wrapper {
-  background: #f8f9fa;
+  background: var(--surface-soft);
   height: 220px;
   display: flex;
   align-items: center;
@@ -3820,7 +3803,7 @@ body.dark-mode {
 .hero-cta-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  background-color: #f8f9fa;
+  background-color: var(--surface-soft);
   color: #000;
 }
 
@@ -3976,7 +3959,7 @@ body.dark-mode {
 .resume-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  background-color: #f8f9fa !important;
+  background-color: var(--surface-soft) !important;
 }
 
 /* Responsive Design */
@@ -4409,16 +4392,6 @@ body.dark-mode #competitions.competition-themed-section {
 }
 
 /* Shared Design Tokens + Navbar Refresh */
-:root {
-  --bg: #f8f9fa;
-  --surface: #ffffff;
-  --surface-2: #f8fafc;
-  --border: #dbe2eb;
-  --text: #212529;
-  --muted: #6b7280;
-  --accent: #e95420;
-  --accent-alt: #0d6efd;
-}
 
 body.dark-mode {
   --bg: #0d1117;
@@ -4672,6 +4645,8 @@ body.dark-mode {
 
 @media (max-width: 991px) {
   .portfolio-navbar-collapse {
+    max-height: min(72vh, 560px);
+    overflow-y: auto;
     margin-top: 0.65rem;
     padding: 0.6rem;
     border-radius: 12px;
