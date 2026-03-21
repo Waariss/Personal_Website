@@ -5,8 +5,8 @@ export const EDUCATION_ENTRIES = [
     logo: {
       src: './images/Mahidol_U.png',
       alt: 'Mahidol University Logo',
-      width: 140,
-      height: 140,
+      width: 170,
+      height: 170,
     },
     activities: [
       {
@@ -50,8 +50,8 @@ export const EDUCATION_ENTRIES = [
     logo: {
       src: './images/bcc.png',
       alt: 'Bangkok Christian College Logo',
-      width: 150,
-      height: 200,
+      width: 120,
+      height: 120,
     },
     activities: [
       {
@@ -98,8 +98,8 @@ export const EDUCATION_ENTRIES = [
     logo: {
       src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzxlNL92ntRTBI1IUwhxyAj7Ybk1mkW5AA&s',
       alt: 'HackTheBox Logo',
-      width: 150,
-      height: 150,
+      width: 140,
+      height: 140,
     },
     activities: [
       {
@@ -131,8 +131,8 @@ export const EDUCATION_ENTRIES = [
     logo: {
       src: 'https://tryhackme.com/img/favicon.png',
       alt: 'TryHackMe Logo',
-      width: 150,
-      height: 150,
+      width: 140,
+      height: 140,
     },
     activities: [
       {

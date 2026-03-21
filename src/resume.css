@@ -310,21 +310,3 @@
     gap: 0.3rem;
   }
 }
-
-@media (max-width: 576px) {
-  .resume-preview-shell,
-  .resume-empty-state,
-  .resume-iframe-shell,
-  .resume-iframe,
-  .resume-terminal-body {
-    min-height: 54vh;
-  }
-
-  .resume-toolbar {
-    padding: 0.55rem 0.65rem;
-  }
-
-  .resume-terminal-body {
-    padding: 0.78rem 0.8rem 0.9rem;
-  }
-}
