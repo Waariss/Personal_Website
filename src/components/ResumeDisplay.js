@@ -55,6 +55,9 @@ const ResumeDisplay = () => {
   const githubProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'github');
   const mediumProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'medium');
   const researchGateProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'researchgate');
+  const htbProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'hackthebox');
+  const htbLabsProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'htb-labs');
+  const letsDefendProfile = RESUME_SOCIAL_PROFILES.find((profile) => profile.id === 'letsdefend');
 
   const contactActions = useMemo(
     () => [
@@ -176,6 +179,30 @@ const ResumeDisplay = () => {
                   <span className="terminal-key">ResearchGate:</span>
                   <a href={researchGateProfile.href} target="_blank" rel="noopener noreferrer" className="terminal-value">
                     researchgate.net/profile/Waris-Damkham
+                  </a>
+                </div>
+              )}
+              {htbProfile && (
+                <div className="terminal-kv-row">
+                  <span className="terminal-key">HackTheBox:</span>
+                  <a href={htbProfile.href} target="_blank" rel="noopener noreferrer" className="terminal-value">
+                    profile.hackthebox.com/profile/019c5786-35c7-7398-ad5e-32d60b572cdb
+                  </a>
+                </div>
+              )}
+              {htbLabsProfile && (
+                <div className="terminal-kv-row">
+                  <span className="terminal-key">HTB Labs:</span>
+                  <a href={htbLabsProfile.href} target="_blank" rel="noopener noreferrer" className="terminal-value">
+                    app.hackthebox.com/public/users/1458142
+                  </a>
+                </div>
+              )}
+              {letsDefendProfile && (
+                <div className="terminal-kv-row">
+                  <span className="terminal-key">LetsDefend:</span>
+                  <a href={letsDefendProfile.href} target="_blank" rel="noopener noreferrer" className="terminal-value">
+                    app.letsdefend.io/user/Waarism
                   </a>
                 </div>
               )}

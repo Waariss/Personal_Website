@@ -70,6 +70,12 @@ export const TALKS = [
             url: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-muict-mahidoluniversity-ugcPost-7440042088827691008-wO5o',
             icon: 'fas fa-external-link-alt',
             color: 'primary'
+            },
+            {
+            label: 'News Article',
+            url: 'https://news.ict.mahidol.ac.th/cybersecurity-club_real-world-cybersecurity-without-filters/',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
             }
         ]
     },

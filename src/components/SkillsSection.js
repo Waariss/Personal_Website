@@ -14,10 +14,10 @@ const Skills = () => (
         const skillChunks = chunkArray(category.skills, CHUNK_SIZE);
 
         return (
-          <Col key={category.name} xs={12} sm={6} md={4} className="mb-4">
-            <Card className="border-0 shadow-sm skill-card hover-shadow">
-              <Card.Body>
-                <Card.Title className="mb-4">{category.name}</Card.Title>
+          <Col key={category.name} xs={12} sm={6} md={4} className="mb-4 d-flex">
+            <Card className="border-0 shadow-sm skill-card hover-shadow h-100 w-100">
+              <Card.Body className="skill-card-body">
+                <Card.Title className="mb-4 skill-card-title">{category.name}</Card.Title>
                 <Carousel indicators className="custom-carousel">
                   {skillChunks.map((chunk, chunkIndex) => (
                     <Carousel.Item key={`${category.name}-${chunkIndex}`}>

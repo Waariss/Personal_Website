@@ -206,10 +206,330 @@
   height: auto;
 }
 
+.edu2-entry-card {
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #d6e2f5 !important;
+}
+
+.edu2-entry-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+.edu2-logo-shell {
+  width: 168px;
+  min-height: 168px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+}
+
+.edu2-header {
+  margin-bottom: 1rem;
+}
+
+.edu2-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2b3a;
+}
+
+.edu2-subtitle-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.7rem;
+}
+
+.edu2-subtitle-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.86rem;
+  color: #2f4f76;
+  background: #edf3ff;
+  border: 1px solid #c8daf7;
+}
+
+.edu2-activities-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.edu2-activity-card {
+  border: 1px solid #d7e2f4;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.85rem 0.9rem;
+}
+
+.edu2-activity-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.edu2-activity-name {
+  color: #0f4ea4;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.edu2-activity-name:hover {
+  color: #0b63d1;
+}
+
+.edu2-activity-time {
+  flex-shrink: 0;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: #556273;
+  background: #eef2f7;
+  padding: 0.2rem 0.56rem;
+}
+
+.edu2-activity-detail {
+  margin: 0;
+  color: #4b5767;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.edu2-link-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.95rem;
+}
+
+.edu2-toggle-wrap {
+  margin-top: 0.8rem;
+}
+
+.edu2-toggle-btn {
+  border: 1px solid #b7ccef;
+  background: #f2f7ff;
+  color: #1d4f95;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.edu2-toggle-btn:hover {
+  background: #e8f1ff;
+  border-color: #8fb2e7;
+}
+
+.edu2-action-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid #c4d5ef;
+  padding: 0.45rem 0.8rem;
+  color: #234a80;
+  font-weight: 600;
+  text-decoration: none;
+  background: #f4f8ff;
+  transition: all 0.2s ease;
+}
+
+.edu2-action-link:hover {
+  color: #0f4ea4;
+  border-color: #8fb2e7;
+  background: #eaf2ff;
+}
+
+.htb-edu-panel {
+  border: 1px solid #bfd7f8;
+  border-radius: 14px;
+  padding: 0.7rem;
+  background:
+    radial-gradient(900px 420px at 0% 0%, rgba(13, 110, 253, 0.1), transparent 55%),
+    linear-gradient(180deg, #f8fbff 0%, #edf4ff 100%);
+}
+
+.htb-edu-intro {
+  margin: 0 0 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #355987;
+}
+
+.htb-edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.htb-edu-link-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 88px;
+  border: 1px solid #9ec3ef;
+  border-radius: 12px;
+  padding: 0.58rem 0.68rem;
+  text-decoration: none;
+  background: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.htb-edu-link-card:hover {
+  transform: translateY(-1px);
+  border-color: #669cde;
+  box-shadow: 0 6px 14px rgba(21, 62, 110, 0.12);
+}
+
+.htb-edu-link-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #124a97;
+  line-height: 1.28;
+}
+
+.htb-edu-link-detail {
+  margin-top: 0.28rem;
+  color: #526882;
+  font-size: 0.84rem;
+  line-height: 1.35;
+}
+
+.dark-mode .edu2-entry-card {
+  background: linear-gradient(180deg, #111a2b 0%, #0f2038 100%);
+  border-color: #24405f !important;
+}
+
+.dark-mode .edu2-logo-shell {
+  background: transparent;
+  border: none;
+}
+
+.dark-mode .edu2-title {
+  color: #e9eef6;
+}
+
+.dark-mode .edu2-subtitle-pill {
+  background: rgba(45, 100, 176, 0.2);
+  border-color: #3c6297;
+  color: #b9cfee;
+}
+
+.dark-mode .edu2-activity-card {
+  background: rgba(8, 25, 46, 0.55);
+  border-color: #29486c;
+}
+
+.dark-mode .edu2-activity-name {
+  color: #8fc2ff;
+}
+
+.dark-mode .edu2-activity-name:hover {
+  color: #b3d7ff;
+}
+
+.dark-mode .edu2-activity-time {
+  background: #1b304d;
+  color: #c0d3eb;
+}
+
+.dark-mode .edu2-activity-detail {
+  color: #d3deed;
+}
+
+.dark-mode .edu2-action-link {
+  background: rgba(24, 50, 82, 0.45);
+  border-color: #3a5f90;
+  color: #d6e6fa;
+}
+
+.dark-mode .edu2-action-link:hover {
+  background: rgba(33, 75, 125, 0.45);
+  border-color: #5b8dca;
+  color: #ffffff;
+}
+
+.dark-mode .htb-edu-panel {
+  border-color: #2b4b73;
+  background:
+    radial-gradient(900px 420px at 0% 0%, rgba(13, 110, 253, 0.18), transparent 55%),
+    linear-gradient(180deg, #101b2d 0%, #14263e 100%);
+}
+
+.dark-mode .htb-edu-intro {
+  color: #b9ceea;
+}
+
+.dark-mode .htb-edu-link-card {
+  background: rgba(10, 28, 49, 0.68);
+  border-color: #365985;
+}
+
+.dark-mode .htb-edu-link-card:hover {
+  border-color: #6ea3df;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.dark-mode .htb-edu-link-title {
+  color: #9fcbff;
+}
+
+.dark-mode .htb-edu-link-detail {
+  color: #c6d9ef;
+}
+
+.dark-mode .edu2-toggle-btn {
+  background: rgba(24, 50, 82, 0.42);
+  border-color: #3a5f90;
+  color: #d6e6fa;
+}
+
+.dark-mode .edu2-toggle-btn:hover {
+  background: rgba(33, 75, 125, 0.45);
+  border-color: #5b8dca;
+}
+
 @media (max-width: 768px) {
   .edu-logo {
     max-width: 110px;
   }
+
+  .edu2-logo-shell {
+    width: 124px;
+    min-height: 124px;
+  }
+
+  .edu2-entry-body {
+    padding: 1rem;
+  }
+
+  .edu2-activity-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .edu2-activity-card {
+    min-height: 160px;
+  }
+
+  .htb-edu-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 .custom-link {

@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
-import { FaFileAlt } from 'react-icons/fa';
-import Slider from 'react-slick';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import '../App.css';
 import { EDUCATION_ENTRIES } from '../data';
 
@@ -15,88 +14,143 @@ const ImageLogo = ({ src, alt, width, height }) => (
   />
 );
 
-const calculateAutoplaySpeed = (text) => {
-  const words = text.split(' ').length;
-  const readingSpeed = 200;
+const isExternalLink = (href = '') => /^https?:/i.test(href);
+const isHackTheBoxEntry = (title = '') => /hackthebox/i.test(title);
 
-  return (words / readingSpeed) * 60 * 1000;
+const getLinkCardDetail = (linkText = '') => {
+  const normalized = linkText.toLowerCase();
+
+  if (normalized.includes('portfolio')) {
+    return 'University application portfolio and supporting academic showcase.';
+  }
+
+  if (normalized.includes('pwned rooms')) {
+    return 'Hands-on HTB machine progress and practical exploitation walkthroughs.';
+  }
+
+  return 'Quick access link';
 };
 
-const getMaxAutoplaySpeed = (activities) =>
-  activities.reduce(
-    (maxSpeed, activity) => Math.max(maxSpeed, calculateAutoplaySpeed(activity.detail)),
-    0
+const ActivityCard = ({ link, name, detail, time }) => {
+  const linkProps = isExternalLink(link) ? { target: '_blank', rel: 'noopener noreferrer' } : {};
+
+  return (
+    <article className="edu2-activity-card">
+      <header className="edu2-activity-head">
+        {link ? (
+          <a href={link} className="edu2-activity-name" {...linkProps}>
+            {name}
+            <FaExternalLinkAlt className="ms-2" aria-hidden="true" />
+          </a>
+        ) : (
+          <h3 className="edu2-activity-name mb-0">{name}</h3>
+        )}
+        {time ? <span className="edu2-activity-time">{time}</span> : null}
+      </header>
+      <p className="edu2-activity-detail">{detail}</p>
+    </article>
   );
+};
 
-const ActivityCard = ({ link, name, detail, time }) => (
-  <div className="activity-card">
-    {link ? (
-      <a href={link} className="activity-name">
-        {name}
-      </a>
-    ) : (
-      <span className="activity-name-p">{name}</span>
-    )}
-    {time && <div className="event-time">{time}</div>}
-    <div className="event-detail">{detail}</div>
-  </div>
+const HtbLinkCard = ({ link, name, detail }) => (
+  <a
+    href={link}
+    className="htb-edu-link-card"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span className="htb-edu-link-title">
+      {name}
+      <FaExternalLinkAlt className="ms-2" aria-hidden="true" />
+    </span>
+    <span className="htb-edu-link-detail">{detail}</span>
+  </a>
 );
 
-const EducationEntry = ({ title, subtitle, activities, logo, links }) => (
-  <Card className="mb-4 border-0 shadow-sm about-card">
-    <Card.Body>
-      <Row>
-        <Col xs={12} md={2} className="d-flex align-items-start justify-content-center p-3">
-          <ImageLogo {...logo} />
-        </Col>
-        <Col xs={12} md={10} className="p-3">
-          <Card.Title className="mb-3">{title}</Card.Title>
-          {subtitle.map((text) => (
-            <Card.Subtitle key={text} className="mb-2 text-muted">
-              {text}
-            </Card.Subtitle>
-          ))}
-          <Card.Text className="mb-3 mt-3">
-            <strong>Activities and societies:</strong>
-            <Slider
-              dots
-              infinite
-              slidesToShow={1}
-              slidesToScroll={1}
-              arrows={false}
-              autoplay
-              speed={1000}
-              autoplaySpeed={getMaxAutoplaySpeed(activities)}
-              cssEase="linear"
-            >
-              {activities.map((activity) => (
-                <ActivityCard
-                  key={`${activity.name}-${activity.link || activity.detail}`}
-                  {...activity}
-                />
-              ))}
-            </Slider>
-          </Card.Text>
-          {links && (
-            <Card.Text className="mb-3 link-group mt-3">
-              {links.map((link) => (
-                <Card.Link
-                  key={link.href}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-outline-dark"
+const EducationEntry = ({ title, subtitle, activities, logo, links }) => {
+  const [showAllActivities, setShowAllActivities] = useState(false);
+  const actionLinks = links || [];
+  const mergedItems = [
+    ...actionLinks.map((link) => ({
+      link: link.href,
+      name: link.text,
+      detail: getLinkCardDetail(link.text),
+    })),
+    ...activities,
+  ];
+
+  const isHTB = isHackTheBoxEntry(title);
+  const visibleActivities = showAllActivities
+      ? mergedItems
+      : mergedItems.slice(0, 1);
+  const hasMoreActivities = !isHTB && mergedItems.length > 1;
+
+  return (
+    <Card className="mb-4 border-0 shadow-sm edu2-entry-card">
+      <Card.Body className="edu2-entry-body">
+        <Row className="g-4 align-items-start">
+          <Col xs={12} md={3} lg={2} className="d-flex justify-content-center justify-content-md-start">
+            <div className="edu2-logo-shell">
+              <ImageLogo {...logo} />
+            </div>
+          </Col>
+
+          <Col xs={12} md={9} lg={10}>
+            <header className="edu2-header">
+              <h3 className="edu2-title">{title}</h3>
+              <div className="edu2-subtitle-wrap">
+                {subtitle.map((text) => (
+                  <span key={text} className="edu2-subtitle-pill">
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </header>
+
+            {isHTB ? (
+              <div className="htb-edu-panel">
+                <p className="htb-edu-intro">
+                  Offensive hands-on track across profile progress, labs, and practical room completions.
+                </p>
+                <div className="htb-edu-grid">
+                  {mergedItems.slice(0, 4).map((item) => (
+                    <HtbLinkCard
+                      key={`${item.name}-${item.link}`}
+                      link={item.link}
+                      name={item.name}
+                      detail={item.detail}
+                    />
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="edu2-activities-grid">
+                {visibleActivities.map((activity) => (
+                  <ActivityCard key={`${activity.name}-${activity.link || activity.detail}`} {...activity} />
+                ))}
+              </div>
+            )}
+
+            {hasMoreActivities && (
+              <div className="edu2-toggle-wrap">
+                <button
+                  type="button"
+                  className="edu2-toggle-btn"
+                  onClick={() => setShowAllActivities((current) => !current)}
                 >
-                  <FaFileAlt className="me-1" /> {link.text}
-                </Card.Link>
-              ))}
-            </Card.Text>
-          )}
-        </Col>
-      </Row>
-    </Card.Body>
-  </Card>
-);
+                  {showAllActivities
+                    ? 'Show less activities'
+                    : `Show ${activities.length - visibleActivities.length} more activities`}
+                </button>
+              </div>
+            )}
+
+          </Col>
+        </Row>
+      </Card.Body>
+    </Card>
+  );
+};
 
 const Education = () => (
   <section id="education" className="my-4">

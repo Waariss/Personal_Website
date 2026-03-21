@@ -19,7 +19,6 @@ export const PDF_CONTENT_MAP = {
   HTBA_2024: { url: '/PDF/Comp/Certificate-Waariss.pdf', isImage: false },
   CAPen: { url: '/PDF/Cert/WarisDamkham-CertifiedAppSecPentester(CAPen).pdf', isImage: false },
   CNPen: { url: '/PDF/Cert/WarisDamkham-CertifiedNetworkPentester(CNPen).pdf', isImage: false },
-  HTB_Academy_Student_Transcript: { url: '/PDF/HTB/HTB_Academy_Student_Transcript.pdf', isImage: false },
   Def: { url: '/PDF/Senior/Defense_SP2023-31-Aj.Piyanuch-PPT.pdf', isImage: false },
   KPMG: { url: '/PDF/Cert/KPMG_Internship_Certificate.pdf', isImage: false },
   CAPenX: { url: '/PDF/Cert/CAPenX.pdf', isImage: false },

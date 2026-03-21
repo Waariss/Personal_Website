@@ -80,7 +80,7 @@ export const EXPERIENCES = [
         ],
         skills: 'Android Development · OAuth2.0 · Application Security · Security · Cybersecurity · Java',
         links: [
-            { href: 'https://www.ict.mahidol.ac.th/thai/abroad-internship-academic-year-2022/', type: 'news', label: 'News' },
+            { href: 'https://www.ict.mahidol.ac.th/wp-content/uploads/2023/06/EN_Student-Activity-News_24.03.2023_Abroad-Internship-2023.pdf', type: 'news', label: 'News' },
             { href: '/pdf/Ritsumeikan_University_Poster', type: 'poster', label: 'Poster' },
             { href: 'https://ieeexplore.ieee.org/document/10430018', type: 'paper', label: 'Conference Paper' }
         ]
@@ -103,7 +103,7 @@ export const EXPERIENCES = [
         ],
         skills: 'Public Speaking · Jupyter · Convolutional Neural Networks (CNN) · Deep Learning · Artificial Intelligence (AI) · Communication · Python',
         links: [
-            { href: 'https://www.ict.mahidol.ac.th/closing-ceremony-for-online-taiwan-summer-internship-2022/', type: 'news', label: 'News' },
+            { href: 'https://www.ict.mahidol.ac.th/wp-content/uploads/2022/08/Activity-News_Closing-Ceremony-for-Online-Taiwan-Summer-Internship-2022.pdf', type: 'news', label: 'News' },
             { href: 'https://ieeexplore.ieee.org/document/10067528', type: 'paper', label: 'Conference Paper' },
             { href: '/pdf/NCU_CERT', type: 'poster', label: 'Show Credential' },
             { href: '/pdf/INCIT_CERT', type: 'poster', label: 'Conference Certifications' },

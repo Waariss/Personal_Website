@@ -124,12 +124,22 @@ export const SOCIAL_PROFILES = [
     id: 'hackthebox',
     label: 'HackTheBox',
     resumeLabel: 'HackTheBox',
-    href: 'https://app.hackthebox.com/profile/1458142',
-    display: 'hackthebox.com/profile/1458142',
+    href: 'https://profile.hackthebox.com/profile/019c5786-35c7-7398-ad5e-32d60b572cdb',
+    display: 'profile.hackthebox.com/profile/019c5786-35c7-7398-ad5e-32d60b572cdb',
     imageSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjDzxlNL92ntRTBI1IUwhxyAj7Ybk1mkW5AA&s',
     imageAlt: 'HackTheBox',
     tooltip: 'HackTheBox',
   },
+  // {
+  //   id: 'letsdefend',
+  //   label: 'LetsDefend',
+  //   resumeLabel: 'LetsDefend',
+  //   href: 'https://app.letsdefend.io/user/Waarism',
+  //   display: 'app.letsdefend.io/user/Waarism',
+  //   imageSrc: 'https://app.letsdefend.io/favicon.ico',
+  //   imageAlt: 'LetsDefend',
+  //   tooltip: 'LetsDefend',
+  // },
   {
     id: 'credential-net',
     label: 'Credential.Net',
@@ -173,6 +183,8 @@ export const ABOUT_SOCIAL_PROFILE_IDS = [
   'credly',
   'tryhackme',
   'hackthebox',
+  'htb-labs',
+  'letsdefend',
   'credential-net',
   'medium',
 ];
@@ -186,6 +198,8 @@ export const RESUME_SOCIAL_PROFILE_IDS = [
   'credential-net',
   'tryhackme',
   'hackthebox',
+  'htb-labs',
+  'letsdefend',
 ];
 
 export const FOOTER_SOCIAL_PROFILE_IDS = [

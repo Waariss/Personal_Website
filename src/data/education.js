@@ -10,7 +10,7 @@ export const EDUCATION_ENTRIES = [
     },
     activities: [
       {
-        link: 'https://www.ict.mahidol.ac.th/ict-students-internship-poster-exhibition-2023/',
+        link: 'https://www.ict.mahidol.ac.th/wp-content/uploads/2023/09/EN_Students-Activity-News_13.09.2023_ICT-Students-Internship-Poster-Exhibition-2023.pdf',
         name: 'ICT Internship Poster Exhibition 2023 at ICT Mahidol',
         time: 'Sep 2023',
         detail:
@@ -23,7 +23,7 @@ export const EDUCATION_ENTRIES = [
           "In the esteemed ICT and DST Open Houses, I had the privilege of serving as the Master of Ceremony. This role involved introducing speakers, guiding the event's flow, and ensuring that attendees felt welcomed and engaged. My primary responsibility was to foster an enthusiastic environment while seamlessly transitioning between the event's various segments, ensuring a memorable experience for new students.",
       },
       {
-        link: 'https://www.ict.mahidol.ac.th/ict-mahidol-organized-an-online-activity-welcome-freshy-2021/',
+        // link: 'https://www.ict.mahidol.ac.th/ict-mahidol-organized-an-online-activity-welcome-freshy-2021/',
         name: 'Head of Game Entertainment for ICT Welcome Freshy 2021 Event',
         time: 'Jun 2021 - Aug 2021',
         detail:
@@ -36,7 +36,7 @@ export const EDUCATION_ENTRIES = [
           'As the leader of the entertainment group during the 2021 Welcome event for New Students, titled RakNong 132, I was tasked with crafting a memorable introduction for the freshmen at Mahidol University. Drawing on my experience and insights, I curated a mix of activities and games aimed at fostering connections, introducing university culture, and ensuring that the newcomers felt a genuine sense of belonging and excitement for their upcoming academic journey.',
       },
       {
-        link: 'https://www.ict.mahidol.ac.th/ict-mahidol-held-the-on-site-muict-open-house-2020-day-1/',
+        // link: 'https://www.ict.mahidol.ac.th/ict-mahidol-held-the-on-site-muict-open-house-2020-day-1/',
         name: 'Head of SA for the Open House 2020',
         time: 'Sep 2020 - Nov 2020',
         detail:
@@ -103,16 +103,22 @@ export const EDUCATION_ENTRIES = [
     },
     activities: [
       {
-        link: 'https://app.hackthebox.com/profile/1458142',
-        name: 'Pro Hacker',
-        detail: 'HackTheBox Profile',
+        link: 'https://profile.hackthebox.com/profile/019c5786-35c7-7398-ad5e-32d60b572cdb',
+        name: 'Hack The Box Profile',
+        detail: 'Official HTB profile',
+      },
+      {
+        link: 'https://app.hackthebox.com/public/users/1458142',
+        name: 'Hack The Box Labs',
+        detail: 'Public labs profile and machine progress',
+      },
+      {
+        link: 'https://app.letsdefend.io/user/Waarism',
+        name: 'LetsDefend Profile',
+        detail: 'Blue-team labs and defensive training profile',
       },
     ],
     links: [
-      {
-        href: '/pdf/HTB_Academy_Student_Transcript',
-        text: 'HTB Academy Student Transcript',
-      },
       {
         href: '/htb',
         text: 'Pwned Rooms',
