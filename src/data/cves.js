@@ -1,6 +1,6 @@
 export const CVES = [
     {
-        id: 'TBA',
+        id: 'CVE-2026-4766',
         plugin: 'Easy Image Gallery',
         description: "The Easy Image Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gallery SHORTCODE post meta field in all versions up to, and including, 1.5.3. This is due to insufficient input sanitization and output escaping on user-supplied gallery SHORTCODE values. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
         cvss: 6.4,
