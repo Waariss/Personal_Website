@@ -28,7 +28,7 @@ export const TALKS = [
             },
             {
             label: 'LinkedIn (DEF CON)',
-            url: 'https://www.linkedin.com/posts/waris-damkham_cybersecurity-bhasia-activity-7438047875575681024-CMQ7',
+            url: 'https://www.linkedin.com/posts/waris-damkham_defcon-defconsingapore-demolabs-ugcPost-7443330964774326273-qsp-',
             icon: 'fas fa-external-link-alt',
             color: 'primary'
             }
