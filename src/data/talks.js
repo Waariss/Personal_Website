@@ -104,6 +104,12 @@ export const TALKS = [
         date: 'October 2023',
         links: [
             {
+            label: 'Facebook Post',
+            url: 'https://www.facebook.com/share/p/18dAvoLH8S/',
+            icon: 'fas fa-external-link-alt',
+            color: 'primary'
+            },
+            {
                 label: 'IEEE Paper',
                 url: 'https://ieeexplore.ieee.org/document/10430018',
                 icon: 'fas fa-file-alt',
