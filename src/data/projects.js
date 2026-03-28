@@ -1,7 +1,7 @@
 export const PROJECTS = [
     {
         id: "Oblivion Token",
-        imgSrc: "./images/oblivion-token-banner.png",
+        imgSrc: "./images/Oblivion-Token-Logo.jpg",
         title: "Oblivion Token : M365 Conditional Access Policy Bypass OST (Offensive Tooling)",
         subtitle: "Oct 2025 - Apr 2026",
         description: "Oblivion Token is a focused offensive-research utility that makes Microsoft 365 Conditional Access Policy (CAP) bypass testing practical, repeatable, and scriptable. Designed for red-teamers and security researchers, it systematizes token-centric workflows and exercises policy edge cases to expose where device, network, or app-context assumptions fail including realistic test paths against Microsoft first-party (built-in) applications.",
