@@ -39,7 +39,7 @@ export const TALKS = [
         event: 'NCSA AI CTF (Thailand’s first Cyber AI CTF)',
         type: 'Community',
         description:
-            'Contributed as a challenge author for NCSA AI CTF 2026, representing KBTG, focusing on AI security and prompt-injection scenarios.',
+            'Contributed as a challenge author for NCSA AI CTF 2026, representing KBTG. Focused on AI security and prompt-injection scenarios; created 4 challenges: Baan Suk Coffee, TechSupport Analytics, TechBot, and SecureRAG Helpdesk.',
         location: 'Thailand (Online)',
         date: 'Mar 2026',
         links: [
