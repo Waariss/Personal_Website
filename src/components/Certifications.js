@@ -6,7 +6,7 @@ import '../App.css';
 import { CERTIFICATIONS } from '../data';
 import { chunkArray, parseDateLabelValue } from '../utils';
 
-const FEATURED_COUNT = 16;
+const FEATURED_COUNT = 12;
 
 const Certifications = () => {
   const [showAllCerts, setShowAllCerts] = useState(false);
@@ -30,11 +30,11 @@ const Certifications = () => {
     slidesToScroll: 1,
   };
 
-  const slides = chunkArray(displayedCertificates, 4);
+  const slides = chunkArray(displayedCertificates, 3);
 
   return (
     <section id="certifications" className="my-5">
-      <h2 className="mb-4 text-center title-enhanced">Certifications</h2>
+      <h2 className="mb-3 text-center title-enhanced">Certifications</h2>
 
       <Slider {...settings}>
         {slides.map((slideCerts) => (
@@ -43,7 +43,7 @@ const Certifications = () => {
               <Card.Body className="p-4">
                 <Row>
                   {slideCerts.map((cert) => (
-                    <Col key={cert.link || `${cert.title}-${cert.date}`} xs={12} sm={6} md={6} lg={3} className="mb-4">
+                    <Col key={cert.link || `${cert.title}-${cert.date}`} xs={12} sm={6} md={6} lg={4} className="mb-4">
                       <Card className="cert-item-card h-100 border-0 shadow-sm">
                         <div className="cert-img-wrapper">
                           <Card.Img

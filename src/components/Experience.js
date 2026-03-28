@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { FaFileAlt, FaFlask, FaImage, FaNewspaper } from 'react-icons/fa';
 import '../App.css';
 import { EXPERIENCES } from '../data';
 import { formatExperienceDuration } from '../utils';
+
+const FEATURED_EXPERIENCE_COUNT = 3;
 
 const getIconForLinkType = (type) => {
   switch (type) {
@@ -20,78 +22,101 @@ const getIconForLinkType = (type) => {
   }
 };
 
-const Experience = () => (
-  <section id="experience" className="my-5">
-    <h2 className="mb-4 text-center title-enhanced">Experience</h2>
+const Experience = () => {
+  const [showAllExperiences, setShowAllExperiences] = useState(false);
+  const displayedExperiences = showAllExperiences
+    ? EXPERIENCES
+    : EXPERIENCES.slice(0, FEATURED_EXPERIENCE_COUNT);
 
-    {EXPERIENCES.map((experience) => (
-      <Card
-        key={`${experience.company}-${experience.title}-${experience.duration}`}
-        className="mb-4 border-0 shadow-sm experience-card hover-shadow"
-      >
-        <Card.Body>
-          <Row>
-            <Col xs={12} md={2} className="d-flex align-items-start justify-content-center mb-3 mb-md-0">
-              <img
-                src={experience.companyLogo}
-                alt={`${experience.company} Logo`}
-                className="company-logo"
-                loading="lazy"
-              />
-            </Col>
-            <Col xs={12} md={10}>
-              <div className="details-container">
+  return (
+    <section id="experience" className="my-5">
+      <h2 className="mb-4 text-center title-enhanced">Experience</h2>
+
+      {displayedExperiences.map((experience) => (
+        <Card
+          key={`${experience.company}-${experience.title}-${experience.duration}`}
+          className="mb-4 border-0 shadow-sm experience-card hover-shadow"
+        >
+          <Card.Body>
+            <Row>
+              <Col xs={12} md={2} className="d-flex align-items-start justify-content-center mb-3 mb-md-0">
                 <img
-                  src={experience.internshipImages}
-                  alt={`${experience.title} at ${experience.company}`}
-                  className="internship-image"
+                  src={experience.companyLogo}
+                  alt={`${experience.company} Logo`}
+                  className="company-logo"
                   loading="lazy"
                 />
-                <Card.Title className="mb-3 experience-title">
-                  <strong>{experience.title}</strong>
-                </Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  {experience.company} · {experience.type}
-                </Card.Subtitle>
-                <Card.Subtitle className="mb-2 text-muted">
-                  {formatExperienceDuration(experience.duration)}
-                </Card.Subtitle>
-                <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
-                <Card.Text className="mb-1">
-                  <strong>Key Responsibilities:</strong>
-                </Card.Text>
-                <ul className="mb-2 ps-3">
-                  {experience.description.map((item) => (
-                    <li key={item} className="mb-2">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <Card.Text className="mb-3">
-                  <strong>Skills:</strong> <span className="skills">{experience.skills}</span>
-                </Card.Text>
-                {experience.links.length > 0 && (
-                  <Card.Text className="mb-3 link-group">
-                    {experience.links.map((link) => (
-                      <Card.Link
-                        key={`${link.href}-${link.label}`}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-outline-dark custom-link"
-                      >
-                        {getIconForLinkType(link.type)} {link.label}
-                      </Card.Link>
-                    ))}
+              </Col>
+              <Col xs={12} md={10}>
+                <div className="details-container">
+                  <img
+                    src={experience.internshipImages}
+                    alt={`${experience.title} at ${experience.company}`}
+                    className="internship-image"
+                    loading="lazy"
+                  />
+                  <Card.Title className="mb-3 experience-title">
+                    <strong>{experience.title}</strong>
+                  </Card.Title>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    {experience.company} · {experience.type}
+                  </Card.Subtitle>
+                  <Card.Subtitle className="mb-2 text-muted">
+                    {formatExperienceDuration(experience.duration)}
+                  </Card.Subtitle>
+                  <Card.Subtitle className="mb-3 text-muted">{experience.location}</Card.Subtitle>
+                  <Card.Text className="mb-1">
+                    <strong>Key Responsibilities:</strong>
                   </Card.Text>
-                )}
-              </div>
-            </Col>
-          </Row>
-        </Card.Body>
-      </Card>
-    ))}
-  </section>
-);
+                  <ul className="mb-2 ps-3 experience-list">
+                    {experience.description.map((item) => (
+                      <li key={item} className="mb-2">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <Card.Text className="mb-3 experience-skills-line">
+                    <strong className="experience-skills-label">Skills:</strong>
+                    <span className="skills experience-skills-value">{experience.skills}</span>
+                  </Card.Text>
+                  {experience.links.length > 0 && (
+                    <Card.Text className="mb-3 link-group">
+                      {experience.links.map((link) => (
+                        <Card.Link
+                          key={`${link.href}-${link.label}`}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="btn btn-outline-dark custom-link"
+                        >
+                          {getIconForLinkType(link.type)} {link.label}
+                        </Card.Link>
+                      ))}
+                    </Card.Text>
+                  )}
+                </div>
+              </Col>
+            </Row>
+          </Card.Body>
+        </Card>
+      ))}
+
+      {EXPERIENCES.length > FEATURED_EXPERIENCE_COUNT && (
+        <div className="text-center mt-4">
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-lg"
+            onClick={() => setShowAllExperiences((currentValue) => !currentValue)}
+            aria-expanded={showAllExperiences}
+          >
+            {showAllExperiences
+              ? 'Show Less Experience'
+              : `View All ${EXPERIENCES.length} Experiences`}
+          </button>
+        </div>
+      )}
+    </section>
+  );
+};
 
 export default Experience;

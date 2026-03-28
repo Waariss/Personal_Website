@@ -51,7 +51,7 @@ const Speaker = () => {
 
   return (
     <section id="speaker" className="my-5">
-      <h2 className="mb-4 text-center title-enhanced">Talks & Contributions</h2>
+      <h2 className="mb-3 text-center title-enhanced">Talks & Contributions</h2>
 
       <Row>
         {displayedTalks.map((talk) => {
@@ -98,7 +98,7 @@ const Speaker = () => {
                             href={link.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`btn btn-outline-${link.color || 'primary'} btn-sm flex-fill`}
+                            className={`btn btn-outline-${link.color || 'primary'} btn-sm flex-fill proof-link-btn`}
                           >
                             {link.label} {renderTalkLinkIcon(link.icon)}
                           </a>
@@ -116,7 +116,7 @@ const Speaker = () => {
       {TALKS.length > 3 && (
         <div className="text-center mt-4">
           <button
-            className="btn btn-outline-secondary btn-lg"
+            className="btn btn-outline-secondary btn-lg section-toggle-btn"
             onClick={() => setShowAllTalks(!showAllTalks)}
           >
             {showAllTalks ? 'Show Less Talks' : `Show All ${TALKS.length} Talks`}

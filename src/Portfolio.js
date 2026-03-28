@@ -28,12 +28,12 @@ const Portfolio = () => (
       <Home />
       <About />
       <Experience />
-      <CVE />
       <Speaker />
       <Publications />
+      <CVE />
       <Projects />
-      <Skills />
       <Certifications />
+      <Skills />
       <Education />
       <Competitions />
       <Blog />

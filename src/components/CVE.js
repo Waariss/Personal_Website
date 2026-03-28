@@ -45,7 +45,7 @@ const CVE = () => {
 
   return (
     <section id="cves" className="my-5">
-      <h2 className="mb-4 text-center title-enhanced">Security Vulnerabilities (CVEs)</h2>
+      <h2 className="mb-3 text-center title-enhanced">Security Vulnerabilities (CVEs)</h2>
       <div className="cve-summary-bar" aria-label="CVE summary">
         <span className="cve-summary-pill cve-summary-total">Total {summary.total}</span>
         <span className="cve-summary-pill cve-summary-critical">Critical {summary.critical}</span>
@@ -104,7 +104,7 @@ const CVE = () => {
                     href={cve.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline-danger btn-sm w-100"
+                    className="btn btn-outline-danger btn-sm w-100 proof-link-btn"
                   >
                     View on Wordfence{' '}
                     <FaExternalLinkAlt className="ms-1" aria-hidden="true" focusable="false" />
@@ -119,7 +119,7 @@ const CVE = () => {
       {CVES.length > 3 && (
         <div className="text-center mt-4">
           <button
-            className="btn btn-outline-secondary btn-lg"
+            className="btn btn-outline-secondary btn-lg section-toggle-btn"
             onClick={() => setShowAllCVEs(!showAllCVEs)}
           >
             {showAllCVEs ? 'Show Less CVEs' : `Show All ${CVES.length} CVEs`}

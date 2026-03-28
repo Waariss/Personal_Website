@@ -8,7 +8,7 @@ const CHUNK_SIZE = 3;
 
 const Skills = () => (
   <section id="skills" className="my-5">
-    <h2 className="mb-4 text-center title-enhanced">Skills &amp; Tools</h2>
+    <h2 className="mb-3 text-center title-enhanced">Skills &amp; Tools</h2>
     <Row>
       {SKILL_CATEGORIES.map((category) => {
         const skillChunks = chunkArray(category.skills, CHUNK_SIZE);

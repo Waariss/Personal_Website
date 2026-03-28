@@ -4,6 +4,8 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import '../App.css';
 import { EDUCATION_ENTRIES } from '../data';
 
+const FEATURED_EDUCATION_COUNT = 2;
+
 const ImageLogo = ({ src, alt, width, height }) => (
   <img
     src={src}
@@ -152,13 +154,35 @@ const EducationEntry = ({ title, subtitle, activities, logo, links }) => {
   );
 };
 
-const Education = () => (
-  <section id="education" className="my-4">
-    <h2 className="mb-4 text-center title-enhanced">Education</h2>
-    {EDUCATION_ENTRIES.map((entry) => (
-      <EducationEntry key={entry.title} {...entry} />
-    ))}
-  </section>
-);
+const Education = () => {
+  const [showAllEducation, setShowAllEducation] = useState(false);
+  const displayedEntries = showAllEducation
+    ? EDUCATION_ENTRIES
+    : EDUCATION_ENTRIES.slice(0, FEATURED_EDUCATION_COUNT);
+
+  return (
+    <section id="education" className="my-4">
+      <h2 className="mb-4 text-center title-enhanced">Education</h2>
+      {displayedEntries.map((entry) => (
+        <EducationEntry key={entry.title} {...entry} />
+      ))}
+
+      {EDUCATION_ENTRIES.length > FEATURED_EDUCATION_COUNT && (
+        <div className="text-center mt-4">
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-lg"
+            onClick={() => setShowAllEducation((currentValue) => !currentValue)}
+            aria-expanded={showAllEducation}
+          >
+            {showAllEducation
+              ? 'Show Less Education'
+              : `View All ${EDUCATION_ENTRIES.length} Education Entries`}
+          </button>
+        </div>
+      )}
+    </section>
+  );
+};
 
 export default Education;

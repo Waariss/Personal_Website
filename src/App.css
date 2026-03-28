@@ -556,7 +556,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  padding-right: 35%;  /* Add padding to prevent text overlap, adjust as necessary */
+  padding-right: 39%;
 }
 .details-container a{
   text-decoration: none;
@@ -570,13 +570,13 @@
 }
 
 .internship-image {
-  max-width: 32%;  /* Adjust width as per your preference */
-  border-radius: 10px;
+  max-width: 28%;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: absolute; 
-  right: 10px;
+  right: 0;
   top: 50%;
-  transform: translateY(-50%);  /* Center the image vertically */
+  transform: translateY(-50%);
 }
 
 .experience-title {
@@ -587,6 +587,23 @@
 .skills {
   color: black !important; /* Default Bootstrap primary color */
   text-decoration: none !important;
+}
+
+.experience-list {
+  line-height: 1.65;
+}
+
+.experience-skills-line {
+  line-height: 1.7;
+}
+
+.experience-skills-label {
+  display: inline-block;
+  margin-right: 0.45rem;
+}
+
+.experience-skills-value {
+  display: inline;
 }
 
 .btn-primary {
@@ -767,7 +784,7 @@
 
 .project-card img {
   width: 100%;
-  height: 325px;  /* or any desired fixed height */
+  height: 325px;
   object-fit: cover;
 }
 
@@ -776,28 +793,27 @@
   bottom: 0;
   left: 0;
   margin: 10px;
-  color: white !important; /* Or any color that suits your design */
+  color: white !important;
 }
 
 .image-overlay {
-  background: rgba(0, 0, 0, 0.3); /* Lighter black overlay with reduced opacity */
-  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for background and transform */
-  cursor: pointer; /* Indicate clickable area */
-  will-change: background; /* Hint for potential background changes */
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  will-change: background;
 }
 
 .image-overlay:hover {
-  background: rgba(0, 0, 0, 0.4); /* Slightly darker on hover, but still lighter than before */
+  background: rgba(0, 0, 0, 0.4);
 }
 
-/* If there's text inside the overlay */
 .image-overlay .project-title {
-  color: white; /* Ensure text is readable against dark overlay */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Slightly lighter shadow for better readability */
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .white-text {
-  color: white !important; /* Ensure this overrides other color styles */
+  color: white !important;
   display: none;
 }
 
@@ -3241,6 +3257,19 @@ body.dark-mode {
   overflow: hidden;
 }
 
+.publication-section-intro {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.publication-section-subintro {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .publication-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
@@ -3298,6 +3327,11 @@ body.dark-mode {
 .publication-meta {
   padding-top: 0.75rem;
   border-top: 1px solid #f0f0f0;
+}
+
+.publication-link-btn {
+  border-radius: 999px !important;
+  font-weight: 600;
 }
 
 /* Dark Mode */
@@ -3607,42 +3641,6 @@ body.dark-mode {
 .cert-toggle-btn:focus-visible {
   outline: 2px solid #0d6efd;
   outline-offset: 2px;
-}
-/* Certification toggle button */
-.cert-toggle-btn:focus-visible {
-  outline: 2px solid #0d6efd;
-  outline-offset: 2px;
-}
-
-/* Responsive - maintain premium feel on all devices */
-
-  
-  .chip-group-label {
-    font-size: 0.85rem;
-  
-  
-  
-
-@media (max-width: 576px) {
-  .chips-container {
-    gap: 0.6rem;
-  }
-  
-  
-  
-}
-/* Responsive adjustments for chips */
-
-  
-  
-}
-
-@media (max-width: 576px) {
-  .chips-container {
-    gap: 0.4rem;
-  }
-  
-  
 }
 
 /* Base chip style - SIGNIFICANTLY INCREASED */
@@ -4686,5 +4684,376 @@ body.dark-mode {
   .footer-brand-col {
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* Consistency pass */
+
+.portfolio-navbar-brand {
+  margin-right: 0.75rem;
+}
+
+.portfolio-brand-mark {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background:
+    linear-gradient(140deg, rgba(255, 255, 255, 0.16) 0%, rgba(88, 166, 255, 0.18) 55%, rgba(10, 24, 61, 0.24) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.portfolio-navbar-link {
+  border: 1px solid transparent;
+}
+
+.title-enhanced {
+  font-size: 2.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: #223046;
+  text-transform: none;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  color: #223046;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.about-card,
+.experience-card,
+.publication-card,
+.talk-card,
+.competition-card,
+.blog-card,
+.cert-slide-card,
+.cert-item-card,
+.edu2-entry-card {
+  border-radius: 16px !important;
+  border: 1px solid rgba(31, 43, 58, 0.08) !important;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08) !important;
+}
+
+.about-card:hover,
+.experience-card:hover,
+.publication-card:hover,
+.talk-card:hover,
+.competition-card:hover,
+.blog-card:hover,
+.cert-item-card:hover,
+.edu2-entry-card:hover {
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.12) !important;
+}
+
+.custom-link,
+.publication-link-btn,
+.edu2-toggle-btn,
+.cert-toggle-btn,
+.btn-outline-secondary,
+.btn-outline-primary {
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+}
+
+.publication-paper-title,
+.talk-title,
+.competition-title,
+.experience-title,
+.cert-item-title {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.publication-abstract,
+.talk-description,
+.competition-card .card-text,
+.edu2-activity-detail,
+.about-copy-block {
+  line-height: 1.7;
+}
+
+.conference-badge,
+.year-badge,
+.event-badge,
+.status-badge,
+.cve-summary-pill,
+.edu2-subtitle-pill {
+  border-radius: 999px;
+}
+
+.proof-section-intro,
+.publication-section-intro,
+.publication-section-subintro {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.section-toggle-btn,
+.proof-link-btn {
+  border-radius: 999px !important;
+  font-weight: 600 !important;
+}
+
+.proof-link-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+.publication-card,
+.talk-card,
+.cve-card {
+  min-height: 100%;
+}
+
+.publication-card .card-body,
+.talk-card .card-body,
+.cve-card .card-body {
+  padding: 1.4rem;
+}
+
+.publication-card:hover,
+.talk-card:hover,
+.cve-card:hover {
+  transform: translateY(-4px);
+}
+
+.publication-header,
+.talk-header {
+  margin-bottom: 1.1rem;
+}
+
+.conference-badge,
+.year-badge,
+.event-badge,
+.status-badge {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.publication-paper-title,
+.talk-title,
+.cve-id {
+  margin-bottom: 0.7rem;
+}
+
+.publication-venue,
+.talk-event,
+.cve-title {
+  min-height: 2.7rem;
+  align-items: flex-start;
+}
+
+.publication-abstract,
+.talk-description,
+.cve-description {
+  color: #59677c;
+  line-height: 1.7;
+}
+
+.publication-meta,
+.talk-meta,
+.cve-meta {
+  margin-top: auto;
+  padding-top: 0.95rem;
+  border-top: 1px solid #edf1f5;
+}
+
+.cve-header {
+  margin-bottom: 1.1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #edf1f5;
+}
+
+.dark-mode .publication-abstract,
+.dark-mode .talk-description,
+.dark-mode .cve-description {
+  color: #aeb8c2;
+}
+
+.dark-mode .publication-meta,
+.dark-mode .talk-meta,
+.dark-mode .cve-meta,
+.dark-mode .cve-header {
+  border-color: #2a3441;
+}
+
+.details-container {
+  padding-right: 33%;
+}
+
+.internship-image,
+.blog-image {
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.badge-section {
+  gap: 0.2rem;
+}
+
+.badge-item {
+  border-radius: 14px;
+}
+
+.badge-item img {
+  object-fit: contain;
+}
+
+.scroll-to-top-button {
+  box-shadow: 0 10px 20px rgba(13, 110, 253, 0.22);
+}
+
+@media (max-width: 768px) {
+  .title-enhanced {
+    font-size: 2rem;
+  }
+
+  .details-container {
+    padding-right: 0;
+  }
+
+  .internship-image {
+    position: static;
+    right: auto;
+    top: auto;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+  }
+}
+
+/* Skills + Certifications refinement */
+
+.skills-section-intro,
+.certifications-section-intro {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.skill-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  border-radius: 14px !important;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+
+.skill-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #223046;
+  letter-spacing: -0.01em;
+}
+
+.skill-card-body {
+  padding: 1rem 1rem 1.7rem;
+}
+
+.skill-logo-wrapper {
+  width: 34%;
+  padding-bottom: 34%;
+}
+
+.skill-title {
+  font-size: 0.8rem;
+  padding-top: 14px !important;
+  margin-bottom: 0.8rem;
+  color: #58657a;
+}
+
+.custom-carousel {
+  padding-bottom: 0.45rem;
+}
+
+.skill-card .carousel-indicators {
+  bottom: -24px;
+}
+
+.skill-card .carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  opacity: 0.55;
+}
+
+.cert-slide-card {
+  border-radius: 16px;
+}
+
+.cert-slide-card:hover {
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.1) !important;
+}
+
+.cert-item-card {
+  border-radius: 14px;
+}
+
+.cert-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12) !important;
+}
+
+.cert-img-wrapper {
+  height: 240px;
+  padding: 0.45rem 0.6rem 0.35rem;
+  align-items: flex-start;
+}
+
+.cert-item-title {
+  font-size: 0.95rem;
+  min-height: 2.55rem;
+}
+
+.cert-item-meta {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+#certifications .slick-dots {
+  bottom: -36px;
+  margin-bottom: 2.25rem;
+}
+
+.dark-mode .skill-card-title {
+  color: #c9d1d9;
+}
+
+.dark-mode .skill-title {
+  color: #a9b4c2;
+}
+
+@media (max-width: 992px) {
+  .cert-img-wrapper {
+    height: 210px;
+  }
+}
+
+@media (max-width: 576px) {
+  .skill-logo-wrapper {
+    width: 30%;
+    padding-bottom: 30%;
+  }
+
+  .cert-img-wrapper {
+    height: 185px;
   }
 }
