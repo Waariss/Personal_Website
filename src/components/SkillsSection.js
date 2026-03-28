@@ -18,7 +18,7 @@ const Skills = () => (
             <Card className="border-0 shadow-sm skill-card hover-shadow h-100 w-100">
               <Card.Body className="skill-card-body">
                 <Card.Title className="mb-4 skill-card-title">{category.name}</Card.Title>
-                <Carousel indicators className="custom-carousel">
+                <Carousel indicators={false} className="custom-carousel">
                   {skillChunks.map((chunk, chunkIndex) => (
                     <Carousel.Item key={`${category.name}-${chunkIndex}`}>
                       <Row>
