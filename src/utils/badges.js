@@ -19,6 +19,7 @@ export function getEventTypeColor(type = '') {
   switch (t) {
     case 'arsenal':
     case 'demo labs':
+    case 'arsenal / demo labs':
       return 'danger';
 
     case 'conference':

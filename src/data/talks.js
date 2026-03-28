@@ -2,7 +2,7 @@ export const TALKS = [
     {
         title: 'Oblivion Token: M365 Conditional Access Policy Bypass OST (Offensive Tooling)',
         event: 'Black Hat Asia Arsenal 2026 · DEF CON Singapore 2026 Demo Labs',
-        type: 'Demo Labs',
+        type: 'Arsenal / Demo Labs',
         description:
             'Accepted for both Black Hat Asia 2026 Arsenal and DEF CON Singapore 2026 Demo Labs. Oblivion Token is an offensive research utility for practical, repeatable testing of Microsoft 365 Conditional Access (CA) edge cases. It systematizes token-centric workflows to help identify where device, network, or app-context assumptions can fail in real-world environments.',
         location: 'Marina Bay Sands, Singapore',
