@@ -47,8 +47,6 @@ const About = () => {
 
                 I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and serve as a <strong>core member of Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work includes <strong>security automation</strong>, critical vulnerability response support, and <strong>AI security readiness</strong> for AI-enabled applications.
 
-                In parallel, I’m currently building <strong>AI-driven offensive tooling</strong>, including <strong>Copilot-enabled agents</strong> for vulnerability analysis and critical vulnerability alert triage, plus <strong>MCP-based AI assistants</strong> for black-box penetration testing.
-
                 I conduct applied identity and access security work on <strong>Microsoft 365 Conditional Access</strong> policy enforcement, with tooling accepted for <strong>Black Hat Asia 2026 (Arsenal)</strong> and <strong>DEF CON Singapore 2026 (Demo Labs)</strong>.
 
                 Open to global opportunities in Red Teaming, AI Security, and Application Security.
