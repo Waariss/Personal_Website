@@ -45,7 +45,7 @@ const About = () => {
               <Card.Text>
                 I am an <strong>Offensive Security Engineer</strong> and <strong>AI Security Engineer</strong> with hands-on experience across enterprise penetration testing and applied AI and security research.
 
-                I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and serve as a <strong>core member of Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work includes <strong>security automation</strong>, critical vulnerability response support, and <strong>AI security readiness</strong> for AI-enabled applications.
+                I deliver end-to-end assessments across <strong>Web, API, Mobile, and Network</strong> environments, and serve as a <strong>core member of Red Team operations</strong> focused on real-world attack scenarios, identity abuse, and security posture improvement. My work includes <strong>security workflow automation</strong>, <strong>critical vulnerability intelligence and alert triage</strong>, and <strong>AI agent-based offensive tooling</strong> for vulnerability analysis, critical alert intelligence, and <strong>black-box pentesting</strong>, as well as <strong>AI security readiness</strong> for AI-enabled applications.
 
                 I conduct applied identity and access security work on <strong>Microsoft 365 Conditional Access</strong> policy enforcement, with tooling accepted for <strong>Black Hat Asia 2026 (Arsenal)</strong> and <strong>DEF CON Singapore 2026 (Demo Labs)</strong>.
 
