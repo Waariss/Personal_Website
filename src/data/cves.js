@@ -1,5 +1,14 @@
 export const CVES = [
     {
+        id: 'CVE-2026-1830',
+        plugin: 'Quick Playground',
+        description: "The Quick Playground plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.3.1. This is due to insufficient authorization checks on REST API endpoints that expose a sync code and allow arbitrary file uploads. This makes it possible for unauthenticated attackers to retrieve the sync code, upload PHP files with path traversal, and achieve remote code execution on the server.",
+        cvss: 9.8,
+        severity: 'Critical',
+        date: 'Apr 8, 2026',
+        link: 'https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/quick-playground/quick-playground-131-missing-authorization-to-unauthenticated-arbitrary-file-upload'
+    },
+    {
         id: 'CVE-2026-4766',
         plugin: 'Easy Image Gallery',
         description: "The Easy Image Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gallery SHORTCODE post meta field in all versions up to, and including, 1.5.3. This is due to insufficient input sanitization and output escaping on user-supplied gallery SHORTCODE values. This makes it possible for authenticated attackers, with Contributor-level access and above, to inject arbitrary web scripts in pages that will execute whenever a user accesses an injected page.",
